@@ -32,17 +32,17 @@ switch ($action) {
 	case 'add':
 		announcement_add($description, $recording, $allow_skip, $post_dest);
 		needreload();
-		redirect('config.php?display=announcement&type=setup&extdisplay=');
+		redirect_standard();
 	break;
 	case 'edit':
 		announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest);
 		needreload();
-		redirect('config.php?display=announcement&ype=setup&extdisplay='.$announcement_id);
+		redirect_standard();
 	break;
 	case 'delete':
 		announcement_delete($announcement_id);
 		needreload();
-		redirect('config.php?display=announcement&type=setup');
+		redirect_standard();
 	break;
 }
 
