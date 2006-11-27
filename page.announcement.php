@@ -37,7 +37,7 @@ switch ($action) {
 	case 'edit':
 		announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest);
 		needreload();
-		redirect_standard();
+		redirect_standard('extdisplay');
 	break;
 	case 'delete':
 		announcement_delete($announcement_id);
