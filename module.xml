@@ -1,7 +1,11 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>0.2</version>
+	<version>0.3</version>
+	<changelog>
+		*0.3* Added support to return to calling IVR
+		*0.2* First Module Intro
+	</changelog>
 	<type>setup</type>
 	<category>Inbound Call Control</category>
 	<description>

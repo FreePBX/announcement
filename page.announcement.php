@@ -20,6 +20,7 @@ $announcement_id = isset($_POST['announcement_id']) ? $_POST['announcement_id'] 
 $description = isset($_POST['description']) ? $_POST['description'] :  '';
 $recording = isset($_POST['recording']) ? $_POST['recording'] :  '';
 $allow_skip = isset($_POST['allow_skip']) ? $_POST['allow_skip'] :  0;
+$return_ivr = isset($_POST['return_ivr']) ? $_POST['return_ivr'] :  0;
 $post_dest = isset($_POST['post_dest']) ? $_POST['post_dest'] :  '';
 
 if ($_POST['goto0']) {
@@ -30,12 +31,12 @@ if ($_POST['goto0']) {
 
 switch ($action) {
 	case 'add':
-		announcement_add($description, $recording, $allow_skip, $post_dest);
+		announcement_add($description, $recording, $allow_skip, $post_dest, $return_ivr);
 		needreload();
 		redirect_standard();
 	break;
 	case 'edit':
-		announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest);
+		announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest, $return_ivr);
 		needreload();
 		redirect_standard('extdisplay');
 	break;
@@ -75,6 +76,7 @@ if ($extdisplay) {
 	$recording = $row[2];
 	$allow_skip = $row[3];
 	$post_dest = $row[4];
+	$return_ivr = $row[5];
 
 }
 
@@ -111,6 +113,10 @@ if ($extdisplay) {
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Allow Skip")?><span><?php echo _("If the caller is allowed to press a key to skip the message.")?></span></a></td>
 		<td><input type="checkbox" name="allow_skip" value="1" <?php echo ($allow_skip ? 'CHECKED' : ''); ?> /></td>
+	</tr>
+	<tr>
+		<td><a href="#" class="info"><?php echo _("Return to IVR")?><span><?php echo _("If this announcement came from an IVR and this box is checked, the destination below will be ignored and instead it will return to the calling IVR. Otherwise, the destinatino below will be taken.")?></span></a></td>
+		<td><input type="checkbox" name="return_ivr" value="1" <?php echo ($return_ivr ? 'CHECKED' : ''); ?> /></td>
 	</tr>
 	
 	<tr><td colspan="2"><br><h5><?php echo _("Destination after playback")?>:<hr></h5></td></tr>

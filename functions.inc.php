@@ -21,11 +21,20 @@ function announcement_get_config($engine) {
 					$ext->add('app-announcement-'.$row[0], 's', '', new ext_background($row[2]));
 					
 					$ext->add('app-announcement-'.$row[0], '_X', '', new ext_noop('User skipped announcement'));
-					$ext->add('app-announcement-'.$row[0], '_X', '', new ext_goto($row[4]));
+					if ($row[5]) {
+						$ext->add('app-announcement-'.$row[0], '_X', '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row[4].':${IVR_CONTEXT},s,1'));
+					} else {
+						$ext->add('app-announcement-'.$row[0], '_X', '', new ext_goto($row[4]));
+					}
 				} else {
 					$ext->add('app-announcement-'.$row[0], 's', '', new ext_playback($row[2]));
 				}
-				$ext->add('app-announcement-'.$row[0], 's', '', new ext_goto($row[4]));
+
+				if ($row[5]) {
+					$ext->add('app-announcement-'.$row[0], 's', '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row[4].':${IVR_CONTEXT},s,1'));
+				} else {
+					$ext->add('app-announcement-'.$row[0], 's', '', new ext_goto($row[4]));
+				}
 				
 			}
 		break;
@@ -34,7 +43,7 @@ function announcement_get_config($engine) {
 
 function announcement_list() {
 	global $db;
-	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest FROM announcement ORDER BY description ";
+	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest, return_ivr FROM announcement ORDER BY description ";
 	$results = $db->getAll($sql);
 	if(DB::IsError($results)) {
 		die($results->getMessage()."<br><br>Error selecting from announcement");	
@@ -44,7 +53,7 @@ function announcement_list() {
 
 function announcement_get($announcement_id) {
 	global $db;
-	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest FROM announcement WHERE announcement_id = ".addslashes($announcement_id);
+	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest, return_ivr FROM announcement WHERE announcement_id = ".addslashes($announcement_id);
 	$row = $db->getRow($sql);
 	if(DB::IsError($row)) {
 		die($row->getMessage()."<br><br>Errpr selecting row from announcement");	
@@ -52,13 +61,14 @@ function announcement_get($announcement_id) {
 	return $row;
 }
 
-function announcement_add($description, $recording, $allow_skip, $post_dest) {
+function announcement_add($description, $recording, $allow_skip, $post_dest, $return_ivr) {
 	global $db;
-	$sql = "INSERT INTO announcement (description, recording, allow_skip, post_dest) VALUES (".
+	$sql = "INSERT INTO announcement (description, recording, allow_skip, post_dest, return_ivr) VALUES (".
 		"'".addslashes($description)."', ".
 		"'".addslashes($recording)."', ".
 		"'".($allow_skip ? 1 : 0)."', ".
-		"'".addslashes($post_dest)."')";
+		"'".addslashes($post_dest)."', ".
+		"'".($return_ivr ? 1 : 0)."')";
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die($result->getMessage().$sql);
@@ -75,13 +85,14 @@ function announcement_delete($announcement_id) {
 	
 }
 
-function announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest) { 
+function announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest, $return_ivr) { 
 	global $db;
 	$sql = "UPDATE announcement SET ".
 		"description = '".addslashes($description)."', ".
 		"recording = '".addslashes($recording)."', ".
 		"allow_skip = '".($allow_skip ? 1 : 0)."', ".
-		"post_dest = '".addslashes($post_dest)."' ".
+		"post_dest = '".addslashes($post_dest)."', ".
+		"return_ivr = '".($return_ivr ? 1 : 0)."' ".
 		"WHERE announcement_id = ".addslashes($announcement_id);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
