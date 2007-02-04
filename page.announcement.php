@@ -115,7 +115,7 @@ if ($extdisplay) {
 		<td><input type="checkbox" name="allow_skip" value="1" <?php echo ($allow_skip ? 'CHECKED' : ''); ?> /></td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("Return to IVR")?><span><?php echo _("If this announcement came from an IVR and this box is checked, the destination below will be ignored and instead it will return to the calling IVR. Otherwise, the destinatino below will be taken.")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Return to IVR")?><span><?php echo _("If this announcement came from an IVR and this box is checked, the destination below will be ignored and instead it will return to the calling IVR. Otherwise, the destinatino below will be taken. Don't check if not using in this mode. <br>The IVR return location will be to the last IVR in the call chain that was called so be careful to only check when needed. For example, if an IVR directs a call to another destination which eventually calls this annoucement and this box is checked, it will return to that IVR which may not be the expected behavior.")?></span></a></td>
 		<td><input type="checkbox" name="return_ivr" value="1" <?php echo ($return_ivr ? 'CHECKED' : ''); ?> /></td>
 	</tr>
 	
