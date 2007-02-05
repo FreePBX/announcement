@@ -21,6 +21,7 @@ $description = isset($_POST['description']) ? $_POST['description'] :  '';
 $recording = isset($_POST['recording']) ? $_POST['recording'] :  '';
 $allow_skip = isset($_POST['allow_skip']) ? $_POST['allow_skip'] :  0;
 $return_ivr = isset($_POST['return_ivr']) ? $_POST['return_ivr'] :  0;
+$noanswer = isset($_POST['noanswer']) ? $_POST['noanswer'] :  0;
 $post_dest = isset($_POST['post_dest']) ? $_POST['post_dest'] :  '';
 
 if ($_POST['goto0']) {
@@ -31,12 +32,12 @@ if ($_POST['goto0']) {
 
 switch ($action) {
 	case 'add':
-		announcement_add($description, $recording, $allow_skip, $post_dest, $return_ivr);
+		announcement_add($description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer);
 		needreload();
 		redirect_standard();
 	break;
 	case 'edit':
-		announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest, $return_ivr);
+		announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer);
 		needreload();
 		redirect_standard('extdisplay');
 	break;
@@ -77,6 +78,7 @@ if ($extdisplay) {
 	$allow_skip = $row[3];
 	$post_dest = $row[4];
 	$return_ivr = $row[5];
+	$noanswer = $row[6];
 
 }
 
@@ -117,6 +119,10 @@ if ($extdisplay) {
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Return to IVR")?><span><?php echo _("If this announcement came from an IVR and this box is checked, the destination below will be ignored and instead it will return to the calling IVR. Otherwise, the destinatino below will be taken. Don't check if not using in this mode. <br>The IVR return location will be to the last IVR in the call chain that was called so be careful to only check when needed. For example, if an IVR directs a call to another destination which eventually calls this annoucement and this box is checked, it will return to that IVR which may not be the expected behavior.")?></span></a></td>
 		<td><input type="checkbox" name="return_ivr" value="1" <?php echo ($return_ivr ? 'CHECKED' : ''); ?> /></td>
+	</tr>
+	<tr>
+		<td><a href="#" class="info"><?php echo _("Don't Answer Channel")?><span><?php echo _("Check this to keep the channel from explicitly being answered. When checked, the message will be played and if the channel is not already answered it will be delivered as early media if the channel supports that. When not checked, the channel is answered followed by a 1 second delay. When using an annoucement from an IVR or other sources that have already answered the channel, that 1 second delay may not be desired.")?></span></a></td>
+		<td><input type="checkbox" name="noanswer" value="1" <?php echo ($noanswer ? 'CHECKED' : ''); ?> /></td>
 	</tr>
 	
 	<tr><td colspan="2"><br><h5><?php echo _("Destination after playback")?>:<hr></h5></td></tr>

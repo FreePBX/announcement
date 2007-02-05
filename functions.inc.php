@@ -13,12 +13,14 @@ function announcement_get_config($engine) {
 	switch ($engine) {
 		case 'asterisk':
 			foreach (announcement_list() as $row) {
-				$ext->add('app-announcement-'.$row[0], 's', '', new ext_answer(''));
-                $ext->add('app-announcement-'.$row[0], 's', '', new ext_wait('1'));
 				$ext->add('app-announcement-'.$row[0], 's', '', new ext_noop('Playing announcement '.$row[1]));
+				if (! $row[6]) {
+					$ext->add('app-announcement-'.$row[0], 's', '', new ext_answer(''));
+					$ext->add('app-announcement-'.$row[0], 's', '', new ext_wait('1'));
+				}
 				if ($row[3]) {
 					// allow skip
-					$ext->add('app-announcement-'.$row[0], 's', '', new ext_background($row[2]));
+					$ext->add('app-announcement-'.$row[0], 's', '', new ext_background($row[2].'|n'));
 					
 					$ext->add('app-announcement-'.$row[0], '_X', '', new ext_noop('User skipped announcement'));
 					if ($row[5]) {
@@ -27,7 +29,7 @@ function announcement_get_config($engine) {
 						$ext->add('app-announcement-'.$row[0], '_X', '', new ext_goto($row[4]));
 					}
 				} else {
-					$ext->add('app-announcement-'.$row[0], 's', '', new ext_playback($row[2]));
+					$ext->add('app-announcement-'.$row[0], 's', '', new ext_playback($row[2].'|noanswer'));
 				}
 
 				if ($row[5]) {
@@ -43,7 +45,7 @@ function announcement_get_config($engine) {
 
 function announcement_list() {
 	global $db;
-	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest, return_ivr FROM announcement ORDER BY description ";
+	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest, return_ivr, noanswer FROM announcement ORDER BY description ";
 	$results = $db->getAll($sql);
 	if(DB::IsError($results)) {
 		die($results->getMessage()."<br><br>Error selecting from announcement");	
@@ -53,7 +55,7 @@ function announcement_list() {
 
 function announcement_get($announcement_id) {
 	global $db;
-	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest, return_ivr FROM announcement WHERE announcement_id = ".addslashes($announcement_id);
+	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest, return_ivr, noanswer FROM announcement WHERE announcement_id = ".addslashes($announcement_id);
 	$row = $db->getRow($sql);
 	if(DB::IsError($row)) {
 		die($row->getMessage()."<br><br>Errpr selecting row from announcement");	
@@ -61,14 +63,15 @@ function announcement_get($announcement_id) {
 	return $row;
 }
 
-function announcement_add($description, $recording, $allow_skip, $post_dest, $return_ivr) {
+function announcement_add($description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer) {
 	global $db;
-	$sql = "INSERT INTO announcement (description, recording, allow_skip, post_dest, return_ivr) VALUES (".
+	$sql = "INSERT INTO announcement (description, recording, allow_skip, post_dest, return_ivr, noanswer) VALUES (".
 		"'".addslashes($description)."', ".
 		"'".addslashes($recording)."', ".
 		"'".($allow_skip ? 1 : 0)."', ".
 		"'".addslashes($post_dest)."', ".
-		"'".($return_ivr ? 1 : 0)."')";
+		"'".($return_ivr ? 1 : 0)."', ".
+		"'".($noanswer ? 1 : 0)."')";
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die($result->getMessage().$sql);
@@ -85,14 +88,15 @@ function announcement_delete($announcement_id) {
 	
 }
 
-function announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest, $return_ivr) { 
+function announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer) { 
 	global $db;
 	$sql = "UPDATE announcement SET ".
 		"description = '".addslashes($description)."', ".
 		"recording = '".addslashes($recording)."', ".
 		"allow_skip = '".($allow_skip ? 1 : 0)."', ".
 		"post_dest = '".addslashes($post_dest)."', ".
-		"return_ivr = '".($return_ivr ? 1 : 0)."' ".
+		"return_ivr = '".($return_ivr ? 1 : 0)."', ".
+		"noanswer = '".($noanswer ? 1 : 0)."' ".
 		"WHERE announcement_id = ".addslashes($announcement_id);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
