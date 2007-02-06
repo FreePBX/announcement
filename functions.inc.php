@@ -24,7 +24,7 @@ function announcement_get_config($engine) {
 					
 					$ext->add('app-announcement-'.$row[0], '_X', '', new ext_noop('User skipped announcement'));
 					if ($row[5]) {
-						$ext->add('app-announcement-'.$row[0], '_X', '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row[4].':${IVR_CONTEXT},s,1'));
+						$ext->add('app-announcement-'.$row[0], '_X', '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row[4].':${IVR_CONTEXT},return,1'));
 					} else {
 						$ext->add('app-announcement-'.$row[0], '_X', '', new ext_goto($row[4]));
 					}
@@ -33,7 +33,7 @@ function announcement_get_config($engine) {
 				}
 
 				if ($row[5]) {
-					$ext->add('app-announcement-'.$row[0], 's', '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row[4].':${IVR_CONTEXT},s,1'));
+					$ext->add('app-announcement-'.$row[0], 's', '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row[4].':${IVR_CONTEXT},return,1'));
 				} else {
 					$ext->add('app-announcement-'.$row[0], 's', '', new ext_goto($row[4]));
 				}
