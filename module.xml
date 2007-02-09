@@ -1,8 +1,9 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>0.5</version>
+	<version>0.6</version>
 	<changelog>
+		*0.6* added an option to choose a single digit that can be used to have the msg repeated
 		*0.5* chaned to jump to ivr's return context
 		*0.4* Added Don't Answer option to not answer the channel (and playback early media if supported)
 		*0.3* Added support to return to calling IVR

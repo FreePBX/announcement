@@ -5,5 +5,6 @@ CREATE TABLE IF NOT EXISTS announcement (
 	allow_skip INT,
 	post_dest VARCHAR( 255 ) ,
 	return_ivr TINYINT(1) NOT NULL DEFAULT 0,
-	noanswer TINYINT(1) NOT NULL DEFAULT 0
+	noanswer TINYINT(1) NOT NULL DEFAULT 0,
+	repeat VARCHAR(2) NOT NULL DEFAULT ''
 );

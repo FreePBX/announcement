@@ -23,6 +23,7 @@ $allow_skip = isset($_POST['allow_skip']) ? $_POST['allow_skip'] :  0;
 $return_ivr = isset($_POST['return_ivr']) ? $_POST['return_ivr'] :  0;
 $noanswer = isset($_POST['noanswer']) ? $_POST['noanswer'] :  0;
 $post_dest = isset($_POST['post_dest']) ? $_POST['post_dest'] :  '';
+$repeat = isset($_POST['repeat']) ? $_POST['repeat'] :  '';
 
 if ($_POST['goto0']) {
 	// 'ringgroup_post_dest'  'ivr_post_dest' or whatever
@@ -32,12 +33,12 @@ if ($_POST['goto0']) {
 
 switch ($action) {
 	case 'add':
-		announcement_add($description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer);
+		announcement_add($description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat);
 		needreload();
 		redirect_standard();
 	break;
 	case 'edit':
-		announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer);
+		announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat);
 		needreload();
 		redirect_standard('extdisplay');
 	break;
@@ -79,6 +80,7 @@ if ($extdisplay) {
 	$post_dest = $row[4];
 	$return_ivr = $row[5];
 	$noanswer = $row[6];
+	$repeat = $row[7];
 
 }
 
@@ -112,6 +114,25 @@ if ($extdisplay) {
 		</td>
 	</tr>
 <?php } ?>
+	<tr>
+		<td><a href="#" class="info"><?php echo _("Repeat")?><span><?php echo _("Key to press that will allow for the message to be replayed. If you choose this option there will be a short delay inserted after the message. If a longer delay is needed it should be incoporated into the recording.")?></span></a></td>
+		<td>
+			&nbsp;&nbsp;<select name="repeat"/>
+			<?php
+				$default = isset($repeat) ? $repeat : '';
+				for ($i=0; $i<=9; $i++ ) {
+					$digits[]="$i";
+				}
+				$digits[] = '*';
+				$digits[] = '#';
+				echo '<option value=""'.($default == '' ? ' SELECTED' : '').'>'._("Disable")."</option>";
+				foreach ($digits as $digit) {
+					echo '<option value="'.$digit.'"'.($digit == $default ? ' SELECTED' : '').'>'.$digit."</option>\n";
+				}
+			?>
+			</select>
+		</td>
+	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Allow Skip")?><span><?php echo _("If the caller is allowed to press a key to skip the message.")?></span></a></td>
 		<td><input type="checkbox" name="allow_skip" value="1" <?php echo ($allow_skip ? 'CHECKED' : ''); ?> /></td>

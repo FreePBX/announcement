@@ -22,4 +22,14 @@ if(DB::IsError($check)) {
     if(DB::IsError($result)) { die($result->getDebugInfo()); }
 }
 
+// Version 0.6 adds repeat
+$sql = "SELECT repeat FROM announcement";
+$check = $db->getRow($sql, DB_FETCHMODE_ASSOC);
+if(DB::IsError($check)) {
+	// add new field
+    $sql = "ALTER TABLE announcement ADD repeat VARCHAR(2) NOT NULL DEFAULT '';";
+    $result = $db->query($sql);
+    if(DB::IsError($result)) { die($result->getDebugInfo()); }
+}
+
 ?>
