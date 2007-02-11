@@ -17,7 +17,7 @@
 	<menuitems>
 		<announcement>Announcements</announcement>
 	</menuitems>
-	<location>release/2.3/announcement-0.5.tgz</location>
+	<location>release/2.3/announcement-0.6.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Announcement</info>
-	<md5sum>2f21548c7a47eb4c7f48590095047873</md5sum>
+	<md5sum>f5fb7a09cd4e48b46913115b0afd36ac</md5sum>
 </module>
