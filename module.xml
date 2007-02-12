@@ -1,8 +1,10 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>0.6</version>
+	<version>0.7.0</version>
 	<changelog>
+		*0.7.0* more fixes to deal with sqlite and fix mysql5 (includes renaming of repeat to repeat_msg)
+		*0.6.1* Modified the install.sql to work on sqlite3
 		*0.6* added an option to choose a single digit that can be used to have the msg repeated
 		*0.5* chaned to jump to ivr's return context
 		*0.4* Added Don't Answer option to not answer the channel (and playback early media if supported)

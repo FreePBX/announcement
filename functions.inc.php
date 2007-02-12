@@ -40,7 +40,7 @@ function announcement_get_config($engine) {
 					$ext->add('app-announcement-'.$row[0], 's', '', new ext_playback($row[2].'|noanswer'));
 				}
 
-				// if repeat enabled then set exten to t to allow for the key to be pressed, otherwise play message and go
+				// if repeat_msg enabled then set exten to t to allow for the key to be pressed, otherwise play message and go
 				$exten = $row[7] ? 't':'s';
 				if ($row[5]) {
 					$ext->add('app-announcement-'.$row[0], $exten, '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row[4].':${IVR_CONTEXT},return,1'));
@@ -55,7 +55,7 @@ function announcement_get_config($engine) {
 
 function announcement_list() {
 	global $db;
-	$sql = "SELECT `announcement_id`, `description`, `recording`, `allow_skip`, `post_dest`, `return_ivr`, `noanswer`, repeat FROM `announcement` ORDER BY `description`";
+	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement ORDER BY description ";
 	$results = $db->getAll($sql);
 	if(DB::IsError($results)) {
 		die($results->getMessage()."<br><br>Error selecting from announcement");	
@@ -65,7 +65,7 @@ function announcement_list() {
 
 function announcement_get($announcement_id) {
 	global $db;
-	$sql = "SELECT `announcement_id`, `description`, `recording`, `allow_skip`, `post_dest`, `return_ivr`, `noanswer`, `repeat` FROM `announcement` WHERE `announcement_id` = ".addslashes($announcement_id);
+	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement WHERE announcement_id = ".addslashes($announcement_id);
 	$row = $db->getRow($sql);
 	if(DB::IsError($row)) {
 		die($row->getMessage()."<br><br>Errpr selecting row from announcement");	
@@ -73,16 +73,16 @@ function announcement_get($announcement_id) {
 	return $row;
 }
 
-function announcement_add($description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat) {
+function announcement_add($description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
 	global $db;
-	$sql = "INSERT INTO `announcement` (`description`, `recording`, `allow_skip`, `post_dest`, `return_ivr`, `noanswer`, `repeat`) VALUES (".
+	$sql = "INSERT INTO announcement (description, recording, allow_skip, post_dest, return_ivr, noanswer, repeat_msg) VALUES (".
 		"'".addslashes($description)."', ".
 		"'".addslashes($recording)."', ".
 		"'".($allow_skip ? 1 : 0)."', ".
 		"'".addslashes($post_dest)."', ".
 		"'".($return_ivr ? 1 : 0)."', ".
 		"'".($noanswer ? 1 : 0)."', ".
-		"'".addslashes($repeat)."')";
+		"'".addslashes($repeat_msg)."')";
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die($result->getMessage().$sql);
@@ -91,7 +91,7 @@ function announcement_add($description, $recording, $allow_skip, $post_dest, $re
 
 function announcement_delete($announcement_id) {
 	global $db;
-	$sql = "DELETE FROM `announcement` WHERE `announcement_id` = ".addslashes($announcement_id);
+	$sql = "DELETE FROM announcement WHERE announcement_id = ".addslashes($announcement_id);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die($result->getMessage().$sql);
@@ -99,17 +99,17 @@ function announcement_delete($announcement_id) {
 	
 }
 
-function announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat) { 
+function announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) { 
 	global $db;
-	$sql = "UPDATE `announcement` SET ".
-		"`description` = '".addslashes($description)."', ".
-		"`recording` = '".addslashes($recording)."', ".
-		"`allow_skip` = '".($allow_skip ? 1 : 0)."', ".
-		"`post_dest` = '".addslashes($post_dest)."', ".
-		"`return_ivr` = '".($return_ivr ? 1 : 0)."', ".
-		"`noanswer` = '".($noanswer ? 1 : 0)."', ".
-		"`repeat` = '".addslashes($repeat)."' ".
-		"WHERE `announcement_id` = ".addslashes($announcement_id);
+	$sql = "UPDATE announcement SET ".
+		"description = '".addslashes($description)."', ".
+		"recording = '".addslashes($recording)."', ".
+		"allow_skip = '".($allow_skip ? 1 : 0)."', ".
+		"post_dest = '".addslashes($post_dest)."', ".
+		"return_ivr = '".($return_ivr ? 1 : 0)."', ".
+		"noanswer = '".($noanswer ? 1 : 0)."', ".
+		"repeat_msg = '".addslashes($repeat_msg)."' ".
+		"WHERE announcement_id = ".addslashes($announcement_id);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die($result->getMessage().$sql);

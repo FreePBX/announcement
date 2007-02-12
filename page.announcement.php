@@ -23,7 +23,7 @@ $allow_skip = isset($_POST['allow_skip']) ? $_POST['allow_skip'] :  0;
 $return_ivr = isset($_POST['return_ivr']) ? $_POST['return_ivr'] :  0;
 $noanswer = isset($_POST['noanswer']) ? $_POST['noanswer'] :  0;
 $post_dest = isset($_POST['post_dest']) ? $_POST['post_dest'] :  '';
-$repeat = isset($_POST['repeat']) ? $_POST['repeat'] :  '';
+$repeat_msg = isset($_POST['repeat_msg']) ? $_POST['repeat_msg'] :  '';
 
 if ($_POST['goto0']) {
 	// 'ringgroup_post_dest'  'ivr_post_dest' or whatever
@@ -33,12 +33,12 @@ if ($_POST['goto0']) {
 
 switch ($action) {
 	case 'add':
-		announcement_add($description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat);
+		announcement_add($description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 		needreload();
 		redirect_standard();
 	break;
 	case 'edit':
-		announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat);
+		announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 		needreload();
 		redirect_standard('extdisplay');
 	break;
@@ -80,7 +80,7 @@ if ($extdisplay) {
 	$post_dest = $row[4];
 	$return_ivr = $row[5];
 	$noanswer = $row[6];
-	$repeat = $row[7];
+	$repeat_msg = $row[7];
 
 }
 
@@ -117,9 +117,9 @@ if ($extdisplay) {
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Repeat")?><span><?php echo _("Key to press that will allow for the message to be replayed. If you choose this option there will be a short delay inserted after the message. If a longer delay is needed it should be incoporated into the recording.")?></span></a></td>
 		<td>
-			&nbsp;&nbsp;<select name="repeat"/>
+			&nbsp;&nbsp;<select name="repeat_msg"/>
 			<?php
-				$default = isset($repeat) ? $repeat : '';
+				$default = isset($repeat_msg) ? $repeat_msg : '';
 				for ($i=0; $i<=9; $i++ ) {
 					$digits[]="$i";
 				}
