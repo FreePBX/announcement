@@ -44,8 +44,12 @@ function announcement_get_config($engine) {
 				$exten = $row[7] ? 't':'s';
 				if ($row[5]) {
 					$ext->add('app-announcement-'.$row[0], $exten, '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row[4].':${IVR_CONTEXT},return,1'));
+					if ($row[3] || $row[7])
+						$ext->add('app-announcement-'.$row[0], 'i', '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row[4].':${IVR_CONTEXT},return,1'));
 				} else {
 					$ext->add('app-announcement-'.$row[0], $exten, '', new ext_goto($row[4]));
+					if ($row[3] || $row[7])
+						$ext->add('app-announcement-'.$row[0], 'i', '', new ext_goto($row[4]));
 				}
 				
 			}
