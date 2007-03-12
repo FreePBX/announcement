@@ -21,7 +21,7 @@ function announcement_get_config($engine) {
 				if ($row[3] || $row[7]) {
 					// allow skip
 					if ($row[7]) {
-						$ext->add('app-announcement-'.$row[0], 's', '', new ext_responsetimeout(10));
+						$ext->add('app-announcement-'.$row[0], 's', '', new ext_responsetimeout(3));
 					}
 					$ext->add('app-announcement-'.$row[0], 's', 'play', new ext_background($row[2].'|nm'));
 					

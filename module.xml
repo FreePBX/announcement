@@ -1,8 +1,9 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>0.8.0</version>
+	<version>0.8.1</version>
 	<changelog>
+		*0.8.1* changed response timeout from 10 to 3 seconds (when used at all)
 		*0.8.0* need to add an i extension, even with m option in bacground, it fails if skip is not enabled
 		*0.7.0* more fixes to deal with sqlite and fix mysql5 (includes renaming of repeat to repeat_msg)
 		*0.6.1* Modified the install.sql to work on sqlite3
