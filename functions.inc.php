@@ -13,11 +13,12 @@ function announcement_get_config($engine) {
 	switch ($engine) {
 		case 'asterisk':
 			foreach (announcement_list() as $row) {
-				$ext->add('app-announcement-'.$row[0], 's', '', new ext_noop('Playing announcement '.$row[1]));
 				if (! $row[6]) {
+					$ext->add('app-announcement-'.$row[0], 's', '', new ext_gotoif('$["${CDR(disposition)}" = "ANSWERED"]','begin'));
 					$ext->add('app-announcement-'.$row[0], 's', '', new ext_answer(''));
 					$ext->add('app-announcement-'.$row[0], 's', '', new ext_wait('1'));
 				}
+				$ext->add('app-announcement-'.$row[0], 's', 'begin', new ext_noop('Playing announcement '.$row[1]));
 				if ($row[3] || $row[7]) {
 					// allow skip
 					if ($row[7]) {
