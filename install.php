@@ -62,4 +62,24 @@ if(DB::IsError($check)) {
     $result = $db->query($sql);
     if(DB::IsError($result)) { die($result->getDebugInfo()); }
 }
+
+$results = array();
+$sql = "SELECT announcement_id, post_dest FROM announcement";
+$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
+if (!DB::IsError($results)) { // error - table must not be there
+	foreach ($results as $result) {
+		$old_dest  = $result['post_dest'];
+		$announcement_id    = $result['announcement_id'];
+
+		$new_dest = merge_ext_followme(trim($old_dest));
+		if ($new_dest != $old_dest) {
+			$sql = "UPDATE announcement SET post_dest = '$new_dest' WHERE announcement_id = $announcement_id  AND post_dest = '$old_dest'";
+			$results = $db->query($sql);
+			if(DB::IsError($results)) {
+				die($results->getMessage());
+			}
+		}
+	}
+}
+
 ?>

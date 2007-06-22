@@ -1,8 +1,9 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>0.8.2</version>
+	<version>0.8.3</version>
 	<changelog>
+		*0.8.3* merge findmefollow/core extension destinations if any
 		*0.8.2* skip the answer/wait(1) if channel is already answered
 		*0.8.1* changed response timeout from 10 to 3 seconds (when used at all)
 		*0.8.0* need to add an i extension, even with m option in bacground, it fails if skip is not enabled
