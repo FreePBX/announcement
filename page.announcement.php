@@ -1,5 +1,5 @@
 <?php 
-/** Announcments module for freePBX 2.2+
+/** Announcments module for FreePBX 2.2+
  * Copyright 2006 Greg MacLellan
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
