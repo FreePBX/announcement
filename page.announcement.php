@@ -25,7 +25,7 @@ $noanswer = isset($_POST['noanswer']) ? $_POST['noanswer'] :  0;
 $post_dest = isset($_POST['post_dest']) ? $_POST['post_dest'] :  '';
 $repeat_msg = isset($_POST['repeat_msg']) ? $_POST['repeat_msg'] :  '';
 
-if ($_POST['goto0']) {
+if (isset($_POST['goto0']) && $_POST['goto0']) {
 	// 'ringgroup_post_dest'  'ivr_post_dest' or whatever
 	$post_dest = $_POST[ $_POST['goto0'].'0' ];
 }

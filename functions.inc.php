@@ -2,6 +2,7 @@
 
 function announcement_destinations() {
 	// return an associative array with destination and description
+	$extens = array();
 	foreach (announcement_list() as $row) {
 		$extens[] = array('destination' => 'app-announcement-'.$row[0].',s,1', 'description' => $row[1]);
 	}
