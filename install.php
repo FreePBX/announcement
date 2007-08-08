@@ -16,7 +16,7 @@ $sql = "CREATE TABLE IF NOT EXISTS announcement (
 )";
 $check = $db->query($sql);
 if(DB::IsError($check)) {
-	die("Can not create annoucment table");
+	die_freepbx("Can not create annoucment table");
 }
 
 // Version 0.3 adds auto-return to IVR
@@ -26,7 +26,7 @@ if(DB::IsError($check)) {
 	// add new field
     $sql = "ALTER TABLE announcement ADD return_ivr TINYINT(1) NOT NULL DEFAULT 0;";
     $result = $db->query($sql);
-    if(DB::IsError($result)) { die($result->getDebugInfo()); }
+    if(DB::IsError($result)) { die_freepbx($result->getDebugInfo()); }
 }
 
 // Version 0.4 adds auto-return to IVR
@@ -36,7 +36,7 @@ if(DB::IsError($check)) {
 	// add new field
     $sql = "ALTER TABLE announcement ADD noanswer TINYINT(1) NOT NULL DEFAULT 0;";
     $result = $db->query($sql);
-    if(DB::IsError($result)) { die($result->getDebugInfo()); }
+    if(DB::IsError($result)) { die_freepbx($result->getDebugInfo()); }
 }
 
 // Version 0.8 upgrade
@@ -49,7 +49,7 @@ if(! DB::IsError($check)) {
     $sql = "ALTER TABLE announcement CHANGE $repeat repeat_msg VARCHAR( 2 ) NOT NULL DEFAULT '' ;"; 
     $result = $db->query($sql);
     if(DB::IsError($result)) {
-            die($result->getDebugInfo());
+            die_freepbx($result->getDebugInfo());
     }
 }
 
@@ -60,7 +60,7 @@ if(DB::IsError($check)) {
 	// add new field
     $sql = "ALTER TABLE announcement ADD repeat_msg VARCHAR(2) NOT NULL DEFAULT '';";
     $result = $db->query($sql);
-    if(DB::IsError($result)) { die($result->getDebugInfo()); }
+    if(DB::IsError($result)) { die_freepbx($result->getDebugInfo()); }
 }
 
 $results = array();
@@ -76,7 +76,7 @@ if (!DB::IsError($results)) { // error - table must not be there
 			$sql = "UPDATE announcement SET post_dest = '$new_dest' WHERE announcement_id = $announcement_id  AND post_dest = '$old_dest'";
 			$results = $db->query($sql);
 			if(DB::IsError($results)) {
-				die($results->getMessage());
+				die_freepbx($results->getMessage());
 			}
 		}
 	}

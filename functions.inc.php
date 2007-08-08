@@ -64,7 +64,7 @@ function announcement_list() {
 	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement ORDER BY description ";
 	$results = $db->getAll($sql);
 	if(DB::IsError($results)) {
-		die($results->getMessage()."<br><br>Error selecting from announcement");	
+		die_freepbx($results->getMessage()."<br><br>Error selecting from announcement");	
 	}
 	return $results;
 }
@@ -74,7 +74,7 @@ function announcement_get($announcement_id) {
 	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement WHERE announcement_id = ".addslashes($announcement_id);
 	$row = $db->getRow($sql);
 	if(DB::IsError($row)) {
-		die($row->getMessage()."<br><br>Errpr selecting row from announcement");	
+		die_freepbx($row->getMessage()."<br><br>Errpr selecting row from announcement");	
 	}
 	return $row;
 }
@@ -91,7 +91,7 @@ function announcement_add($description, $recording, $allow_skip, $post_dest, $re
 		"'".addslashes($repeat_msg)."')";
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
-		die($result->getMessage().$sql);
+		die_freepbx($result->getMessage().$sql);
 	}
 }
 
@@ -100,7 +100,7 @@ function announcement_delete($announcement_id) {
 	$sql = "DELETE FROM announcement WHERE announcement_id = ".addslashes($announcement_id);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
-		die($result->getMessage().$sql);
+		die_freepbx($result->getMessage().$sql);
 	}
 	
 }
@@ -118,7 +118,7 @@ function announcement_edit($announcement_id, $description, $recording, $allow_sk
 		"WHERE announcement_id = ".addslashes($announcement_id);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
-		die($result->getMessage().$sql);
+		die_freepbx($result->getMessage().$sql);
 	}
 }
 
