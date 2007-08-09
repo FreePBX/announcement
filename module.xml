@@ -1,8 +1,9 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>0.8.5</version>
+	<version>0.8.5.1</version>
 	<changelog>
+		*0.8.5.1* bump for rc1
 		*0.8.5* fixed some undefined variables
 		*0.8.4* changed freePBX to FreePBX
 		*0.8.3* merge findmefollow/core extension destinations if any
@@ -26,6 +27,5 @@
 		<announcement>Announcements</announcement>
 	</menuitems>
 	<location>release/2.3/announcement-0.8.5.tgz</location>
-	<info>http://aussievoip.com.au/wiki/freePBX-Announcement</info>
 	<md5sum>b01d039bf3f83ad93bf502012f016a96</md5sum>
 </module>
