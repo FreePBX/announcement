@@ -39,7 +39,7 @@ function announcement_get_config($engine) {
 						$ext->add('app-announcement-'.$row[0], $row[7], '', new ext_goto('s,play'));
 					}
 				} else {
-					$ext->add('app-announcement-'.$row[0], 's', '', new ext_playback($row[2].'|noanswer'));
+					$ext->add('app-announcement-'.$row[0], 's', '', new ext_playback($row[2].',noanswer'));
 				}
 
 				// if repeat_msg enabled then set exten to t to allow for the key to be pressed, otherwise play message and go
