@@ -1,8 +1,9 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>0.8.5.1</version>
+	<version>0.8.5.2</version>
 	<changelog>
+		*0.8.5.2* #2172 deprecated use of |
 		*0.8.5.1* bump for rc1
 		*0.8.5* fixed some undefined variables
 		*0.8.4* changed freePBX to FreePBX
@@ -26,6 +27,6 @@
 	<menuitems>
 		<announcement>Announcements</announcement>
 	</menuitems>
-	<location>release/2.3/announcement-0.8.5.1.tgz</location>
-	<md5sum>c466721479ef3467fecf454d82e7a1cc</md5sum>
+	<location>release/2.3/announcement-0.8.5.2.tgz</location>
+	<md5sum>468be3f70b85ef9d20895c474b531cb8</md5sum>
 </module>
