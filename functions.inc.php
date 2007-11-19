@@ -122,4 +122,31 @@ function announcement_edit($announcement_id, $description, $recording, $allow_sk
 	}
 }
 
+function announcement_check_destinations($dest=true) {
+	global $active_modules;
+
+	$destlist = array();
+	if (is_array($dest) && empty($dest)) {
+		return $destlist;
+	}
+	$sql = "SELECT announcement_id, post_dest, description FROM announcement ";
+	if ($dest !== true) {
+		$sql .= "WHERE post_dest in ('".implode("','",$dest)."')";
+	}
+	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
+
+	$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
+
+	foreach ($results as $result) {
+		$thisdest = $result['post_dest'];
+		$thisid   = $result['annoucement_id'];
+		$destlist[] = array(
+			'dest' => $thisdest,
+			'description' => 'Annoucement: '.$result['description'],
+			'edit_url' => 'config.php?display=announcement&type='.$type.'&extdisplay='.urlencode($thisid),
+		);
+	}
+	return $destlist;
+}
+
 ?>
