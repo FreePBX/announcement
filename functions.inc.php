@@ -9,6 +9,31 @@ function announcement_destinations() {
 	return $extens;
 }
 
+function announcement_getdest($exten) {
+	return array('app-announcement-'.$exten.',s,1');
+}
+
+function announcement_getdestinfo($dest) {
+	global $active_modules;
+
+	if (substr(trim($dest),0,17) == 'app-announcement-') {
+		$exten = explode(',',$dest);
+		$exten = substr($exten[0],17);
+
+		$thisexten = announcement_get($exten);
+		if (empty($thisexten)) {
+			return array();
+		} else {
+			$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
+			return array('description' => 'Annoucement : '.$thisexten['description'],
+			             'edit_url' => 'config.php?display=announcement&type='.$type.'&extdisplay='.urlencode($exten),
+								  );
+		}
+	} else {
+		return false;
+	}
+}
+
 function announcement_get_config($engine) {
 	global $ext;
 	switch ($engine) {
@@ -71,10 +96,17 @@ function announcement_list() {
 
 function announcement_get($announcement_id) {
 	global $db;
-	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement WHERE announcement_id = ".addslashes($announcement_id);
-	$row = $db->getRow($sql);
+	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement WHERE announcement_id = '".addslashes($announcement_id)."'";
+	$row = $db->getRow($sql,DB_FETCHMODE_ASSOC);
 	if(DB::IsError($row)) {
 		die_freepbx($row->getMessage()."<br><br>Errpr selecting row from announcement");	
+	}
+	// Added Associative query above but put positional indexes back to maintain backward compatibility
+	//
+	$i = 0;
+	foreach ($row as $item) {
+		$row[$i] = $item;
+		$i++;
 	}
 	return $row;
 }

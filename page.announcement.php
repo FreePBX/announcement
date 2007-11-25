@@ -159,6 +159,19 @@ echo drawselects($post_dest,0);
 			</td>		
 			
 			</tr>
+			<?php
+
+			if ($extdisplay) {
+				$usage_list = framework_display_destination_usage(announcement_getdest($extdisplay));
+				if (!empty($usage_list)) {
+				?>
+					<tr><td colspan="2">
+					<a href="#" class="info"><?php echo $usage_list['text']?>:<span><?php echo $usage_list['tooltip']?></span></a>
+					</td></tr>
+				<?php
+				}
+			}
+			?>
 			</table>
 			</form>
 			
