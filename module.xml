@@ -1,8 +1,9 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>0.8.5.2</version>
+	<version>2.4.0</version>
 	<changelog>
+		*2.4.0* added support for extension/destination registry and other minor changes
 		*0.8.5.2* #2172 deprecated use of |
 		*0.8.5.1* bump for rc1
 		*0.8.5* fixed some undefined variables
@@ -27,6 +28,6 @@
 	<menuitems>
 		<announcement>Announcements</announcement>
 	</menuitems>
-	<location>release/2.3/announcement-0.8.5.2.tgz</location>
-	<md5sum>468be3f70b85ef9d20895c474b531cb8</md5sum>
+	<location>release/2.4/announcement-2.4.0.tgz</location>
+	<md5sum>8404405d746c2b152d2d5de7359f7268</md5sum>
 </module>
