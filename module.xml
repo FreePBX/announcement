@@ -1,8 +1,9 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>2.4.0</version>
+	<version>2.4.0.1</version>
 	<changelog>
+		*2.4.0.1* added 2.4.0 dependency
 		*2.4.0* added support for extension/destination registry and other minor changes
 		*0.8.5.2* #2172 deprecated use of |
 		*0.8.5.1* bump for rc1
@@ -25,9 +26,12 @@
 	<description>
 		Plays back one of the system recordings (optionally allowing the user to skip it) and then goes to another destination.
 	</description>
+	<depends>
+		<version>2.4.0</version>
+	</depends>
 	<menuitems>
 		<announcement>Announcements</announcement>
 	</menuitems>
-	<location>release/2.4/announcement-2.4.0.tgz</location>
-	<md5sum>8404405d746c2b152d2d5de7359f7268</md5sum>
+	<location>release/2.4/announcement-2.4.0.1.tgz</location>
+	<md5sum>106a89ad1411c38be8d34df8e0e722e3</md5sum>
 </module>
