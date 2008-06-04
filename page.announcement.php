@@ -100,7 +100,7 @@ if ($extdisplay) {
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Recording")?><span><?php echo _("Message to be played.<br>To add additional recordings use the \"System Recordings\" MENU to the left")?></span></a></td>
 		<td>
-			<select name="recording"/>
+			<select name="recording">
 			<?php
 				$tresults = recordings_list();
 				$default = (isset($recording) ? $recording : '');
@@ -117,7 +117,7 @@ if ($extdisplay) {
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Repeat")?><span><?php echo _("Key to press that will allow for the message to be replayed. If you choose this option there will be a short delay inserted after the message. If a longer delay is needed it should be incoporated into the recording.")?></span></a></td>
 		<td>
-			<select name="repeat_msg"/>
+			<select name="repeat_msg">
 			<?php
 				$default = isset($repeat_msg) ? $repeat_msg : '';
 				for ($i=0; $i<=9; $i++ ) {
