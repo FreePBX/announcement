@@ -174,7 +174,7 @@ function announcement_check_destinations($dest=true) {
 		$thisid   = $result['annoucement_id'];
 		$destlist[] = array(
 			'dest' => $thisdest,
-			'description' => 'Annoucement: '.$result['description'],
+			'description' => 'Announcement: '.$result['description'],
 			'edit_url' => 'config.php?display=announcement&type='.$type.'&extdisplay='.urlencode($thisid),
 		);
 	}
