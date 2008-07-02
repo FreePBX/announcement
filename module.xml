@@ -1,8 +1,9 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>2.4.0.2</version>
+	<version>2.4.0.3</version>
 	<changelog>
+		*2.4.0.3* #2872 mispelled Announcement
 		*2.4.0.2* #2604, #2843 mal-formed html tag, Russian translations
 		*2.4.0.1* added 2.4.0 dependency
 		*2.4.0* added support for extension/destination registry and other minor changes
@@ -33,6 +34,6 @@
 	<menuitems>
 		<announcement>Announcements</announcement>
 	</menuitems>
-	<location>release/2.4/announcement-2.4.0.2.tgz</location>
-	<md5sum>f75e3103cb449774b687f0ff0f9e3dd2</md5sum>
+	<location>release/2.4/announcement-2.4.0.3.tgz</location>
+	<md5sum>19694dde08e50cd9028202ecc4305b9c</md5sum>
 </module>
