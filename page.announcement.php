@@ -93,14 +93,14 @@ if ($extdisplay) {
 			<tr><td colspan="2"><h5><?php  echo ($extdisplay ? _("Edit Announcement") : _("Add Announcement")) ?><hr></h5></td></tr>
 			<tr>
 				<td><a href="#" class="info"><?php echo _("Description")?>:<span><?php echo _("The name of this announcement")?></span></a></td>
-				<td><input size="15" type="text" name="description" value="<?php  echo $description; ?>"></td>
+				<td><input size="15" type="text" name="description" value="<?php  echo $description; ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 
 <?php if(function_exists('recordings_list')) { //only include if recordings is enabled?>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Recording")?><span><?php echo _("Message to be played.<br>To add additional recordings use the \"System Recordings\" MENU to the left")?></span></a></td>
 		<td>
-			<select name="recording">
+			<select name="recording"  tabindex="<?php echo ++$tabindex;?>">
 			<?php
 				$tresults = recordings_list();
 				$default = (isset($recording) ? $recording : '');
@@ -117,7 +117,7 @@ if ($extdisplay) {
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Repeat")?><span><?php echo _("Key to press that will allow for the message to be replayed. If you choose this option there will be a short delay inserted after the message. If a longer delay is needed it should be incoporated into the recording.")?></span></a></td>
 		<td>
-			<select name="repeat_msg">
+			<select name="repeat_msg"  tabindex="<?php echo ++$tabindex;?>">
 			<?php
 				$default = isset($repeat_msg) ? $repeat_msg : '';
 				for ($i=0; $i<=9; $i++ ) {
@@ -135,15 +135,15 @@ if ($extdisplay) {
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Allow Skip")?><span><?php echo _("If the caller is allowed to press a key to skip the message.")?></span></a></td>
-		<td><input type="checkbox" name="allow_skip" value="1" <?php echo ($allow_skip ? 'CHECKED' : ''); ?> /></td>
+		<td><input type="checkbox" name="allow_skip" value="1" tabindex="<?php echo ++$tabindex;?>" <?php echo ($allow_skip ? 'CHECKED' : ''); ?> /></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Return to IVR")?><span><?php echo _("If this announcement came from an IVR and this box is checked, the destination below will be ignored and instead it will return to the calling IVR. Otherwise, the destinatino below will be taken. Don't check if not using in this mode. <br>The IVR return location will be to the last IVR in the call chain that was called so be careful to only check when needed. For example, if an IVR directs a call to another destination which eventually calls this annoucement and this box is checked, it will return to that IVR which may not be the expected behavior.")?></span></a></td>
-		<td><input type="checkbox" name="return_ivr" value="1" <?php echo ($return_ivr ? 'CHECKED' : ''); ?> /></td>
+		<td><input type="checkbox" name="return_ivr" value="1" tabindex="<?php echo ++$tabindex;?>" <?php echo ($return_ivr ? 'CHECKED' : ''); ?> /></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Don't Answer Channel")?><span><?php echo _("Check this to keep the channel from explicitly being answered. When checked, the message will be played and if the channel is not already answered it will be delivered as early media if the channel supports that. When not checked, the channel is answered followed by a 1 second delay. When using an annoucement from an IVR or other sources that have already answered the channel, that 1 second delay may not be desired.")?></span></a></td>
-		<td><input type="checkbox" name="noanswer" value="1" <?php echo ($noanswer ? 'CHECKED' : ''); ?> /></td>
+		<td><input type="checkbox" name="noanswer" value="1" tabindex="<?php echo ++$tabindex;?>" <?php echo ($noanswer ? 'CHECKED' : ''); ?> /></td>
 	</tr>
 	
 	<tr><td colspan="2"><br><h5><?php echo _("Destination after playback")?>:<hr></h5></td></tr>
@@ -154,7 +154,7 @@ echo drawselects($post_dest,0);
 ?>
 			
 			<tr>
-			<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>">
+			<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>">
 			<?php if ($extdisplay) { echo '&nbsp;<input name="delete" type="submit" value="'._("Delete").'">'; } ?>
 			</td>		
 			
