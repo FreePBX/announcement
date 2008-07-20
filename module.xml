@@ -1,8 +1,9 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>2.4.0.3</version>
+	<version>2.5.0</version>
 	<changelog>
+		*2.5.0* #2845 tabindex
 		*2.4.0.3* #2872 mispelled Announcement
 		*2.4.0.2* #2604, #2843 mal-formed html tag, Russian translations
 		*2.4.0.1* added 2.4.0 dependency
