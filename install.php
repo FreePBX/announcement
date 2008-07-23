@@ -1,4 +1,15 @@
 <?php
+if (! function_exists("out")) {
+	function out($text) {
+		echo $text."<br />";
+	}
+}
+
+if (! function_exists("outn")) {
+	function outn($text) {
+		echo $text;
+	}
+}
 
 global $db;
 global $amp_conf;
@@ -7,7 +18,7 @@ $autoincrement = (($amp_conf["AMPDBENGINE"] == "sqlite") || ($amp_conf["AMPDBENG
 $sql = "CREATE TABLE IF NOT EXISTS announcement (
 	announcement_id integer NOT NULL PRIMARY KEY $autoincrement,
 	description VARCHAR( 50 ),
-	recording VARCHAR( 255 ),
+	recording_id INTEGER,
 	allow_skip INT,
 	post_dest VARCHAR( 255 ),
 	return_ivr TINYINT(1) NOT NULL DEFAULT 0,
@@ -80,6 +91,68 @@ if (!DB::IsError($results)) { // error - table must not be there
 			}
 		}
 	}
+}
+
+// Version 2.5 migrate to recording ids
+//
+outn(_("Checking if recordings need migration.."));
+$sql = "SELECT recording_id FROM announcement";
+$check = $db->getRow($sql, DB_FETCHMODE_ASSOC);
+if(DB::IsError($check)) {
+	//  Add recording_id field
+	//
+	out("migrating");
+	outn(_("adding recording_id field.."));
+  $sql = "ALTER TABLE announcement ADD recording_id INTEGER";
+  $result = $db->query($sql);
+  if(DB::IsError($result)) {
+		out(_("fatal error"));
+		die_freepbx($result->getDebugInfo()); 
+	} else {
+		out(_("ok"));
+	}
+
+	// Get all the valudes and replace them with recording_id
+	//
+	outn(_("migrate to recording ids.."));
+  $sql = "SELECT `announcement_id`, `recording` FROM `announcement`";
+	$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
+	if(DB::IsError($results)) {
+		out(_("fatal error"));
+		die_freepbx($results->getDebugInfo());	
+	}
+	$migrate_arr = array();
+	$count = 0;
+	foreach ($results as $row) {
+		if (trim($row['recording']) != '') {
+			$rec_id = recordings_get_or_create_id($row['recording'], 'announcement');
+			$migrate_arr[] = array($rec_id, $row['announcement_id']);
+			$count++;
+		}
+	}
+	if ($count) {
+		$compiled = $db->prepare('UPDATE `announcement` SET `recording_id` = ? WHERE `announcement_id` = ?');
+		$result = $db->executeMultiple($compiled,$migrate_arr);
+		if(DB::IsError($result)) {
+			out(_("fatal error"));
+			die_freepbx($result->getDebugInfo());	
+		}
+	}
+	out(sprintf(_("migrated %s entries"),$count));
+
+	// Now remove the old recording field replaced by new id field
+	//
+	outn(_("dropping recording field.."));
+  $sql = "ALTER TABLE `announcement` DROP `recording`";
+  $result = $db->query($sql);
+  if(DB::IsError($result)) { 
+		out(_("no recording field???"));
+	} else {
+		out(_("ok"));
+	}
+
+} else {
+	out("already migrated");
 }
 
 ?>

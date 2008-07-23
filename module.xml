@@ -1,8 +1,9 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>2.5.0</version>
+	<version>2.5.1</version>
 	<changelog>
+		*2.5.1* #2063 Migrate recordings to recording ids
 		*2.5.0* #2845 tabindex
 		*2.4.0.3* #2872 mispelled Announcement
 		*2.4.0.2* #2604, #2843 mal-formed html tag, Russian translations
@@ -30,7 +31,8 @@
 		Plays back one of the system recordings (optionally allowing the user to skip it) and then goes to another destination.
 	</description>
 	<depends>
-		<version>2.4.0</version>
+		<version>2.5.0alpha1</version>
+		<module>recordings ge 3.3.8</module>
 	</depends>
 	<menuitems>
 		<announcement>Announcements</announcement>

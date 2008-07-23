@@ -18,7 +18,7 @@ if (isset($_POST['delete'])) $action = 'delete';
 
 $announcement_id = isset($_POST['announcement_id']) ? $_POST['announcement_id'] :  false;
 $description = isset($_POST['description']) ? $_POST['description'] :  '';
-$recording = isset($_POST['recording']) ? $_POST['recording'] :  '';
+$recording_id = isset($_POST['recording_id']) ? $_POST['recording_id'] :  '';
 $allow_skip = isset($_POST['allow_skip']) ? $_POST['allow_skip'] :  0;
 $return_ivr = isset($_POST['return_ivr']) ? $_POST['return_ivr'] :  0;
 $noanswer = isset($_POST['noanswer']) ? $_POST['noanswer'] :  0;
@@ -33,12 +33,12 @@ if (isset($_POST['goto0']) && $_POST['goto0']) {
 
 switch ($action) {
 	case 'add':
-		announcement_add($description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
+		announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 		needreload();
 		redirect_standard();
 	break;
 	case 'edit':
-		announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
+		announcement_edit($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 		needreload();
 		redirect_standard('extdisplay');
 	break;
@@ -74,13 +74,13 @@ if ($extdisplay) {
 	// load
 	$row = announcement_get($extdisplay);
 	
-	$description = $row[1];
-	$recording = $row[2];
-	$allow_skip = $row[3];
-	$post_dest = $row[4];
-	$return_ivr = $row[5];
-	$noanswer = $row[6];
-	$repeat_msg = $row[7];
+	$description = $row['description'];
+	$recording_id = $row['recording_id'];
+	$allow_skip = $row['allow_skip'];
+	$post_dest = $row['post_dest'];
+	$return_ivr = $row['return_ivr'];
+	$noanswer = $row['noanswer'];
+	$repeat_msg = $row['repeat_msg'];
 
 }
 
@@ -100,13 +100,13 @@ if ($extdisplay) {
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Recording")?><span><?php echo _("Message to be played.<br>To add additional recordings use the \"System Recordings\" MENU to the left")?></span></a></td>
 		<td>
-			<select name="recording"  tabindex="<?php echo ++$tabindex;?>">
+			<select name="recording_id"  tabindex="<?php echo ++$tabindex;?>">
 			<?php
 				$tresults = recordings_list();
-				$default = (isset($recording) ? $recording : '');
+				$default = (isset($recording_id) ? $recording_id : '');
 				if (isset($tresults[0])) {
 					foreach ($tresults as $tresult) {
-						echo '<option value="'.$tresult[2].'"'.($tresult[2] == $default ? ' SELECTED' : '').'>'.$tresult[1]."</option>\n";
+						echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $default ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
 					}
 				}
 			?>

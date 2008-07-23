@@ -4,7 +4,7 @@ function announcement_destinations() {
 	// return an associative array with destination and description
 	$extens = array();
 	foreach (announcement_list() as $row) {
-		$extens[] = array('destination' => 'app-announcement-'.$row[0].',s,1', 'description' => $row[1]);
+		$extens[] = array('destination' => 'app-announcement-'.$row['announcement_id'].',s,1', 'description' => $row[1]);
 	}
 	return $extens;
 }
@@ -34,49 +34,68 @@ function announcement_getdestinfo($dest) {
 	}
 }
 
+function announcement_recordings_usage($recording_id) {
+	global $active_modules;
+
+	$results = sql("SELECT announcement_id, description FROM announcement WHERE recording_id = '$recording_id'","getAll",DB_FETCHMODE_ASSOC);
+	if (empty($results)) {
+		return array();
+	} else {
+		$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
+		foreach ($results as $result) {
+			$usage_arr[] = array(
+				'url_query' => 'config.php?display=announcement&type='.$type.'&extdisplay='.urlencode($result['announcement_id']),
+				'description' => "Announcement: ".$result['description'],
+			);
+		}
+		return $usage_arr;
+	}
+}
+
 function announcement_get_config($engine) {
 	global $ext;
 	switch ($engine) {
 		case 'asterisk':
 			foreach (announcement_list() as $row) {
-				if (! $row[6]) {
-					$ext->add('app-announcement-'.$row[0], 's', '', new ext_gotoif('$["${CDR(disposition)}" = "ANSWERED"]','begin'));
-					$ext->add('app-announcement-'.$row[0], 's', '', new ext_answer(''));
-					$ext->add('app-announcement-'.$row[0], 's', '', new ext_wait('1'));
+				$recording = recordings_get_file($row['recording_id']);
+				if (! $row['noanswer']) {
+					$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_gotoif('$["${CDR(disposition)}" = "ANSWERED"]','begin'));
+					$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_answer(''));
+					$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_wait('1'));
 				}
-				$ext->add('app-announcement-'.$row[0], 's', 'begin', new ext_noop('Playing announcement '.$row[1]));
-				if ($row[3] || $row[7]) {
+				$ext->add('app-announcement-'.$row['announcement_id'], 's', 'begin', new ext_noop('Playing announcement '.$row['description']));
+				if ($row['allow_skip'] || $row['repeat_msg']) {
 					// allow skip
-					if ($row[7]) {
-						$ext->add('app-announcement-'.$row[0], 's', '', new ext_responsetimeout(3));
+					if ($row['repeat_msg']) {
+						$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_responsetimeout(3));
 					}
-					$ext->add('app-announcement-'.$row[0], 's', 'play', new ext_background($row[2].'|nm'));
+					$ext->add('app-announcement-'.$row['announcement_id'], 's', 'play', new ext_background($recording.'|nm'));
 					
-					if ($row[3]) {
-						$ext->add('app-announcement-'.$row[0], '_X', '', new ext_noop('User skipped announcement'));
-						if ($row[5]) {
-							$ext->add('app-announcement-'.$row[0], '_X', '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row[4].':${IVR_CONTEXT},return,1'));
+					if ($row['allow_skip']) {
+						$ext->add('app-announcement-'.$row['announcement_id'], '_X', '', new ext_noop('User skipped announcement'));
+						if ($row['return_ivr']) {
+							$ext->add('app-announcement-'.$row['announcement_id'], '_X', '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row['post_dest'].':${IVR_CONTEXT},return,1'));
 						} else {
-							$ext->add('app-announcement-'.$row[0], '_X', '', new ext_goto($row[4]));
+							$ext->add('app-announcement-'.$row['announcement_id'], '_X', '', new ext_goto($row['post_dest']));
 						}
 					}
-					if ($row[7]) {
-						$ext->add('app-announcement-'.$row[0], $row[7], '', new ext_goto('s,play'));
+					if ($row['repeat_msg']) {
+						$ext->add('app-announcement-'.$row['announcement_id'], $row['repeat_msg'], '', new ext_goto('s,play'));
 					}
 				} else {
-					$ext->add('app-announcement-'.$row[0], 's', '', new ext_playback($row[2].',noanswer'));
+					$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_playback($recording.',noanswer'));
 				}
 
 				// if repeat_msg enabled then set exten to t to allow for the key to be pressed, otherwise play message and go
-				$exten = $row[7] ? 't':'s';
-				if ($row[5]) {
-					$ext->add('app-announcement-'.$row[0], $exten, '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row[4].':${IVR_CONTEXT},return,1'));
-					if ($row[3] || $row[7])
-						$ext->add('app-announcement-'.$row[0], 'i', '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row[4].':${IVR_CONTEXT},return,1'));
+				$exten = $row['repeat_msg'] ? 't':'s';
+				if ($row['return_ivr']) {
+					$ext->add('app-announcement-'.$row['announcement_id'], $exten, '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row['post_dest'].':${IVR_CONTEXT},return,1'));
+					if ($row['allow_skip'] || $row['repeat_msg'])
+						$ext->add('app-announcement-'.$row['announcement_id'], 'i', '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row['post_dest'].':${IVR_CONTEXT},return,1'));
 				} else {
-					$ext->add('app-announcement-'.$row[0], $exten, '', new ext_goto($row[4]));
-					if ($row[3] || $row[7])
-						$ext->add('app-announcement-'.$row[0], 'i', '', new ext_goto($row[4]));
+					$ext->add('app-announcement-'.$row['announcement_id'], $exten, '', new ext_goto($row['post_dest']));
+					if ($row['allow_skip'] || $row['repeat_msg'])
+						$ext->add('app-announcement-'.$row['announcement_id'], 'i', '', new ext_goto($row['post_dest']));
 				}
 				
 			}
@@ -86,17 +105,31 @@ function announcement_get_config($engine) {
 
 function announcement_list() {
 	global $db;
-	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement ORDER BY description ";
-	$results = $db->getAll($sql);
+	$sql = "SELECT announcement_id, description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement ORDER BY description ";
+	$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($results)) {
 		die_freepbx($results->getMessage()."<br><br>Error selecting from announcement");	
+	}
+
+	// Make array backward compatible.
+	$count = 0;
+	foreach($results as $item) {
+		$results[$count][0] = $item['announcement_id'];
+		$results[$count][1] = $item['description'];
+		$results[$count][2] = $item['recording_id'];
+		$results[$count][3] = $item['allow_skip'];
+		$results[$count][4] = $item['post_dest'];
+		$results[$count][5] = $item['return_ivr'];
+		$results[$count][6] = $item['noanswer'];
+		$results[$count][7] = $item['repeat_msg'];
+		$count++;
 	}
 	return $results;
 }
 
 function announcement_get($announcement_id) {
 	global $db;
-	$sql = "SELECT announcement_id, description, recording, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement WHERE announcement_id = '".addslashes($announcement_id)."'";
+	$sql = "SELECT announcement_id, description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement WHERE announcement_id = '".addslashes($announcement_id)."'";
 	$row = $db->getRow($sql,DB_FETCHMODE_ASSOC);
 	if(DB::IsError($row)) {
 		die_freepbx($row->getMessage()."<br><br>Errpr selecting row from announcement");	
@@ -111,11 +144,11 @@ function announcement_get($announcement_id) {
 	return $row;
 }
 
-function announcement_add($description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
+function announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
 	global $db;
-	$sql = "INSERT INTO announcement (description, recording, allow_skip, post_dest, return_ivr, noanswer, repeat_msg) VALUES (".
+	$sql = "INSERT INTO announcement (description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg) VALUES (".
 		"'".addslashes($description)."', ".
-		"'".addslashes($recording)."', ".
+		"'".$recording_id."', ".
 		"'".($allow_skip ? 1 : 0)."', ".
 		"'".addslashes($post_dest)."', ".
 		"'".($return_ivr ? 1 : 0)."', ".
@@ -137,11 +170,11 @@ function announcement_delete($announcement_id) {
 	
 }
 
-function announcement_edit($announcement_id, $description, $recording, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) { 
+function announcement_edit($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) { 
 	global $db;
 	$sql = "UPDATE announcement SET ".
 		"description = '".addslashes($description)."', ".
-		"recording = '".addslashes($recording)."', ".
+		"recording_id = '".$recording_id."', ".
 		"allow_skip = '".($allow_skip ? 1 : 0)."', ".
 		"post_dest = '".addslashes($post_dest)."', ".
 		"return_ivr = '".($return_ivr ? 1 : 0)."', ".
