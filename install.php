@@ -53,7 +53,7 @@ if(DB::IsError($check)) {
 // Version 0.8 upgrade
 $repeat = (($amp_conf["AMPDBENGINE"] == "sqlite") || ($amp_conf["AMPDBENGINE"] == "sqlite3")) ? "repeat":"`repeat`";
 $sql = "SELECT $repeat FROM announcement";
-$check = $db->getRow($sql, DB_FETCHMODE_ASSOC);
+$check = @$db->getRow($sql, DB_FETCHMODE_ASSOC);
 if(! DB::IsError($check)) {
     // Change field name because php5 was not happy with repeat
     //
