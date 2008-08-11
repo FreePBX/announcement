@@ -1,8 +1,9 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>2.5.1</version>
+	<version>2.5.1.1</version>
 	<changelog>
+		*2.5.1.1* #2987 sqlite3 install script changes
 		*2.5.1* #2063 Migrate recordings to recording ids
 		*2.5.0* #2845 tabindex
 		*2.4.0.3* #2872 mispelled Announcement
@@ -37,6 +38,6 @@
 	<menuitems>
 		<announcement>Announcements</announcement>
 	</menuitems>
-	<location>release/2.5/announcement-2.5.1.tgz</location>
-	<md5sum>366f09f3029e7bc8c933d5cfe46ab6b0</md5sum>
+	<location>release/2.5/announcement-2.5.1.1.tgz</location>
+	<md5sum>d45ad04e7f9d50dc1367e074ed41cbb1</md5sum>
 </module>
