@@ -9,22 +9,7 @@
 		*2.4.0.3* #2872 mispelled Announcement
 		*2.4.0.2* #2604, #2843 mal-formed html tag, Russian translations
 		*2.4.0.1* added 2.4.0 dependency
-		*2.4.0* added support for extension/destination registry and other minor changes
-		*0.8.5.2* #2172 deprecated use of |
-		*0.8.5.1* bump for rc1
-		*0.8.5* fixed some undefined variables
-		*0.8.4* changed freePBX to FreePBX
-		*0.8.3* merge findmefollow/core extension destinations if any
-		*0.8.2* skip the answer/wait(1) if channel is already answered
-		*0.8.1* changed response timeout from 10 to 3 seconds (when used at all)
-		*0.8.0* need to add an i extension, even with m option in bacground, it fails if skip is not enabled
-		*0.7.0* more fixes to deal with sqlite and fix mysql5 (includes renaming of repeat to repeat_msg)
-		*0.6.1* Modified the install.sql to work on sqlite3
-		*0.6* added an option to choose a single digit that can be used to have the msg repeated
-		*0.5* chaned to jump to ivr's return context
-		*0.4* Added Don't Answer option to not answer the channel (and playback early media if supported)
-		*0.3* Added support to return to calling IVR
-		*0.2* First Module Intro
+		*2.4.0* CHANGELOG TRUNCATED See SVN Repository
 	</changelog>
 	<type>setup</type>
 	<category>Inbound Call Control</category>
