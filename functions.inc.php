@@ -129,7 +129,7 @@ function announcement_list() {
 
 function announcement_get($announcement_id) {
 	global $db;
-	$sql = "SELECT announcement_id, description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement WHERE announcement_id = '".addslashes($announcement_id)."'";
+	$sql = "SELECT announcement_id, description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement WHERE announcement_id = '".$db->escapeSimple($announcement_id)."'";
 	$row = $db->getRow($sql,DB_FETCHMODE_ASSOC);
 	if(DB::IsError($row)) {
 		die_freepbx($row->getMessage()."<br><br>Errpr selecting row from announcement");	
@@ -147,13 +147,13 @@ function announcement_get($announcement_id) {
 function announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
 	global $db;
 	$sql = "INSERT INTO announcement (description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg) VALUES (".
-		"'".addslashes($description)."', ".
+		"'".$db->escapeSimple($description)."', ".
 		"'".$recording_id."', ".
 		"'".($allow_skip ? 1 : 0)."', ".
-		"'".addslashes($post_dest)."', ".
+		"'".$db->escapeSimple($post_dest)."', ".
 		"'".($return_ivr ? 1 : 0)."', ".
 		"'".($noanswer ? 1 : 0)."', ".
-		"'".addslashes($repeat_msg)."')";
+		"'".$db->escapeSimple($repeat_msg)."')";
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
@@ -162,7 +162,7 @@ function announcement_add($description, $recording_id, $allow_skip, $post_dest, 
 
 function announcement_delete($announcement_id) {
 	global $db;
-	$sql = "DELETE FROM announcement WHERE announcement_id = ".addslashes($announcement_id);
+	$sql = "DELETE FROM announcement WHERE announcement_id = ".$db->escapeSimple($announcement_id);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
@@ -173,14 +173,14 @@ function announcement_delete($announcement_id) {
 function announcement_edit($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) { 
 	global $db;
 	$sql = "UPDATE announcement SET ".
-		"description = '".addslashes($description)."', ".
+		"description = '".$db->escapeSimple($description)."', ".
 		"recording_id = '".$recording_id."', ".
 		"allow_skip = '".($allow_skip ? 1 : 0)."', ".
-		"post_dest = '".addslashes($post_dest)."', ".
+		"post_dest = '".$db->escapeSimple($post_dest)."', ".
 		"return_ivr = '".($return_ivr ? 1 : 0)."', ".
 		"noanswer = '".($noanswer ? 1 : 0)."', ".
-		"repeat_msg = '".addslashes($repeat_msg)."' ".
-		"WHERE announcement_id = ".addslashes($announcement_id);
+		"repeat_msg = '".$db->escapeSimple($repeat_msg)."' ".
+		"WHERE announcement_id = ".$db->escapeSimple($announcement_id);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
