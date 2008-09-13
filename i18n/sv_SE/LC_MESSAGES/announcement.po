@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBXannouncement\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-03 21:10+0200\n"
+"PO-Revision-Date: 2008-09-13 21:14+0100\n"
+"Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+
+#: install.php:98
+msgid "Checking if recordings need migration.."
+msgstr "Kontrollerar om inspelningar behöver migreras.."
+
+#: install.php:105
+msgid "adding recording_id field.."
+msgstr "lägger till fältet recording_id"
+
+#: install.php:109
+#: install.php:121
+#: install.php:137
+msgid "fatal error"
+msgstr "allvarligt fel"
+
+#: install.php:112
+#: install.php:151
+msgid "ok"
+msgstr "ok"
+
+#: install.php:117
+msgid "migrate to recording ids.."
+msgstr "migrerar till recording ids.."
+
+#: install.php:141
+#, php-format
+msgid "migrated %s entries"
+msgstr "migrerade %s poster"
+
+#: install.php:145
+msgid "dropping recording field.."
+msgstr "kastar fältet recording.."
+
+#: install.php:149
+msgid "no recording field???"
+msgstr "inget fält som heter recording???"
+
+#: page.announcement.php:61
+#: page.announcement.php:93
+msgid "Add Announcement"
+msgstr "Lägg till meddelande"
+
+#: page.announcement.php:93
+msgid "Edit Announcement"
+msgstr "Redigera meddelande"
+
+#: page.announcement.php:95
+msgid "Description"
+msgstr "Beskrivning"
+
+#: page.announcement.php:95
+msgid "The name of this announcement"
+msgstr "Kortfattat namn för detta meddelande"
+
+#: page.announcement.php:101
+msgid "Recording"
+msgstr "Inspelning"
+
+#: page.announcement.php:101
+msgid "Message to be played.<br>To add additional recordings use the \"System Recordings\" MENU to the left"
+msgstr "Meddelande att spela upp.<br>För att lägga till fler inspelade meddelande väljer du \"Systeminspelningar\" i menyn till vänster."
+
+#: page.announcement.php:118
+msgid "Repeat"
+msgstr "Repetera"
+
+#: page.announcement.php:118
+msgid "Key to press that will allow for the message to be replayed. If you choose this option there will be a short delay inserted after the message. If a longer delay is needed it should be incoporated into the recording."
+msgstr "Tangent att trycka för att repetera meddelandet. Om du väljer detta kommer en kort paus att läggas till efter meddelandet. Om en längre paus behövs, spela in det i meddelandet."
+
+#: page.announcement.php:128
+msgid "Disable"
+msgstr "Avaktivera"
+
+#: page.announcement.php:137
+msgid "Allow Skip"
+msgstr "Tillåt hoppa över"
+
+#: page.announcement.php:137
+msgid "If the caller is allowed to press a key to skip the message."
+msgstr "Om uppringaren ska tillåtas att trycka en tangent för att hoppa över meddelandet."
+
+#: page.announcement.php:141
+msgid "Return to IVR"
+msgstr "Återgå till den digitala receptionisten"
+
+#: page.announcement.php:141
+msgid "If this announcement came from an IVR and this box is checked, the destination below will be ignored and instead it will return to the calling IVR. Otherwise, the destinatino below will be taken. Don't check if not using in this mode. <br>The IVR return location will be to the last IVR in the call chain that was called so be careful to only check when needed. For example, if an IVR directs a call to another destination which eventually calls this annoucement and this box is checked, it will return to that IVR which may not be the expected behavior."
+msgstr "Om detta meddelande kom från den digitala receptionisten och detta val aktiveras, kommer destinationen nedan att ignoreras och återgång kommer att ske till den anropande digitala receptionisten. Annars kommer destionationen nedan att anropas. Aktivera inte detta om du inte använder detta läge.<br>Returpunkten kommer att bli till den sist valda punkten i den Digitala receptionisten så var noga med att bara aktivera detta val när det behövs. T.ex. om en Digital receptionist skickar samtalet till en destination som anropar detta meddelande och detta val är aktiverat kommer samtalet att återgå till den Digitala receptionisten och du har skapat en liten loop."
+
+#: page.announcement.php:145
+msgid "Don't Answer Channel"
+msgstr "Svara inte denna kanal"
+
+#: page.announcement.php:145
+msgid "Check this to keep the channel from explicitly being answered. When checked, the message will be played and if the channel is not already answered it will be delivered as early media if the channel supports that. When not checked, the channel is answered followed by a 1 second delay. When using an annoucement from an IVR or other sources that have already answered the channel, that 1 second delay may not be desired."
+msgstr "Aktivera denna för att hindra att kanalen uttryckligen svaras. När detta är aktiverat kommer meddelandet att spelas upp och om kanalen inte redan har svarats kommer det att levereras som tidigt media om kanalen stöder det. När valet inte är aktiverat kommer kanalen att svaras med en efterföljande paus på 1 sekund. När du använder ett mededelande från en Digital receptionist (IVR) eller annan källa som redan har svarat kanalen är kanske denna paus inte önskad."
+
+#: page.announcement.php:149
+msgid "Destination after playback"
+msgstr "Destination efter uppspelning"
+
+#: page.announcement.php:157
+msgid "Submit Changes"
+msgstr "Spara ändringar"
+
+#: page.announcement.php:158
+msgid "Delete"
+msgstr "Ta bort"
+
+#: page.announcement.php:183
+msgid "Invalid description specified"
+msgstr "Ogiltig beskrivning"
+
+#: module.xlm:3
+msgid "Announcements"
+msgstr "Meddelanden"
