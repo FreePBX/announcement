@@ -67,9 +67,12 @@ function announcement_get_config($engine) {
 				if ($row['allow_skip'] || $row['repeat_msg']) {
 					// allow skip
 					if ($row['repeat_msg']) {
-						$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_responsetimeout(3));
+						$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_responsetimeout(1));
 					}
 					$ext->add('app-announcement-'.$row['announcement_id'], 's', 'play', new ext_background($recording.'|nm'));
+					if ($row['repeat_msg']) {
+						$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_waitexten(''));
+					}
 					
 					if ($row['allow_skip']) {
 						$ext->add('app-announcement-'.$row['announcement_id'], '_X', '', new ext_noop('User skipped announcement'));
