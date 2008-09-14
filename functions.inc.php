@@ -207,7 +207,7 @@ function announcement_check_destinations($dest=true) {
 
 	foreach ($results as $result) {
 		$thisdest = $result['post_dest'];
-		$thisid   = $result['annoucement_id'];
+		$thisid   = $result['announcement_id'];
 		$destlist[] = array(
 			'dest' => $thisdest,
 			'description' => 'Announcement: '.$result['description'],
