@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-23 16:44+0100\n"
+"POT-Creation-Date: 2008-09-15 21:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Francesco Romano\n"
 "Language-Team: Italian <LL@li.org>\n"
@@ -16,110 +16,166 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: page.announcement.php:87
-msgid "Edit Announcement"
-msgstr "Modifica Annuncio"
+#: install.php:98
+msgid "Checking if recordings need migration.."
+msgstr ""
 
-#: page.announcement.php:87
+#: install.php:104
+msgid "migrating"
+msgstr ""
+
+#: install.php:105
+msgid "adding recording_id field.."
+msgstr ""
+
+#: install.php:109 install.php:121 install.php:137
+msgid "fatal error"
+msgstr ""
+
+#: install.php:112 install.php:151
+msgid "ok"
+msgstr ""
+
+#: install.php:117
+msgid "migrate to recording ids.."
+msgstr ""
+
+#: install.php:141
+#, php-format
+msgid "migrated %s entries"
+msgstr ""
+
+#: install.php:145
+msgid "dropping recording field.."
+msgstr ""
+
+#: install.php:149
+msgid "no recording field???"
+msgstr ""
+
+#: install.php:155
+msgid "already migrated"
+msgstr ""
+
+#: page.announcement.php:61 page.announcement.php:93
 msgid "Add Announcement"
 msgstr "Aggiungi Annuncio"
 
-#: page.announcement.php:89
+#: page.announcement.php:93
+msgid "Edit Announcement"
+msgstr "Modifica Annuncio"
+
+#: page.announcement.php:95
 msgid "Description"
 msgstr "Descrizione"
 
-#: page.announcement.php:89
+#: page.announcement.php:95
 msgid "The name of this announcement"
 msgstr "Il nome dell'annuncio"
 
-#: page.announcement.php:95
+#: page.announcement.php:101
 msgid "Recording"
 msgstr "Registrazione"
 
-#: page.announcement.php:95
+#: page.announcement.php:101
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU to the left"
-msgstr "Messaggio da riprodurre.<br>Per aggiungere ulteriori registrazioni, utilizzare \"Registrazioni di Sistema\" nel menu di sinistra."
+msgstr ""
+"Messaggio da riprodurre.<br>Per aggiungere ulteriori registrazioni, "
+"utilizzare \"Registrazioni di Sistema\" nel menu di sinistra."
 
-#: page.announcement.php:112
-msgid "Allow Skip"
-msgstr "Permetti Salta"
-
-#: page.announcement.php:112
-msgid "If the caller is allowed to press a key to skip the message."
-msgstr "Se si vuole permettere al chiamante di saltare il messaggio premendo un tasto."
-
-#: page.announcement.php:116
-msgid "Destination after playback"
-msgstr "Destinazione dopo la riproduzione"
-
-#: page.announcement.php:125
-msgid "Delete"
-msgstr "Elimina"
-
-msgid "Invalid description specified"
-msgstr "Descrizione specificata non valida"
-
-msgid "Submit Changes"
-msgstr "Applica"
-
-msgid "Core"
-msgstr "Sistema"
-
-msgid "Conferences"
-msgstr "Conferenze"
-
-msgid "Phonebook Directory"
-msgstr "Rubrica"
-
-msgid "Queues"
-msgstr "Code"
-
-msgid "Ring Groups"
-msgstr "Gruppi di chiamata"
-
-msgid "Speed dial functions"
-msgstr "Selezione breve"
-
-msgid "Time Conditions"
-msgstr "Condizioni Temporali"
-
-msgid "Custom Contexts"
-msgstr "Contesti Personalizzati"
-
-msgid "Extended Routing"
-msgstr "Rotte specifiche"
-
-msgid "Custom App<span><br>ADVANCED USERS ONLY<br><br>Uses Goto() to send caller to a custom context.<br><br>The context name should start with \"custom-\", and be in the format custom-context,extension,priority. Example entry:<br><br><b>custom-myapp,s,1</b><br><br>The <b>[custom-myapp]</b> context would need to be created and included in extensions_custom.conf</span>"
-msgstr "Applicazione Personalizzata<span>SOLO UTENTI AVANZATI<br>Utilizzare Goto() per inviare la chiamata verso un contesto personalizzato.<br><br>Il nome del contesto deve iniziare per \"custom-\" e deve essere nel formato custom-contesto,extension,priorità. Esempio: <br><br><b>custom-app,s,1</b><br><br><b>Il contesto [custom-app] </b> deve poi essere creato e incluso nel file extensions_custom.conf</span>"
-
-msgid "Voicemail"
-msgstr "Casella Vocale"
-
-msgid "Extensions"
-msgstr "Interni"
-
-msgid "Day Night Mode"
-msgstr "Controllo Giorno Notte"
-
-msgid "Terminate Call"
-msgstr "Termina Chiamata"
-
+#: page.announcement.php:118
 msgid "Repeat"
 msgstr "Ripeti"
 
-msgid "Key to press that will allow for the message to be replayed. If you choose this option there will be a short delay inserted after the message. If a longer delay is needed it should be incoporated into the recording."
-msgstr "Il tasto da premere per ripetere l'annuncio. Se si sceglie questa opzione ci sarà un breve ritardo dopo il messaggio. Per allungare questo tempo, includerlo nella registrazione."
+#: page.announcement.php:118
+msgid ""
+"Key to press that will allow for the message to be replayed. If you choose "
+"this option there will be a short delay inserted after the message. If a "
+"longer delay is needed it should be incoporated into the recording."
+msgstr ""
+"Il tasto da premere per ripetere l'annuncio. Se si sceglie questa opzione ci "
+"sarà un breve ritardo dopo il messaggio. Per allungare questo tempo, "
+"includerlo nella registrazione."
 
+#: page.announcement.php:128
+msgid "Disable"
+msgstr ""
+
+#: page.announcement.php:137
+msgid "Allow Skip"
+msgstr "Permetti Salta"
+
+#: page.announcement.php:137
+msgid "If the caller is allowed to press a key to skip the message."
+msgstr ""
+"Se si vuole permettere al chiamante di saltare il messaggio premendo un "
+"tasto."
+
+#: page.announcement.php:141
 msgid "Return to IVR"
 msgstr "Ritorna all'IVR"
 
-msgid "If this announcement came from an IVR and this box is checked, the destination below will be ignored and instead it will return to the calling IVR. Otherwise, the destinatino below will be taken. Don't check if not using in this mode. <br>The IVR return location will be to the last IVR in the call chain that was called so be careful to only check when needed. For example, if an IVR directs a call to another destination which eventually calls this annoucement and this box is checked, it will return to that IVR which may not be the expected behavior."
-msgstr "Se questo annuncio proviene da un IVR e questa opzione è selezionata, la destinazione di sotto verrà ignorata e la chiamata ritornerà all'IVR. Altrimenti, la destinazione di sotto verrà presa in considerazione. Non selezionare se non si utilizzà questa modalità. <br> L'IVR di ritorno sarà l'ultimo IVR richiamato nel percorso della chiamata quindi stare attenti a impostare solo quando serve. Per esempio, se un IVR dirotta una chiamata verso un'altra destinazione che richiama a sua volta questo annuncio e l'impostazione è selezionata, la chiamata ritornerà all'IVR iniziale e questo magari non è il comportamento che ci si aspetta."
+#: page.announcement.php:141
+msgid ""
+"If this announcement came from an IVR and this box is checked, the "
+"destination below will be ignored and instead it will return to the calling "
+"IVR. Otherwise, the destination below will be taken. Don't check if not "
+"using in this mode. <br>The IVR return location will be to the last IVR in "
+"the call chain that was called so be careful to only check when needed. For "
+"example, if an IVR directs a call to another destination which eventually "
+"calls this annoucement and this box is checked, it will return to that IVR "
+"which may not be the expected behavior."
+msgstr ""
+"Se questo annuncio proviene da un IVR e questa opzione è selezionata, la "
+"destinazione di sotto verrà ignorata e la chiamata ritornerà all'IVR. "
+"Altrimenti, la destinazione di sotto verrà presa in considerazione. Non "
+"selezionare se non si utilizzà questa modalità. <br> L'IVR di ritorno "
+"sarà l'ultimo IVR richiamato nel percorso della chiamata quindi stare "
+"attenti a impostare solo quando serve. Per esempio, se un IVR dirotta una "
+"chiamata verso un'altra destinazione che richiama a sua volta questo "
+"annuncio e l'impostazione è selezionata, la chiamata ritornerà all'IVR "
+"iniziale e questo magari non è il comportamento che ci si aspetta."
 
+
+#: page.announcement.php:145
 msgid "Don't Answer Channel"
 msgstr "Non Rispondere al Canale"
 
-msgid "Check this to keep the channel from explicitly being answered. When checked, the message will be played and if the channel is not already answered it will be delivered as early media if the channel supports that. When not checked, the channel is answered followed by a 1 second delay. When using an annoucement from an IVR or other sources that have already answered the channel, that 1 second delay may not be desired."
-msgstr "Selezionare questa opzione per non rispondere esplicitamente alla chiamata. Se impostato, il messaggio verrà riprodotto e se la chiamata non è già stata risposta, verrà inviato come early media (il canale lo deve però supportare). Se non impostato, il canale verrà risposto seguito da 1 secondo di ritardo. Quando si utilizza un annuncio proveniente da un IVR o da altre sorgenti che hanno risposto al canale, questo secondo di ritardo puo' essere evitato."
+#: page.announcement.php:145
+msgid ""
+"Check this to keep the channel from explicitly being answered. When checked, "
+"the message will be played and if the channel is not already answered it "
+"will be delivered as early media if the channel supports that. When not "
+"checked, the channel is answered followed by a 1 second delay. When using an "
+"annoucement from an IVR or other sources that have already answered the "
+"channel, that 1 second delay may not be desired."
+msgstr ""
+"Selezionare questa opzione per non rispondere esplicitamente alla chiamata. "
+"Se impostato, il messaggio verrà riprodotto e se la chiamata non è già stata "
+"risposta, verrà inviato come early media (il canale lo deve però "
+"supportare). Se non impostato, il canale verrà risposto seguito da 1 secondo "
+"di ritardo. Quando si utilizza un annuncio proveniente da un IVR o da altre "
+"sorgenti che hanno risposto al canale, questo secondo di ritardo puo' essere "
+"evitato."
+
+#: page.announcement.php:149
+msgid "Destination after playback"
+msgstr "Destinazione dopo la riproduzione"
+
+#: page.announcement.php:157
+msgid "Submit Changes"
+msgstr "Applica"
+
+#: page.announcement.php:158
+msgid "Delete"
+msgstr "Elimina"
+
+#: page.announcement.php:183
+msgid "Invalid description specified"
+msgstr "Descrizione specificata non valida"
+
+#: module.xml
+msgid "Announcement"
+msgstr ""
