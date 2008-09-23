@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: FreePBXannouncement\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-03 21:10+0200\n"
-"PO-Revision-Date: 2008-09-17 09:41+0100\n"
+"PO-Revision-Date: 2008-09-23 15:58+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -129,4 +129,8 @@ msgstr "Ta bort"
 #: page.announcement.php:183
 msgid "Invalid description specified"
 msgstr "Ogiltig beskrivning"
+
+#: module.xml
+msgid "Announcements"
+msgstr "Meddelanden"
 

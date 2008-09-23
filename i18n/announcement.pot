@@ -153,5 +153,5 @@ msgid "Invalid description specified"
 msgstr ""
 
 #: module.xml
-msgid "Announcement"
+msgid "Announcements"
 msgstr ""
