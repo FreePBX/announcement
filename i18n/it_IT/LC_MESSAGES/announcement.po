@@ -131,13 +131,12 @@ msgstr ""
 "Se questo annuncio proviene da un IVR e questa opzione è selezionata, la "
 "destinazione di sotto verrà ignorata e la chiamata ritornerà all'IVR. "
 "Altrimenti, la destinazione di sotto verrà presa in considerazione. Non "
-"selezionare se non si utilizzà questa modalità. <br> L'IVR di ritorno "
-"sarà l'ultimo IVR richiamato nel percorso della chiamata quindi stare "
-"attenti a impostare solo quando serve. Per esempio, se un IVR dirotta una "
-"chiamata verso un'altra destinazione che richiama a sua volta questo "
-"annuncio e l'impostazione è selezionata, la chiamata ritornerà all'IVR "
-"iniziale e questo magari non è il comportamento che ci si aspetta."
-
+"selezionare se non si utilizzà questa modalità. <br> L'IVR di ritorno sarà "
+"l'ultimo IVR richiamato nel percorso della chiamata quindi stare attenti a "
+"impostare solo quando serve. Per esempio, se un IVR dirotta una chiamata "
+"verso un'altra destinazione che richiama a sua volta questo annuncio e "
+"l'impostazione è selezionata, la chiamata ritornerà all'IVR iniziale e "
+"questo magari non è il comportamento che ci si aspetta."
 
 #: page.announcement.php:145
 msgid "Don't Answer Channel"
@@ -177,5 +176,5 @@ msgid "Invalid description specified"
 msgstr "Descrizione specificata non valida"
 
 #: module.xml
-msgid "Announcement"
+msgid "Announcements"
 msgstr ""
