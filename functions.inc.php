@@ -25,7 +25,7 @@ function announcement_getdestinfo($dest) {
 			return array();
 		} else {
 			$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
-			return array('description' => 'Annoucement : '.$thisexten['description'],
+			return array('description' => sprintf(_("Annoucement : %s"),$thisexten['description']),
 			             'edit_url' => 'config.php?display=announcement&type='.$type.'&extdisplay='.urlencode($exten),
 								  );
 		}
@@ -45,7 +45,7 @@ function announcement_recordings_usage($recording_id) {
 		foreach ($results as $result) {
 			$usage_arr[] = array(
 				'url_query' => 'config.php?display=announcement&type='.$type.'&extdisplay='.urlencode($result['announcement_id']),
-				'description' => "Announcement: ".$result['description'],
+				'description' => sprintf(_("Announcement: %s"),$result['description']),
 			);
 		}
 		return $usage_arr;
