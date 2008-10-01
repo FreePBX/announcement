@@ -25,7 +25,7 @@ function announcement_getdestinfo($dest) {
 			return array();
 		} else {
 			$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
-			return array('description' => sprintf(_("Annoucement : %s"),$thisexten['description']),
+			return array('description' => sprintf(_("Announcement : %s"),$thisexten['description']),
 			             'edit_url' => 'config.php?display=announcement&type='.$type.'&extdisplay='.urlencode($exten),
 								  );
 		}
