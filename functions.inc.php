@@ -25,7 +25,7 @@ function announcement_getdestinfo($dest) {
 			return array();
 		} else {
 			$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
-			return array('description' => sprintf(_("Announcement : %s"),$thisexten['description']),
+			return array('description' => sprintf(_("Announcement: %s"),$thisexten['description']),
 			             'edit_url' => 'config.php?display=announcement&type='.$type.'&extdisplay='.urlencode($exten),
 								  );
 		}
@@ -135,7 +135,7 @@ function announcement_get($announcement_id) {
 	$sql = "SELECT announcement_id, description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement WHERE announcement_id = '".$db->escapeSimple($announcement_id)."'";
 	$row = $db->getRow($sql,DB_FETCHMODE_ASSOC);
 	if(DB::IsError($row)) {
-		die_freepbx($row->getMessage()."<br><br>Errpr selecting row from announcement");	
+		die_freepbx($row->getMessage()."<br><br>Error selecting row from announcement");	
 	}
 	// Added Associative query above but put positional indexes back to maintain backward compatibility
 	//
@@ -210,7 +210,7 @@ function announcement_check_destinations($dest=true) {
 		$thisid   = $result['announcement_id'];
 		$destlist[] = array(
 			'dest' => $thisdest,
-			'description' => 'Announcement: '.$result['description'],
+			'description' => sprintf(_("Announcement: %s"),$result['description']),
 			'edit_url' => 'config.php?display=announcement&type='.$type.'&extdisplay='.urlencode($thisid),
 		);
 	}
