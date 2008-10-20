@@ -1,8 +1,9 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>2.5.1.6</version>
+	<version>2.5.1.7</version>
 	<changelog>
+		*2.5.1.7* localization string enclosures, spelling
 		*2.5.1.6* spelling, localization fixes
 		*2.5.1.5* spelling fixes, Swedish
 		*2.5.1.4* #3196 typo in index
@@ -28,6 +29,6 @@
 	<menuitems>
 		<announcement>Announcements</announcement>
 	</menuitems>
-	<location>release/2.5/announcement-2.5.1.6.tgz</location>
-	<md5sum>0f18cdb5e8a08a912fe65164292225c9</md5sum>
+	<location>release/2.5/announcement-2.5.1.7.tgz</location>
+	<md5sum>a01c255e80fedb1c17c29df5e35eff49</md5sum>
 </module>
