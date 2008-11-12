@@ -156,3 +156,7 @@ msgstr ""
 #: page.announcement.php:183
 msgid "Invalid description specified"
 msgstr ""
+
+#: modules.xml
+msgid "Announcement"
+msgstr ""
