@@ -20,6 +20,8 @@
 $action = isset($_POST['action']) ? $_POST['action'] :  '';
 if (isset($_POST['delete'])) $action = 'delete'; 
 
+$tabindex = 0;
+
 
 $announcement_id = isset($_POST['announcement_id']) ? $_POST['announcement_id'] :  false;
 $description = isset($_POST['description']) ? $_POST['description'] :  '';
