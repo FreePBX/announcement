@@ -85,7 +85,7 @@ function announcement_get_config($engine) {
 					if ($row['repeat_msg']) {
 						$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_responsetimeout(1));
 					}
-					$ext->add('app-announcement-'.$row['announcement_id'], 's', 'play', new ext_background($recording.'|nm'));
+					$ext->add('app-announcement-'.$row['announcement_id'], 's', 'play', new ext_background($recording.',nm'));
 					if ($row['repeat_msg']) {
 						$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_waitexten(''));
 					}
