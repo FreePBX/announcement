@@ -33,6 +33,6 @@
 	<menuitems>
 		<announcement>Announcements</announcement>
 	</menuitems>
-	<location>release/2.6/announcement-2.6.0.0.tgz</location>
-	<md5sum>7f494f27bdb876e062f3d8479b4c1da5</md5sum>
+	<location>release/2.6/announcement-2.6.0.1.tgz</location>
+	<md5sum>a154b7a15e6fba7781a0b68e4900190b</md5sum>
 </module>
