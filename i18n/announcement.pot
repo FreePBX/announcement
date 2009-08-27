@@ -102,6 +102,10 @@ msgid ""
 "Recordings\" MENU to the left"
 msgstr ""
 
+#: page.announcement.php:115
+msgid "None"
+msgstr ""
+
 #: page.announcement.php:118
 msgid "Repeat"
 msgstr ""
@@ -172,5 +176,5 @@ msgid "Invalid description specified"
 msgstr ""
 
 #: modules.xml
-msgid "Announcement"
+msgid "Announcements"
 msgstr ""

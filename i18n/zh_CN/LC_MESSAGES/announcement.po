@@ -18,9 +18,7 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: functions.inc.php:28
-#: functions.inc.php:48
-#: functions.inc.php:213
+#: functions.inc.php:28 functions.inc.php:48 functions.inc.php:213
 #, php-format
 msgid "Announcement: %s"
 msgstr "公告：%s"
@@ -37,14 +35,11 @@ msgstr "正在迁移"
 msgid "adding recording_id field.."
 msgstr "正在添加recording_id字段。。"
 
-#: install.php:109
-#: install.php:121
-#: install.php:137
+#: install.php:109 install.php:121 install.php:137
 msgid "fatal error"
 msgstr "致命错误"
 
-#: install.php:112
-#: install.php:151
+#: install.php:112 install.php:151
 msgid "ok"
 msgstr "完成"
 
@@ -69,8 +64,7 @@ msgstr "recording字段不存在？"
 msgid "already migrated"
 msgstr "已经迁移过了"
 
-#: page.announcement.php:61
-#: page.announcement.php:93
+#: page.announcement.php:61 page.announcement.php:93
 msgid "Add Announcement"
 msgstr "添加公告"
 
@@ -91,16 +85,27 @@ msgid "Recording"
 msgstr "录音"
 
 #: page.announcement.php:101
-msgid "Message to be played.<br>To add additional recordings use the \"System Recordings\" MENU to the left"
+msgid ""
+"Message to be played.<br>To add additional recordings use the \"System "
+"Recordings\" MENU to the left"
 msgstr "要播放的消息。<br />要添加额外的录音，使用左侧的“系统录音”菜单"
+
+#: page.announcement.php:115
+msgid "None"
+msgstr ""
 
 #: page.announcement.php:118
 msgid "Repeat"
 msgstr "重复"
 
 #: page.announcement.php:118
-msgid "Key to press that will allow for the message to be replayed. If you choose this option there will be a short delay inserted after the message. If a longer delay is needed it should be incoporated into the recording."
-msgstr "设定按下某键后，可重复播放消息。如果你选择了这个选项，在消息之后会插入一个短暂的停顿，如果需要更长的停顿，直接把停顿合成到录音里。"
+msgid ""
+"Key to press that will allow for the message to be replayed. If you choose "
+"this option there will be a short delay inserted after the message. If a "
+"longer delay is needed it should be incoporated into the recording."
+msgstr ""
+"设定按下某键后，可重复播放消息。如果你选择了这个选项，在消息之后会插入一个短"
+"暂的停顿，如果需要更长的停顿，直接把停顿合成到录音里。"
 
 #: page.announcement.php:128
 msgid "Disable"
@@ -119,16 +124,40 @@ msgid "Return to IVR"
 msgstr "返回至IVR"
 
 #: page.announcement.php:141
-msgid "If this announcement came from an IVR and this box is checked, the destination below will be ignored and instead it will return to the calling IVR. Otherwise, the destination below will be taken. Don't check if not using in this mode. <br>The IVR return location will be to the last IVR in the call chain that was called so be careful to only check when needed. For example, if an IVR directs a call to another destination which eventually calls this annoucement and this box is checked, it will return to that IVR which may not be the expected behavior."
-msgstr "如果这项公告是由IVR发出的，而又钩选了此项，下面的目的地就会被忽略，因此最后会返回到IVR。如果没钩选此项，最后会转向下面的目的地。如果不使用这种模式就不必钩选。<br />返回到IVR时，会返回到IVR呼叫链的最后被呼叫的一项，所以仅在需要这样的功能时才使用这种模式。例如，如果一个IVR引导一个呼叫到令一个目的地，而此目的地最后呼叫了此通告且此选项被钩选，最后呼叫会返回到原来的IVR，这也许是你想要的功能，也许不是。"
+msgid ""
+"If this announcement came from an IVR and this box is checked, the "
+"destination below will be ignored and instead it will return to the calling "
+"IVR. Otherwise, the destination below will be taken. Don't check if not "
+"using in this mode. <br>The IVR return location will be to the last IVR in "
+"the call chain that was called so be careful to only check when needed. For "
+"example, if an IVR directs a call to another destination which eventually "
+"calls this annoucement and this box is checked, it will return to that IVR "
+"which may not be the expected behavior."
+msgstr ""
+"如果这项公告是由IVR发出的，而又钩选了此项，下面的目的地就会被忽略，因此最后会"
+"返回到IVR。如果没钩选此项，最后会转向下面的目的地。如果不使用这种模式就不必钩"
+"选。<br />返回到IVR时，会返回到IVR呼叫链的最后被呼叫的一项，所以仅在需要这样"
+"的功能时才使用这种模式。例如，如果一个IVR引导一个呼叫到令一个目的地，而此目的"
+"地最后呼叫了此通告且此选项被钩选，最后呼叫会返回到原来的IVR，这也许是你想要的"
+"功能，也许不是。"
 
 #: page.announcement.php:145
 msgid "Don't Answer Channel"
 msgstr "不要接听频道"
 
 #: page.announcement.php:145
-msgid "Check this to keep the channel from explicitly being answered. When checked, the message will be played and if the channel is not already answered it will be delivered as early media if the channel supports that. When not checked, the channel is answered followed by a 1 second delay. When using an annoucement from an IVR or other sources that have already answered the channel, that 1 second delay may not be desired."
-msgstr "钩选此项可以防止频道被显式的接听。启用此功能后，消息会被播放，如果频道尚未被接听，它会被当作早期媒体递送出去（如果频道支持的话）。如果不启用此功能，频道就会被接听，接着会出现1秒的停顿。如果正在使用的公告是从IVR或其他的源引导过来的，并且此前频道已被接听，那么这1秒的停顿可能是你不需要的。"
+msgid ""
+"Check this to keep the channel from explicitly being answered. When checked, "
+"the message will be played and if the channel is not already answered it "
+"will be delivered as early media if the channel supports that. When not "
+"checked, the channel is answered followed by a 1 second delay. When using an "
+"annoucement from an IVR or other sources that have already answered the "
+"channel, that 1 second delay may not be desired."
+msgstr ""
+"钩选此项可以防止频道被显式的接听。启用此功能后，消息会被播放，如果频道尚未被"
+"接听，它会被当作早期媒体递送出去（如果频道支持的话）。如果不启用此功能，频道"
+"就会被接听，接着会出现1秒的停顿。如果正在使用的公告是从IVR或其他的源引导过来"
+"的，并且此前频道已被接听，那么这1秒的停顿可能是你不需要的。"
 
 #: page.announcement.php:149
 msgid "Destination after playback"
@@ -147,6 +176,5 @@ msgid "Invalid description specified"
 msgstr "指定了无效的描述"
 
 #: modules.xml
-msgid "Announcement"
+msgid "Announcements"
 msgstr "公告"
-

@@ -92,6 +92,10 @@ msgstr ""
 "Üzenet lejátszása.<br>Előzőleg a a rögzítéshez a \"Központoi rögzítés\" "
 "menüpontot használd a BAL menüben."
 
+#: page.announcement.php:115
+msgid "None"
+msgstr ""
+
 #: page.announcement.php:118
 msgid "Repeat"
 msgstr "Ismétlés"
@@ -135,12 +139,12 @@ msgid ""
 "which may not be the expected behavior."
 msgstr ""
 "Ha az esemény egy IVR-ből lett megcímezve, és ez a pipa meg van jelölve, "
-"akkor a célpont figyelmen kívül lessz hagyva, és az üzenet lejátszása "
-"után ismét az IVR lesz meghívva. Minden egyéb esetben a célpont lesz az "
-"érvényes következő feladat. Ne használd, ha nem használnád. <br> Az IVR-"
-"be visszatérés helye az utolsó kért IVR pont. Ha ide akarsz visszatérni, "
-"csak akkor jelöld be. Ha egy másik IVR helyre szeretnél továbbmenni, "
-"akkor a célpontok között jelöld meg azt az IVR pontot."
+"akkor a célpont figyelmen kívül lessz hagyva, és az üzenet lejátszása után "
+"ismét az IVR lesz meghívva. Minden egyéb esetben a célpont lesz az érvényes "
+"következő feladat. Ne használd, ha nem használnád. <br> Az IVR-be "
+"visszatérés helye az utolsó kért IVR pont. Ha ide akarsz visszatérni, csak "
+"akkor jelöld be. Ha egy másik IVR helyre szeretnél továbbmenni, akkor a "
+"célpontok között jelöld meg azt az IVR pontot."
 
 #: page.announcement.php:145
 msgid "Don't Answer Channel"
@@ -178,3 +182,6 @@ msgstr "Törlés"
 msgid "Invalid description specified"
 msgstr ""
 
+#: modules.xml
+msgid "Announcements"
+msgstr ""

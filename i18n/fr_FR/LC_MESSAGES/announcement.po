@@ -102,6 +102,10 @@ msgstr ""
 "Message à jouer.<br>Pour ajouter des enregistrements additionnels, utilisez "
 "le MENU \"Enregistrements Système\" à gauche"
 
+#: page.announcement.php:115
+msgid "None"
+msgstr ""
+
 #: page.announcement.php:118
 msgid "Repeat"
 msgstr "Répéter"
@@ -192,5 +196,5 @@ msgid "Invalid description specified"
 msgstr "Description spécifiée invalide"
 
 #: modules.xml
-msgid "Announcement"
+msgid "Announcements"
 msgstr "Annonces"
