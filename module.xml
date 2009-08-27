@@ -1,10 +1,11 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>2.6.0.1</version>
+	<version>2.6.0.2</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<changelog>
+		*2.6.0.2* #3829
 		*2.6.0.1* #3804
 		*2.6.0.0* localizations, misc
 		*2.5.1.7* localization string enclosures, spelling

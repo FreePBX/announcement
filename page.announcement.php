@@ -112,6 +112,7 @@ if ($extdisplay) {
 				$tresults = recordings_list();
 				$default = (isset($recording_id) ? $recording_id : '');
 				if (isset($tresults[0])) {
+					echo '<option value="">'._("None")."</option>\n";
 					foreach ($tresults as $tresult) {
 						echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $default ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
 					}
