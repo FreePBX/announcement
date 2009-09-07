@@ -44,7 +44,7 @@ $sql = "CREATE TABLE IF NOT EXISTS announcement (
 )";
 $check = $db->query($sql);
 if(DB::IsError($check)) {
-	die_freepbx("Can not create annoucement table");
+	die_freepbx("Can not create announcement table");
 }
 
 // Version 0.3 adds auto-return to IVR
