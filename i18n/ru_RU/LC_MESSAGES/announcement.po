@@ -1,6 +1,20 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
 # Russian freePBX ver. translation
 # Copyright (c) 2006-2008 PostMet Corporation
-# This file is distributed under the same license as the freePBX package.
 # Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
 #
 # Использовать iconv amp.new -f UTF-8 -t ISO-8859-5 -o amp.po
@@ -10,7 +24,7 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-05 10:47+0200\n"
-"PO-Revision-Date: 2008-01-16 16:38+0100\n"
+"PO-Revision-Date: 2009-11-30 16:38+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
 "MIME-Version: 1.0\n"
@@ -20,48 +34,48 @@ msgstr ""
 #: functions.inc.php:28 functions.inc.php:48 functions.inc.php:213
 #, php-format
 msgid "Announcement: %s"
-msgstr ""
+msgstr "Приветствия: %s"
 
 #: install.php:98
 msgid "Checking if recordings need migration.."
-msgstr ""
+msgstr "Проверка нуждаются ли записи  в перемещении.."
 
 #: install.php:104
 msgid "migrating"
-msgstr ""
+msgstr "перемещение"
 
 #: install.php:105
 msgid "adding recording_id field.."
-msgstr ""
+msgstr "добавляется поле recording_id.."
 
 #: install.php:109 install.php:121 install.php:137
 msgid "fatal error"
-msgstr ""
+msgstr "неустранимая ошибка"
 
 #: install.php:112 install.php:151
 msgid "ok"
-msgstr ""
+msgstr "ок"
 
 #: install.php:117
 msgid "migrate to recording ids.."
-msgstr ""
+msgstr "переход к id записей"
 
 #: install.php:141
 #, php-format
 msgid "migrated %s entries"
-msgstr ""
+msgstr "перемещено %s записей"
 
 #: install.php:145
 msgid "dropping recording field.."
-msgstr ""
+msgstr "сброс поля записей.."
 
 #: install.php:149
 msgid "no recording field???"
-msgstr ""
+msgstr "нет поля записи?"
 
 #: install.php:155
 msgid "already migrated"
-msgstr ""
+msgstr "уже перемещено"
 
 #: page.announcement.php:61 page.announcement.php:93
 msgid "Add Announcement"
@@ -93,7 +107,7 @@ msgstr ""
 
 #: page.announcement.php:115
 msgid "None"
-msgstr ""
+msgstr "Нет"
 
 #: page.announcement.php:118
 msgid "Repeat"
@@ -111,7 +125,7 @@ msgstr ""
 
 #: page.announcement.php:128
 msgid "Disable"
-msgstr ""
+msgstr "Выключено"
 
 #: page.announcement.php:137
 msgid "Allow Skip"
@@ -188,4 +202,4 @@ msgstr "Указано неверное описание"
 
 #: modules.xml
 msgid "Announcements"
-msgstr ""
+msgstr "Приветствия"
