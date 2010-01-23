@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-05 10:47+0200\n"
+"POT-Creation-Date: 2010-01-23 08:18+0100\n"
 "PO-Revision-Date: 2009-11-30 16:38+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
@@ -31,73 +31,73 @@ msgstr ""
 "Content-Type: text/plain; charset=iso-8859-5\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:28 functions.inc.php:48 functions.inc.php:213
+#: functions.inc.php:44 functions.inc.php:64 functions.inc.php:229
 #, php-format
 msgid "Announcement: %s"
 msgstr "Приветствия: %s"
 
-#: install.php:98
+#: install.php:115
 msgid "Checking if recordings need migration.."
 msgstr "Проверка нуждаются ли записи  в перемещении.."
 
-#: install.php:104
+#: install.php:121
 msgid "migrating"
 msgstr "перемещение"
 
-#: install.php:105
+#: install.php:122
 msgid "adding recording_id field.."
 msgstr "добавляется поле recording_id.."
 
-#: install.php:109 install.php:121 install.php:137
+#: install.php:126 install.php:138 install.php:154
 msgid "fatal error"
 msgstr "неустранимая ошибка"
 
-#: install.php:112 install.php:151
+#: install.php:129 install.php:168
 msgid "ok"
 msgstr "ок"
 
-#: install.php:117
+#: install.php:134
 msgid "migrate to recording ids.."
 msgstr "переход к id записей"
 
-#: install.php:141
+#: install.php:158
 #, php-format
 msgid "migrated %s entries"
 msgstr "перемещено %s записей"
 
-#: install.php:145
+#: install.php:162
 msgid "dropping recording field.."
 msgstr "сброс поля записей.."
 
-#: install.php:149
+#: install.php:166
 msgid "no recording field???"
 msgstr "нет поля записи?"
 
-#: install.php:155
+#: install.php:172
 msgid "already migrated"
 msgstr "уже перемещено"
 
-#: page.announcement.php:61 page.announcement.php:93
+#: page.announcement.php:68 page.announcement.php:100
 msgid "Add Announcement"
 msgstr "Добавить приветствие"
 
-#: page.announcement.php:93
+#: page.announcement.php:100
 msgid "Edit Announcement"
 msgstr "Изменить приветствие"
 
-#: page.announcement.php:95
+#: page.announcement.php:102
 msgid "Description"
 msgstr "Описание"
 
-#: page.announcement.php:95
+#: page.announcement.php:102
 msgid "The name of this announcement"
 msgstr "Имя для этого приветствия"
 
-#: page.announcement.php:101
+#: page.announcement.php:108
 msgid "Recording"
 msgstr "Запись"
 
-#: page.announcement.php:101
+#: page.announcement.php:108
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU to the left"
@@ -109,39 +109,39 @@ msgstr ""
 msgid "None"
 msgstr "Нет"
 
-#: page.announcement.php:118
+#: page.announcement.php:126
 msgid "Repeat"
 msgstr "Повторить"
 
-#: page.announcement.php:118
+#: page.announcement.php:126
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
-"longer delay is needed it should be incoporated into the recording."
+"longer delay is needed it should be incorporated into the recording."
 msgstr ""
 "Какую кнопку нажимать для повторения приветствия. Если используется эта "
 "опция, то будет небольшая задержка после сообщения. Если нужна более "
 "длительная задержка, её нужно вводить в конце записи."
 
-#: page.announcement.php:128
+#: page.announcement.php:136
 msgid "Disable"
 msgstr "Выключено"
 
-#: page.announcement.php:137
+#: page.announcement.php:145
 msgid "Allow Skip"
 msgstr "Разрешить пропустить"
 
-#: page.announcement.php:137
+#: page.announcement.php:145
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 "Разрешить пропуск приветствия по нажатию клавиши, чтобы не слушать его "
 "каждый раз."
 
-#: page.announcement.php:141
+#: page.announcement.php:149
 msgid "Return to IVR"
 msgstr "Вернуться в 'Интерактивное меню'"
 
-#: page.announcement.php:141
+#: page.announcement.php:149
 msgid ""
 "If this announcement came from an IVR and this box is checked, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -149,7 +149,7 @@ msgid ""
 "using in this mode. <br>The IVR return location will be to the last IVR in "
 "the call chain that was called so be careful to only check when needed. For "
 "example, if an IVR directs a call to another destination which eventually "
-"calls this annoucement and this box is checked, it will return to that IVR "
+"calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
 "Если приветствие используется как шаг в Интерактивном меню и отмечено "
@@ -164,17 +164,17 @@ msgstr ""
 "воспроизвести это приветствие, и отмечена эта опция, то возврат в "
 "Интерактивное меню может привести к непредсказуемому поведению."
 
-#: page.announcement.php:145
+#: page.announcement.php:153
 msgid "Don't Answer Channel"
 msgstr "Не отвечать в канал"
 
-#: page.announcement.php:145
+#: page.announcement.php:153
 msgid ""
 "Check this to keep the channel from explicitly being answered. When checked, "
 "the message will be played and if the channel is not already answered it "
 "will be delivered as early media if the channel supports that. When not "
 "checked, the channel is answered followed by a 1 second delay. When using an "
-"annoucement from an IVR or other sources that have already answered the "
+"announcement from an IVR or other sources that have already answered the "
 "channel, that 1 second delay may not be desired."
 msgstr ""
 "Использование этой опции при явном ответе. Если отмечено, приветствие "
@@ -184,19 +184,19 @@ msgstr ""
 "уже проговорил что-то в канал, то эта задержка в 1 секунду может быть "
 "нежелательна."
 
-#: page.announcement.php:149
+#: page.announcement.php:157
 msgid "Destination after playback"
 msgstr "Назначение после воспроизведения"
 
-#: page.announcement.php:157
+#: page.announcement.php:165
 msgid "Submit Changes"
 msgstr "Применить изменения"
 
-#: page.announcement.php:158
+#: page.announcement.php:166
 msgid "Delete"
 msgstr "Удалить"
 
-#: page.announcement.php:183
+#: page.announcement.php:191
 msgid "Invalid description specified"
 msgstr "Указано неверное описание"
 

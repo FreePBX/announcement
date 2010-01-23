@@ -1,9 +1,27 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for announcement
+# Copyright (C) 2008, 2009 FreePBX
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - test module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-05 10:47+0200\n"
-"PO-Revision-Date: 2009-01-22 11:50+0100\n"
+"PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -99,7 +117,7 @@ msgstr "Repetir"
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
-"longer delay is needed it should be incoporated into the recording."
+"longer delay is needed it should be incorporated into the recording."
 msgstr ""
 "Tecla que se debe presionar para repetir el mensaje. Si se selecciona esta "
 "opción, se insertará un pequeño retraso tras la reproducción del mensaje. Si "
@@ -131,7 +149,7 @@ msgid ""
 "using in this mode. <br>The IVR return location will be to the last IVR in "
 "the call chain that was called so be careful to only check when needed. For "
 "example, if an IVR directs a call to another destination which eventually "
-"calls this annoucement and this box is checked, it will return to that IVR "
+"calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
 "Si este anuncio llega desde un IVR y esta casilla está marcada, el siguiente "
@@ -153,7 +171,7 @@ msgid ""
 "the message will be played and if the channel is not already answered it "
 "will be delivered as early media if the channel supports that. When not "
 "checked, the channel is answered followed by a 1 second delay. When using an "
-"annoucement from an IVR or other sources that have already answered the "
+"announcement from an IVR or other sources that have already answered the "
 "channel, that 1 second delay may not be desired."
 msgstr ""
 "Marque esta opción para evitar que el canal sea contestado. Cuando esté "
