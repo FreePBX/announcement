@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 13:44+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,127 +28,96 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: announcement/announcement.i18n.php:5 announcement/announcement.i18n.php:11
 msgid "Announcements"
 msgstr ""
 
-#: announcement/announcement.i18n.php:7
 msgid "Inbound Call Control"
 msgstr ""
 
-#: announcement/announcement.i18n.php:9
 msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
 
-#: announcement/functions.inc.php:44 announcement/functions.inc.php:64
-#: announcement/functions.inc.php:229
 #, php-format
 msgid "Announcement: %s"
 msgstr ""
 
-#: announcement/install.php:115
 msgid "Checking if recordings need migration.."
 msgstr ""
 
-#: announcement/install.php:121
 msgid "migrating"
 msgstr ""
 
-#: announcement/install.php:122
 msgid "adding recording_id field.."
 msgstr ""
 
-#: announcement/install.php:126 announcement/install.php:138
-#: announcement/install.php:154
 msgid "fatal error"
 msgstr ""
 
-#: announcement/install.php:129 announcement/install.php:168
 msgid "ok"
 msgstr ""
 
-#: announcement/install.php:134
 msgid "migrate to recording ids.."
 msgstr ""
 
-#: announcement/install.php:158
 #, php-format
 msgid "migrated %s entries"
 msgstr ""
 
-#: announcement/install.php:162
 msgid "dropping recording field.."
 msgstr ""
 
-#: announcement/install.php:166
 msgid "no recording field???"
 msgstr ""
 
-#: announcement/install.php:172
 msgid "already migrated"
 msgstr ""
 
-#: announcement/page.announcement.php:68
-#: announcement/page.announcement.php:100
 msgid "Add Announcement"
 msgstr ""
 
-#: announcement/page.announcement.php:100
 msgid "Edit Announcement"
 msgstr ""
 
-#: announcement/page.announcement.php:102
 msgid "Description"
 msgstr ""
 
-#: announcement/page.announcement.php:102
 msgid "The name of this announcement"
 msgstr ""
 
-#: announcement/page.announcement.php:108
 msgid "Recording"
 msgstr ""
 
-#: announcement/page.announcement.php:108
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU to the left"
 msgstr ""
 
-#: announcement/page.announcement.php:115
 msgid "None"
 msgstr ""
 
-#: announcement/page.announcement.php:126
 msgid "Repeat"
 msgstr ""
 
-#: announcement/page.announcement.php:126
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
 "longer delay is needed it should be incorporated into the recording."
 msgstr ""
 
-#: announcement/page.announcement.php:136
 msgid "Disable"
 msgstr ""
 
-#: announcement/page.announcement.php:145
 msgid "Allow Skip"
 msgstr ""
 
-#: announcement/page.announcement.php:145
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 
-#: announcement/page.announcement.php:149
 msgid "Return to IVR"
 msgstr ""
 
-#: announcement/page.announcement.php:149
 msgid ""
 "If this announcement came from an IVR and this box is checked, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -160,11 +129,9 @@ msgid ""
 "which may not be the expected behavior."
 msgstr ""
 
-#: announcement/page.announcement.php:153
 msgid "Don't Answer Channel"
 msgstr ""
 
-#: announcement/page.announcement.php:153
 msgid ""
 "Check this to keep the channel from explicitly being answered. When checked, "
 "the message will be played and if the channel is not already answered it "
@@ -174,18 +141,14 @@ msgid ""
 "channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: announcement/page.announcement.php:157
 msgid "Destination after playback"
 msgstr ""
 
-#: announcement/page.announcement.php:165
 msgid "Submit Changes"
 msgstr ""
 
-#: announcement/page.announcement.php:166
 msgid "Delete"
 msgstr ""
 
-#: announcement/page.announcement.php:191
 msgid "Invalid description specified"
 msgstr ""
