@@ -13,14 +13,14 @@
 #    You should have received a copy of the GNU General Public License
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
-# FreePBX language template for announcement
+# FreePBX language for announcement
 # Copyright (C) 2008, 2009 FreePBX
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - test module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-05 10:47+0200\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
@@ -31,73 +31,67 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: functions.inc.php:28 functions.inc.php:48 functions.inc.php:213
+msgid "Announcements"
+msgstr ""
+
+msgid "Inbound Call Control"
+msgstr ""
+
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+
 #, php-format
 msgid "Announcement: %s"
 msgstr "Anuncio: %s"
 
-#: install.php:98
 msgid "Checking if recordings need migration.."
 msgstr "Comprobando si las grabaciones necesitan migrarse..."
 
-#: install.php:104
 msgid "migrating"
 msgstr "migrando"
 
-#: install.php:105
 msgid "adding recording_id field.."
 msgstr "añadiendo campo recording_id..."
 
-#: install.php:109 install.php:121 install.php:137
 msgid "fatal error"
 msgstr "error fatal"
 
-#: install.php:112 install.php:151
 msgid "ok"
 msgstr "ok"
 
-#: install.php:117
 msgid "migrate to recording ids.."
 msgstr "migrar a identificadores de grabación (recording ids)"
 
-#: install.php:141
 #, php-format
 msgid "migrated %s entries"
 msgstr "%s entradas migradas"
 
-#: install.php:145
 msgid "dropping recording field.."
 msgstr "eliminando campo de grabación (recording)"
 
-#: install.php:149
 msgid "no recording field???"
 msgstr "¿No hay campo de grabación (recording)?"
 
-#: install.php:155
 msgid "already migrated"
 msgstr "ya migrado"
 
-#: page.announcement.php:61 page.announcement.php:93
 msgid "Add Announcement"
 msgstr "Añadir anuncio"
 
-#: page.announcement.php:93
 msgid "Edit Announcement"
 msgstr "Editar anuncio"
 
-#: page.announcement.php:95
 msgid "Description"
 msgstr "Descripción"
 
-#: page.announcement.php:95
 msgid "The name of this announcement"
 msgstr "El nombre de este anuncio"
 
-#: page.announcement.php:101
 msgid "Recording"
 msgstr "Grabación"
 
-#: page.announcement.php:101
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU to the left"
@@ -105,15 +99,12 @@ msgstr ""
 "El mensaje que será reproducido.<br/>Para añadir más grabaciones, use el "
 "menú de \"Grabaciones del sistema\" a la izquierda"
 
-#: page.announcement.php:115
 msgid "None"
 msgstr ""
 
-#: page.announcement.php:118
 msgid "Repeat"
 msgstr "Repetir"
 
-#: page.announcement.php:118
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -124,24 +115,19 @@ msgstr ""
 "se necesita un retardo mayor, se debería incorporar directamente al mensaje "
 "grabado."
 
-#: page.announcement.php:128
 msgid "Disable"
 msgstr "Deshabilitar"
 
-#: page.announcement.php:137
 msgid "Allow Skip"
 msgstr "Permitir saltar"
 
-#: page.announcement.php:137
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 "Indica si el llamante puede presionar una tecla para saltarse el mensaje."
 
-#: page.announcement.php:141
 msgid "Return to IVR"
 msgstr "Volver al IVR"
 
-#: page.announcement.php:141
 msgid ""
 "If this announcement came from an IVR and this box is checked, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -161,11 +147,9 @@ msgstr ""
 "ocasionalmente llama a este anuncio y esta casilla está activada, regresará "
 "a ese IVR, lo que puede provocar un comportamiento inesperado."
 
-#: page.announcement.php:145
 msgid "Don't Answer Channel"
 msgstr "No contestar canal"
 
-#: page.announcement.php:145
 msgid ""
 "Check this to keep the channel from explicitly being answered. When checked, "
 "the message will be played and if the channel is not already answered it "
@@ -181,25 +165,14 @@ msgstr ""
 "Cuando se use un anuncio desde un IVR u otros orígenes que ya hayan "
 "contestado el canal, ese segundo de retardo puede que no sea adecuado."
 
-#: page.announcement.php:149
 msgid "Destination after playback"
 msgstr "Destino tras la reproducción"
 
-#: page.announcement.php:157
 msgid "Submit Changes"
 msgstr "Enviar cambios"
 
-#: page.announcement.php:158
 msgid "Delete"
 msgstr "Eliminar"
 
-#: page.announcement.php:183
 msgid "Invalid description specified"
 msgstr "La descripción especificada no es válida"
-
-#: modules.xml
-msgid "Announcements"
-msgstr ""
-
-#~ msgid "Announcement"
-#~ msgstr "Anuncio"

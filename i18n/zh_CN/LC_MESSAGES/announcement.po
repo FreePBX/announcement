@@ -13,14 +13,14 @@
 #    You should have received a copy of the GNU General Public License
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
-# FreePBX language template for announcement
+# FreePBX language for announcement
 # Copyright (C) 2008, 2009 FreePBX
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-23 08:18+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: 2010-01-23 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -31,87 +31,78 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: functions.inc.php:44 functions.inc.php:64 functions.inc.php:229
+msgid "Announcements"
+msgstr "公告"
+
+msgid "Inbound Call Control"
+msgstr ""
+
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+
 #, php-format
 msgid "Announcement: %s"
 msgstr "公告：%s"
 
-#: install.php:115
 msgid "Checking if recordings need migration.."
 msgstr "检查是否需要迁移录音。。"
 
-#: install.php:121
 msgid "migrating"
 msgstr "正在迁移"
 
-#: install.php:122
 msgid "adding recording_id field.."
 msgstr "正在添加recording_id字段。。"
 
-#: install.php:126 install.php:138 install.php:154
 msgid "fatal error"
 msgstr "致命错误"
 
-#: install.php:129 install.php:168
 msgid "ok"
 msgstr "完成"
 
-#: install.php:134
 msgid "migrate to recording ids.."
 msgstr "迁移到录音ID。。"
 
-#: install.php:158
 #, php-format
 msgid "migrated %s entries"
 msgstr "迁移了 %s 个项目"
 
-#: install.php:162
 msgid "dropping recording field.."
 msgstr "正在删除recording字段"
 
-#: install.php:166
 msgid "no recording field???"
 msgstr "recording字段不存在？"
 
-#: install.php:172
 msgid "already migrated"
 msgstr "已经迁移过了"
 
-#: page.announcement.php:68 page.announcement.php:100
 msgid "Add Announcement"
 msgstr "添加公告"
 
-#: page.announcement.php:100
 msgid "Edit Announcement"
 msgstr "编辑公告"
 
-#: page.announcement.php:102
 msgid "Description"
 msgstr "描述"
 
-#: page.announcement.php:102
 msgid "The name of this announcement"
 msgstr "这项公告的名字"
 
-#: page.announcement.php:108
 msgid "Recording"
 msgstr "录音"
 
-#: page.announcement.php:108
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU to the left"
 msgstr "要播放的消息。<br />要添加额外的录音，使用左侧的“系统录音”菜单"
 
-#: page.announcement.php:115
 msgid "None"
 msgstr ""
 
-#: page.announcement.php:126
 msgid "Repeat"
 msgstr "重复"
 
-#: page.announcement.php:126
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -120,23 +111,18 @@ msgstr ""
 "设定按下某键后，可重复播放消息。如果你选择了这个选项，在消息之后会插入一个短"
 "暂的停顿，如果需要更长的停顿，直接把停顿合成到录音里。"
 
-#: page.announcement.php:136
 msgid "Disable"
 msgstr "禁用"
 
-#: page.announcement.php:145
 msgid "Allow Skip"
 msgstr "允许跳过"
 
-#: page.announcement.php:145
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr "设定主叫是否可以按下某键以跳过消息。"
 
-#: page.announcement.php:149
 msgid "Return to IVR"
 msgstr "返回至IVR"
 
-#: page.announcement.php:149
 msgid ""
 "If this announcement came from an IVR and this box is checked, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -154,11 +140,9 @@ msgstr ""
 "地最后呼叫了此通告且此选项被钩选，最后呼叫会返回到原来的IVR，这也许是你想要的"
 "功能，也许不是。"
 
-#: page.announcement.php:153
 msgid "Don't Answer Channel"
 msgstr "不要接听频道"
 
-#: page.announcement.php:153
 msgid ""
 "Check this to keep the channel from explicitly being answered. When checked, "
 "the message will be played and if the channel is not already answered it "
@@ -172,22 +156,14 @@ msgstr ""
 "就会被接听，接着会出现1秒的停顿。如果正在使用的公告是从IVR或其他的源引导过来"
 "的，并且此前频道已被接听，那么这1秒的停顿可能是你不需要的。"
 
-#: page.announcement.php:157
 msgid "Destination after playback"
 msgstr "播放后的目的地"
 
-#: page.announcement.php:165
 msgid "Submit Changes"
 msgstr "提交更改"
 
-#: page.announcement.php:166
 msgid "Delete"
 msgstr "删除"
 
-#: page.announcement.php:191
 msgid "Invalid description specified"
 msgstr "指定了无效的描述"
-
-#: modules.xml
-msgid "Announcements"
-msgstr "公告"

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-05 10:47+0200\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -27,73 +27,67 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:28 functions.inc.php:48 functions.inc.php:213
+msgid "Announcements"
+msgstr "Annonces"
+
+msgid "Inbound Call Control"
+msgstr ""
+
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+
 #, php-format
 msgid "Announcement: %s"
 msgstr "Annonce: %s"
 
-#: install.php:98
 msgid "Checking if recordings need migration.."
 msgstr "Teste si les enregistrements ont besoin d'être migrés..."
 
-#: install.php:104
 msgid "migrating"
 msgstr "migration"
 
-#: install.php:105
 msgid "adding recording_id field.."
 msgstr "ajout du champ recording_id"
 
-#: install.php:109 install.php:121 install.php:137
 msgid "fatal error"
 msgstr "erreur fatale"
 
-#: install.php:112 install.php:151
 msgid "ok"
 msgstr "ok"
 
-#: install.php:117
 msgid "migrate to recording ids.."
 msgstr "migration vers les enregistrements ids..."
 
-#: install.php:141
 #, php-format
 msgid "migrated %s entries"
 msgstr "%s entrées migrées"
 
-#: install.php:145
 msgid "dropping recording field.."
 msgstr "suppression du champ enregistrement"
 
-#: install.php:149
 msgid "no recording field???"
 msgstr "pas de champ d'enregistrement ???"
 
-#: install.php:155
 msgid "already migrated"
 msgstr "déjà migré"
 
-#: page.announcement.php:61 page.announcement.php:93
 msgid "Add Announcement"
 msgstr "Ajouter une Annonce"
 
-#: page.announcement.php:93
 msgid "Edit Announcement"
 msgstr "Editer une Annonce"
 
-#: page.announcement.php:95
 msgid "Description"
 msgstr "Description"
 
-#: page.announcement.php:95
 msgid "The name of this announcement"
 msgstr "Le nom de cette annonce"
 
-#: page.announcement.php:101
 msgid "Recording"
 msgstr "Enregistrement"
 
-#: page.announcement.php:101
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU to the left"
@@ -101,15 +95,12 @@ msgstr ""
 "Message à jouer.<br>Pour ajouter des enregistrements additionnels, utilisez "
 "le MENU \"Enregistrements Système\" à gauche"
 
-#: page.announcement.php:115
 msgid "None"
 msgstr ""
 
-#: page.announcement.php:118
 msgid "Repeat"
 msgstr "Répéter"
 
-#: page.announcement.php:118
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -119,24 +110,19 @@ msgstr ""
 "court délai sera ajouté à la fin du message. Si un délai plus long est "
 "nécessaire, il doit être incorporé dans le message."
 
-#: page.announcement.php:128
 msgid "Disable"
 msgstr "Désactiver"
 
-#: page.announcement.php:137
 msgid "Allow Skip"
 msgstr "Autoriser à Passer"
 
-#: page.announcement.php:137
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 "Si l'appelant est autorisé à presser une touche pour passer le message."
 
-#: page.announcement.php:141
 msgid "Return to IVR"
 msgstr "Retourner à IVR"
 
-#: page.announcement.php:141
 msgid ""
 "If this announcement came from an IVR and this box is checked, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -157,11 +143,9 @@ msgstr ""
 "cochée, cela retournera à cet IVR ce qui n'est pas forcément le comportement "
 "attendu."
 
-#: page.announcement.php:145
 msgid "Don't Answer Channel"
 msgstr "Ne pas répondre au Canal"
 
-#: page.announcement.php:145
 msgid ""
 "Check this to keep the channel from explicitly being answered. When checked, "
 "the message will be played and if the channel is not already answered it "
@@ -178,22 +162,14 @@ msgstr ""
 "qui ont déjà répondu au canal, cette seconde de délai peut ne pas être "
 "désirée."
 
-#: page.announcement.php:149
 msgid "Destination after playback"
 msgstr "Destination après playback"
 
-#: page.announcement.php:157
 msgid "Submit Changes"
 msgstr "Soumettre les Changements"
 
-#: page.announcement.php:158
 msgid "Delete"
 msgstr "Supprimer"
 
-#: page.announcement.php:183
 msgid "Invalid description specified"
 msgstr "Description spécifiée invalide"
-
-#: modules.xml
-msgid "Announcements"
-msgstr "Annonces"

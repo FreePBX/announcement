@@ -13,14 +13,14 @@
 #    You should have received a copy of the GNU General Public License
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
-# FreePBX language template for announcement
+# FreePBX language for announcement
 # Copyright (C) 2008, 2009 FreePBX
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-05 10:47+0200\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: 2010-01-23 00:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
@@ -31,73 +31,67 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: functions.inc.php:28 functions.inc.php:48 functions.inc.php:213
+msgid "Announcements"
+msgstr "Съобщения"
+
+msgid "Inbound Call Control"
+msgstr ""
+
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+
 #, php-format
 msgid "Announcement: %s"
 msgstr "Съобщение: %s"
 
-#: install.php:98
 msgid "Checking if recordings need migration.."
 msgstr "Проверка дали записите имат нужда от преместване.."
 
-#: install.php:104
 msgid "migrating"
 msgstr "преместване"
 
-#: install.php:105
 msgid "adding recording_id field.."
 msgstr "добавяне на поле recording_id.."
 
-#: install.php:109 install.php:121 install.php:137
 msgid "fatal error"
 msgstr "фатална грешка"
 
-#: install.php:112 install.php:151
 msgid "ok"
 msgstr "ok"
 
-#: install.php:117
 msgid "migrate to recording ids.."
 msgstr "преместване към id на записите.."
 
-#: install.php:141
 #, php-format
 msgid "migrated %s entries"
 msgstr "преместени %s записа"
 
-#: install.php:145
 msgid "dropping recording field.."
 msgstr "премахване на полето за записи.."
 
-#: install.php:149
 msgid "no recording field???"
 msgstr "няма поле за записи???"
 
-#: install.php:155
 msgid "already migrated"
 msgstr "вече са преместени"
 
-#: page.announcement.php:61 page.announcement.php:93
 msgid "Add Announcement"
 msgstr "Добави Съобщение"
 
-#: page.announcement.php:93
 msgid "Edit Announcement"
 msgstr "Редактирай Съобщение"
 
-#: page.announcement.php:95
 msgid "Description"
 msgstr "Описание"
 
-#: page.announcement.php:95
 msgid "The name of this announcement"
 msgstr "Име на това съобщение"
 
-#: page.announcement.php:101
 msgid "Recording"
 msgstr "Запис"
 
-#: page.announcement.php:101
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU to the left"
@@ -105,15 +99,12 @@ msgstr ""
 "Съобщение за възпроизвеждане.<br>За да добавите допълнителни записи "
 "използвайте меню \"Системни Записи\" отляво"
 
-#: page.announcement.php:115
 msgid "None"
 msgstr ""
 
-#: page.announcement.php:118
 msgid "Repeat"
 msgstr "Повтори"
 
-#: page.announcement.php:118
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -123,24 +114,19 @@ msgstr ""
 "изберете тази опция след съобщението ще се вмъкне кратка пауза. Ако е "
 "необходима по-дълга пауза трябва да я вградите в записа. "
 
-#: page.announcement.php:128
 msgid "Disable"
 msgstr "Забрани"
 
-#: page.announcement.php:137
 msgid "Allow Skip"
 msgstr "Позволи Прескачане"
 
-#: page.announcement.php:137
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 "Дали е позволено на обаждащия се да натисне бутон и да прескочи съобщението."
 
-#: page.announcement.php:141
 msgid "Return to IVR"
 msgstr "Върни се към IVR"
 
-#: page.announcement.php:141
 msgid ""
 "If this announcement came from an IVR and this box is checked, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -160,11 +146,9 @@ msgstr ""
 "маркирана, това ще доведе до връщане към този IVR което може да не е "
 "очакваното поведение."
 
-#: page.announcement.php:145
 msgid "Don't Answer Channel"
 msgstr "Не Отваряй Канал"
 
-#: page.announcement.php:145
 msgid ""
 "Check this to keep the channel from explicitly being answered. When checked, "
 "the message will be played and if the channel is not already answered it "
@@ -180,22 +164,14 @@ msgstr ""
 "съобщение в IVR или други източници които вече са отворили канала, тази 1 "
 "секунда пауза може да не е желана."
 
-#: page.announcement.php:149
 msgid "Destination after playback"
 msgstr "Направление след възпроизвеждане"
 
-#: page.announcement.php:157
 msgid "Submit Changes"
 msgstr "Приеми Промените"
 
-#: page.announcement.php:158
 msgid "Delete"
 msgstr "Изтрий"
 
-#: page.announcement.php:183
 msgid "Invalid description specified"
 msgstr "Неправилно установено описание"
-
-#: modules.xml
-msgid "Announcements"
-msgstr "Съобщения"

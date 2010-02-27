@@ -13,14 +13,14 @@
 #    You should have received a copy of the GNU General Public License
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
-# FreePBX language template for announcement
+# FreePBX language for announcement
 # Copyright (C) 2008, 2009 FreePBX
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-23 08:18+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <support@freepbx.hu>\n"
@@ -31,73 +31,67 @@ msgstr ""
 "X-Poedit-Country: HUNGARY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: functions.inc.php:44 functions.inc.php:64 functions.inc.php:229
+msgid "Announcements"
+msgstr ""
+
+msgid "Inbound Call Control"
+msgstr ""
+
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+
 #, php-format
 msgid "Announcement: %s"
 msgstr ""
 
-#: install.php:115
 msgid "Checking if recordings need migration.."
 msgstr ""
 
-#: install.php:121
 msgid "migrating"
 msgstr ""
 
-#: install.php:122
 msgid "adding recording_id field.."
 msgstr ""
 
-#: install.php:126 install.php:138 install.php:154
 msgid "fatal error"
 msgstr ""
 
-#: install.php:129 install.php:168
 msgid "ok"
 msgstr ""
 
-#: install.php:134
 msgid "migrate to recording ids.."
 msgstr ""
 
-#: install.php:158
 #, php-format
 msgid "migrated %s entries"
 msgstr ""
 
-#: install.php:162
 msgid "dropping recording field.."
 msgstr ""
 
-#: install.php:166
 msgid "no recording field???"
 msgstr ""
 
-#: install.php:172
 msgid "already migrated"
 msgstr ""
 
-#: page.announcement.php:68 page.announcement.php:100
 msgid "Add Announcement"
 msgstr "Esemény hozzáadása"
 
-#: page.announcement.php:100
 msgid "Edit Announcement"
 msgstr "Esemény szerkesztése"
 
-#: page.announcement.php:102
 msgid "Description"
 msgstr "Meghatározás"
 
-#: page.announcement.php:102
 msgid "The name of this announcement"
 msgstr "Esemény neve"
 
-#: page.announcement.php:108
 msgid "Recording"
 msgstr "Rögzítés"
 
-#: page.announcement.php:108
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU to the left"
@@ -105,15 +99,12 @@ msgstr ""
 "Üzenet lejátszása.<br>Előzőleg a a rögzítéshez a \"Központoi rögzítés\" "
 "menüpontot használd a BAL menüben."
 
-#: page.announcement.php:115
 msgid "None"
 msgstr ""
 
-#: page.announcement.php:126
 msgid "Repeat"
 msgstr "Ismétlés"
 
-#: page.announcement.php:126
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -123,24 +114,19 @@ msgstr ""
 "van, akkor egy kisebb szünet lesz az üzenet után illesztve. Ha hosszabb "
 "szünetre lenne szükséged, akkor azt az üzenet rögzítésbe tervezd bele."
 
-#: page.announcement.php:136
 msgid "Disable"
 msgstr "Tiltás"
 
-#: page.announcement.php:145
 msgid "Allow Skip"
 msgstr "Elfogad kihagyást"
 
-#: page.announcement.php:145
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 "Ha elfogadott, akkor a hívó egy gomb megnyomásával átugorhatja az üzenetet."
 
-#: page.announcement.php:149
 msgid "Return to IVR"
 msgstr "Vissza az IVR-be."
 
-#: page.announcement.php:149
 msgid ""
 "If this announcement came from an IVR and this box is checked, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -159,11 +145,9 @@ msgstr ""
 "akkor jelöld be. Ha egy másik IVR helyre szeretnél továbbmenni, akkor a "
 "célpontok között jelöld meg azt az IVR pontot."
 
-#: page.announcement.php:153
 msgid "Don't Answer Channel"
 msgstr "Nem megválaszolt csatorna."
 
-#: page.announcement.php:153
 msgid ""
 "Check this to keep the channel from explicitly being answered. When checked, "
 "the message will be played and if the channel is not already answered it "
@@ -179,22 +163,14 @@ msgstr ""
 "válaszolva. Amikor az eseményt egy IVR-ben, vagy más helyzetben használod, "
 "akkor ez az 1 másodperces várakozás elmaradhat."
 
-#: page.announcement.php:157
 msgid "Destination after playback"
 msgstr "Visszajátszás utáni cél"
 
-#: page.announcement.php:165
 msgid "Submit Changes"
 msgstr ""
 
-#: page.announcement.php:166
 msgid "Delete"
 msgstr "Törlés"
 
-#: page.announcement.php:191
 msgid "Invalid description specified"
-msgstr ""
-
-#: modules.xml
-msgid "Announcements"
 msgstr ""
