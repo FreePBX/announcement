@@ -1,10 +1,11 @@
 <module>
 	<rawname>announcement</rawname>
 	<name>Announcements</name>
-	<version>2.6.0.2</version>
+	<version>2.7.0.0</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<changelog>
+		*2.7.0.0* spelling fixes, localization updates
 		*2.6.0.2* #3829
 		*2.6.0.1* #3804
 		*2.6.0.0* localizations, misc
@@ -34,6 +35,6 @@
 	<menuitems>
 		<announcement>Announcements</announcement>
 	</menuitems>
-	<location>release/2.6/announcement-2.6.0.2.tgz</location>
-	<md5sum>e4f55449a3a86c57ec7652617cf8245f</md5sum>
+	<location>release/2.7/announcement-2.7.0.0.tgz</location>
+	<md5sum>207446bd5bb1bf185000fe9555885ec4</md5sum>
 </module>
