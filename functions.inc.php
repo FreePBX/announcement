@@ -233,4 +233,8 @@ function announcement_check_destinations($dest=true) {
 	return $destlist;
 }
 
+function announcement_change_destination($old_dest, $new_dest) {
+	$sql = 'UPDATE announcement SET post_dest = "' . $new_dest . '" WHERE post_dest= "' . $old_dest . '"';
+	sql($sql, "query");
+}
 ?>
