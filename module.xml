@@ -1,5 +1,6 @@
 <module>
 	<rawname>announcement</rawname>
+	<repo>standard</repo>
 	<name>Announcements</name>
 	<version>2.8.0.0</version>
 	<publisher>FreePBX</publisher>
