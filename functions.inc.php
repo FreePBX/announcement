@@ -78,7 +78,9 @@ function announcement_get_config($engine) {
 					$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_gotoif('$["${CDR(disposition)}" = "ANSWERED"]','begin'));
 					$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_answer(''));
 					$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_wait('1'));
-				}
+        } else {
+					$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_progress());
+        }
 				$ext->add('app-announcement-'.$row['announcement_id'], 's', 'begin', new ext_noop('Playing announcement '.$row['description']));
 				if ($row['allow_skip'] || $row['repeat_msg']) {
 					// allow skip
