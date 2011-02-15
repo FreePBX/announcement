@@ -2,10 +2,11 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>2.9.0.1</version>
+	<version>2.9.0.2</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<changelog>
+		*2.9.0.2* #4683
 		*2.9.0.1* removed duplicate functions
 		*2.9.0.0* #4655
 		*2.8.0.0* published 2.8 version
@@ -39,6 +40,6 @@
 	<menuitems>
 		<announcement>Announcements</announcement>
 	</menuitems>
-	<location>release/2.9/announcement-2.9.0.1.tgz</location>
-	<md5sum>fb4abfa07870d4e80ff71d4db0bd6e77</md5sum>
+	<location>release/2.9/announcement-2.9.0.2.tgz</location>
+	<md5sum>df6837e7b6ab0a31420d26834918e36b</md5sum>
 </module>
