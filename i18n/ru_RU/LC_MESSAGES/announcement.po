@@ -14,10 +14,10 @@
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Russian freePBX ver. translation
-# Copyright (c) 2006-2008 PostMet Corporation
-# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
+# Copyright (c) 2006-2011 PostMet Corporation
+# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2011.
 #
-# Использовать iconv amp.new -f UTF-8 -t ISO-8859-5 -o amp.po
+# Использовать iconv announcement.utf8.po -f UTF-8 -t ISO-8859-5 -o announcement.po
 # fuzzy
 msgid ""
 msgstr ""
@@ -35,12 +35,14 @@ msgid "Announcements"
 msgstr "Приветствия"
 
 msgid "Inbound Call Control"
-msgstr ""
+msgstr "Контроль входящих вызовов"
 
 msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
+"Воспроизводится одна из системных аудиозаписей (опцуионально можно разрешить "
+"абоненту пропускать её) и затем вызов направляется по назначению."
 
 #, php-format
 msgid "Announcement: %s"
