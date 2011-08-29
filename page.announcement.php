@@ -58,7 +58,6 @@ switch ($action) {
 
 
 ?> 
-</div>
 
 <div class="rnav"><ul>
 <?php 
@@ -74,7 +73,6 @@ foreach (announcement_list() as $row) {
 ?>
 </ul></div>
 
-<div class="content">
 
 <?php
 if ($extdisplay) {
