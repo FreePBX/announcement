@@ -28,7 +28,7 @@
 		*2.4.0.1* added 2.4.0 dependency
 		*2.4.0* CHANGELOG TRUNCATED See SVN Repository
 	</changelog>
-	<category>Apps</category>
+	<category>Applications</category>
 	<description>
 		Plays back one of the system recordings (optionally allowing the user to skip it) and then goes to another destination.
 	</description>
