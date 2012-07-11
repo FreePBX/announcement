@@ -92,13 +92,13 @@ function announcement_get_config($engine) {
 					if ($row['repeat_msg']) {
 						$ext->add('app-announcement-'.$row['announcement_id'], 's', '', new ext_waitexten(''));
 					}
-					
 					if ($row['allow_skip']) {
-						$ext->add('app-announcement-'.$row['announcement_id'], '_X', '', new ext_noop('User skipped announcement'));
+						$skip = "_[0-9*#]";
+						$ext->add('app-announcement-'.$row['announcement_id'], $skip, '', new ext_noop('User skipped announcement'));
 						if ($row['return_ivr']) {
-							$ext->add('app-announcement-'.$row['announcement_id'], '_X', '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row['post_dest'].':${IVR_CONTEXT},return,1'));
+							$ext->add('app-announcement-'.$row['announcement_id'], $skip, '', new ext_gotoif('$["x${IVR_CONTEXT}" = "x"]', $row['post_dest'].':${IVR_CONTEXT},return,1'));
 						} else {
-							$ext->add('app-announcement-'.$row['announcement_id'], '_X', '', new ext_goto($row['post_dest']));
+							$ext->add('app-announcement-'.$row['announcement_id'], $skip, '', new ext_goto($row['post_dest']));
 						}
 					}
 					if ($row['repeat_msg']) {

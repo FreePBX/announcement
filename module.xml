@@ -2,10 +2,11 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>2.10.0.1</version>
+	<version>2.10.0.2</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<changelog>
+		*2.10.0.2* #5883
 		*2.10.0.1* #5478
 		*2.10.0.0* new version changes
 		*2.9.0.2* #4683
@@ -41,6 +42,6 @@
 	<menuitems>
 		<announcement>Announcements</announcement>
 	</menuitems>
-	<location>release/2.10/announcement-2.10.0.1.tgz</location>
-	<md5sum>6d0b726c07d6a14ba811991e0c06e74c</md5sum>
+	<location>release/2.10/announcement-2.10.0.2.tgz</location>
+	<md5sum>17a96dbb7f5e19049ba6e01edfdb0f54</md5sum>
 </module>
