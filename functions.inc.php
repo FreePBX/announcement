@@ -168,6 +168,7 @@ function announcement_get($announcement_id) {
 
 function announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
 	global $db;
+	global $amp_conf;
 	$sql = "INSERT INTO announcement (description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg) VALUES (".
 		"'".$db->escapeSimple($description)."', ".
 		"'".$recording_id."', ".
@@ -180,6 +181,8 @@ function announcement_add($description, $recording_id, $allow_skip, $post_dest, 
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
 	}
+  $id = $amp_conf["AMPDBENGINE"] == "sqlite3" ? sqlite_last_insert_rowid($db->connection) : mysql_insert_id($db->connection);
+	return $id;
 }
 
 function announcement_delete($announcement_id) {

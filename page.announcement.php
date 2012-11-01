@@ -41,9 +41,10 @@ if (isset($_POST['goto0']) && $_POST['goto0']) {
 
 switch ($action) {
 	case 'add':
-		announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
+		$_REQUEST['extdisplay'] = 
+			announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 		needreload();
-		redirect_standard();
+		redirect_standard('extdisplay');
 	break;
 	case 'edit':
 		announcement_edit($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
