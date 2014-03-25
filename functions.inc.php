@@ -181,7 +181,11 @@ function announcement_add($description, $recording_id, $allow_skip, $post_dest, 
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
 	}
-  $id = $amp_conf["AMPDBENGINE"] == "sqlite3" ? sqlite_last_insert_rowid($db->connection) : mysql_insert_id($db->connection);
+	if(method_exists($db,'last_id')) {
+		$id = $db->last_id();
+	} else {
+		$id = $amp_conf["AMPDBENGINE"] == "sqlite3" ? sqlite_last_insert_rowid($db->connection) : mysql_insert_id($db->connection);
+	}
 	return $id;
 }
 
