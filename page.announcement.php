@@ -1,4 +1,4 @@
-<?php 
+<?php
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //This file is part of FreePBX.
 //
@@ -19,7 +19,7 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //    Copyright 2006 Greg MacLellan
 
 $action = isset($_POST['action']) ? $_POST['action'] :  '';
-if (isset($_POST['delete'])) $action = 'delete'; 
+if (isset($_POST['delete'])) $action = 'delete';
 
 $tabindex = 0;
 
@@ -41,7 +41,7 @@ if (isset($_POST['goto0']) && $_POST['goto0']) {
 
 switch ($action) {
 	case 'add':
-		$_REQUEST['extdisplay'] = 
+		$_REQUEST['extdisplay'] =
 			announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 		needreload();
 		redirect_standard('extdisplay');
@@ -59,10 +59,10 @@ switch ($action) {
 }
 
 
-?> 
+?>
 
 <div class="rnav"><ul>
-<?php 
+<?php
 // Eventually I recon the drawListMenu could be built into the new component class thus making
 // the relevent page.php file unnessassary
 
@@ -80,7 +80,7 @@ foreach (announcement_list() as $row) {
 if ($extdisplay) {
 	// load
 	$row = announcement_get($extdisplay);
-	
+
 	$description = $row['description'];
 	$recording_id = $row['recording_id'];
 	$allow_skip = $row['allow_skip'];
@@ -92,7 +92,7 @@ if ($extdisplay) {
 }
 
 ?>
-<form name="editAnnouncement" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkAnnouncement(editAnnouncement);">
+<form name="editAnnouncement" action="" method="post" onsubmit="return checkAnnouncement(editAnnouncement);">
 			<input type="hidden" name="extdisplay" value="<?php echo $extdisplay; ?>">
 			<input type="hidden" name="announcement_id" value="<?php echo $extdisplay; ?>">
 			<input type="hidden" name="action" value="<?php echo ($extdisplay ? 'edit' : 'add'); ?>">
@@ -153,19 +153,19 @@ if ($extdisplay) {
 		<td><a href="#" class="info"><?php echo _("Don't Answer Channel")?><span><?php echo _("Check this to keep the channel from explicitly being answered. When checked, the message will be played and if the channel is not already answered it will be delivered as early media if the channel supports that. When not checked, the channel is answered followed by a 1 second delay. When using an announcement from an IVR or other sources that have already answered the channel, that 1 second delay may not be desired.")?></span></a></td>
 		<td><input type="checkbox" name="noanswer" value="1" tabindex="<?php echo ++$tabindex;?>" <?php echo ($noanswer ? 'CHECKED' : ''); ?> /></td>
 	</tr>
-	
+
 	<tr><td colspan="2"><br><h5><?php echo _("Destination after playback")?>:<hr></h5></td></tr>
 
-<?php 
+<?php
 //draw goto selects
 echo drawselects($post_dest,0);
 ?>
-			
+
 			<tr>
 			<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>">
 			<?php if ($extdisplay) { echo '&nbsp;<input name="delete" type="submit" value="'._("Delete").'">'; } ?>
-			</td>		
-			
+			</td>
+
 			</tr>
 			<?php
 
@@ -182,8 +182,8 @@ echo drawselects($post_dest,0);
 			?>
 			</table>
 			</form>
-			
-			
+
+
 <script language="javascript">
 <!--
 
@@ -194,7 +194,7 @@ function checkAnnouncement(theForm) {
 	setDestinations(theForm, '_post_dest');
 
 	// form validation
-	defaultEmptyOK = false;	
+	defaultEmptyOK = false;
 	if (isEmpty(theForm.description.value))
 		return warnInvalid(theForm.description, msgInvalidDescription);
 
