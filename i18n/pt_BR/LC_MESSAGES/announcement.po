@@ -21,19 +21,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-23 09:52+0000\n"
-"PO-Revision-Date: 2011-09-23 09:52+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2014-07-26 00:02+0200\n"
+"Last-Translator: Rafael <rafael@ibinetwork.com.br>\n"
+"Language-Team: Portuguese (Brazil) "
+"<http://git.freepbx.org/projects/freepbx/announcement/pt_BR/>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 1.10-dev\n"
 
 msgid "Announcements"
-msgstr ""
+msgstr "Anuncios"
 
 msgid "Applications"
-msgstr ""
+msgstr "Aplicações"
 
 msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
@@ -42,22 +45,22 @@ msgstr ""
 
 #, php-format
 msgid "Announcement: %s"
-msgstr ""
+msgstr "Anuncio: %s"
 
 msgid "Checking if recordings need migration.."
-msgstr ""
+msgstr "Checando se a gravação precisa migrar..."
 
 msgid "migrating"
-msgstr ""
+msgstr "migrando"
 
 msgid "adding recording_id field.."
 msgstr ""
 
 msgid "fatal error"
-msgstr ""
+msgstr "erro fatal"
 
 msgid "ok"
-msgstr ""
+msgstr "ok"
 
 msgid "migrate to recording ids.."
 msgstr ""
@@ -73,22 +76,22 @@ msgid "no recording field???"
 msgstr ""
 
 msgid "already migrated"
-msgstr ""
+msgstr "já migrado"
 
 msgid "Add Announcement"
-msgstr ""
+msgstr "Adicionar Anuncio"
 
 msgid "Edit Announcement"
-msgstr ""
+msgstr "Editar Anuncio"
 
 msgid "Description"
-msgstr ""
+msgstr "Descrição"
 
 msgid "The name of this announcement"
-msgstr ""
+msgstr "Nome para este anuncio"
 
 msgid "Recording"
-msgstr ""
+msgstr "Gravando"
 
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
@@ -96,10 +99,10 @@ msgid ""
 msgstr ""
 
 msgid "None"
-msgstr ""
+msgstr "Nenhum"
 
 msgid "Repeat"
-msgstr ""
+msgstr "Repetir"
 
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
@@ -108,16 +111,16 @@ msgid ""
 msgstr ""
 
 msgid "Disable"
-msgstr ""
+msgstr "Desabilitar"
 
 msgid "Allow Skip"
-msgstr ""
+msgstr "Permitir pular"
 
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 
 msgid "Return to IVR"
-msgstr ""
+msgstr "Retornar para URA"
 
 msgid ""
 "If this announcement came from an IVR and this box is checked, the "
@@ -146,10 +149,10 @@ msgid "Destination after playback"
 msgstr ""
 
 msgid "Submit Changes"
-msgstr ""
+msgstr "Enviar Alterações"
 
 msgid "Delete"
-msgstr ""
+msgstr "Apagar"
 
 msgid "Invalid description specified"
-msgstr ""
+msgstr "Descrição especificada invalida"
