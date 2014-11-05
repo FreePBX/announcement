@@ -29,7 +29,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO  {
 						'value' => _('Submit')
 					)
 				);
-				if (empty($_REQUEST['extdisplay'])) {
+				if (empty($request['extdisplay'])) {
 					unset($buttons['delete']);
 				}
 			break;
