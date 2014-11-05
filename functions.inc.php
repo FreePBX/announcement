@@ -192,7 +192,6 @@ function announcement_add($description, $recording_id, $allow_skip, $post_dest, 
 function announcement_delete($announcement_id) {
 	global $db;
 	$sql = "DELETE FROM announcement WHERE announcement_id = ".$db->escapeSimple($announcement_id);
-	dbug('sql', $sql);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
