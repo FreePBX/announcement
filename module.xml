@@ -2,7 +2,7 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>2.11.0.1</version>
+	<version>13.0.1alpha1</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<changelog>
@@ -50,7 +50,7 @@
 		</announcement>
  	</popovers>
 	<supported>
-		<version>2.10</version>
+		<version>13.0</version>
 	</supported>
 	<location>release/2.11/announcement-2.11.0.0.tgz</location>
 	<md5sum>704dee25bbe8e854fa4e126018b83864</md5sum>
