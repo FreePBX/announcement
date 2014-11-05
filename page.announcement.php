@@ -18,9 +18,8 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //    Announcments module for FreePBX 2.2+
 //    Copyright 2006 Greg MacLellan
 
-$action = isset($_POST['action']) ? $_POST['action'] :  '';
+$action = isset($_REQUEST['action']) ? $_REQUEST['action'] :  '';
 if (isset($_POST['delete'])) $action = 'delete';
-
 $tabindex = 0;
 
 
@@ -52,7 +51,7 @@ switch ($action) {
 		redirect_standard('extdisplay');
 	break;
 	case 'delete':
-		announcement_delete($announcement_id);
+		announcement_delete($_REQUEST['extdisplay']);
 		needreload();
 		redirect_standard();
 	break;
@@ -92,7 +91,7 @@ if ($extdisplay) {
 }
 
 ?>
-<form name="editAnnouncement" action="" method="post" onsubmit="return checkAnnouncement(editAnnouncement);">
+<form class="fpbx-submit" name="editAnnouncement" action="" method="post" onsubmit="return checkAnnouncement(editAnnouncement);" data-fpbx-delete="config.php?display=announcement&amp;extdisplay=<?php echo $extdisplay ?>&amp;action=delete">
 			<input type="hidden" name="extdisplay" value="<?php echo $extdisplay; ?>">
 			<input type="hidden" name="announcement_id" value="<?php echo $extdisplay; ?>">
 			<input type="hidden" name="action" value="<?php echo ($extdisplay ? 'edit' : 'add'); ?>">
@@ -161,12 +160,6 @@ if ($extdisplay) {
 echo drawselects($post_dest,0);
 ?>
 
-			<tr>
-			<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>">
-			<?php if ($extdisplay) { echo '&nbsp;<input name="delete" type="submit" value="'._("Delete").'">'; } ?>
-			</td>
-
-			</tr>
 			<?php
 
 			if ($extdisplay) {
