@@ -29,94 +29,101 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Announcements"
-msgstr ""
+msgstr "Съобщения"
 
 msgid "Applications"
-msgstr ""
+msgstr "Приложения"
 
 msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
+"Възпроизвежда един от системните записи (възможно е потребителя да го "
+"прескочи) и се насочва към друго направление."
 
 #, php-format
 msgid "Announcement: %s"
-msgstr ""
+msgstr "Съобщение: %s"
 
 msgid "Checking if recordings need migration.."
-msgstr ""
+msgstr "Проверка дали записите имат нужда от преместване.."
 
 msgid "migrating"
-msgstr ""
+msgstr "преместване"
 
 msgid "adding recording_id field.."
-msgstr ""
+msgstr "добавяне на поле recording_id.."
 
 msgid "fatal error"
-msgstr ""
+msgstr "фатална грешка"
 
 msgid "ok"
-msgstr ""
+msgstr "ok"
 
 msgid "migrate to recording ids.."
-msgstr ""
+msgstr "преместване към id на записите.."
 
 #, php-format
 msgid "migrated %s entries"
-msgstr ""
+msgstr "преместени %s записа"
 
 msgid "dropping recording field.."
-msgstr ""
+msgstr "премахване на полето за записи.."
 
 msgid "no recording field???"
-msgstr ""
+msgstr "няма поле за записи???"
 
 msgid "already migrated"
-msgstr ""
+msgstr "вече са преместени"
 
 msgid "Add Announcement"
-msgstr ""
+msgstr "Добави Съобщение"
 
 msgid "Edit Announcement"
-msgstr ""
+msgstr "Редактирай Съобщение"
 
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 msgid "The name of this announcement"
-msgstr ""
+msgstr "Име на Съобщение"
 
 msgid "Recording"
-msgstr ""
+msgstr "Запис"
 
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU to the left"
 msgstr ""
+"Съобщение за възпроизвеждане.<br>За да добавите допълнителни записи "
+"използвайте меню \"Системни Записи\""
 
 msgid "None"
-msgstr ""
+msgstr "Няма"
 
 msgid "Repeat"
-msgstr ""
+msgstr "Повтори"
 
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
 "longer delay is needed it should be incorporated into the recording."
 msgstr ""
+"Натискането на бутон който ще позволи съобщението да се повтори. Ако "
+"изберете тази опция след съобщението ще се вмъкне кратка пауза. Ако е "
+"необходима по-дълга пауза трябва да я вградите в записа."
 
 msgid "Disable"
-msgstr ""
+msgstr "Забрани"
 
 msgid "Allow Skip"
-msgstr ""
+msgstr "Позволи Прескачане"
 
 msgid "If the caller is allowed to press a key to skip the message."
-msgstr ""
+msgstr "Позволява на обаждащия се да натисне бутон и да прескочи съобщението."
 
 msgid "Return to IVR"
-msgstr ""
+msgstr "Върни се към IVR"
 
 msgid ""
 "If this announcement came from an IVR and this box is checked, the "
@@ -128,9 +135,17 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
+"Ако съобщението идва от IVR и тази отметка е маркирана, направлението по-"
+"долу ще бъде игнорирано и вместо това ще се върне към IVR. Иначе ще се "
+"използва направлението по-долу. Не маркирайте ако не използвате този режим. "
+"<br>IVR ще се върне към последния IVR от серията обаждания така че гледайте "
+"да маркирате само при необходимост. Например, ако IVR насочва обаждането към "
+"друго направление, което евентуално извиква това съобщение и отметката е "
+"маркирана, това ще доведе до връщане към този IVR което може да не е "
+"очакваното поведение."
 
 msgid "Don't Answer Channel"
-msgstr ""
+msgstr "Не Отваряй Канал"
 
 msgid ""
 "Check this to keep the channel from explicitly being answered. When checked, "
@@ -140,15 +155,21 @@ msgid ""
 "announcement from an IVR or other sources that have already answered the "
 "channel, that 1 second delay may not be desired."
 msgstr ""
+"Маркирайте това за да предпазите канала от задължително отваряне. Когато е "
+"маркирано, съобщението ще се възпроизведе и ако канала не е отворен ще бъде "
+"доставено като 'early media' ако канала поддържа услугата. Когато не е "
+"маркирано, канала се отваря последвано от 1 секунда пауза. Когато използвате "
+"съобщение в IVR или други източници които вече са отворили канала, тази 1 "
+"секунда пауза може да е нежелана."
 
 msgid "Destination after playback"
-msgstr ""
+msgstr "Направление след възпроизвеждане"
 
 msgid "Submit Changes"
-msgstr ""
+msgstr "Приеми Промените"
 
 msgid "Delete"
-msgstr ""
+msgstr "Изтрий"
 
 msgid "Invalid description specified"
-msgstr ""
+msgstr "Въведено е неправилно описание"
