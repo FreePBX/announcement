@@ -13,124 +13,110 @@
 #    You should have received a copy of the GNU General Public License
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
-# FreePBX language for announcement
-# Copyright (C) 2008, 2009 FreePBX
+# FreePBX language template for announcement
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: FreePBX v2.5\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-23 09:52+0000\n"
-"PO-Revision-Date: 2014-08-01 19:41+0200\n"
-"Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
-"Language-Team: Bulgarian "
-"<http://git.freepbx.org/projects/freepbx/announcement/bg/>\n"
-"Language: bg_BG\n"
+"PO-Revision-Date: 2011-09-23 09:52+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.10-dev\n"
-"X-Poedit-Language: Bulgarian\n"
-"X-Poedit-Country: BULGARIA\n"
-"X-Poedit-SourceCharset: utf-8\n"
 
 msgid "Announcements"
-msgstr "Съобщения"
+msgstr ""
 
 msgid "Applications"
-msgstr "Приложения"
+msgstr ""
 
 msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
-"Възпроизвежда един от системните записи (възможно е потребителя да го "
-"прескочи) и се насочва към друго направление."
 
 #, php-format
 msgid "Announcement: %s"
-msgstr "Съобщение: %s"
+msgstr ""
 
 msgid "Checking if recordings need migration.."
-msgstr "Проверка дали записите имат нужда от преместване.."
+msgstr ""
 
 msgid "migrating"
-msgstr "преместване"
+msgstr ""
 
 msgid "adding recording_id field.."
-msgstr "добавяне на поле recording_id.."
+msgstr ""
 
 msgid "fatal error"
-msgstr "фатална грешка"
+msgstr ""
 
 msgid "ok"
-msgstr "ok"
+msgstr ""
 
 msgid "migrate to recording ids.."
-msgstr "преместване към recording ids.."
+msgstr ""
 
 #, php-format
 msgid "migrated %s entries"
-msgstr "преместени %s записа"
+msgstr ""
 
 msgid "dropping recording field.."
-msgstr "премахване на поле recording.."
+msgstr ""
 
 msgid "no recording field???"
-msgstr "няма поле recording???"
+msgstr ""
 
 msgid "already migrated"
-msgstr "вече са преместени"
+msgstr ""
 
 msgid "Add Announcement"
-msgstr "Добави Съобщение"
+msgstr ""
 
 msgid "Edit Announcement"
-msgstr "Редактирай Съобщение"
+msgstr ""
 
 msgid "Description"
-msgstr "Описание"
+msgstr ""
 
 msgid "The name of this announcement"
-msgstr "Име на това съобщение"
+msgstr ""
 
 msgid "Recording"
-msgstr "Запис"
+msgstr ""
 
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU to the left"
 msgstr ""
-"Съобщение за възпроизвеждане.<br>За да добавите допълнителни записи "
-"използвайте меню \"Системни Записи\""
 
 msgid "None"
-msgstr "Няма"
+msgstr ""
 
 msgid "Repeat"
-msgstr "Повтори"
+msgstr ""
 
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
 "longer delay is needed it should be incorporated into the recording."
 msgstr ""
-"Натискането на бутон който ще позволи съобщението да се повтори. Ако "
-"изберете тази опция след съобщението ще се вмъкне кратка пауза. Ако е "
-"необходима по-дълга пауза трябва да я вградите в записа."
 
 msgid "Disable"
-msgstr "Забрани"
+msgstr ""
 
 msgid "Allow Skip"
-msgstr "Позволи Прескачане"
+msgstr ""
 
 msgid "If the caller is allowed to press a key to skip the message."
-msgstr "Позволява на обаждащия се да натисне бутон и да прескочи съобщението."
+msgstr ""
 
 msgid "Return to IVR"
-msgstr "Върни се към IVR"
+msgstr ""
 
 msgid ""
 "If this announcement came from an IVR and this box is checked, the "
@@ -142,17 +128,9 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
-"Ако съобщението идва от IVR и тази отметка е маркирана, направлението по-"
-"долу ще бъде игнорирано и вместо това ще се върне към IVR. Иначе ще се "
-"използва направлението по-долу. Не маркирайте ако не използвате този режим. "
-"<br>IVR ще се върне към последния IVR от серията обаждания така че гледайте "
-"да маркирате само при необходимост. Например, ако IVR насочва обаждането към "
-"друго направление, което евентуално извиква това съобщение и отметката е "
-"маркирана, това ще доведе до връщане към този IVR което може да не е "
-"очакваното поведение."
 
 msgid "Don't Answer Channel"
-msgstr "Не Отваряй Канал"
+msgstr ""
 
 msgid ""
 "Check this to keep the channel from explicitly being answered. When checked, "
@@ -162,21 +140,15 @@ msgid ""
 "announcement from an IVR or other sources that have already answered the "
 "channel, that 1 second delay may not be desired."
 msgstr ""
-"Маркирайте това за да предпазите канала от задължително отваряне. Когато е "
-"маркирано, съобщението ще се възпроизведе и ако канала не е отворен ще бъде "
-"доставено като 'early media' ако канала поддържа услугата. Когато не е "
-"маркирано, канала се отваря последвано от 1 секунда пауза. Когато използвате "
-"съобщение в IVR или други източници които вече са отворили канала, тази 1 "
-"секунда пауза може да е нежелана."
 
 msgid "Destination after playback"
-msgstr "Направление след възпроизвеждане"
+msgstr ""
 
 msgid "Submit Changes"
-msgstr "Приеми Промените"
+msgstr ""
 
 msgid "Delete"
-msgstr "Изтрий"
+msgstr ""
 
 msgid "Invalid description specified"
-msgstr "Въведено е неправилно описание"
+msgstr ""
