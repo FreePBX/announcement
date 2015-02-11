@@ -20,115 +20,84 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBXannouncement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 13:11-0500\n"
 "PO-Revision-Date: 2008-10-10 20:20+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-msgid "Announcements"
-msgstr "Meddelanden"
+#: /usr/src/freepbx/announcement/page.announcement.php:54
+#: /usr/src/freepbx/announcement/page.announcement.php:85
+msgid "Add Announcement"
+msgstr "Lägg till meddelande"
 
-msgid "Applications"
-msgstr ""
+#: /usr/src/freepbx/announcement/page.announcement.php:130
+msgid "Allow Skip"
+msgstr "Tillåt hoppa över"
 
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"Spelar upp en av systeminspelningarn (valbart om uppringaren ska kunna hoppa "
-"över det) för att sedan gå till en annan destination."
-
+#: /usr/src/freepbx/announcement/functions.inc.php:31
+#: /usr/src/freepbx/announcement/functions.inc.php:51
+#: /usr/src/freepbx/announcement/functions.inc.php:225
 #, php-format
 msgid "Announcement: %s"
 msgstr "Meddelande: %s"
 
+#: /usr/src/freepbx/announcement/page.announcement.php:138
+msgid ""
+"Check this to keep the channel from explicitly being answered. When checked, "
+"the message will be played and if the channel is not already answered it "
+"will be delivered as early media if the channel supports that. When not "
+"checked, the channel is answered followed by a 1 second delay. When using an "
+"announcement from an IVR or other sources that have already answered the "
+"channel, that 1 second delay may not be desired."
+msgstr ""
+"Aktivera denna för att hindra att kanalen uttryckligen svaras. När detta är "
+"aktiverat kommer meddelandet att spelas upp och om kanalen inte redan har "
+"svarats kommer det att levereras som tidigt media om kanalen stöder det. När "
+"valet inte är aktiverat kommer kanalen att svaras med en efterföljande paus "
+"på 1 sekund. När du använder ett meddelande från en Digital receptionist "
+"(IVR) eller annan källa som redan har svarat kanalen är kanske denna paus "
+"inte önskad."
+
+#: /usr/src/freepbx/announcement/install.php:90
 msgid "Checking if recordings need migration.."
 msgstr "Kontrollerar om inspelningar behöver migreras.."
 
-msgid "migrating"
-msgstr "migrerar"
+#: /usr/src/freepbx/announcement/page.announcement.php:151
+msgid "Delete"
+msgstr "Ta bort"
 
-msgid "adding recording_id field.."
-msgstr "lägger till fältet recording_id"
-
-msgid "fatal error"
-msgstr "allvarligt fel"
-
-msgid "ok"
-msgstr "ok"
-
-msgid "migrate to recording ids.."
-msgstr "migrerar till recording ids.."
-
-#, php-format
-msgid "migrated %s entries"
-msgstr "migrerade %s poster"
-
-msgid "dropping recording field.."
-msgstr "kastar fältet recording.."
-
-msgid "no recording field???"
-msgstr "inget fält som heter recording???"
-
-msgid "already migrated"
-msgstr "redan migrerad"
-
-msgid "Add Announcement"
-msgstr "Lägg till meddelande"
-
-msgid "Edit Announcement"
-msgstr "Redigera meddelande"
-
+#: /usr/src/freepbx/announcement/page.announcement.php:87
 msgid "Description"
 msgstr "Beskrivning"
 
-msgid "The name of this announcement"
-msgstr "Kortfattat namn för detta meddelande"
+#: /usr/src/freepbx/announcement/page.announcement.php:142
+msgid "Destination after playback"
+msgstr "Destination efter uppspelning"
 
-msgid "Recording"
-msgstr "Inspelning"
-
-msgid ""
-"Message to be played.<br>To add additional recordings use the \"System "
-"Recordings\" MENU to the left"
-msgstr ""
-"Meddelande att spela upp.<br>För att lägga till fler inspelade meddelande "
-"väljer du \"Systeminspelningar\" i menyn till vänster."
-
-msgid "None"
-msgstr "Ingen"
-
-msgid "Repeat"
-msgstr "Repetera"
-
-msgid ""
-"Key to press that will allow for the message to be replayed. If you choose "
-"this option there will be a short delay inserted after the message. If a "
-"longer delay is needed it should be incorporated into the recording."
-msgstr ""
-"Tangent att trycka för att repetera meddelandet. Om du väljer detta kommer "
-"en kort paus att läggas till efter meddelandet. Om en längre paus behövs, "
-"spela in det i meddelandet."
-
+#: /usr/src/freepbx/announcement/page.announcement.php:121
 msgid "Disable"
 msgstr "Avaktivera"
 
-msgid "Allow Skip"
-msgstr "Tillåt hoppa över"
+#: /usr/src/freepbx/announcement/page.announcement.php:138
+msgid "Don't Answer Channel"
+msgstr "Svara inte denna kanal"
 
+#: /usr/src/freepbx/announcement/page.announcement.php:85
+msgid "Edit Announcement"
+msgstr "Redigera meddelande"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:130
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 "Om uppringaren ska tillåtas att trycka en tangent för att hoppa över "
 "meddelandet."
 
-msgid "Return to IVR"
-msgstr "Återgå till den digitala receptionisten"
-
+#: /usr/src/freepbx/announcement/page.announcement.php:134
 msgid ""
 "If this announcement came from an IVR and this box is checked, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -149,36 +118,101 @@ msgstr ""
 "anropar detta meddelande och detta val är aktiverat kommer samtalet att "
 "återgå till den Digitala receptionisten och du har skapat en liten loop."
 
-msgid "Don't Answer Channel"
-msgstr "Svara inte denna kanal"
+#: /usr/src/freepbx/announcement/page.announcement.php:176
+msgid "Invalid description specified"
+msgstr "Ogiltig beskrivning"
 
+#: /usr/src/freepbx/announcement/page.announcement.php:111
 msgid ""
-"Check this to keep the channel from explicitly being answered. When checked, "
-"the message will be played and if the channel is not already answered it "
-"will be delivered as early media if the channel supports that. When not "
-"checked, the channel is answered followed by a 1 second delay. When using an "
-"announcement from an IVR or other sources that have already answered the "
-"channel, that 1 second delay may not be desired."
+"Key to press that will allow for the message to be replayed. If you choose "
+"this option there will be a short delay inserted after the message. If a "
+"longer delay is needed it should be incorporated into the recording."
 msgstr ""
-"Aktivera denna för att hindra att kanalen uttryckligen svaras. När detta är "
-"aktiverat kommer meddelandet att spelas upp och om kanalen inte redan har "
-"svarats kommer det att levereras som tidigt media om kanalen stöder det. När "
-"valet inte är aktiverat kommer kanalen att svaras med en efterföljande paus "
-"på 1 sekund. När du använder ett meddelande från en Digital receptionist "
-"(IVR) eller annan källa som redan har svarat kanalen är kanske denna paus "
-"inte önskad."
+"Tangent att trycka för att repetera meddelandet. Om du väljer detta kommer "
+"en kort paus att läggas till efter meddelandet. Om en längre paus behövs, "
+"spela in det i meddelandet."
 
-msgid "Destination after playback"
-msgstr "Destination efter uppspelning"
+#: /usr/src/freepbx/announcement/page.announcement.php:93
+msgid ""
+"Message to be played.<br>To add additional recordings use the \"System "
+"Recordings\" MENU to the left"
+msgstr ""
+"Meddelande att spela upp.<br>För att lägga till fler inspelade meddelande "
+"väljer du \"Systeminspelningar\" i menyn till vänster."
 
+#: /usr/src/freepbx/announcement/page.announcement.php:100
+msgid "None"
+msgstr "Ingen"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:93
+msgid "Recording"
+msgstr "Inspelning"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:111
+msgid "Repeat"
+msgstr "Repetera"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:134
+msgid "Return to IVR"
+msgstr "Återgå till den digitala receptionisten"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:150
 msgid "Submit Changes"
 msgstr "Spara ändringar"
 
-msgid "Delete"
-msgstr "Ta bort"
+#: /usr/src/freepbx/announcement/page.announcement.php:87
+msgid "The name of this announcement"
+msgstr "Kortfattat namn för detta meddelande"
 
-msgid "Invalid description specified"
-msgstr "Ogiltig beskrivning"
+#: /usr/src/freepbx/announcement/install.php:97
+msgid "adding recording_id field.."
+msgstr "lägger till fältet recording_id"
+
+#: /usr/src/freepbx/announcement/install.php:147
+msgid "already migrated"
+msgstr "redan migrerad"
+
+#: /usr/src/freepbx/announcement/install.php:137
+msgid "dropping recording field.."
+msgstr "kastar fältet recording.."
+
+#: /usr/src/freepbx/announcement/install.php:101
+#: /usr/src/freepbx/announcement/install.php:113
+#: /usr/src/freepbx/announcement/install.php:129
+msgid "fatal error"
+msgstr "allvarligt fel"
+
+#: /usr/src/freepbx/announcement/install.php:109
+msgid "migrate to recording ids.."
+msgstr "migrerar till recording ids.."
+
+#: /usr/src/freepbx/announcement/install.php:133
+#, php-format
+msgid "migrated %s entries"
+msgstr "migrerade %s poster"
+
+#: /usr/src/freepbx/announcement/install.php:96
+msgid "migrating"
+msgstr "migrerar"
+
+#: /usr/src/freepbx/announcement/install.php:141
+msgid "no recording field???"
+msgstr "inget fält som heter recording???"
+
+#: /usr/src/freepbx/announcement/install.php:104
+#: /usr/src/freepbx/announcement/install.php:143
+msgid "ok"
+msgstr "ok"
+
+#~ msgid "Announcements"
+#~ msgstr "Meddelanden"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "Spelar upp en av systeminspelningarn (valbart om uppringaren ska kunna "
+#~ "hoppa över det) för att sedan gå till en annan destination."
 
 #~ msgid "Inbound Call Control"
 #~ msgstr "Inkommande samtal"

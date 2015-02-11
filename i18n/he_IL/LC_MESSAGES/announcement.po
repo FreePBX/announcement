@@ -2,127 +2,35 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX announcement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 13:11-0500\n"
 "PO-Revision-Date: 2014-03-04 09:09+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
-"Language-Team: Hebrew "
-"<http://git.freepbx.org/projects/freepbx/announcement/he/>\n"
-"Language: he_IL\n"
+"Language-Team: Hebrew <http://git.freepbx.org/projects/freepbx/announcement/"
+"he/>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: he_IL\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 1.9-dev\n"
 
-msgid "Announcements"
-msgstr "הכרזות"
+#: /usr/src/freepbx/announcement/page.announcement.php:54
+#: /usr/src/freepbx/announcement/page.announcement.php:85
+msgid "Add Announcement"
+msgstr "הוסף הכרזה"
 
-#, fuzzy
-msgid "Applications"
-msgstr "יישומים"
+#: /usr/src/freepbx/announcement/page.announcement.php:130
+msgid "Allow Skip"
+msgstr "אפשר לדלג"
 
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"משמיע אחת הקלטות המערכת (עם אפשרות המאפשר למשתמש לדלג על זה) ולאחר מכן עובר "
-"ליעד אחר."
-
+#: /usr/src/freepbx/announcement/functions.inc.php:31
+#: /usr/src/freepbx/announcement/functions.inc.php:51
+#: /usr/src/freepbx/announcement/functions.inc.php:225
 #, php-format
 msgid "Announcement: %s"
 msgstr "הכרזה: %s"
 
-msgid "Checking if recordings need migration.."
-msgstr "בודק אם הקלטות צריכות הגירה.."
-
-msgid "migrating"
-msgstr "הגירת"
-
-msgid "adding recording_id field.."
-msgstr "הוספת שדה recording_id .."
-
-msgid "fatal error"
-msgstr "שגיאה קטלנית"
-
-msgid "ok"
-msgstr "בסדר"
-
-msgid "migrate to recording ids.."
-msgstr "מהגר אל recording ids .."
-
-#, php-format
-msgid "migrated %s entries"
-msgstr "היגרו %s ערכים"
-
-msgid "dropping recording field.."
-msgstr "הסרת שדה recording .."
-
-msgid "no recording field???"
-msgstr "\"אין שדה recording???"
-
-msgid "already migrated"
-msgstr "כבר היגרו"
-
-msgid "Add Announcement"
-msgstr "הוסף הכרזה"
-
-msgid "Edit Announcement"
-msgstr "ערוך הכרזה"
-
-msgid "Description"
-msgstr "תאור"
-
-msgid "The name of this announcement"
-msgstr "שם ההכרזה"
-
-msgid "Recording"
-msgstr "הקלטה"
-
-msgid ""
-"Message to be played.<br>To add additional recordings use the \"System "
-"Recordings\" MENU to the left"
-msgstr "הודעה להחרזה. <br> כדי להוסיף הקלטות נוספות להשתמש במודל הקלתות מערכת"
-
-msgid "None"
-msgstr "ללא"
-
-msgid "Repeat"
-msgstr "חוזר"
-
-msgid ""
-"Key to press that will allow for the message to be replayed. If you choose "
-"this option there will be a short delay inserted after the message. If a "
-"longer delay is needed it should be incorporated into the recording."
-msgstr ""
-"מקש שיחזור אל ההכרזה. במדיה שמסומן, יוסיף השהיה של ממש אחרי ההכרזה. להשהיה "
-"ליותר זמן תשלב ההשהיה בתוך ההקלתה"
-
-msgid "Disable"
-msgstr "נטרל"
-
-msgid "Allow Skip"
-msgstr "אפשר לדלג"
-
-msgid "If the caller is allowed to press a key to skip the message."
-msgstr "אם  מותר למתקשר ללחוץ על מקש כדי לדלג על ההכרזה"
-
-msgid "Return to IVR"
-msgstr "חזור אל IVR"
-
-msgid ""
-"If this announcement came from an IVR and this box is checked, the "
-"destination below will be ignored and instead it will return to the calling "
-"IVR. Otherwise, the destination below will be taken. Don't check if not "
-"using in this mode. <br>The IVR return location will be to the last IVR in "
-"the call chain that was called so be careful to only check when needed. For "
-"example, if an IVR directs a call to another destination which eventually "
-"calls this announcement and this box is checked, it will return to that IVR "
-"which may not be the expected behavior."
-msgstr "אם הכרזה זו באה מIVR ואפשארות זו מסומנת, היעד הבא הIVR  ולא יעד הבאה"
-
-msgid "Don't Answer Channel"
-msgstr "לא לענות לערוץ"
-
+#: /usr/src/freepbx/announcement/page.announcement.php:138
 msgid ""
 "Check this to keep the channel from explicitly being answered. When checked, "
 "the message will be played and if the channel is not already answered it "
@@ -136,17 +44,146 @@ msgstr ""
 "מסומן נשלחת answer לערוץ ואח\"כ השהיה של שניה. יתכן שהשהיה אינו רצוי כאשר "
 "ההכרזה מגיע אחרי IVR או גורם אחר שכבר שלך answer לערוץ"
 
-msgid "Destination after playback"
-msgstr "יעד אחרי הכרזה"
+#: /usr/src/freepbx/announcement/install.php:90
+msgid "Checking if recordings need migration.."
+msgstr "בודק אם הקלטות צריכות הגירה.."
 
-msgid "Submit Changes"
-msgstr "שמור שינוים"
-
+#: /usr/src/freepbx/announcement/page.announcement.php:151
 msgid "Delete"
 msgstr "מחק"
 
+#: /usr/src/freepbx/announcement/page.announcement.php:87
+msgid "Description"
+msgstr "תאור"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:142
+msgid "Destination after playback"
+msgstr "יעד אחרי הכרזה"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:121
+msgid "Disable"
+msgstr "נטרל"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:138
+msgid "Don't Answer Channel"
+msgstr "לא לענות לערוץ"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:85
+msgid "Edit Announcement"
+msgstr "ערוך הכרזה"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:130
+msgid "If the caller is allowed to press a key to skip the message."
+msgstr "אם  מותר למתקשר ללחוץ על מקש כדי לדלג על ההכרזה"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:134
+msgid ""
+"If this announcement came from an IVR and this box is checked, the "
+"destination below will be ignored and instead it will return to the calling "
+"IVR. Otherwise, the destination below will be taken. Don't check if not "
+"using in this mode. <br>The IVR return location will be to the last IVR in "
+"the call chain that was called so be careful to only check when needed. For "
+"example, if an IVR directs a call to another destination which eventually "
+"calls this announcement and this box is checked, it will return to that IVR "
+"which may not be the expected behavior."
+msgstr "אם הכרזה זו באה מIVR ואפשארות זו מסומנת, היעד הבא הIVR  ולא יעד הבאה"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:176
 msgid "Invalid description specified"
 msgstr "ציון תיאור לא חוקי"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:111
+msgid ""
+"Key to press that will allow for the message to be replayed. If you choose "
+"this option there will be a short delay inserted after the message. If a "
+"longer delay is needed it should be incorporated into the recording."
+msgstr ""
+"מקש שיחזור אל ההכרזה. במדיה שמסומן, יוסיף השהיה של ממש אחרי ההכרזה. להשהיה "
+"ליותר זמן תשלב ההשהיה בתוך ההקלתה"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:93
+msgid ""
+"Message to be played.<br>To add additional recordings use the \"System "
+"Recordings\" MENU to the left"
+msgstr "הודעה להחרזה. <br> כדי להוסיף הקלטות נוספות להשתמש במודל הקלתות מערכת"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:100
+msgid "None"
+msgstr "ללא"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:93
+msgid "Recording"
+msgstr "הקלטה"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:111
+msgid "Repeat"
+msgstr "חוזר"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:134
+msgid "Return to IVR"
+msgstr "חזור אל IVR"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:150
+msgid "Submit Changes"
+msgstr "שמור שינוים"
+
+#: /usr/src/freepbx/announcement/page.announcement.php:87
+msgid "The name of this announcement"
+msgstr "שם ההכרזה"
+
+#: /usr/src/freepbx/announcement/install.php:97
+msgid "adding recording_id field.."
+msgstr "הוספת שדה recording_id .."
+
+#: /usr/src/freepbx/announcement/install.php:147
+msgid "already migrated"
+msgstr "כבר היגרו"
+
+#: /usr/src/freepbx/announcement/install.php:137
+msgid "dropping recording field.."
+msgstr "הסרת שדה recording .."
+
+#: /usr/src/freepbx/announcement/install.php:101
+#: /usr/src/freepbx/announcement/install.php:113
+#: /usr/src/freepbx/announcement/install.php:129
+msgid "fatal error"
+msgstr "שגיאה קטלנית"
+
+#: /usr/src/freepbx/announcement/install.php:109
+msgid "migrate to recording ids.."
+msgstr "מהגר אל recording ids .."
+
+#: /usr/src/freepbx/announcement/install.php:133
+#, php-format
+msgid "migrated %s entries"
+msgstr "היגרו %s ערכים"
+
+#: /usr/src/freepbx/announcement/install.php:96
+msgid "migrating"
+msgstr "הגירת"
+
+#: /usr/src/freepbx/announcement/install.php:141
+msgid "no recording field???"
+msgstr "\"אין שדה recording???"
+
+#: /usr/src/freepbx/announcement/install.php:104
+#: /usr/src/freepbx/announcement/install.php:143
+msgid "ok"
+msgstr "בסדר"
+
+#~ msgid "Announcements"
+#~ msgstr "הכרזות"
+
+#, fuzzy
+#~ msgid "Applications"
+#~ msgstr "יישומים"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "משמיע אחת הקלטות המערכת (עם אפשרות המאפשר למשתמש לדלג על זה) ולאחר מכן "
+#~ "עובר ליעד אחר."
 
 #~ msgid "Apps"
 #~ msgstr "יישומים"
