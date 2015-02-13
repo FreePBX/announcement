@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - test module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-11 13:11-0500\n"
-"PO-Revision-Date: 2015-02-13 08:11+0200\n"
+"PO-Revision-Date: 2015-02-13 08:13+0200\n"
 "Last-Translator: Andrew <andrew@starway.cc>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/announcement/es_ES/>\n"
@@ -172,7 +172,7 @@ msgstr "error fatal"
 
 #: /usr/src/freepbx/announcement/install.php:109
 msgid "migrate to recording ids.."
-msgstr "migrar a identificadores de grabación (recording ids)"
+msgstr "migrar a identificadores de grabación (recording ids).."
 
 #: /usr/src/freepbx/announcement/install.php:133
 #, php-format
