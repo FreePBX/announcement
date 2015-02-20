@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 13:11-0500\n"
+"POT-Creation-Date: 2015-02-20 18:56-0500\n"
 "PO-Revision-Date: 2014-02-28 04:52+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Russian <http://example.com/projects/freepbx-211/announcement/"
@@ -35,23 +35,29 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 1.9-dev\n"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:54
-#: /usr/src/freepbx/announcement/page.announcement.php:85
+#: page.announcement.php:54 page.announcement.php:85
 msgid "Add Announcement"
 msgstr "Добавить приветствие"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:130
+#: page.announcement.php:130
 msgid "Allow Skip"
 msgstr "Разрешить пропустить"
 
-#: /usr/src/freepbx/announcement/functions.inc.php:31
-#: /usr/src/freepbx/announcement/functions.inc.php:51
-#: /usr/src/freepbx/announcement/functions.inc.php:225
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:225
 #, php-format
 msgid "Announcement: %s"
 msgstr "Приветствия: %s"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:138
+#: announcement.i18n.php:3 announcement.i18n.php:6 announcement.i18n.php:8
+#: announcement.i18n.php:14
+msgid "Announcements"
+msgstr "Приветствия"
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Applications"
+msgstr "Приложения"
+
+#: page.announcement.php:138
 msgid ""
 "Check this to keep the channel from explicitly being answered. When checked, "
 "the message will be played and if the channel is not already answered it "
@@ -67,41 +73,41 @@ msgstr ""
 "уже проговорил что-то в канал, то эта задержка в 1 секунду может быть "
 "нежелательна."
 
-#: /usr/src/freepbx/announcement/install.php:90
+#: install.php:90
 msgid "Checking if recordings need migration.."
 msgstr "Проверка нуждаются ли записи в перемещении.."
 
-#: /usr/src/freepbx/announcement/page.announcement.php:151
+#: page.announcement.php:151
 msgid "Delete"
 msgstr "Удалить"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:87
+#: page.announcement.php:87
 msgid "Description"
 msgstr "Описание"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:142
+#: page.announcement.php:142
 msgid "Destination after playback"
 msgstr "Назначение после воспроизведения"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:121
+#: page.announcement.php:121
 msgid "Disable"
 msgstr "Выключено"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:138
+#: page.announcement.php:138
 msgid "Don't Answer Channel"
 msgstr "Не отвечать в канал"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:85
+#: page.announcement.php:85
 msgid "Edit Announcement"
 msgstr "Изменить приветствие"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:130
+#: page.announcement.php:130
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 "Разрешить пропуск приветствия по нажатию клавиши, чтобы не слушать его "
 "каждый раз."
 
-#: /usr/src/freepbx/announcement/page.announcement.php:134
+#: page.announcement.php:134
 msgid ""
 "If this announcement came from an IVR and this box is checked, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -124,11 +130,11 @@ msgstr ""
 "воспроизвести это приветствие, и отмечена эта опция, то возврат в "
 "Интерактивное меню может привести к непредсказуемому поведению."
 
-#: /usr/src/freepbx/announcement/page.announcement.php:176
+#: page.announcement.php:176
 msgid "Invalid description specified"
 msgstr "Указано неверное описание"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:111
+#: page.announcement.php:111
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -138,7 +144,7 @@ msgstr ""
 "опция, то будет небольшая задержка после сообщения. Если нужна более "
 "длительная задержка, её нужно вводить в конце записи."
 
-#: /usr/src/freepbx/announcement/page.announcement.php:93
+#: page.announcement.php:93
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU to the left"
@@ -146,83 +152,74 @@ msgstr ""
 "Сообщение, которое будет воспроизведено.<br>Для создания сообщения "
 "воспользуйтесь разделом \"Запись сообщений\" в меню слева."
 
-#: /usr/src/freepbx/announcement/page.announcement.php:100
+#: page.announcement.php:100
 msgid "None"
 msgstr "Нет"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:93
+#: announcement.i18n.php:5 announcement.i18n.php:12
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+"Воспроизводится одна из системных аудиозаписей (опцуионально можно разрешить "
+"абоненту пропускать её) и затем вызов направляется по назначению."
+
+#: page.announcement.php:93
 msgid "Recording"
 msgstr "Запись"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:111
+#: page.announcement.php:111
 msgid "Repeat"
 msgstr "Повторить"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:134
+#: page.announcement.php:134
 msgid "Return to IVR"
 msgstr "Вернуться в 'Интерактивное меню'"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:150
+#: page.announcement.php:150
 msgid "Submit Changes"
 msgstr "Применить изменения"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:87
+#: page.announcement.php:87
 msgid "The name of this announcement"
 msgstr "Имя для этого приветствия"
 
-#: /usr/src/freepbx/announcement/install.php:97
+#: install.php:97
 msgid "adding recording_id field.."
 msgstr "добавляется поле recording_id.."
 
-#: /usr/src/freepbx/announcement/install.php:147
+#: install.php:147
 msgid "already migrated"
 msgstr "уже перемещено"
 
-#: /usr/src/freepbx/announcement/install.php:137
+#: install.php:137
 msgid "dropping recording field.."
 msgstr "сброс поля записей.."
 
-#: /usr/src/freepbx/announcement/install.php:101
-#: /usr/src/freepbx/announcement/install.php:113
-#: /usr/src/freepbx/announcement/install.php:129
+#: install.php:101 install.php:113 install.php:129
 msgid "fatal error"
 msgstr "неустранимая ошибка"
 
-#: /usr/src/freepbx/announcement/install.php:109
+#: install.php:109
 msgid "migrate to recording ids.."
 msgstr "переход к id записей.."
 
-#: /usr/src/freepbx/announcement/install.php:133
+#: install.php:133
 #, php-format
 msgid "migrated %s entries"
 msgstr "перемещено %s записей"
 
-#: /usr/src/freepbx/announcement/install.php:96
+#: install.php:96
 msgid "migrating"
 msgstr "перемещение"
 
-#: /usr/src/freepbx/announcement/install.php:141
+#: install.php:141
 msgid "no recording field???"
 msgstr "нет поля записи?"
 
-#: /usr/src/freepbx/announcement/install.php:104
-#: /usr/src/freepbx/announcement/install.php:143
+#: install.php:104 install.php:143
 msgid "ok"
 msgstr "ok"
-
-#~ msgid "Announcements"
-#~ msgstr "Приветствия"
-
-#~ msgid "Applications"
-#~ msgstr "Приложения"
-
-#~ msgid ""
-#~ "Plays back one of the system recordings (optionally allowing the user to "
-#~ "skip it) and then goes to another destination."
-#~ msgstr ""
-#~ "Воспроизводится одна из системных аудиозаписей (опцуионально можно "
-#~ "разрешить абоненту пропускать её) и затем вызов направляется по "
-#~ "назначению."
 
 #~ msgid "Inbound Call Control"
 #~ msgstr "Контроль входящих вызовов"
