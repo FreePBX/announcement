@@ -5,8 +5,10 @@
 namespace FreePBX\modules;
 class Announcement extends \FreePBX_Helpers implements \BMO  {
 
+	private $freepbx;
 	public function __construct($freepbx = null) {
 		parent::__construct($freepbx);
+		$this->freepbx = $freepbx;
 	}
 
 	public function getActionBar($request) {
@@ -82,20 +84,20 @@ class Announcement extends \FreePBX_Helpers implements \BMO  {
 		switch ($action) {
 			case 'add':
 				$_REQUEST['extdisplay'] =
-					announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
+				announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 				needreload();
-				redirect_standard('extdisplay', 'view');
+				$this->freepbx->View->redirect_standard('extdisplay', 'view');
 			break;
 			case 'edit':
 				announcement_edit($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 				needreload();
-				redirect_standard('extdisplay', 'view');
+				$this->freepbx->View->redirect_standard('extdisplay', 'view');
 			break;
 			case 'delete':
 				announcement_delete($_REQUEST['extdisplay']);
 				needreload();
-				redirect_standard();
+				$this->freepbx->View->redirect_standard();
 			break;
-		}		
+		}
 	}
 }
