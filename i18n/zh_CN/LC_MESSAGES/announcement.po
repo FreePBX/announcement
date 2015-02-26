@@ -138,7 +138,7 @@ msgstr "要播放的消息。<br />要添加额外的录音，使用左侧的“
 
 #: page.announcement.php:100
 msgid "None"
-msgstr ""
+msgstr "无"
 
 #: announcement.i18n.php:5 announcement.i18n.php:12
 msgid ""
