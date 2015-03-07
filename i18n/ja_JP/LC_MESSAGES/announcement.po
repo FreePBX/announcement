@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 13:11-0500\n"
+"POT-Creation-Date: 2015-02-20 18:56-0500\n"
 "PO-Revision-Date: 2014-08-14 01:26+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/"
@@ -49,23 +49,29 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.10-dev\n"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:54
-#: /usr/src/freepbx/announcement/page.announcement.php:85
+#: page.announcement.php:54 page.announcement.php:85
 msgid "Add Announcement"
 msgstr "アナウンス追加"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:130
+#: page.announcement.php:130
 msgid "Allow Skip"
 msgstr "スキップを許可"
 
-#: /usr/src/freepbx/announcement/functions.inc.php:31
-#: /usr/src/freepbx/announcement/functions.inc.php:51
-#: /usr/src/freepbx/announcement/functions.inc.php:225
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:225
 #, php-format
 msgid "Announcement: %s"
 msgstr "アナウンス： %s"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:138
+#: announcement.i18n.php:3 announcement.i18n.php:6 announcement.i18n.php:8
+#: announcement.i18n.php:14
+msgid "Announcements"
+msgstr "アナウンス"
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Applications"
+msgstr "アプリケーション"
+
+#: page.announcement.php:138
 msgid ""
 "Check this to keep the channel from explicitly being answered. When checked, "
 "the message will be played and if the channel is not already answered it "
@@ -80,39 +86,39 @@ msgstr ""
 "の遅延後にチャネルが応答します。IVRや、既にチャネル応答をした他のソースからの"
 "アナウンスを使用している場合は、1秒間の遅延は不要でしょう。"
 
-#: /usr/src/freepbx/announcement/install.php:90
+#: install.php:90
 msgid "Checking if recordings need migration.."
 msgstr "録音の移行が必要かチェック中.."
 
-#: /usr/src/freepbx/announcement/page.announcement.php:151
+#: page.announcement.php:151
 msgid "Delete"
 msgstr "削除"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:87
+#: page.announcement.php:87
 msgid "Description"
 msgstr "説明"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:142
+#: page.announcement.php:142
 msgid "Destination after playback"
 msgstr "再生後の宛先"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:121
+#: page.announcement.php:121
 msgid "Disable"
 msgstr "無効"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:138
+#: page.announcement.php:138
 msgid "Don't Answer Channel"
 msgstr "応答させないチャネル"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:85
+#: page.announcement.php:85
 msgid "Edit Announcement"
 msgstr "アナウンスを編集"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:130
+#: page.announcement.php:130
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr "発信者がキーを押すことによるメッセージのスキップを許可するかどうか。"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:134
+#: page.announcement.php:134
 msgid ""
 "If this announcement came from an IVR and this box is checked, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -132,11 +138,11 @@ msgstr ""
 "クスがチェックされている場合は、このIVRにまた戻ることになり、その結果予期せぬ"
 "動作をすることになります。"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:176
+#: page.announcement.php:176
 msgid "Invalid description specified"
 msgstr "無効な説明が指定されました"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:111
+#: page.announcement.php:111
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -146,7 +152,7 @@ msgstr ""
 "が選択された場合はメッセージの後に少しの間が発生します。より長い間が必要な場"
 "合は、録音の最後に組み入れてください。"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:93
+#: page.announcement.php:93
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU to the left"
@@ -154,79 +160,71 @@ msgstr ""
 "再生されるメッセージ。<br>録音選択肢を追加をする場合は、左メニューの\"システ"
 "ム録音\"を使用します"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:100
+#: page.announcement.php:100
 msgid "None"
 msgstr "なし"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:93
+#: announcement.i18n.php:5 announcement.i18n.php:12
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+"システムレコーディングを再生する（ユーザーはスキップするのを許可する）そして"
+"次の宛先に進みます。"
+
+#: page.announcement.php:93
 msgid "Recording"
 msgstr "録音"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:111
+#: page.announcement.php:111
 msgid "Repeat"
 msgstr "リピート"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:134
+#: page.announcement.php:134
 msgid "Return to IVR"
 msgstr "IVRに戻る"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:150
+#: page.announcement.php:150
 msgid "Submit Changes"
 msgstr "変更を適用"
 
-#: /usr/src/freepbx/announcement/page.announcement.php:87
+#: page.announcement.php:87
 msgid "The name of this announcement"
 msgstr "このアナウンスの名前"
 
-#: /usr/src/freepbx/announcement/install.php:97
+#: install.php:97
 msgid "adding recording_id field.."
 msgstr "recording_idフィールドを追加中.."
 
-#: /usr/src/freepbx/announcement/install.php:147
+#: install.php:147
 msgid "already migrated"
 msgstr "移行済み"
 
-#: /usr/src/freepbx/announcement/install.php:137
+#: install.php:137
 msgid "dropping recording field.."
 msgstr "録音フィールドを削除.."
 
-#: /usr/src/freepbx/announcement/install.php:101
-#: /usr/src/freepbx/announcement/install.php:113
-#: /usr/src/freepbx/announcement/install.php:129
+#: install.php:101 install.php:113 install.php:129
 msgid "fatal error"
 msgstr "致命的なエラー"
 
-#: /usr/src/freepbx/announcement/install.php:109
+#: install.php:109
 msgid "migrate to recording ids.."
 msgstr "録音IDに移行中.."
 
-#: /usr/src/freepbx/announcement/install.php:133
+#: install.php:133
 #, php-format
 msgid "migrated %s entries"
 msgstr "%sエントリーを移行する"
 
-#: /usr/src/freepbx/announcement/install.php:96
+#: install.php:96
 msgid "migrating"
 msgstr "移行中"
 
-#: /usr/src/freepbx/announcement/install.php:141
+#: install.php:141
 msgid "no recording field???"
 msgstr "録音フィールドがありません???"
 
-#: /usr/src/freepbx/announcement/install.php:104
-#: /usr/src/freepbx/announcement/install.php:143
+#: install.php:104 install.php:143
 msgid "ok"
 msgstr "ok"
-
-#~ msgid "Announcements"
-#~ msgstr "アナウンス"
-
-#~ msgid "Applications"
-#~ msgstr "アプリケーション"
-
-#~ msgid ""
-#~ "Plays back one of the system recordings (optionally allowing the user to "
-#~ "skip it) and then goes to another destination."
-#~ msgstr ""
-#~ "システムレコーディングを再生する（ユーザーはスキップするのを許可する）そし"
-#~ "て次の宛先に進みます。"
