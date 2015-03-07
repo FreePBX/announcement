@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 18:56-0500\n"
+"POT-Creation-Date: 2015-03-06 19:36-0500\n"
 "PO-Revision-Date: 2014-08-14 01:26+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/"
@@ -49,78 +49,74 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.10-dev\n"
 
-#: page.announcement.php:54 page.announcement.php:85
-msgid "Add Announcement"
-msgstr "アナウンス追加"
+#: page.announcement.php:14
+msgid ": Add"
+msgstr ""
 
-#: page.announcement.php:130
+#: page.announcement.php:12
+msgid ": Edit"
+msgstr ""
+
+#: views/grid.php:23
+msgid "Actions"
+msgstr ""
+
+#: views/bootnav.php:6
+msgid "Add Announcemet"
+msgstr ""
+
+#: views/form.php:143
 msgid "Allow Skip"
 msgstr "スキップを許可"
+
+#: page.announcement.php:7
+msgid "Announcement"
+msgstr ""
 
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:225
 #, php-format
 msgid "Announcement: %s"
 msgstr "アナウンス： %s"
 
-#: announcement.i18n.php:3 announcement.i18n.php:6 announcement.i18n.php:8
-#: announcement.i18n.php:14
+#: announcement.i18n.php:4 announcement.i18n.php:10
 msgid "Announcements"
 msgstr "アナウンス"
 
-#: announcement.i18n.php:4 announcement.i18n.php:10
+#: announcement.i18n.php:6 announcement.i18n.php:12
 msgid "Applications"
 msgstr "アプリケーション"
-
-#: page.announcement.php:138
-msgid ""
-"Check this to keep the channel from explicitly being answered. When checked, "
-"the message will be played and if the channel is not already answered it "
-"will be delivered as early media if the channel supports that. When not "
-"checked, the channel is answered followed by a 1 second delay. When using an "
-"announcement from an IVR or other sources that have already answered the "
-"channel, that 1 second delay may not be desired."
-msgstr ""
-"チャネルが明示的に応答することを防ぎたい場合はチェックを入れます。チェックさ"
-"れた場合は、メッセージが再生され、チャネルがまだ応答しない場合は、チャネルが"
-"サポートしている場合のみ早いメディアに運ばれます。チェックされない場合は、1秒"
-"の遅延後にチャネルが応答します。IVRや、既にチャネル応答をした他のソースからの"
-"アナウンスを使用している場合は、1秒間の遅延は不要でしょう。"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
 msgstr "録音の移行が必要かチェック中.."
 
-#: page.announcement.php:151
+#: Announcement.class.php:23
 msgid "Delete"
 msgstr "削除"
 
-#: page.announcement.php:87
+#: views/form.php:92 views/grid.php:22
 msgid "Description"
 msgstr "説明"
 
-#: page.announcement.php:142
-msgid "Destination after playback"
-msgstr "再生後の宛先"
+#: views/form.php:224
+msgid "Destination after Playback"
+msgstr ""
 
-#: page.announcement.php:121
+#: views/form.php:63
 msgid "Disable"
 msgstr "無効"
 
-#: page.announcement.php:138
+#: views/form.php:197
 msgid "Don't Answer Channel"
 msgstr "応答させないチャネル"
 
-#: page.announcement.php:85
-msgid "Edit Announcement"
-msgstr "アナウンスを編集"
-
-#: page.announcement.php:130
+#: views/form.php:158
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr "発信者がキーを押すことによるメッセージのスキップを許可するかどうか。"
 
-#: page.announcement.php:134
+#: views/form.php:185
 msgid ""
-"If this announcement came from an IVR and this box is checked, the "
+"If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
 "IVR. Otherwise, the destination below will be taken. Don't check if not "
 "using in this mode. <br>The IVR return location will be to the last IVR in "
@@ -129,20 +125,12 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
-"IVRからこのアナウンスが来て、このチェックボックスがチェックされている場合、以"
-"下の宛先は無視されて呼出し元のIVRに戻ります。それ以外の場合は以下の宛先に進み"
-"ます。このモードを使用しない場合は、チェックをしないでください。<br>IVRに戻る"
-"場所は、呼出しがあったコールチェインの最後のIVRになりますので、必要なときだけ"
-"チェックするように気を付けてください。例えば、IVRがコールを他の宛先に行くよう"
-"に設定されており、最終的にこのアナウンスを呼び出すケースで、このチェックボッ"
-"クスがチェックされている場合は、このIVRにまた戻ることになり、その結果予期せぬ"
-"動作をすることになります。"
 
-#: page.announcement.php:176
+#: page.announcement.php:49
 msgid "Invalid description specified"
 msgstr "無効な説明が指定されました"
 
-#: page.announcement.php:111
+#: views/form.php:131
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -152,19 +140,25 @@ msgstr ""
 "が選択された場合はメッセージの後に少しの間が発生します。より長い間が必要な場"
 "合は、録音の最後に組み入れてください。"
 
-#: page.announcement.php:93
+#: views/bootnav.php:5
+msgid "List Announcemets"
+msgstr ""
+
+#: views/form.php:50
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
-"Recordings\" MENU to the left"
+"Recordings\" MENU above"
 msgstr ""
-"再生されるメッセージ。<br>録音選択肢を追加をする場合は、左メニューの\"システ"
-"ム録音\"を使用します"
 
-#: page.announcement.php:100
+#: views/form.php:150 views/form.php:177 views/form.php:204
+msgid "No"
+msgstr ""
+
+#: views/form.php:23
 msgid "None"
 msgstr "なし"
 
-#: announcement.i18n.php:5 announcement.i18n.php:12
+#: announcement.i18n.php:8
 msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
@@ -172,25 +166,47 @@ msgstr ""
 "システムレコーディングを再生する（ユーザーはスキップするのを許可する）そして"
 "次の宛先に進みます。"
 
-#: page.announcement.php:93
+#: views/form.php:36
 msgid "Recording"
 msgstr "録音"
 
-#: page.announcement.php:111
+#: views/form.php:117
 msgid "Repeat"
 msgstr "リピート"
 
-#: page.announcement.php:134
+#: Announcement.class.php:28
+msgid "Reset"
+msgstr ""
+
+#: views/form.php:170
 msgid "Return to IVR"
 msgstr "IVRに戻る"
 
-#: page.announcement.php:150
-msgid "Submit Changes"
-msgstr "変更を適用"
+#: views/form.php:212
+msgid ""
+"Set this to yes, to keep the channel from explicitly being answered. When "
+"checked, the message will be played and if the channel is not already "
+"answered it will be delivered as early media if the channel supports that. "
+"When not checked, the channel is answered followed by a 1 second delay. When "
+"using an announcement from an IVR or other sources that have already "
+"answered the channel, that 1 second delay may not be desired."
+msgstr ""
 
-#: page.announcement.php:87
-msgid "The name of this announcement"
-msgstr "このアナウンスの名前"
+#: Announcement.class.php:33
+msgid "Submit"
+msgstr ""
+
+#: views/form.php:104
+msgid "The name of this announcement."
+msgstr ""
+
+#: views/form.php:236
+msgid "Where to send the caller after the announcement is played."
+msgstr ""
+
+#: views/form.php:148 views/form.php:175 views/form.php:202
+msgid "Yes"
+msgstr ""
 
 #: install.php:97
 msgid "adding recording_id field.."
@@ -228,3 +244,58 @@ msgstr "録音フィールドがありません???"
 #: install.php:104 install.php:143
 msgid "ok"
 msgstr "ok"
+
+#~ msgid "Add Announcement"
+#~ msgstr "アナウンス追加"
+
+#~ msgid ""
+#~ "Check this to keep the channel from explicitly being answered. When "
+#~ "checked, the message will be played and if the channel is not already "
+#~ "answered it will be delivered as early media if the channel supports "
+#~ "that. When not checked, the channel is answered followed by a 1 second "
+#~ "delay. When using an announcement from an IVR or other sources that have "
+#~ "already answered the channel, that 1 second delay may not be desired."
+#~ msgstr ""
+#~ "チャネルが明示的に応答することを防ぎたい場合はチェックを入れます。チェック"
+#~ "された場合は、メッセージが再生され、チャネルがまだ応答しない場合は、チャネ"
+#~ "ルがサポートしている場合のみ早いメディアに運ばれます。チェックされない場合"
+#~ "は、1秒の遅延後にチャネルが応答します。IVRや、既にチャネル応答をした他の"
+#~ "ソースからのアナウンスを使用している場合は、1秒間の遅延は不要でしょう。"
+
+#~ msgid "Destination after playback"
+#~ msgstr "再生後の宛先"
+
+#~ msgid "Edit Announcement"
+#~ msgstr "アナウンスを編集"
+
+#~ msgid ""
+#~ "If this announcement came from an IVR and this box is checked, the "
+#~ "destination below will be ignored and instead it will return to the "
+#~ "calling IVR. Otherwise, the destination below will be taken. Don't check "
+#~ "if not using in this mode. <br>The IVR return location will be to the "
+#~ "last IVR in the call chain that was called so be careful to only check "
+#~ "when needed. For example, if an IVR directs a call to another destination "
+#~ "which eventually calls this announcement and this box is checked, it will "
+#~ "return to that IVR which may not be the expected behavior."
+#~ msgstr ""
+#~ "IVRからこのアナウンスが来て、このチェックボックスがチェックされている場"
+#~ "合、以下の宛先は無視されて呼出し元のIVRに戻ります。それ以外の場合は以下の"
+#~ "宛先に進みます。このモードを使用しない場合は、チェックをしないでください。"
+#~ "<br>IVRに戻る場所は、呼出しがあったコールチェインの最後のIVRになりますの"
+#~ "で、必要なときだけチェックするように気を付けてください。例えば、IVRがコー"
+#~ "ルを他の宛先に行くように設定されており、最終的にこのアナウンスを呼び出す"
+#~ "ケースで、このチェックボックスがチェックされている場合は、このIVRにまた戻"
+#~ "ることになり、その結果予期せぬ動作をすることになります。"
+
+#~ msgid ""
+#~ "Message to be played.<br>To add additional recordings use the \"System "
+#~ "Recordings\" MENU to the left"
+#~ msgstr ""
+#~ "再生されるメッセージ。<br>録音選択肢を追加をする場合は、左メニューの\"シス"
+#~ "テム録音\"を使用します"
+
+#~ msgid "Submit Changes"
+#~ msgstr "変更を適用"
+
+#~ msgid "The name of this announcement"
+#~ msgstr "このアナウンスの名前"

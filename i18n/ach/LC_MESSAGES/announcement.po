@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 18:56-0500\n"
+"POT-Creation-Date: 2015-03-06 19:36-0500\n"
 "PO-Revision-Date: 2015-02-11 13:11-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,12 +17,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: page.announcement.php:54 page.announcement.php:85
-msgid "Add Announcement"
+#: page.announcement.php:14
+msgid ": Add"
 msgstr ""
 
-#: page.announcement.php:130
+#: page.announcement.php:12
+msgid ": Edit"
+msgstr ""
+
+#: views/grid.php:23
+msgid "Actions"
+msgstr ""
+
+#: views/bootnav.php:6
+msgid "Add Announcemet"
+msgstr ""
+
+#: views/form.php:143
 msgid "Allow Skip"
+msgstr ""
+
+#: page.announcement.php:7
+msgid "Announcement"
 msgstr ""
 
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:225
@@ -30,60 +46,45 @@ msgstr ""
 msgid "Announcement: %s"
 msgstr ""
 
-#: announcement.i18n.php:3 announcement.i18n.php:6 announcement.i18n.php:8
-#: announcement.i18n.php:14
+#: announcement.i18n.php:4 announcement.i18n.php:10
 msgid "Announcements"
 msgstr ""
 
-#: announcement.i18n.php:4 announcement.i18n.php:10
+#: announcement.i18n.php:6 announcement.i18n.php:12
 msgid "Applications"
-msgstr ""
-
-#: page.announcement.php:138
-msgid ""
-"Check this to keep the channel from explicitly being answered. When checked, "
-"the message will be played and if the channel is not already answered it "
-"will be delivered as early media if the channel supports that. When not "
-"checked, the channel is answered followed by a 1 second delay. When using an "
-"announcement from an IVR or other sources that have already answered the "
-"channel, that 1 second delay may not be desired."
 msgstr ""
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
 msgstr ""
 
-#: page.announcement.php:151
+#: Announcement.class.php:23
 msgid "Delete"
 msgstr ""
 
-#: page.announcement.php:87
+#: views/form.php:92 views/grid.php:22
 msgid "Description"
 msgstr ""
 
-#: page.announcement.php:142
-msgid "Destination after playback"
+#: views/form.php:224
+msgid "Destination after Playback"
 msgstr ""
 
-#: page.announcement.php:121
+#: views/form.php:63
 msgid "Disable"
 msgstr ""
 
-#: page.announcement.php:138
+#: views/form.php:197
 msgid "Don't Answer Channel"
 msgstr ""
 
-#: page.announcement.php:85
-msgid "Edit Announcement"
-msgstr ""
-
-#: page.announcement.php:130
+#: views/form.php:158
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 
-#: page.announcement.php:134
+#: views/form.php:185
 msgid ""
-"If this announcement came from an IVR and this box is checked, the "
+"If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
 "IVR. Otherwise, the destination below will be taken. Don't check if not "
 "using in this mode. <br>The IVR return location will be to the last IVR in "
@@ -93,51 +94,81 @@ msgid ""
 "which may not be the expected behavior."
 msgstr ""
 
-#: page.announcement.php:176
+#: page.announcement.php:49
 msgid "Invalid description specified"
 msgstr ""
 
-#: page.announcement.php:111
+#: views/form.php:131
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
 "longer delay is needed it should be incorporated into the recording."
 msgstr ""
 
-#: page.announcement.php:93
-msgid ""
-"Message to be played.<br>To add additional recordings use the \"System "
-"Recordings\" MENU to the left"
+#: views/bootnav.php:5
+msgid "List Announcemets"
 msgstr ""
 
-#: page.announcement.php:100
+#: views/form.php:50
+msgid ""
+"Message to be played.<br>To add additional recordings use the \"System "
+"Recordings\" MENU above"
+msgstr ""
+
+#: views/form.php:150 views/form.php:177 views/form.php:204
+msgid "No"
+msgstr ""
+
+#: views/form.php:23
 msgid "None"
 msgstr ""
 
-#: announcement.i18n.php:5 announcement.i18n.php:12
+#: announcement.i18n.php:8
 msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
 
-#: page.announcement.php:93
+#: views/form.php:36
 msgid "Recording"
 msgstr ""
 
-#: page.announcement.php:111
+#: views/form.php:117
 msgid "Repeat"
 msgstr ""
 
-#: page.announcement.php:134
+#: Announcement.class.php:28
+msgid "Reset"
+msgstr ""
+
+#: views/form.php:170
 msgid "Return to IVR"
 msgstr ""
 
-#: page.announcement.php:150
-msgid "Submit Changes"
+#: views/form.php:212
+msgid ""
+"Set this to yes, to keep the channel from explicitly being answered. When "
+"checked, the message will be played and if the channel is not already "
+"answered it will be delivered as early media if the channel supports that. "
+"When not checked, the channel is answered followed by a 1 second delay. When "
+"using an announcement from an IVR or other sources that have already "
+"answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: page.announcement.php:87
-msgid "The name of this announcement"
+#: Announcement.class.php:33
+msgid "Submit"
+msgstr ""
+
+#: views/form.php:104
+msgid "The name of this announcement."
+msgstr ""
+
+#: views/form.php:236
+msgid "Where to send the caller after the announcement is played."
+msgstr ""
+
+#: views/form.php:148 views/form.php:175 views/form.php:202
+msgid "Yes"
 msgstr ""
 
 #: install.php:97
