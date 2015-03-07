@@ -83,8 +83,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO  {
 
 		switch ($action) {
 			case 'add':
-				$_REQUEST['extdisplay'] =
-				announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
+				$_REQUEST['extdisplay'] = announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 				needreload();
 				$this->freepbx->View->redirect_standard('extdisplay', 'view');
 			break;
