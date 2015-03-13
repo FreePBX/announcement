@@ -11,7 +11,7 @@ foreach (announcement_list() as $row) {
 	$arows .= '<td>';
 	$arows .= '<a href="?display=announcement&view=form&extdisplay='.$row['announcement_id'].'"><i class="fa fa-edit"></i></a>';
 	$arows .= '&nbsp;';
-	$arows .= '<a href="config.php?display=announcement&amp;extdisplay='.$row['announcement_id'].'&amp;action=delete"><i class="fa fa-trash"></i></a>';
+	$arows .= '<a class="delAction" href="config.php?display=announcement&amp;extdisplay='.$row['announcement_id'].'&amp;action=delete"><i class="fa fa-trash"></i></a>';
 	$arows .= '</td></tr>';
 }
 
