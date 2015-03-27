@@ -50,6 +50,7 @@
 	<popovers>
 		<announcement>
 			<display>announcement</display>
+			<view>form</view>
 		</announcement>
  	</popovers>
 	<supported>
