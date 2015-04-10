@@ -180,7 +180,7 @@ msgstr "已经迁移过了"
 
 #: install.php:137
 msgid "dropping recording field.."
-msgstr "正在删除recording字段"
+msgstr "正在删除recording字段。。"
 
 #: install.php:101 install.php:113 install.php:129
 msgid "fatal error"
