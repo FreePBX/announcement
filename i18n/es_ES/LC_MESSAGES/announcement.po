@@ -8,8 +8,7 @@ msgstr ""
 "POT-Creation-Date: 2015-03-06 19:36-0500\n"
 "PO-Revision-Date: 2015-02-13 08:13+0200\n"
 "Last-Translator: Andrew <andrew@starway.cc>\n"
-"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
-"announcement/es_ES/>\n"
+"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/announcement/es_ES/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -50,6 +49,7 @@ msgid "Announcement: %s"
 msgstr "Anuncio: %s"
 
 #: announcement.i18n.php:4 announcement.i18n.php:10
+#, fuzzy
 msgid "Announcements"
 msgstr "Noticias"
 
@@ -83,19 +83,10 @@ msgstr "No contestar canal"
 
 #: views/form.php:158
 msgid "If the caller is allowed to press a key to skip the message."
-msgstr ""
-"Indica si el llamante puede presionar una tecla para saltarse el mensaje."
+msgstr "Indica si el llamante puede presionar una tecla para saltarse el mensaje."
 
 #: views/form.php:185
-msgid ""
-"If this announcement came from an IVR and this is set to yes, the "
-"destination below will be ignored and instead it will return to the calling "
-"IVR. Otherwise, the destination below will be taken. Don't check if not "
-"using in this mode. <br>The IVR return location will be to the last IVR in "
-"the call chain that was called so be careful to only check when needed. For "
-"example, if an IVR directs a call to another destination which eventually "
-"calls this announcement and this box is checked, it will return to that IVR "
-"which may not be the expected behavior."
+msgid "If this announcement came from an IVR and this is set to yes, the destination below will be ignored and instead it will return to the calling IVR. Otherwise, the destination below will be taken. Don't check if not using in this mode. <br>The IVR return location will be to the last IVR in the call chain that was called so be careful to only check when needed. For example, if an IVR directs a call to another destination which eventually calls this announcement and this box is checked, it will return to that IVR which may not be the expected behavior."
 msgstr ""
 
 #: page.announcement.php:49
@@ -103,24 +94,15 @@ msgid "Invalid description specified"
 msgstr "La descripción especificada no es válida"
 
 #: views/form.php:131
-msgid ""
-"Key to press that will allow for the message to be replayed. If you choose "
-"this option there will be a short delay inserted after the message. If a "
-"longer delay is needed it should be incorporated into the recording."
-msgstr ""
-"Tecla que se debe presionar para repetir el mensaje. Si se selecciona esta "
-"opción, se insertará un pequeño retraso tras la reproducción del mensaje. Si "
-"se necesita un retardo mayor, se debería incorporar directamente al mensaje "
-"grabado."
+msgid "Key to press that will allow for the message to be replayed. If you choose this option there will be a short delay inserted after the message. If a longer delay is needed it should be incorporated into the recording."
+msgstr "Tecla que se debe presionar para repetir el mensaje. Si se selecciona esta opción, se insertará un pequeño retraso tras la reproducción del mensaje. Si se necesita un retardo mayor, se debería incorporar directamente al mensaje grabado."
 
 #: views/bootnav.php:5
 msgid "List Announcemets"
 msgstr ""
 
 #: views/form.php:50
-msgid ""
-"Message to be played.<br>To add additional recordings use the \"System "
-"Recordings\" MENU above"
+msgid "Message to be played.<br>To add additional recordings use the \"System Recordings\" MENU above"
 msgstr ""
 
 #: views/form.php:150 views/form.php:177 views/form.php:204
@@ -132,12 +114,9 @@ msgid "None"
 msgstr "ninguno"
 
 #: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"Reproduce una de las grabaciones del sistema (opcional que permite al "
-"usuario saltar él) y luego se va a otro destino."
+#, fuzzy
+msgid "Plays back one of the system recordings (optionally allowing the user to skip it) and then goes to another destination."
+msgstr "Reproduce una de las grabaciones del sistema (permitiendo opcionalmente al usuario saltárselo) y luego se va a otro destino."
 
 #: views/form.php:36
 msgid "Recording"
@@ -156,13 +135,7 @@ msgid "Return to IVR"
 msgstr "Volver al IVR"
 
 #: views/form.php:212
-msgid ""
-"Set this to yes, to keep the channel from explicitly being answered. When "
-"checked, the message will be played and if the channel is not already "
-"answered it will be delivered as early media if the channel supports that. "
-"When not checked, the channel is answered followed by a 1 second delay. When "
-"using an announcement from an IVR or other sources that have already "
-"answered the channel, that 1 second delay may not be desired."
+msgid "Set this to yes, to keep the channel from explicitly being answered. When checked, the message will be played and if the channel is not already answered it will be delivered as early media if the channel supports that. When not checked, the channel is answered followed by a 1 second delay. When using an announcement from an IVR or other sources that have already answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
 #: Announcement.class.php:33
@@ -187,7 +160,7 @@ msgstr "añadiendo campo recording_id..."
 
 #: install.php:147
 msgid "already migrated"
-msgstr "ya migrado"
+msgstr "Ya se ha migrado"
 
 #: install.php:137
 msgid "dropping recording field.."
@@ -218,24 +191,14 @@ msgstr "¿No hay campo de grabación (recording)?"
 msgid "ok"
 msgstr "ok"
 
+#, fuzzy
+#~ msgid "Check this to keep the channel from explicitly being answered. When checked, the message will be played and if the channel is not already answered it will be delivered as early media if the channel supports that. When not checked, the channel is answered followed by a 1 second delay. When using an announcement from an IVR or other sources that have already answered the channel, that 1 second delay may not be desired."
+#~ msgstr ""
+#~ "#-#-#-#-#  - (FreePBX - test module spanish translation)  #-#-#-#-#\n"
+#~ "Marque esta opción para evitar que el canal sea contestado. Cuando esté marcada, el mensaje se reproducirá y si el canal no ha sido ya contestado, será atendido tan pronto como hayas medios y el canal lo soporte. Cuando no esté marcada, el canal será contestado, seguido de un retardo de 1 segundo. Cuando se use un anuncio desde un IVR u otros orígenes que ya hayan contestado el canal, ese segundo de retardo puede que no sea adecuado."
+
 #~ msgid "Add Announcement"
 #~ msgstr "Añadir anuncio"
-
-#~ msgid ""
-#~ "Check this to keep the channel from explicitly being answered. When "
-#~ "checked, the message will be played and if the channel is not already "
-#~ "answered it will be delivered as early media if the channel supports "
-#~ "that. When not checked, the channel is answered followed by a 1 second "
-#~ "delay. When using an announcement from an IVR or other sources that have "
-#~ "already answered the channel, that 1 second delay may not be desired."
-#~ msgstr ""
-#~ "Marque esta opción para evitar que el canal sea contestado. Cuando esté "
-#~ "marcada, el mensaje se reproducirá y si el canal no ha sido ya "
-#~ "contestado, será atendido tan pronto como hayas medios y el canal lo "
-#~ "soporte. Cuando no esté marcada, el canal será contestado, seguido de un "
-#~ "retardo de 1 segundo. Cuando se use un anuncio desde un IVR u otros "
-#~ "orígenes que ya hayan contestado el canal, ese segundo de retardo puede "
-#~ "que no sea adecuado."
 
 #~ msgid "Destination after playback"
 #~ msgstr "Destino tras la reproducción"
@@ -243,32 +206,11 @@ msgstr "ok"
 #~ msgid "Edit Announcement"
 #~ msgstr "Editar anuncio"
 
-#~ msgid ""
-#~ "If this announcement came from an IVR and this box is checked, the "
-#~ "destination below will be ignored and instead it will return to the "
-#~ "calling IVR. Otherwise, the destination below will be taken. Don't check "
-#~ "if not using in this mode. <br>The IVR return location will be to the "
-#~ "last IVR in the call chain that was called so be careful to only check "
-#~ "when needed. For example, if an IVR directs a call to another destination "
-#~ "which eventually calls this announcement and this box is checked, it will "
-#~ "return to that IVR which may not be the expected behavior."
-#~ msgstr ""
-#~ "Si este anuncio llega desde un IVR y esta casilla está marcada, el "
-#~ "siguiente destino será ignorando y en su lugar se volverá al IVR. De lo "
-#~ "contrario, el destino siguiente se tomará. No marque esta casilla si no "
-#~ "utiliza en este modo.<br/>El punto de regreso del IVR será el último IVR "
-#~ "en la cadena de llamadas que llamó, así que tenga cuidado de marcar "
-#~ "sólamente cuando sea necesario. Por ejemplo, si un IVR dirige una llamada "
-#~ "a otro destino que ocasionalmente llama a este anuncio y esta casilla "
-#~ "está activada, regresará a ese IVR, lo que puede provocar un "
-#~ "comportamiento inesperado."
+#~ msgid "If this announcement came from an IVR and this box is checked, the destination below will be ignored and instead it will return to the calling IVR. Otherwise, the destination below will be taken. Don't check if not using in this mode. <br>The IVR return location will be to the last IVR in the call chain that was called so be careful to only check when needed. For example, if an IVR directs a call to another destination which eventually calls this announcement and this box is checked, it will return to that IVR which may not be the expected behavior."
+#~ msgstr "Si este anuncio llega desde un IVR y esta casilla está marcada, el siguiente destino será ignorando y en su lugar se volverá al IVR. De lo contrario, el destino siguiente se tomará. No marque esta casilla si no utiliza en este modo.<br/>El punto de regreso del IVR será el último IVR en la cadena de llamadas que llamó, así que tenga cuidado de marcar sólamente cuando sea necesario. Por ejemplo, si un IVR dirige una llamada a otro destino que ocasionalmente llama a este anuncio y esta casilla está activada, regresará a ese IVR, lo que puede provocar un comportamiento inesperado."
 
-#~ msgid ""
-#~ "Message to be played.<br>To add additional recordings use the \"System "
-#~ "Recordings\" MENU to the left"
-#~ msgstr ""
-#~ "El mensaje que será reproducido.<br/>Para añadir más grabaciones, use el "
-#~ "menú de \"Grabaciones del sistema\" a la izquierda"
+#~ msgid "Message to be played.<br>To add additional recordings use the \"System Recordings\" MENU to the left"
+#~ msgstr "El mensaje que será reproducido.<br/>Para añadir más grabaciones, use el menú de \"Grabaciones del sistema\" a la izquierda"
 
 #~ msgid "Submit Changes"
 #~ msgstr "Enviar cambios"
