@@ -10,35 +10,38 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 18:56-0500\n"
-"PO-Revision-Date: 2015-02-20 18:56-0500\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2015-04-24 21:12+0200\n"
+"Last-Translator: Paulo <paulop1975@gmail.com>\n"
+"Language-Team: Portuguese (Portugal) "
+"<http://weblate.freepbx.org/projects/freepbx/announcement/pt_PT/>\n"
+"Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: page.announcement.php:54 page.announcement.php:85
 msgid "Add Announcement"
-msgstr ""
+msgstr "Adicionar Anúncio"
 
 #: page.announcement.php:130
 msgid "Allow Skip"
-msgstr ""
+msgstr "Permitir Saltar"
 
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:225
 #, php-format
 msgid "Announcement: %s"
-msgstr ""
+msgstr "Anúncio: %s"
 
 #: announcement.i18n.php:3 announcement.i18n.php:6 announcement.i18n.php:8
 #: announcement.i18n.php:14
 msgid "Announcements"
-msgstr ""
+msgstr "Anúncios"
 
 #: announcement.i18n.php:4 announcement.i18n.php:10
 msgid "Applications"
-msgstr ""
+msgstr "Aplicações"
 
 #: page.announcement.php:138
 msgid ""
@@ -52,35 +55,36 @@ msgstr ""
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
-msgstr ""
+msgstr "Verificando se se é necessário migrar gravações.."
 
 #: page.announcement.php:151
 msgid "Delete"
-msgstr ""
+msgstr "Eliminar"
 
 #: page.announcement.php:87
 msgid "Description"
-msgstr ""
+msgstr "Descrição"
 
 #: page.announcement.php:142
 msgid "Destination after playback"
-msgstr ""
+msgstr "Destino após reprodução"
 
 #: page.announcement.php:121
 msgid "Disable"
-msgstr ""
+msgstr "Desativar"
 
 #: page.announcement.php:138
+#, fuzzy
 msgid "Don't Answer Channel"
-msgstr ""
+msgstr "Não Atender Canal"
 
 #: page.announcement.php:85
 msgid "Edit Announcement"
-msgstr ""
+msgstr "Editar Anúncio"
 
 #: page.announcement.php:130
 msgid "If the caller is allowed to press a key to skip the message."
-msgstr ""
+msgstr "Se for permitido ao chamador premir uma tecla para saltar mensagem."
 
 #: page.announcement.php:134
 msgid ""
@@ -96,7 +100,7 @@ msgstr ""
 
 #: page.announcement.php:176
 msgid "Invalid description specified"
-msgstr ""
+msgstr "Especificada descrição inválida"
 
 #: page.announcement.php:111
 msgid ""
@@ -110,69 +114,73 @@ msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU to the left"
 msgstr ""
+"Mensagem a ser reproduzida.<br>Para adicionar mais gravações utilize o MENU "
+"\"Gravações de Sistema\" à esquerda"
 
 #: page.announcement.php:100
 msgid "None"
-msgstr ""
+msgstr "Nenhum"
 
 #: announcement.i18n.php:5 announcement.i18n.php:12
 msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
+"Reproduz uma das gravações do sistema (opcionalmente permitindo ao "
+"utilizador saltá-la), passando em seguida para outro destino."
 
 #: page.announcement.php:93
 msgid "Recording"
-msgstr ""
+msgstr "Gravação"
 
 #: page.announcement.php:111
 msgid "Repeat"
-msgstr ""
+msgstr "Repetir"
 
 #: page.announcement.php:134
 msgid "Return to IVR"
-msgstr ""
+msgstr "Voltar ao IVR"
 
 #: page.announcement.php:150
 msgid "Submit Changes"
-msgstr ""
+msgstr "Submeter Alterações"
 
 #: page.announcement.php:87
 msgid "The name of this announcement"
-msgstr ""
+msgstr "O nome deste anúncio"
 
 #: install.php:97
 msgid "adding recording_id field.."
-msgstr ""
+msgstr "adicionando campo recording_id.."
 
 #: install.php:147
 msgid "already migrated"
-msgstr ""
+msgstr "anteriormente migrado"
 
 #: install.php:137
 msgid "dropping recording field.."
-msgstr ""
+msgstr "apagando o campo recording.."
 
 #: install.php:101 install.php:113 install.php:129
 msgid "fatal error"
-msgstr ""
+msgstr "erro fatal"
 
 #: install.php:109
 msgid "migrate to recording ids.."
-msgstr ""
+msgstr "migrar para ids de gravações.."
 
 #: install.php:133
 #, php-format
 msgid "migrated %s entries"
-msgstr ""
+msgstr "%s entradas migradas"
 
 #: install.php:96
 msgid "migrating"
-msgstr ""
+msgstr "migrando"
 
 #: install.php:141
 msgid "no recording field???"
-msgstr ""
+msgstr "sem campo de gravação???"
 
 #: install.php:104 install.php:143
 msgid "ok"
