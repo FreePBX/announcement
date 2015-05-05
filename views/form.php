@@ -16,6 +16,7 @@ if ($extdisplay) {
 	$noanswer = $row['noanswer'];
 	$repeat_msg = $row['repeat_msg'];
 }
+$recopts = '';
 if(function_exists('recordings_list')){
 	$tresults = recordings_list();
 	$default = (isset($recording_id) ? $recording_id : '');
@@ -60,14 +61,15 @@ for ($i=0; $i<=9; $i++ ) {
 }
 $digits[] = '*';
 $digits[] = '#';
-$repeatopts .= '<option value=""'.($default == '' ? ' SELECTED' : '').'>'._("Disable")."</option>";
+$repeatopts = '<option value=""'.($default == '' ? ' SELECTED' : '').'>'._("Disable")."</option>";
 foreach ($digits as $digit) {
 	$repeatopts .= '<option value="'.$digit.'"'.($digit == $default ? ' SELECTED' : '').'>'.$digit."</option>\n";
 }
+$usagehtml = '';
 if ($extdisplay) {
 	$usage_list = framework_display_destination_usage(announcement_getdest($extdisplay));
 	if (!empty($usage_list)) {
-		$usagehtml = '<div class="well">';
+		$usagehtml .= '<div class="well">';
 		$usagehtml .= '<h4>'.$usage_list['text'].'</h4>';
 		$usagehtml .= '<p>'.$usage_list['tooltip'].'</p>';
 		$usagehtml .='</div>';

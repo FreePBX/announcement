@@ -5,6 +5,7 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //
 $request = $_REQUEST;
 $heading = _("Announcement");
+$request["view"] = !empty($request["view"]) ? $request["view"] : '';
 //get unique queues
 switch($request["view"]){
 	case "form":
@@ -32,7 +33,7 @@ switch($request["view"]){
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-3 hidden-xs bootnav <?php echo $request['fw_popover']?'hidden':''?>">
+			<div class="col-sm-3 hidden-xs bootnav <?php echo !empty($request['fw_popover'])?'hidden':''?>">
 				<div class="list-group">
 					<?php echo load_view(__DIR__.'/views/bootnav.php', array('request' => $request));?>
 				</div>
