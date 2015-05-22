@@ -5,11 +5,12 @@
 //
 ?>
 <div id="toolbar-all">
+	<a href="config.php?display=announcement&amp;view=form" class="btn btn-primary"><i class="fa fa-plus"></i> <?php echo _('Add')?></a>
 	<button id="remove-all" class="btn btn-danger btn-remove" data-type="extensions" disabled data-section="all">
 		<i class="glyphicon glyphicon-remove"></i> <span><?php echo _('Delete')?></span>
 	</button>
 </div>
-<table data-toolbar="#toolbar-all" data-toggle="table" data-pagination="true" data-search="true" class="table table-striped" id="table-all">
+<table data-toolbar="#toolbar-all" data-toggle="table"  data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true"  id="table-all">
 <thead>
 	<tr>
 		<th data-sortable="true"><?php echo _("ID")?></th>

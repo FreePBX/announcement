@@ -15,6 +15,14 @@ if ($extdisplay) {
 	$return_ivr = $row['return_ivr'];
 	$noanswer = $row['noanswer'];
 	$repeat_msg = $row['repeat_msg'];
+} else {
+	$description = "";
+	$recording_id = "";
+	$allow_skip = "";
+	$post_dest =  "";
+	$return_ivr = "";
+	$noanswer = "";
+	$repeat_msg = "";
 }
 $recopts = '';
 if(function_exists('recordings_list')){

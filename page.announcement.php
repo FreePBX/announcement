@@ -28,7 +28,7 @@ switch($request["view"]){
 		<div class="row">
 			<div class="col-sm-9">
 				<div class="fpbx-container">
-					<div class="display full-border">
+					<div class="display <?php echo !empty($_REQUEST['view']) ? "full" : "no"?>-border">
 						<?php echo $content ?>
 					</div>
 				</div>
