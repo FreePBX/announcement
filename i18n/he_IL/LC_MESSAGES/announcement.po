@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX announcement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 19:36-0500\n"
+"POT-Creation-Date: 2015-05-22 11:34-0400\n"
 "PO-Revision-Date: 2014-03-04 09:09+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Hebrew <http://git.freepbx.org/projects/freepbx/announcement/"
@@ -14,23 +14,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 1.9-dev\n"
 
-#: page.announcement.php:14
+#: page.announcement.php:15
 msgid ": Add"
 msgstr ""
 
-#: page.announcement.php:12
+#: page.announcement.php:13
 msgid ": Edit"
 msgstr ""
 
-#: views/grid.php:23
+#: views/grid.php:18
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:6
-msgid "Add Announcemet"
+#: views/grid.php:8
+msgid "Add"
 msgstr ""
 
-#: views/form.php:143
+#: views/form.php:153
 msgid "Allow Skip"
 msgstr "אפשר לדלג"
 
@@ -43,44 +43,39 @@ msgstr ""
 msgid "Announcement: %s"
 msgstr "הכרזה: %s"
 
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Announcements"
-msgstr "הכרזות"
-
-#: announcement.i18n.php:6 announcement.i18n.php:12
-#, fuzzy
-msgid "Applications"
-msgstr "יישומים"
-
 #: install.php:90
 msgid "Checking if recordings need migration.."
 msgstr "בודק אם הקלטות צריכות הגירה.."
 
-#: Announcement.class.php:23
+#: Announcement.class.php:23 views/grid.php:10
 msgid "Delete"
 msgstr "מחק"
 
-#: views/form.php:92 views/grid.php:22
+#: views/form.php:102 views/grid.php:17
 msgid "Description"
 msgstr "תאור"
 
-#: views/form.php:224
+#: views/form.php:234
 msgid "Destination after Playback"
 msgstr ""
 
-#: views/form.php:63
+#: views/form.php:72
 msgid "Disable"
 msgstr "נטרל"
 
-#: views/form.php:197
+#: views/form.php:207
 msgid "Don't Answer Channel"
 msgstr "לא לענות לערוץ"
 
-#: views/form.php:158
+#: views/grid.php:16
+msgid "ID"
+msgstr ""
+
+#: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr "אם  מותר למתקשר ללחוץ על מקש כדי לדלג על ההכרזה"
 
-#: views/form.php:185
+#: views/form.php:195
 msgid ""
 "If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -92,11 +87,11 @@ msgid ""
 "which may not be the expected behavior."
 msgstr ""
 
-#: page.announcement.php:49
+#: page.announcement.php:50
 msgid "Invalid description specified"
 msgstr "ציון תיאור לא חוקי"
 
-#: views/form.php:131
+#: views/form.php:141
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -106,36 +101,28 @@ msgstr ""
 "ליותר זמן תשלב ההשהיה בתוך ההקלתה"
 
 #: views/bootnav.php:5
-msgid "List Announcemets"
+msgid "List Announcements"
 msgstr ""
 
-#: views/form.php:50
+#: views/form.php:59
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
 
-#: views/form.php:150 views/form.php:177 views/form.php:204
+#: views/form.php:160 views/form.php:187 views/form.php:214
 msgid "No"
 msgstr ""
 
-#: views/form.php:23
+#: views/form.php:32
 msgid "None"
 msgstr "ללא"
 
-#: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"משמיע אחת הקלטות המערכת (עם אפשרות המאפשר למשתמש לדלג על זה) ולאחר מכן עובר "
-"ליעד אחר."
-
-#: views/form.php:36
+#: views/form.php:45
 msgid "Recording"
 msgstr "הקלטה"
 
-#: views/form.php:117
+#: views/form.php:127
 msgid "Repeat"
 msgstr "חוזר"
 
@@ -143,11 +130,11 @@ msgstr "חוזר"
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:170
+#: views/form.php:180
 msgid "Return to IVR"
 msgstr "חזור אל IVR"
 
-#: views/form.php:212
+#: views/form.php:222
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -161,15 +148,15 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:104
+#: views/form.php:114
 msgid "The name of this announcement."
 msgstr ""
 
-#: views/form.php:236
+#: views/form.php:246
 msgid "Where to send the caller after the announcement is played."
 msgstr ""
 
-#: views/form.php:148 views/form.php:175 views/form.php:202
+#: views/form.php:158 views/form.php:185 views/form.php:212
 msgid "Yes"
 msgstr ""
 
@@ -209,6 +196,20 @@ msgstr "\"אין שדה recording???"
 #: install.php:104 install.php:143
 msgid "ok"
 msgstr "בסדר"
+
+#~ msgid "Announcements"
+#~ msgstr "הכרזות"
+
+#, fuzzy
+#~ msgid "Applications"
+#~ msgstr "יישומים"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "משמיע אחת הקלטות המערכת (עם אפשרות המאפשר למשתמש לדלג על זה) ולאחר מכן "
+#~ "עובר ליעד אחר."
 
 #~ msgid "Add Announcement"
 #~ msgstr "הוסף הכרזה"
