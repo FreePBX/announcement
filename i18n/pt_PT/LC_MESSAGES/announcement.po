@@ -1,0 +1,187 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for announcement
+# Copyright (C) 2008-2015 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-20 18:56-0500\n"
+"PO-Revision-Date: 2015-04-24 21:12+0200\n"
+"Last-Translator: Paulo <paulop1975@gmail.com>\n"
+"Language-Team: Portuguese (Portugal) "
+"<http://weblate.freepbx.org/projects/freepbx/announcement/pt_PT/>\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
+
+#: page.announcement.php:54 page.announcement.php:85
+msgid "Add Announcement"
+msgstr "Adicionar Anúncio"
+
+#: page.announcement.php:130
+msgid "Allow Skip"
+msgstr "Permitir Saltar"
+
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:225
+#, php-format
+msgid "Announcement: %s"
+msgstr "Anúncio: %s"
+
+#: announcement.i18n.php:3 announcement.i18n.php:6 announcement.i18n.php:8
+#: announcement.i18n.php:14
+msgid "Announcements"
+msgstr "Anúncios"
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Applications"
+msgstr "Aplicações"
+
+#: page.announcement.php:138
+msgid ""
+"Check this to keep the channel from explicitly being answered. When checked, "
+"the message will be played and if the channel is not already answered it "
+"will be delivered as early media if the channel supports that. When not "
+"checked, the channel is answered followed by a 1 second delay. When using an "
+"announcement from an IVR or other sources that have already answered the "
+"channel, that 1 second delay may not be desired."
+msgstr ""
+
+#: install.php:90
+msgid "Checking if recordings need migration.."
+msgstr "Verificando se se é necessário migrar gravações.."
+
+#: page.announcement.php:151
+msgid "Delete"
+msgstr "Eliminar"
+
+#: page.announcement.php:87
+msgid "Description"
+msgstr "Descrição"
+
+#: page.announcement.php:142
+msgid "Destination after playback"
+msgstr "Destino após reprodução"
+
+#: page.announcement.php:121
+msgid "Disable"
+msgstr "Desativar"
+
+#: page.announcement.php:138
+#, fuzzy
+msgid "Don't Answer Channel"
+msgstr "Não Atender Canal"
+
+#: page.announcement.php:85
+msgid "Edit Announcement"
+msgstr "Editar Anúncio"
+
+#: page.announcement.php:130
+msgid "If the caller is allowed to press a key to skip the message."
+msgstr "Se for permitido ao chamador premir uma tecla para saltar mensagem."
+
+#: page.announcement.php:134
+msgid ""
+"If this announcement came from an IVR and this box is checked, the "
+"destination below will be ignored and instead it will return to the calling "
+"IVR. Otherwise, the destination below will be taken. Don't check if not "
+"using in this mode. <br>The IVR return location will be to the last IVR in "
+"the call chain that was called so be careful to only check when needed. For "
+"example, if an IVR directs a call to another destination which eventually "
+"calls this announcement and this box is checked, it will return to that IVR "
+"which may not be the expected behavior."
+msgstr ""
+
+#: page.announcement.php:176
+msgid "Invalid description specified"
+msgstr "Especificada descrição inválida"
+
+#: page.announcement.php:111
+msgid ""
+"Key to press that will allow for the message to be replayed. If you choose "
+"this option there will be a short delay inserted after the message. If a "
+"longer delay is needed it should be incorporated into the recording."
+msgstr ""
+
+#: page.announcement.php:93
+msgid ""
+"Message to be played.<br>To add additional recordings use the \"System "
+"Recordings\" MENU to the left"
+msgstr ""
+"Mensagem a ser reproduzida.<br>Para adicionar mais gravações utilize o MENU "
+"\"Gravações de Sistema\" à esquerda"
+
+#: page.announcement.php:100
+msgid "None"
+msgstr "Nenhum"
+
+#: announcement.i18n.php:5 announcement.i18n.php:12
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+"Reproduz uma das gravações do sistema (opcionalmente permitindo ao "
+"utilizador saltá-la), passando em seguida para outro destino."
+
+#: page.announcement.php:93
+msgid "Recording"
+msgstr "Gravação"
+
+#: page.announcement.php:111
+msgid "Repeat"
+msgstr "Repetir"
+
+#: page.announcement.php:134
+msgid "Return to IVR"
+msgstr "Voltar ao IVR"
+
+#: page.announcement.php:150
+msgid "Submit Changes"
+msgstr "Submeter Alterações"
+
+#: page.announcement.php:87
+msgid "The name of this announcement"
+msgstr "O nome deste anúncio"
+
+#: install.php:97
+msgid "adding recording_id field.."
+msgstr "adicionando campo recording_id.."
+
+#: install.php:147
+msgid "already migrated"
+msgstr "anteriormente migrado"
+
+#: install.php:137
+msgid "dropping recording field.."
+msgstr "apagando o campo recording.."
+
+#: install.php:101 install.php:113 install.php:129
+msgid "fatal error"
+msgstr "erro fatal"
+
+#: install.php:109
+msgid "migrate to recording ids.."
+msgstr "migrar para ids de gravações.."
+
+#: install.php:133
+#, php-format
+msgid "migrated %s entries"
+msgstr "%s entradas migradas"
+
+#: install.php:96
+msgid "migrating"
+msgstr "migrando"
+
+#: install.php:141
+msgid "no recording field???"
+msgstr "sem campo de gravação???"
+
+#: install.php:104 install.php:143
+msgid "ok"
+msgstr ""
