@@ -23,7 +23,10 @@
 		<tr>
 			<td><?php echo $row['announcement_id']?></td>
 			<td><?php echo $row['description']?></td>
-			<td><a href="?display=announcement&amp;view=form&amp;extdisplay=<?php echo $row['announcement_id']?>"><i class="fa fa-edit"></i></a></td>
+			<td>
+				<a href="?display=announcement&amp;view=form&amp;extdisplay=<?php echo $row['announcement_id']?>"><i class="fa fa-edit"></i></a>
+				<a href="?display=announcement&amp;action=delete&amp;extdisplay=<?php echo $row['announcement_id']?>" class="delAction"><i class="fa fa-trash"></i></a>
+			</td>
 		</tr>
 	<?php } ?>
 </tbody>

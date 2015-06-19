@@ -145,11 +145,16 @@ function announcement_get($announcement_id) {
 	// Added Associative query above but put positional indexes back to maintain backward compatibility
 	//
 	$i = 0;
-	foreach ($row as $item) {
-		$row[$i] = $item;
-		$i++;
+	if(!empty($row) && is_array($row)) {
+		foreach ($row as $item) {
+			$row[$i] = $item;
+			$i++;
+		}
+		return $row;
+	} else {
+		return array();
 	}
-	return $row;
+
 }
 
 function announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
