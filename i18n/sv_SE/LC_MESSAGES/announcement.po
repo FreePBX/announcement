@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBXannouncement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-22 11:34-0400\n"
+"POT-Creation-Date: 2015-06-19 12:11-0400\n"
 "PO-Revision-Date: 2008-10-10 20:20+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -54,7 +54,7 @@ msgstr "Tillåt hoppa över"
 msgid "Announcement"
 msgstr ""
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:225
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:230
 #, php-format
 msgid "Announcement: %s"
 msgstr "Meddelande: %s"

@@ -2,11 +2,12 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>13.0.1alpha3</version>
+	<version>13.0.1alpha4</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*13.0.1alpha4* FREEPBX-9495 Cannot Delete Announcement
 		*13.0.1alpha3* Overall fixes and tweaks
 		*13.0.1alpha2* Fix popovers
 		*13.0.1alpha1* Complete reskin

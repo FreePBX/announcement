@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-22 11:34-0400\n"
+"POT-Creation-Date: 2015-06-19 12:11-0400\n"
 "PO-Revision-Date: 2015-03-19 20:53+0200\n"
 "Last-Translator: Jan Peter <jpveldhuizen@gmail.com>\n"
 "Language-Team: Dutch <http://weblate.freepbx.org/projects/freepbx/"
@@ -45,7 +45,7 @@ msgstr "Overslaan toestaan"
 msgid "Announcement"
 msgstr ""
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:225
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:230
 #, php-format
 msgid "Announcement: %s"
 msgstr "Aankondiging: %s"

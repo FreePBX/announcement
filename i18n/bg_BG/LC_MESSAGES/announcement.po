@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-22 11:34-0400\n"
+"POT-Creation-Date: 2015-06-19 12:11-0400\n"
 "PO-Revision-Date: 2014-11-17 16:32+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -56,7 +56,7 @@ msgstr "Позволи Прескачане"
 msgid "Announcement"
 msgstr ""
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:225
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:230
 #, php-format
 msgid "Announcement: %s"
 msgstr "Съобщение: %s"

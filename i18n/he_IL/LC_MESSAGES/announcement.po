@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX announcement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-22 11:34-0400\n"
+"POT-Creation-Date: 2015-06-19 12:11-0400\n"
 "PO-Revision-Date: 2014-03-04 09:09+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Hebrew <http://git.freepbx.org/projects/freepbx/announcement/"
@@ -38,7 +38,7 @@ msgstr "אפשר לדלג"
 msgid "Announcement"
 msgstr ""
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:225
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:230
 #, php-format
 msgid "Announcement: %s"
 msgstr "הכרזה: %s"
