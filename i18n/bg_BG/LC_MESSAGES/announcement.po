@@ -21,16 +21,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 18:56-0500\n"
-"PO-Revision-Date: 2014-11-17 16:32+0200\n"
+"PO-Revision-Date: 2015-07-10 19:29+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
-"Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
-"announcement/bg_BG/>\n"
+"Language-Team: Bulgarian "
+"<http://weblate.freepbx.org/projects/freepbx/announcement/bg_BG/>\n"
+"Language: bg_BG\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: bg_BG\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.10-dev\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: page.announcement.php:54 page.announcement.php:85
 msgid "Add Announcement"
@@ -96,7 +96,7 @@ msgstr "Не Отваряй Канал"
 
 #: page.announcement.php:85
 msgid "Edit Announcement"
-msgstr "Редактирай Съобщение"
+msgstr "Редактиране на Съобщение"
 
 #: page.announcement.php:130
 msgid "If the caller is allowed to press a key to skip the message."
@@ -174,7 +174,7 @@ msgstr "Приеми Промените"
 
 #: page.announcement.php:87
 msgid "The name of this announcement"
-msgstr "Име на Съобщение"
+msgstr "Име за това съобщение"
 
 #: install.php:97
 msgid "adding recording_id field.."
