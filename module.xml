@@ -2,11 +2,12 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>13.0.2</version>
+	<version>13.0.3</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*13.0.3* Adjust columns to be more meaningful. Show description and destination
 		*13.0.2* Version bump Beta
 		*13.0.1alpha4* FREEPBX-9495 Cannot Delete Announcement
 		*13.0.1alpha3* Overall fixes and tweaks
