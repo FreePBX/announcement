@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 18:56-0500\n"
+"POT-Creation-Date: 2015-06-19 12:11-0400\n"
 "PO-Revision-Date: 2014-03-04 08:44+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Hungarian <http://git.freepbx.org/projects/freepbx/"
@@ -35,80 +35,71 @@ msgstr ""
 "X-Poedit-Country: HUNGARY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: page.announcement.php:54 page.announcement.php:85
-msgid "Add Announcement"
-msgstr "Esemény hozzáadása"
+#: page.announcement.php:15
+msgid ": Add"
+msgstr ""
 
-#: page.announcement.php:130
+#: page.announcement.php:13
+msgid ": Edit"
+msgstr ""
+
+#: views/grid.php:18
+msgid "Actions"
+msgstr ""
+
+#: views/grid.php:8
+msgid "Add"
+msgstr ""
+
+#: views/form.php:153
 msgid "Allow Skip"
 msgstr "Elfogad kihagyást"
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:225
+#: page.announcement.php:7
+msgid "Announcement"
+msgstr ""
+
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:230
 #, php-format
 msgid "Announcement: %s"
 msgstr ""
-
-#: announcement.i18n.php:3 announcement.i18n.php:6 announcement.i18n.php:8
-#: announcement.i18n.php:14
-msgid "Announcements"
-msgstr "Közlemények"
-
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Applications"
-msgstr "Alkalmazások"
-
-#: page.announcement.php:138
-msgid ""
-"Check this to keep the channel from explicitly being answered. When checked, "
-"the message will be played and if the channel is not already answered it "
-"will be delivered as early media if the channel supports that. When not "
-"checked, the channel is answered followed by a 1 second delay. When using an "
-"announcement from an IVR or other sources that have already answered the "
-"channel, that 1 second delay may not be desired."
-msgstr ""
-"Használd ezt a pipát, ha a hívás ezidáig megválaszolatlan. Ha megjelölöd, "
-"akkor az üzenet lejátszása után, ha a csatorna támogatja, és még nem lett "
-"megválaszolva a hívás, akkor a hívásidő innentől lesz számolva. Ha nem "
-"jelölöd meg, akkor a hívás egy 1 másodperces várakozással meg lesz "
-"válaszolva. Amikor az eseményt egy IVR-ben, vagy más helyzetben használod, "
-"akkor ez az 1 másodperces várakozás elmaradhat."
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
 msgstr ""
 
-#: page.announcement.php:151
+#: Announcement.class.php:23 views/grid.php:10
 msgid "Delete"
 msgstr "Törlés"
 
-#: page.announcement.php:87
+#: views/form.php:102 views/grid.php:17
 msgid "Description"
 msgstr "Meghatározás"
 
-#: page.announcement.php:142
-msgid "Destination after playback"
-msgstr "Visszajátszás utáni cél"
+#: views/form.php:234
+msgid "Destination after Playback"
+msgstr ""
 
-#: page.announcement.php:121
+#: views/form.php:72
 msgid "Disable"
 msgstr "Tiltás"
 
-#: page.announcement.php:138
+#: views/form.php:207
 msgid "Don't Answer Channel"
 msgstr "Nem megválaszolt csatorna."
 
-#: page.announcement.php:85
-msgid "Edit Announcement"
-msgstr "Esemény szerkesztése"
+#: views/grid.php:16
+msgid "ID"
+msgstr ""
 
-#: page.announcement.php:130
+#: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 "Ha elfogadott, akkor a hívó egy gomb megnyomásával átugorhatja az üzenetet."
 
-#: page.announcement.php:134
+#: views/form.php:195
 msgid ""
-"If this announcement came from an IVR and this box is checked, the "
+"If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
 "IVR. Otherwise, the destination below will be taken. Don't check if not "
 "using in this mode. <br>The IVR return location will be to the last IVR in "
@@ -117,19 +108,12 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
-"Ha az esemény egy IVR-ből lett megcímezve, és ez a pipa meg van jelölve, "
-"akkor a célpont figyelmen kívül lessz hagyva, és az üzenet lejátszása után "
-"ismét az IVR lesz meghívva. Minden egyéb esetben a célpont lesz az érvényes "
-"következő feladat. Ne használd, ha nem használnád. <br> Az IVR-be "
-"visszatérés helye az utolsó kért IVR pont. Ha ide akarsz visszatérni, csak "
-"akkor jelöld be. Ha egy másik IVR helyre szeretnél továbbmenni, akkor a "
-"célpontok között jelöld meg azt az IVR pontot."
 
-#: page.announcement.php:176
+#: page.announcement.php:50
 msgid "Invalid description specified"
 msgstr ""
 
-#: page.announcement.php:111
+#: views/form.php:141
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -139,43 +123,65 @@ msgstr ""
 "van, akkor egy kisebb szünet lesz az üzenet után illesztve. Ha hosszabb "
 "szünetre lenne szükséged, akkor azt az üzenet rögzítésbe tervezd bele."
 
-#: page.announcement.php:93
+#: views/bootnav.php:5
+msgid "List Announcements"
+msgstr ""
+
+#: views/form.php:59
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
-"Recordings\" MENU to the left"
+"Recordings\" MENU above"
 msgstr ""
-"Üzenet lejátszása.<br>Előzőleg a a rögzítéshez a \"Központoi rögzítés\" "
-"menüpontot használd a BAL menüben."
 
-#: page.announcement.php:100
+#: views/form.php:160 views/form.php:187 views/form.php:214
+msgid "No"
+msgstr ""
+
+#: views/form.php:32
 msgid "None"
 msgstr ""
 
-#: announcement.i18n.php:5 announcement.i18n.php:12
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-
-#: page.announcement.php:93
+#: views/form.php:45
 msgid "Recording"
 msgstr "Rögzítés"
 
-#: page.announcement.php:111
+#: views/form.php:127
 msgid "Repeat"
 msgstr "Ismétlés"
 
-#: page.announcement.php:134
+#: Announcement.class.php:28
+msgid "Reset"
+msgstr ""
+
+#: views/form.php:180
 msgid "Return to IVR"
 msgstr "Vissza az IVR-be."
 
-#: page.announcement.php:150
-msgid "Submit Changes"
+#: views/form.php:222
+msgid ""
+"Set this to yes, to keep the channel from explicitly being answered. When "
+"checked, the message will be played and if the channel is not already "
+"answered it will be delivered as early media if the channel supports that. "
+"When not checked, the channel is answered followed by a 1 second delay. When "
+"using an announcement from an IVR or other sources that have already "
+"answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: page.announcement.php:87
-msgid "The name of this announcement"
-msgstr "Esemény neve"
+#: Announcement.class.php:33
+msgid "Submit"
+msgstr ""
+
+#: views/form.php:114
+msgid "The name of this announcement."
+msgstr ""
+
+#: views/form.php:246
+msgid "Where to send the caller after the announcement is played."
+msgstr ""
+
+#: views/form.php:158 views/form.php:185 views/form.php:212
+msgid "Yes"
+msgstr ""
 
 #: install.php:97
 msgid "adding recording_id field.."
@@ -213,3 +219,61 @@ msgstr ""
 #: install.php:104 install.php:143
 msgid "ok"
 msgstr ""
+
+#~ msgid "Announcements"
+#~ msgstr "Közlemények"
+
+#~ msgid "Applications"
+#~ msgstr "Alkalmazások"
+
+#~ msgid "Add Announcement"
+#~ msgstr "Esemény hozzáadása"
+
+#~ msgid ""
+#~ "Check this to keep the channel from explicitly being answered. When "
+#~ "checked, the message will be played and if the channel is not already "
+#~ "answered it will be delivered as early media if the channel supports "
+#~ "that. When not checked, the channel is answered followed by a 1 second "
+#~ "delay. When using an announcement from an IVR or other sources that have "
+#~ "already answered the channel, that 1 second delay may not be desired."
+#~ msgstr ""
+#~ "Használd ezt a pipát, ha a hívás ezidáig megválaszolatlan. Ha megjelölöd, "
+#~ "akkor az üzenet lejátszása után, ha a csatorna támogatja, és még nem lett "
+#~ "megválaszolva a hívás, akkor a hívásidő innentől lesz számolva. Ha nem "
+#~ "jelölöd meg, akkor a hívás egy 1 másodperces várakozással meg lesz "
+#~ "válaszolva. Amikor az eseményt egy IVR-ben, vagy más helyzetben "
+#~ "használod, akkor ez az 1 másodperces várakozás elmaradhat."
+
+#~ msgid "Destination after playback"
+#~ msgstr "Visszajátszás utáni cél"
+
+#~ msgid "Edit Announcement"
+#~ msgstr "Esemény szerkesztése"
+
+#~ msgid ""
+#~ "If this announcement came from an IVR and this box is checked, the "
+#~ "destination below will be ignored and instead it will return to the "
+#~ "calling IVR. Otherwise, the destination below will be taken. Don't check "
+#~ "if not using in this mode. <br>The IVR return location will be to the "
+#~ "last IVR in the call chain that was called so be careful to only check "
+#~ "when needed. For example, if an IVR directs a call to another destination "
+#~ "which eventually calls this announcement and this box is checked, it will "
+#~ "return to that IVR which may not be the expected behavior."
+#~ msgstr ""
+#~ "Ha az esemény egy IVR-ből lett megcímezve, és ez a pipa meg van jelölve, "
+#~ "akkor a célpont figyelmen kívül lessz hagyva, és az üzenet lejátszása "
+#~ "után ismét az IVR lesz meghívva. Minden egyéb esetben a célpont lesz az "
+#~ "érvényes következő feladat. Ne használd, ha nem használnád. <br> Az IVR-"
+#~ "be visszatérés helye az utolsó kért IVR pont. Ha ide akarsz visszatérni, "
+#~ "csak akkor jelöld be. Ha egy másik IVR helyre szeretnél továbbmenni, "
+#~ "akkor a célpontok között jelöld meg azt az IVR pontot."
+
+#~ msgid ""
+#~ "Message to be played.<br>To add additional recordings use the \"System "
+#~ "Recordings\" MENU to the left"
+#~ msgstr ""
+#~ "Üzenet lejátszása.<br>Előzőleg a a rögzítéshez a \"Központoi rögzítés\" "
+#~ "menüpontot használd a BAL menüben."
+
+#~ msgid "The name of this announcement"
+#~ msgstr "Esemény neve"

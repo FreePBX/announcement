@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX announcement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 18:56-0500\n"
+"POT-Creation-Date: 2015-06-19 12:11-0400\n"
 "PO-Revision-Date: 2014-03-04 09:09+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Hebrew <http://git.freepbx.org/projects/freepbx/announcement/"
@@ -14,78 +14,70 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 1.9-dev\n"
 
-#: page.announcement.php:54 page.announcement.php:85
-msgid "Add Announcement"
-msgstr "הוסף הכרזה"
+#: page.announcement.php:15
+msgid ": Add"
+msgstr ""
 
-#: page.announcement.php:130
+#: page.announcement.php:13
+msgid ": Edit"
+msgstr ""
+
+#: views/grid.php:18
+msgid "Actions"
+msgstr ""
+
+#: views/grid.php:8
+msgid "Add"
+msgstr ""
+
+#: views/form.php:153
 msgid "Allow Skip"
 msgstr "אפשר לדלג"
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:225
+#: page.announcement.php:7
+msgid "Announcement"
+msgstr ""
+
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:230
 #, php-format
 msgid "Announcement: %s"
 msgstr "הכרזה: %s"
-
-#: announcement.i18n.php:3 announcement.i18n.php:6 announcement.i18n.php:8
-#: announcement.i18n.php:14
-msgid "Announcements"
-msgstr "הכרזות"
-
-#: announcement.i18n.php:4 announcement.i18n.php:10
-#, fuzzy
-msgid "Applications"
-msgstr "יישומים"
-
-#: page.announcement.php:138
-msgid ""
-"Check this to keep the channel from explicitly being answered. When checked, "
-"the message will be played and if the channel is not already answered it "
-"will be delivered as early media if the channel supports that. When not "
-"checked, the channel is answered followed by a 1 second delay. When using an "
-"announcement from an IVR or other sources that have already answered the "
-"channel, that 1 second delay may not be desired."
-msgstr ""
-"סמן את זה כדי לשמור את הערוץ מanswer במפורש. כאשר מסומן, ההקלתה יוכרז ואם "
-"עדיין לא היתה answer אל הערוץ ישודר כearly media אם הערוץ תומכת בזה. כאשר לא "
-"מסומן נשלחת answer לערוץ ואח\"כ השהיה של שניה. יתכן שהשהיה אינו רצוי כאשר "
-"ההכרזה מגיע אחרי IVR או גורם אחר שכבר שלך answer לערוץ"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
 msgstr "בודק אם הקלטות צריכות הגירה.."
 
-#: page.announcement.php:151
+#: Announcement.class.php:23 views/grid.php:10
 msgid "Delete"
 msgstr "מחק"
 
-#: page.announcement.php:87
+#: views/form.php:102 views/grid.php:17
 msgid "Description"
 msgstr "תאור"
 
-#: page.announcement.php:142
-msgid "Destination after playback"
-msgstr "יעד אחרי הכרזה"
+#: views/form.php:234
+msgid "Destination after Playback"
+msgstr ""
 
-#: page.announcement.php:121
+#: views/form.php:72
 msgid "Disable"
 msgstr "נטרל"
 
-#: page.announcement.php:138
+#: views/form.php:207
 msgid "Don't Answer Channel"
 msgstr "לא לענות לערוץ"
 
-#: page.announcement.php:85
-msgid "Edit Announcement"
-msgstr "ערוך הכרזה"
+#: views/grid.php:16
+msgid "ID"
+msgstr ""
 
-#: page.announcement.php:130
+#: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr "אם  מותר למתקשר ללחוץ על מקש כדי לדלג על ההכרזה"
 
-#: page.announcement.php:134
+#: views/form.php:195
 msgid ""
-"If this announcement came from an IVR and this box is checked, the "
+"If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
 "IVR. Otherwise, the destination below will be taken. Don't check if not "
 "using in this mode. <br>The IVR return location will be to the last IVR in "
@@ -93,13 +85,13 @@ msgid ""
 "example, if an IVR directs a call to another destination which eventually "
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
-msgstr "אם הכרזה זו באה מIVR ואפשארות זו מסומנת, היעד הבא הIVR  ולא יעד הבאה"
+msgstr ""
 
-#: page.announcement.php:176
+#: page.announcement.php:50
 msgid "Invalid description specified"
 msgstr "ציון תיאור לא חוקי"
 
-#: page.announcement.php:111
+#: views/form.php:141
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -108,43 +100,65 @@ msgstr ""
 "מקש שיחזור אל ההכרזה. במדיה שמסומן, יוסיף השהיה של ממש אחרי ההכרזה. להשהיה "
 "ליותר זמן תשלב ההשהיה בתוך ההקלתה"
 
-#: page.announcement.php:93
+#: views/bootnav.php:5
+msgid "List Announcements"
+msgstr ""
+
+#: views/form.php:59
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
-"Recordings\" MENU to the left"
-msgstr "הודעה להחרזה. <br> כדי להוסיף הקלטות נוספות להשתמש במודל הקלתות מערכת"
+"Recordings\" MENU above"
+msgstr ""
 
-#: page.announcement.php:100
+#: views/form.php:160 views/form.php:187 views/form.php:214
+msgid "No"
+msgstr ""
+
+#: views/form.php:32
 msgid "None"
 msgstr "ללא"
 
-#: announcement.i18n.php:5 announcement.i18n.php:12
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"משמיע אחת הקלטות המערכת (עם אפשרות המאפשר למשתמש לדלג על זה) ולאחר מכן עובר "
-"ליעד אחר."
-
-#: page.announcement.php:93
+#: views/form.php:45
 msgid "Recording"
 msgstr "הקלטה"
 
-#: page.announcement.php:111
+#: views/form.php:127
 msgid "Repeat"
 msgstr "חוזר"
 
-#: page.announcement.php:134
+#: Announcement.class.php:28
+msgid "Reset"
+msgstr ""
+
+#: views/form.php:180
 msgid "Return to IVR"
 msgstr "חזור אל IVR"
 
-#: page.announcement.php:150
-msgid "Submit Changes"
-msgstr "שמור שינוים"
+#: views/form.php:222
+msgid ""
+"Set this to yes, to keep the channel from explicitly being answered. When "
+"checked, the message will be played and if the channel is not already "
+"answered it will be delivered as early media if the channel supports that. "
+"When not checked, the channel is answered followed by a 1 second delay. When "
+"using an announcement from an IVR or other sources that have already "
+"answered the channel, that 1 second delay may not be desired."
+msgstr ""
 
-#: page.announcement.php:87
-msgid "The name of this announcement"
-msgstr "שם ההכרזה"
+#: Announcement.class.php:33
+msgid "Submit"
+msgstr ""
+
+#: views/form.php:114
+msgid "The name of this announcement."
+msgstr ""
+
+#: views/form.php:246
+msgid "Where to send the caller after the announcement is played."
+msgstr ""
+
+#: views/form.php:158 views/form.php:185 views/form.php:212
+msgid "Yes"
+msgstr ""
 
 #: install.php:97
 msgid "adding recording_id field.."
@@ -182,6 +196,66 @@ msgstr "\"אין שדה recording???"
 #: install.php:104 install.php:143
 msgid "ok"
 msgstr "בסדר"
+
+#~ msgid "Announcements"
+#~ msgstr "הכרזות"
+
+#, fuzzy
+#~ msgid "Applications"
+#~ msgstr "יישומים"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "משמיע אחת הקלטות המערכת (עם אפשרות המאפשר למשתמש לדלג על זה) ולאחר מכן "
+#~ "עובר ליעד אחר."
+
+#~ msgid "Add Announcement"
+#~ msgstr "הוסף הכרזה"
+
+#~ msgid ""
+#~ "Check this to keep the channel from explicitly being answered. When "
+#~ "checked, the message will be played and if the channel is not already "
+#~ "answered it will be delivered as early media if the channel supports "
+#~ "that. When not checked, the channel is answered followed by a 1 second "
+#~ "delay. When using an announcement from an IVR or other sources that have "
+#~ "already answered the channel, that 1 second delay may not be desired."
+#~ msgstr ""
+#~ "סמן את זה כדי לשמור את הערוץ מanswer במפורש. כאשר מסומן, ההקלתה יוכרז ואם "
+#~ "עדיין לא היתה answer אל הערוץ ישודר כearly media אם הערוץ תומכת בזה. כאשר "
+#~ "לא מסומן נשלחת answer לערוץ ואח\"כ השהיה של שניה. יתכן שהשהיה אינו רצוי "
+#~ "כאשר ההכרזה מגיע אחרי IVR או גורם אחר שכבר שלך answer לערוץ"
+
+#~ msgid "Destination after playback"
+#~ msgstr "יעד אחרי הכרזה"
+
+#~ msgid "Edit Announcement"
+#~ msgstr "ערוך הכרזה"
+
+#~ msgid ""
+#~ "If this announcement came from an IVR and this box is checked, the "
+#~ "destination below will be ignored and instead it will return to the "
+#~ "calling IVR. Otherwise, the destination below will be taken. Don't check "
+#~ "if not using in this mode. <br>The IVR return location will be to the "
+#~ "last IVR in the call chain that was called so be careful to only check "
+#~ "when needed. For example, if an IVR directs a call to another destination "
+#~ "which eventually calls this announcement and this box is checked, it will "
+#~ "return to that IVR which may not be the expected behavior."
+#~ msgstr ""
+#~ "אם הכרזה זו באה מIVR ואפשארות זו מסומנת, היעד הבא הIVR  ולא יעד הבאה"
+
+#~ msgid ""
+#~ "Message to be played.<br>To add additional recordings use the \"System "
+#~ "Recordings\" MENU to the left"
+#~ msgstr ""
+#~ "הודעה להחרזה. <br> כדי להוסיף הקלטות נוספות להשתמש במודל הקלתות מערכת"
+
+#~ msgid "Submit Changes"
+#~ msgstr "שמור שינוים"
+
+#~ msgid "The name of this announcement"
+#~ msgstr "שם ההכרזה"
 
 #~ msgid "Apps"
 #~ msgstr "יישומים"

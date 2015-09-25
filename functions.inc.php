@@ -105,7 +105,7 @@ function announcement_get_config($engine) {
 					if ($row['allow_skip'] || $row['repeat_msg'])
 						$ext->add('app-announcement-'.$row['announcement_id'], 'i', '', new ext_goto($row['post_dest']));
 				}
-				
+
 			}
 		break;
 	}
@@ -116,7 +116,7 @@ function announcement_list() {
 	$sql = "SELECT announcement_id, description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement ORDER BY description ";
 	$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($results)) {
-		die_freepbx($results->getMessage()."<br><br>Error selecting from announcement");	
+		die_freepbx($results->getMessage()."<br><br>Error selecting from announcement");
 	}
 
 	// Make array backward compatible.
@@ -140,16 +140,21 @@ function announcement_get($announcement_id) {
 	$sql = "SELECT announcement_id, description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement WHERE announcement_id = '".$db->escapeSimple($announcement_id)."'";
 	$row = $db->getRow($sql,DB_FETCHMODE_ASSOC);
 	if(DB::IsError($row)) {
-		die_freepbx($row->getMessage()."<br><br>Error selecting row from announcement");	
+		die_freepbx($row->getMessage()."<br><br>Error selecting row from announcement");
 	}
 	// Added Associative query above but put positional indexes back to maintain backward compatibility
 	//
 	$i = 0;
-	foreach ($row as $item) {
-		$row[$i] = $item;
-		$i++;
+	if(!empty($row) && is_array($row)) {
+		foreach ($row as $item) {
+			$row[$i] = $item;
+			$i++;
+		}
+		return $row;
+	} else {
+		return array();
 	}
-	return $row;
+
 }
 
 function announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
@@ -182,10 +187,10 @@ function announcement_delete($announcement_id) {
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
 	}
-	
+
 }
 
-function announcement_edit($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) { 
+function announcement_edit($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
 	global $db;
 	$sql = "UPDATE announcement SET ".
 		"description = '".$db->escapeSimple($description)."', ".

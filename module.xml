@@ -2,11 +2,17 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>2.11.0.4</version>
-	<publisher>Schmooze Com Inc</publisher>
+	<version>13.0.3</version>
+	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*13.0.3* Adjust columns to be more meaningful. Show description and destination
+		*13.0.2* Version bump Beta
+		*13.0.1alpha4* FREEPBX-9495 Cannot Delete Announcement
+		*13.0.1alpha3* Overall fixes and tweaks
+		*13.0.1alpha2* Fix popovers
+		*13.0.1alpha1* Complete reskin
 		*2.11.0.4* Generate license file
 		*2.11.0.1* Using last_id() function (if available) for database calls
 		*2.11.0.0* #6051
@@ -49,10 +55,11 @@
 	<popovers>
 		<announcement>
 			<display>announcement</display>
+			<view>form</view>
 		</announcement>
  	</popovers>
 	<supported>
-		<version>2.10</version>
+		<version>13.0</version>
 	</supported>
 	<location>release/2.11/announcement-2.11.0.0.tgz</location>
 	<md5sum>704dee25bbe8e854fa4e126018b83864</md5sum>
