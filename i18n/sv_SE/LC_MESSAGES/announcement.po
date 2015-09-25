@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBXannouncement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-19 12:11-0400\n"
+"POT-Creation-Date: 2015-09-25 16:46-0700\n"
 "PO-Revision-Date: 2008-10-10 20:20+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -38,11 +38,11 @@ msgstr ""
 msgid ": Edit"
 msgstr ""
 
-#: views/grid.php:18
+#: views/grid.php:16
 msgid "Actions"
 msgstr ""
 
-#: views/grid.php:8
+#: views/grid.php:9
 msgid "Add"
 msgstr ""
 
@@ -63,13 +63,17 @@ msgstr "Meddelande: %s"
 msgid "Checking if recordings need migration.."
 msgstr "Kontrollerar om inspelningar behöver migreras.."
 
-#: Announcement.class.php:23 views/grid.php:10
+#: Announcement.class.php:23
 msgid "Delete"
 msgstr "Ta bort"
 
-#: views/form.php:102 views/grid.php:17
+#: views/form.php:102 views/grid.php:14
 msgid "Description"
 msgstr "Beskrivning"
+
+#: views/grid.php:15
+msgid "Destination"
+msgstr ""
 
 #: views/form.php:234
 msgid "Destination after Playback"
@@ -82,10 +86,6 @@ msgstr "Avaktivera"
 #: views/form.php:207
 msgid "Don't Answer Channel"
 msgstr "Svara inte denna kanal"
-
-#: views/grid.php:16
-msgid "ID"
-msgstr ""
 
 #: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
@@ -149,7 +149,7 @@ msgstr "Repetera"
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:180
+#: views/form.php:180 views/grid.php:22
 msgid "Return to IVR"
 msgstr "Återgå till den digitala receptionisten"
 

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-19 12:11-0400\n"
+"POT-Creation-Date: 2015-09-25 16:46-0700\n"
 "PO-Revision-Date: 2014-07-26 00:02+0200\n"
 "Last-Translator: Rafael <rafael@ibinetwork.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://git.freepbx.org/projects/freepbx/"
@@ -40,11 +40,11 @@ msgstr ""
 msgid ": Edit"
 msgstr ""
 
-#: views/grid.php:18
+#: views/grid.php:16
 msgid "Actions"
 msgstr ""
 
-#: views/grid.php:8
+#: views/grid.php:9
 msgid "Add"
 msgstr ""
 
@@ -65,13 +65,17 @@ msgstr "Anuncio: %s"
 msgid "Checking if recordings need migration.."
 msgstr "Checando se a gravação precisa migrar..."
 
-#: Announcement.class.php:23 views/grid.php:10
+#: Announcement.class.php:23
 msgid "Delete"
 msgstr "Apagar"
 
-#: views/form.php:102 views/grid.php:17
+#: views/form.php:102 views/grid.php:14
 msgid "Description"
 msgstr "Descrição"
+
+#: views/grid.php:15
+msgid "Destination"
+msgstr ""
 
 #: views/form.php:234
 msgid "Destination after Playback"
@@ -83,10 +87,6 @@ msgstr "Desabilitar"
 
 #: views/form.php:207
 msgid "Don't Answer Channel"
-msgstr ""
-
-#: views/grid.php:16
-msgid "ID"
 msgstr ""
 
 #: views/form.php:168
@@ -146,7 +146,7 @@ msgstr "Repetir"
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:180
+#: views/form.php:180 views/grid.php:22
 msgid "Return to IVR"
 msgstr "Retornar para URA"
 

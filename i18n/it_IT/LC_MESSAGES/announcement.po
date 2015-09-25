@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-19 12:11-0400\n"
+"POT-Creation-Date: 2015-09-25 16:46-0700\n"
 "PO-Revision-Date: 2008-11-06 14:48+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -25,11 +25,11 @@ msgstr ""
 msgid ": Edit"
 msgstr ""
 
-#: views/grid.php:18
+#: views/grid.php:16
 msgid "Actions"
 msgstr ""
 
-#: views/grid.php:8
+#: views/grid.php:9
 msgid "Add"
 msgstr ""
 
@@ -50,13 +50,17 @@ msgstr "Annuncio: %s"
 msgid "Checking if recordings need migration.."
 msgstr "Controllo se le registrazioni hanno bisogno di una migrazione.."
 
-#: Announcement.class.php:23 views/grid.php:10
+#: Announcement.class.php:23
 msgid "Delete"
 msgstr "Elimina"
 
-#: views/form.php:102 views/grid.php:17
+#: views/form.php:102 views/grid.php:14
 msgid "Description"
 msgstr "Descrizione"
+
+#: views/grid.php:15
+msgid "Destination"
+msgstr ""
 
 #: views/form.php:234
 msgid "Destination after Playback"
@@ -69,10 +73,6 @@ msgstr "Disattivato"
 #: views/form.php:207
 msgid "Don't Answer Channel"
 msgstr "Non Rispondere al Canale"
-
-#: views/grid.php:16
-msgid "ID"
-msgstr ""
 
 #: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
@@ -133,7 +133,7 @@ msgstr "Ripeti"
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:180
+#: views/form.php:180 views/grid.php:22
 msgid "Return to IVR"
 msgstr "Ritorna all'IVR"
 

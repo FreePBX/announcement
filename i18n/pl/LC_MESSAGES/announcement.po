@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-19 12:11-0400\n"
+"POT-Creation-Date: 2015-09-25 16:46-0700\n"
 "PO-Revision-Date: 2011-09-23 09:52+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -38,11 +38,11 @@ msgstr ""
 msgid ": Edit"
 msgstr ""
 
-#: views/grid.php:18
+#: views/grid.php:16
 msgid "Actions"
 msgstr ""
 
-#: views/grid.php:8
+#: views/grid.php:9
 msgid "Add"
 msgstr ""
 
@@ -63,12 +63,16 @@ msgstr ""
 msgid "Checking if recordings need migration.."
 msgstr ""
 
-#: Announcement.class.php:23 views/grid.php:10
+#: Announcement.class.php:23
 msgid "Delete"
 msgstr ""
 
-#: views/form.php:102 views/grid.php:17
+#: views/form.php:102 views/grid.php:14
 msgid "Description"
+msgstr ""
+
+#: views/grid.php:15
+msgid "Destination"
 msgstr ""
 
 #: views/form.php:234
@@ -81,10 +85,6 @@ msgstr ""
 
 #: views/form.php:207
 msgid "Don't Answer Channel"
-msgstr ""
-
-#: views/grid.php:16
-msgid "ID"
 msgstr ""
 
 #: views/form.php:168
@@ -144,7 +144,7 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:180
+#: views/form.php:180 views/grid.php:22
 msgid "Return to IVR"
 msgstr ""
 

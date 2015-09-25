@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX announcement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-19 12:11-0400\n"
+"POT-Creation-Date: 2015-09-25 16:46-0700\n"
 "PO-Revision-Date: 2014-03-04 09:09+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Hebrew <http://git.freepbx.org/projects/freepbx/announcement/"
@@ -22,11 +22,11 @@ msgstr ""
 msgid ": Edit"
 msgstr ""
 
-#: views/grid.php:18
+#: views/grid.php:16
 msgid "Actions"
 msgstr ""
 
-#: views/grid.php:8
+#: views/grid.php:9
 msgid "Add"
 msgstr ""
 
@@ -47,13 +47,17 @@ msgstr "הכרזה: %s"
 msgid "Checking if recordings need migration.."
 msgstr "בודק אם הקלטות צריכות הגירה.."
 
-#: Announcement.class.php:23 views/grid.php:10
+#: Announcement.class.php:23
 msgid "Delete"
 msgstr "מחק"
 
-#: views/form.php:102 views/grid.php:17
+#: views/form.php:102 views/grid.php:14
 msgid "Description"
 msgstr "תאור"
+
+#: views/grid.php:15
+msgid "Destination"
+msgstr ""
 
 #: views/form.php:234
 msgid "Destination after Playback"
@@ -66,10 +70,6 @@ msgstr "נטרל"
 #: views/form.php:207
 msgid "Don't Answer Channel"
 msgstr "לא לענות לערוץ"
-
-#: views/grid.php:16
-msgid "ID"
-msgstr ""
 
 #: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
@@ -130,7 +130,7 @@ msgstr "חוזר"
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:180
+#: views/form.php:180 views/grid.php:22
 msgid "Return to IVR"
 msgstr "חזור אל IVR"
 

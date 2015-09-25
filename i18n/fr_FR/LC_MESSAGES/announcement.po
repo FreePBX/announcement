@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-19 12:11-0400\n"
+"POT-Creation-Date: 2015-09-25 16:46-0700\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -35,11 +35,11 @@ msgstr ""
 msgid ": Edit"
 msgstr ""
 
-#: views/grid.php:18
+#: views/grid.php:16
 msgid "Actions"
 msgstr ""
 
-#: views/grid.php:8
+#: views/grid.php:9
 msgid "Add"
 msgstr ""
 
@@ -60,13 +60,17 @@ msgstr "Annonce: %s"
 msgid "Checking if recordings need migration.."
 msgstr "Teste si les enregistrements ont besoin d'être migrés..."
 
-#: Announcement.class.php:23 views/grid.php:10
+#: Announcement.class.php:23
 msgid "Delete"
 msgstr "Supprimer"
 
-#: views/form.php:102 views/grid.php:17
+#: views/form.php:102 views/grid.php:14
 msgid "Description"
 msgstr "Description"
+
+#: views/grid.php:15
+msgid "Destination"
+msgstr ""
 
 #: views/form.php:234
 msgid "Destination after Playback"
@@ -79,10 +83,6 @@ msgstr "Désactiver"
 #: views/form.php:207
 msgid "Don't Answer Channel"
 msgstr "Ne pas répondre au Canal"
-
-#: views/grid.php:16
-msgid "ID"
-msgstr ""
 
 #: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
@@ -145,7 +145,7 @@ msgstr "Répéter"
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:180
+#: views/form.php:180 views/grid.php:22
 msgid "Return to IVR"
 msgstr "Retourner à IVR"
 

@@ -9,92 +9,83 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 18:56-0500\n"
+"POT-Creation-Date: 2015-09-25 16:46-0700\n"
 "PO-Revision-Date: 2015-09-01 03:13+0200\n"
 "Last-Translator: Vidar Skjelanger <vidar@unimicro.no>\n"
-"Language-Team: Norwegian Bokmål "
-"<http://weblate.freepbx.org/projects/freepbx/announcement/nb_NO/>\n"
-"Language: nb_NO\n"
+"Language-Team: Norwegian Bokmål <http://weblate.freepbx.org/projects/freepbx/"
+"announcement/nb_NO/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nb_NO\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: page.announcement.php:54 page.announcement.php:85
-msgid "Add Announcement"
-msgstr "Legg til kunngjøring"
+#: page.announcement.php:15
+msgid ": Add"
+msgstr ""
 
-#: page.announcement.php:130
+#: page.announcement.php:13
+msgid ": Edit"
+msgstr ""
+
+#: views/grid.php:16
+msgid "Actions"
+msgstr ""
+
+#: views/grid.php:9
+msgid "Add"
+msgstr ""
+
+#: views/form.php:153
 msgid "Allow Skip"
 msgstr "Tillat å hoppe over"
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:225
+#: page.announcement.php:7
+msgid "Announcement"
+msgstr ""
+
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:230
 #, php-format
 msgid "Announcement: %s"
 msgstr "Kunngjøring: %s"
-
-#: announcement.i18n.php:3 announcement.i18n.php:6 announcement.i18n.php:8
-#: announcement.i18n.php:14
-msgid "Announcements"
-msgstr "Kunngjøringer"
-
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Applications"
-msgstr "Anvendelser"
-
-#: page.announcement.php:138
-msgid ""
-"Check this to keep the channel from explicitly being answered. When checked, "
-"the message will be played and if the channel is not already answered it "
-"will be delivered as early media if the channel supports that. When not "
-"checked, the channel is answered followed by a 1 second delay. When using an "
-"announcement from an IVR or other sources that have already answered the "
-"channel, that 1 second delay may not be desired."
-msgstr ""
-"Kryss av her for å hindre at kanalen blir eksplisitt besvart. Meldingen vil "
-"bli spilt av, og hvis kanalen ikke allerede er besvart vil lyden bli levert "
-"som tidlig media dersom kanalen støtter dette. Hvis dette valget ikke er "
-"avkrysset blir kanalen besvart etterfulgt av 1 sekunds forsinkelse. Når "
-"kunngjøringen brukes fra en IVR eller annen kilde som allerede har besvart "
-"kanalen, kan dette ekstra sekundet være uønsket."
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
 msgstr "Kontrollerer om lydopptak trenger å migreres..."
 
-#: page.announcement.php:151
+#: Announcement.class.php:23
 msgid "Delete"
 msgstr "Slett"
 
-#: page.announcement.php:87
+#: views/form.php:102 views/grid.php:14
 msgid "Description"
 msgstr "Beskrivelse"
 
-#: page.announcement.php:142
-msgid "Destination after playback"
-msgstr "Destinasjon etter avspilling"
+#: views/grid.php:15
+msgid "Destination"
+msgstr ""
 
-#: page.announcement.php:121
+#: views/form.php:234
+msgid "Destination after Playback"
+msgstr ""
+
+#: views/form.php:72
 msgid "Disable"
 msgstr "Deaktiver"
 
-#: page.announcement.php:138
+#: views/form.php:207
 msgid "Don't Answer Channel"
 msgstr "Ikke besvar kanalen"
 
-#: page.announcement.php:85
-msgid "Edit Announcement"
-msgstr "Endre kunngjøring"
-
-#: page.announcement.php:130
+#: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 "Om den som ringer skal kunne trykke en tast for å hoppe over kunngjøringen."
 
-#: page.announcement.php:134
+#: views/form.php:195
 msgid ""
-"If this announcement came from an IVR and this box is checked, the "
+"If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
 "IVR. Otherwise, the destination below will be taken. Don't check if not "
 "using in this mode. <br>The IVR return location will be to the last IVR in "
@@ -103,17 +94,12 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
-"Hvis denne kunngjøringen kom fra en IVR og denne boksen er krysset av, vil "
-"destinasjonen under bli ignorert og samtalen returnert til samme IVR. Ellers "
-"vil destinasjonen under bli brukt. Ikke kryss av hvis kunngjøringen ikke "
-"blir brukt på denne måten. Hvis samtalen har vært gjennom flere IVRs er det "
-"alltid den siste som blir returnert til."
 
-#: page.announcement.php:176
+#: page.announcement.php:50
 msgid "Invalid description specified"
 msgstr "Ugyldig beskrivelse angitt"
 
-#: page.announcement.php:111
+#: views/form.php:141
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -123,45 +109,65 @@ msgstr ""
 "en kort forsinkelse bli lagt inn etter kunngjøringen. Hvis det trengs en "
 "lenger forsinkelse må det tas med på lydopptaket."
 
-#: page.announcement.php:93
+#: views/bootnav.php:5
+msgid "List Announcements"
+msgstr ""
+
+#: views/form.php:59
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
-"Recordings\" MENU to the left"
+"Recordings\" MENU above"
 msgstr ""
-"Melding som skal spilles av.<br>For å legge til flere lydopptak velger du \""
-"Systeminnspillinger\" i menyen til venstre"
 
-#: page.announcement.php:100
+#: views/form.php:160 views/form.php:187 views/form.php:214
+msgid "No"
+msgstr ""
+
+#: views/form.php:32
 msgid "None"
 msgstr "Ingen"
 
-#: announcement.i18n.php:5 announcement.i18n.php:12
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"Spiller av en av systeminnspillingene (eventuelt med mulighet for å hoppe "
-"over) og fortsetter så til en annen destinasjon."
-
-#: page.announcement.php:93
+#: views/form.php:45
 msgid "Recording"
 msgstr "Lydopptak"
 
-#: page.announcement.php:111
+#: views/form.php:127
 msgid "Repeat"
 msgstr "Gjenta"
 
-#: page.announcement.php:134
+#: Announcement.class.php:28
+msgid "Reset"
+msgstr ""
+
+#: views/form.php:180 views/grid.php:22
 msgid "Return to IVR"
 msgstr "Returnere til IVR"
 
-#: page.announcement.php:150
-msgid "Submit Changes"
-msgstr "Lagre endringer"
+#: views/form.php:222
+msgid ""
+"Set this to yes, to keep the channel from explicitly being answered. When "
+"checked, the message will be played and if the channel is not already "
+"answered it will be delivered as early media if the channel supports that. "
+"When not checked, the channel is answered followed by a 1 second delay. When "
+"using an announcement from an IVR or other sources that have already "
+"answered the channel, that 1 second delay may not be desired."
+msgstr ""
 
-#: page.announcement.php:87
-msgid "The name of this announcement"
-msgstr "Kortfattet navn på denne kunngjøringen"
+#: Announcement.class.php:33
+msgid "Submit"
+msgstr ""
+
+#: views/form.php:114
+msgid "The name of this announcement."
+msgstr ""
+
+#: views/form.php:246
+msgid "Where to send the caller after the announcement is played."
+msgstr ""
+
+#: views/form.php:158 views/form.php:185 views/form.php:212
+msgid "Yes"
+msgstr ""
 
 #: install.php:97
 msgid "adding recording_id field.."
@@ -199,3 +205,69 @@ msgstr "ingen recording-felt?"
 #: install.php:104 install.php:143
 msgid "ok"
 msgstr "ok"
+
+#~ msgid "Add Announcement"
+#~ msgstr "Legg til kunngjøring"
+
+#~ msgid "Announcements"
+#~ msgstr "Kunngjøringer"
+
+#~ msgid "Applications"
+#~ msgstr "Anvendelser"
+
+#~ msgid ""
+#~ "Check this to keep the channel from explicitly being answered. When "
+#~ "checked, the message will be played and if the channel is not already "
+#~ "answered it will be delivered as early media if the channel supports "
+#~ "that. When not checked, the channel is answered followed by a 1 second "
+#~ "delay. When using an announcement from an IVR or other sources that have "
+#~ "already answered the channel, that 1 second delay may not be desired."
+#~ msgstr ""
+#~ "Kryss av her for å hindre at kanalen blir eksplisitt besvart. Meldingen "
+#~ "vil bli spilt av, og hvis kanalen ikke allerede er besvart vil lyden bli "
+#~ "levert som tidlig media dersom kanalen støtter dette. Hvis dette valget "
+#~ "ikke er avkrysset blir kanalen besvart etterfulgt av 1 sekunds "
+#~ "forsinkelse. Når kunngjøringen brukes fra en IVR eller annen kilde som "
+#~ "allerede har besvart kanalen, kan dette ekstra sekundet være uønsket."
+
+#~ msgid "Destination after playback"
+#~ msgstr "Destinasjon etter avspilling"
+
+#~ msgid "Edit Announcement"
+#~ msgstr "Endre kunngjøring"
+
+#~ msgid ""
+#~ "If this announcement came from an IVR and this box is checked, the "
+#~ "destination below will be ignored and instead it will return to the "
+#~ "calling IVR. Otherwise, the destination below will be taken. Don't check "
+#~ "if not using in this mode. <br>The IVR return location will be to the "
+#~ "last IVR in the call chain that was called so be careful to only check "
+#~ "when needed. For example, if an IVR directs a call to another destination "
+#~ "which eventually calls this announcement and this box is checked, it will "
+#~ "return to that IVR which may not be the expected behavior."
+#~ msgstr ""
+#~ "Hvis denne kunngjøringen kom fra en IVR og denne boksen er krysset av, "
+#~ "vil destinasjonen under bli ignorert og samtalen returnert til samme IVR. "
+#~ "Ellers vil destinasjonen under bli brukt. Ikke kryss av hvis "
+#~ "kunngjøringen ikke blir brukt på denne måten. Hvis samtalen har vært "
+#~ "gjennom flere IVRs er det alltid den siste som blir returnert til."
+
+#~ msgid ""
+#~ "Message to be played.<br>To add additional recordings use the \"System "
+#~ "Recordings\" MENU to the left"
+#~ msgstr ""
+#~ "Melding som skal spilles av.<br>For å legge til flere lydopptak velger du "
+#~ "\"Systeminnspillinger\" i menyen til venstre"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "Spiller av en av systeminnspillingene (eventuelt med mulighet for å hoppe "
+#~ "over) og fortsetter så til en annen destinasjon."
+
+#~ msgid "Submit Changes"
+#~ msgstr "Lagre endringer"
+
+#~ msgid "The name of this announcement"
+#~ msgstr "Kortfattet navn på denne kunngjøringen"

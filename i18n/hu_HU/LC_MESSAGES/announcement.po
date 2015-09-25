@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-19 12:11-0400\n"
+"POT-Creation-Date: 2015-09-25 16:46-0700\n"
 "PO-Revision-Date: 2014-03-04 08:44+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Hungarian <http://git.freepbx.org/projects/freepbx/"
@@ -43,11 +43,11 @@ msgstr ""
 msgid ": Edit"
 msgstr ""
 
-#: views/grid.php:18
+#: views/grid.php:16
 msgid "Actions"
 msgstr ""
 
-#: views/grid.php:8
+#: views/grid.php:9
 msgid "Add"
 msgstr ""
 
@@ -68,13 +68,17 @@ msgstr ""
 msgid "Checking if recordings need migration.."
 msgstr ""
 
-#: Announcement.class.php:23 views/grid.php:10
+#: Announcement.class.php:23
 msgid "Delete"
 msgstr "Törlés"
 
-#: views/form.php:102 views/grid.php:17
+#: views/form.php:102 views/grid.php:14
 msgid "Description"
 msgstr "Meghatározás"
+
+#: views/grid.php:15
+msgid "Destination"
+msgstr ""
 
 #: views/form.php:234
 msgid "Destination after Playback"
@@ -87,10 +91,6 @@ msgstr "Tiltás"
 #: views/form.php:207
 msgid "Don't Answer Channel"
 msgstr "Nem megválaszolt csatorna."
-
-#: views/grid.php:16
-msgid "ID"
-msgstr ""
 
 #: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
@@ -153,7 +153,7 @@ msgstr "Ismétlés"
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:180
+#: views/form.php:180 views/grid.php:22
 msgid "Return to IVR"
 msgstr "Vissza az IVR-be."
 
