@@ -34,19 +34,19 @@ msgstr ""
 
 #: page.announcement.php:15
 msgid ": Add"
-msgstr ""
+msgstr ": Добавяне"
 
 #: page.announcement.php:13
 msgid ": Edit"
-msgstr ""
+msgstr ": Редактиране"
 
 #: views/grid.php:16
 msgid "Actions"
-msgstr ""
+msgstr "Действия"
 
 #: views/grid.php:9
 msgid "Add"
-msgstr ""
+msgstr "Добави"
 
 #: views/form.php:153
 msgid "Allow Skip"
@@ -54,7 +54,7 @@ msgstr "Позволи Прескачане"
 
 #: page.announcement.php:7
 msgid "Announcement"
-msgstr ""
+msgstr "Съобщение"
 
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:230
 #, php-format
@@ -75,11 +75,11 @@ msgstr "Описание"
 
 #: views/grid.php:15
 msgid "Destination"
-msgstr ""
+msgstr "Направление"
 
 #: views/form.php:234
 msgid "Destination after Playback"
-msgstr ""
+msgstr "Направление след Възпроизвеждане"
 
 #: views/form.php:72
 msgid "Disable"
@@ -104,6 +104,14 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
+"Ако съобщението идва от IVR и тук е установено на Да, направлението по-долу "
+"ще бъде игнорирано и вместо това ще се върне към IVR. Иначе ще се използва "
+"направлението по-долу. Не превключвайте ако не използвате този режим. <br>"
+"IVR ще се върне към последния IVR от серията обаждания така че гледайте да "
+"превключвате само при необходимост. Например, ако IVR насочва обаждането към "
+"друго направление, което евентуално извиква това съобщение и е установено на "
+"Да, това ще доведе до връщане към този IVR което може да не е очакваното "
+"поведение."
 
 #: page.announcement.php:50
 msgid "Invalid description specified"
@@ -121,17 +129,19 @@ msgstr ""
 
 #: views/bootnav.php:5
 msgid "List Announcements"
-msgstr ""
+msgstr "Списък на Съобщенията"
 
 #: views/form.php:59
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
+"Съобщение за възпроизвеждане.<br>За да добавите допълнителни записи "
+"използвайте меню \"Системни Записи\""
 
 #: views/form.php:160 views/form.php:187 views/form.php:214
 msgid "No"
-msgstr ""
+msgstr "Не"
 
 #: views/form.php:32
 msgid "None"
@@ -147,7 +157,7 @@ msgstr "Повтори"
 
 #: Announcement.class.php:28
 msgid "Reset"
-msgstr ""
+msgstr "Изчисти"
 
 #: views/form.php:180 views/grid.php:22
 msgid "Return to IVR"
@@ -162,22 +172,28 @@ msgid ""
 "using an announcement from an IVR or other sources that have already "
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
+"Установете на Да, за да предпазите канала от задължително отваряне. Когато е "
+"установено на Да, съобщението ще се възпроизведе и ако канала не е отворен "
+"ще бъде доставено като 'early media' ако канала поддържа услугата. Когато не "
+"е установено на Да, канала се отваря последвано от 1 секунда пауза. Когато "
+"използвате съобщение в IVR или други източници които вече са отворили "
+"канала, тази 1 секунда пауза може да е нежелана."
 
 #: Announcement.class.php:33
 msgid "Submit"
-msgstr ""
+msgstr "Приеми"
 
 #: views/form.php:114
 msgid "The name of this announcement."
-msgstr ""
+msgstr "Име на това съобщение."
 
 #: views/form.php:246
 msgid "Where to send the caller after the announcement is played."
-msgstr ""
+msgstr "Накъде да пренасочи обаждащия се след възпроизвеждане на съобщението."
 
 #: views/form.php:158 views/form.php:185 views/form.php:212
 msgid "Yes"
-msgstr ""
+msgstr "Да"
 
 #: install.php:97
 msgid "adding recording_id field.."
