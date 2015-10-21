@@ -9,6 +9,37 @@ class Announcement extends \FreePBX_Helpers implements \BMO  {
 	public function __construct($freepbx = null) {
 		parent::__construct($freepbx);
 		$this->freepbx = $freepbx;
+		$this->db = $this->freepbx->Database;
+	}
+
+	public function getAnnouncements() {
+		$sql = "SELECT announcement_id, description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement";
+		$sth = $this->db->prepare($sql);
+		$sth->execute();
+		return $sth->fetchAll(\PDO::FETCH_ASSOC);
+	}
+
+	/**
+	 * Ajax Request
+	 * @param string $req     The request type
+	 * @param string $setting Settings to return back
+	 */
+	public function ajaxRequest($req, $setting){
+		switch($req){
+			case "getData":
+			break;
+		}
+	}
+
+	/**
+	 * Handle AJAX
+	 */
+	public function ajaxHandler(){
+		$request = $_REQUEST;
+		switch($request['command']){
+			case "getData":
+			break;
+		}
 	}
 
 	public function getActionBar($request) {

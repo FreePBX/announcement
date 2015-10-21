@@ -112,13 +112,9 @@ function announcement_get_config($engine) {
 }
 
 function announcement_list() {
-	global $db;
-	$sql = "SELECT announcement_id, description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement ORDER BY description ";
-	$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
-	if(DB::IsError($results)) {
-		die_freepbx($results->getMessage()."<br><br>Error selecting from announcement");
-	}
+	$results = \FreePBX::Announcement()->getAnnouncements();
 
+	$results = is_array($results) ? $results : array();
 	// Make array backward compatible.
 	$count = 0;
 	foreach($results as $item) {
