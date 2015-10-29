@@ -131,6 +131,8 @@ class Announcement extends \FreePBX_Helpers implements \BMO  {
 		}
 	}
 	public function getRightNav($request) {
-    return load_view(__DIR__."/views/rnav.php",array());
+		if(isset($request['view']) && $request['view'] == 'form'){
+		    return load_view(__DIR__."/views/rnav.php",array());
+		}
 	}
 }
