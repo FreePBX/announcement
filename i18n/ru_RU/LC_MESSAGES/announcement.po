@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 16:46-0700\n"
+"POT-Creation-Date: 2015-10-29 18:12-0700\n"
 "PO-Revision-Date: 2015-04-22 20:24+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -51,6 +51,10 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
+#: views/rnav.php:3
+msgid "Add Announcements"
+msgstr ""
+
 #: views/form.php:153
 msgid "Allow Skip"
 msgstr "Разрешить пропустить"
@@ -59,7 +63,7 @@ msgstr "Разрешить пропустить"
 msgid "Announcement"
 msgstr ""
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:230
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
 msgstr "Приветствия: %s"
@@ -68,7 +72,7 @@ msgstr "Приветствия: %s"
 msgid "Checking if recordings need migration.."
 msgstr "Проверка нуждаются ли записи в перемещении.."
 
-#: Announcement.class.php:23
+#: Announcement.class.php:54
 msgid "Delete"
 msgstr "Удалить"
 
@@ -82,6 +86,10 @@ msgstr ""
 
 #: views/form.php:234
 msgid "Destination after Playback"
+msgstr ""
+
+#: views/rnav.php:8
+msgid "Destinations"
 msgstr ""
 
 #: views/form.php:72
@@ -110,7 +118,7 @@ msgid ""
 "which may not be the expected behavior."
 msgstr ""
 
-#: page.announcement.php:50
+#: page.announcement.php:45
 msgid "Invalid description specified"
 msgstr "Указано неверное описание"
 
@@ -124,7 +132,7 @@ msgstr ""
 "опция, то будет небольшая задержка после сообщения. Если нужна более "
 "длительная задержка, её нужно вводить в конце записи."
 
-#: views/bootnav.php:5
+#: views/rnav.php:2
 msgid "List Announcements"
 msgstr ""
 
@@ -150,7 +158,7 @@ msgstr "Запись"
 msgid "Repeat"
 msgstr "Повторить"
 
-#: Announcement.class.php:28
+#: Announcement.class.php:59
 msgid "Reset"
 msgstr ""
 
@@ -168,7 +176,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:33
+#: Announcement.class.php:64
 msgid "Submit"
 msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 16:46-0700\n"
+"POT-Creation-Date: 2015-10-29 18:12-0700\n"
 "PO-Revision-Date: 2015-03-19 20:53+0200\n"
 "Last-Translator: Jan Peter <jpveldhuizen@gmail.com>\n"
 "Language-Team: Dutch <http://weblate.freepbx.org/projects/freepbx/"
@@ -37,6 +37,10 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
+#: views/rnav.php:3
+msgid "Add Announcements"
+msgstr ""
+
 #: views/form.php:153
 msgid "Allow Skip"
 msgstr "Overslaan toestaan"
@@ -45,7 +49,7 @@ msgstr "Overslaan toestaan"
 msgid "Announcement"
 msgstr ""
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:230
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
 msgstr "Aankondiging: %s"
@@ -54,7 +58,7 @@ msgstr "Aankondiging: %s"
 msgid "Checking if recordings need migration.."
 msgstr "Controleren of opnames moeten worden gemigreerd.."
 
-#: Announcement.class.php:23
+#: Announcement.class.php:54
 msgid "Delete"
 msgstr "Verwijderen"
 
@@ -68,6 +72,10 @@ msgstr ""
 
 #: views/form.php:234
 msgid "Destination after Playback"
+msgstr ""
+
+#: views/rnav.php:8
+msgid "Destinations"
 msgstr ""
 
 #: views/form.php:72
@@ -94,7 +102,7 @@ msgid ""
 "which may not be the expected behavior."
 msgstr ""
 
-#: page.announcement.php:50
+#: page.announcement.php:45
 msgid "Invalid description specified"
 msgstr "Ongeldige omschrijving ingevoerd"
 
@@ -108,7 +116,7 @@ msgstr ""
 "kiest, zal er een korte wachttijd na het bericht zijn. Als er een langere "
 "wachttijd nodig is, dan moet u dit in de opname meenemen."
 
-#: views/bootnav.php:5
+#: views/rnav.php:2
 msgid "List Announcements"
 msgstr ""
 
@@ -134,7 +142,7 @@ msgstr "Opname"
 msgid "Repeat"
 msgstr "Herhalen"
 
-#: Announcement.class.php:28
+#: Announcement.class.php:59
 msgid "Reset"
 msgstr ""
 
@@ -152,7 +160,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:33
+#: Announcement.class.php:64
 msgid "Submit"
 msgstr ""
 

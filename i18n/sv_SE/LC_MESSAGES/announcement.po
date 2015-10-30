@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBXannouncement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 16:46-0700\n"
+"POT-Creation-Date: 2015-10-29 18:12-0700\n"
 "PO-Revision-Date: 2008-10-10 20:20+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -46,6 +46,10 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
+#: views/rnav.php:3
+msgid "Add Announcements"
+msgstr ""
+
 #: views/form.php:153
 msgid "Allow Skip"
 msgstr "Tillåt hoppa över"
@@ -54,7 +58,7 @@ msgstr "Tillåt hoppa över"
 msgid "Announcement"
 msgstr ""
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:230
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
 msgstr "Meddelande: %s"
@@ -63,7 +67,7 @@ msgstr "Meddelande: %s"
 msgid "Checking if recordings need migration.."
 msgstr "Kontrollerar om inspelningar behöver migreras.."
 
-#: Announcement.class.php:23
+#: Announcement.class.php:54
 msgid "Delete"
 msgstr "Ta bort"
 
@@ -77,6 +81,10 @@ msgstr ""
 
 #: views/form.php:234
 msgid "Destination after Playback"
+msgstr ""
+
+#: views/rnav.php:8
+msgid "Destinations"
 msgstr ""
 
 #: views/form.php:72
@@ -105,7 +113,7 @@ msgid ""
 "which may not be the expected behavior."
 msgstr ""
 
-#: page.announcement.php:50
+#: page.announcement.php:45
 msgid "Invalid description specified"
 msgstr "Ogiltig beskrivning"
 
@@ -119,7 +127,7 @@ msgstr ""
 "en kort paus att läggas till efter meddelandet. Om en längre paus behövs, "
 "spela in det i meddelandet."
 
-#: views/bootnav.php:5
+#: views/rnav.php:2
 msgid "List Announcements"
 msgstr ""
 
@@ -145,7 +153,7 @@ msgstr "Inspelning"
 msgid "Repeat"
 msgstr "Repetera"
 
-#: Announcement.class.php:28
+#: Announcement.class.php:59
 msgid "Reset"
 msgstr ""
 
@@ -163,7 +171,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:33
+#: Announcement.class.php:64
 msgid "Submit"
 msgstr ""
 

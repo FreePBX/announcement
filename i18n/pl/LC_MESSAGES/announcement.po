@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 16:46-0700\n"
+"POT-Creation-Date: 2015-10-29 18:12-0700\n"
 "PO-Revision-Date: 2011-09-23 09:52+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -46,6 +46,10 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
+#: views/rnav.php:3
+msgid "Add Announcements"
+msgstr ""
+
 #: views/form.php:153
 msgid "Allow Skip"
 msgstr ""
@@ -54,7 +58,7 @@ msgstr ""
 msgid "Announcement"
 msgstr ""
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:230
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
 msgstr ""
@@ -63,7 +67,7 @@ msgstr ""
 msgid "Checking if recordings need migration.."
 msgstr ""
 
-#: Announcement.class.php:23
+#: Announcement.class.php:54
 msgid "Delete"
 msgstr ""
 
@@ -77,6 +81,10 @@ msgstr ""
 
 #: views/form.php:234
 msgid "Destination after Playback"
+msgstr ""
+
+#: views/rnav.php:8
+msgid "Destinations"
 msgstr ""
 
 #: views/form.php:72
@@ -103,7 +111,7 @@ msgid ""
 "which may not be the expected behavior."
 msgstr ""
 
-#: page.announcement.php:50
+#: page.announcement.php:45
 msgid "Invalid description specified"
 msgstr ""
 
@@ -114,7 +122,7 @@ msgid ""
 "longer delay is needed it should be incorporated into the recording."
 msgstr ""
 
-#: views/bootnav.php:5
+#: views/rnav.php:2
 msgid "List Announcements"
 msgstr ""
 
@@ -140,7 +148,7 @@ msgstr ""
 msgid "Repeat"
 msgstr ""
 
-#: Announcement.class.php:28
+#: Announcement.class.php:59
 msgid "Reset"
 msgstr ""
 
@@ -158,7 +166,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:33
+#: Announcement.class.php:64
 msgid "Submit"
 msgstr ""
 

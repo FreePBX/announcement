@@ -37,15 +37,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 16:46-0700\n"
+"POT-Creation-Date: 2015-10-29 18:12-0700\n"
 "PO-Revision-Date: 2015-10-27 13:03+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
-"Language-Team: Japanese "
-"<http://weblate.freepbx.org/projects/freepbx/announcement/ja_JP/>\n"
-"Language: ja_JP\n"
+"Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
+"announcement/ja_JP/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja_JP\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
@@ -65,6 +65,10 @@ msgstr "アクション"
 msgid "Add"
 msgstr "追加"
 
+#: views/rnav.php:3
+msgid "Add Announcements"
+msgstr ""
+
 #: views/form.php:153
 msgid "Allow Skip"
 msgstr "スキップを許可"
@@ -73,7 +77,7 @@ msgstr "スキップを許可"
 msgid "Announcement"
 msgstr "アナウンス:"
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:230
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
 msgstr "アナウンス: %s"
@@ -82,7 +86,7 @@ msgstr "アナウンス: %s"
 msgid "Checking if recordings need migration.."
 msgstr "録音の移行が必要かチェック中.."
 
-#: Announcement.class.php:23
+#: Announcement.class.php:54
 msgid "Delete"
 msgstr "削除"
 
@@ -98,6 +102,10 @@ msgstr "宛先"
 msgid "Destination after Playback"
 msgstr "再生後の宛先"
 
+#: views/rnav.php:8
+msgid "Destinations"
+msgstr ""
+
 #: views/form.php:72
 msgid "Disable"
 msgstr "無効"
@@ -108,7 +116,8 @@ msgstr "チャネルを応答させない"
 
 #: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
-msgstr "発信者がキーを押した場合はメッセージのスキップを許可するかどうか設定します。"
+msgstr ""
+"発信者がキーを押した場合はメッセージのスキップを許可するかどうか設定します。"
 
 #: views/form.php:195
 msgid ""
@@ -121,10 +130,12 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
-"IVR経由でこのアナウンスにたどり着いた場合は、この設定を有効にすると通常の宛先を無視して、元のIVRに戻ります。<br>注意: "
-"IVRに戻る必要が無い場合は、設定しないでください。なお、複数のIVRを経由した場合には、いちばん最後のIVRに戻しますので、注意が必要です。"
+"IVR経由でこのアナウンスにたどり着いた場合は、この設定を有効にすると通常の宛先"
+"を無視して、元のIVRに戻ります。<br>注意: IVRに戻る必要が無い場合は、設定しな"
+"いでください。なお、複数のIVRを経由した場合には、いちばん最後のIVRに戻します"
+"ので、注意が必要です。"
 
-#: page.announcement.php:50
+#: page.announcement.php:45
 msgid "Invalid description specified"
 msgstr "無効な説明が入力されました"
 
@@ -134,10 +145,11 @@ msgid ""
 "this option there will be a short delay inserted after the message. If a "
 "longer delay is needed it should be incorporated into the recording."
 msgstr ""
-"メッセージをもう一度再生したい場合に押すキーを選択します。このオプションが有効の場合はメッセージの後に少しの間が発生します。より長い間が必要な場合は、音声"
-"ファイルの最後に無音を入れてください。"
+"メッセージをもう一度再生したい場合に押すキーを選択します。このオプションが有"
+"効の場合はメッセージの後に少しの間が発生します。より長い間が必要な場合は、音"
+"声ファイルの最後に無音を入れてください。"
 
-#: views/bootnav.php:5
+#: views/rnav.php:2
 msgid "List Announcements"
 msgstr "アナウンスを一覧表示"
 
@@ -163,7 +175,7 @@ msgstr "録音"
 msgid "Repeat"
 msgstr "リピート"
 
-#: Announcement.class.php:28
+#: Announcement.class.php:59
 msgid "Reset"
 msgstr "リセット"
 
@@ -180,10 +192,12 @@ msgid ""
 "using an announcement from an IVR or other sources that have already "
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
-"有効にすると、チャネルを応答しないで Early Media で音を再生しようとします。無効の場合は、チャネルを応答して1秒が経ってから音声を再生しますが"
-"、IVRや他の宛先を経由した場合は1秒が空くと音の流れが不自然になる可能性がありますので注意が必要です。"
+"有効にすると、チャネルを応答しないで Early Media で音を再生しようとします。無"
+"効の場合は、チャネルを応答して1秒が経ってから音声を再生しますが、IVRや他の宛"
+"先を経由した場合は1秒が空くと音の流れが不自然になる可能性がありますので注意が"
+"必要です。"
 
-#: Announcement.class.php:33
+#: Announcement.class.php:64
 msgid "Submit"
 msgstr "送信"
 
