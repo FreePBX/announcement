@@ -21,14 +21,14 @@ msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:12-0700\n"
-"PO-Revision-Date: 2015-10-16 08:48+0200\n"
+"PO-Revision-Date: 2015-11-12 12:25+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
-"Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
-"freepbx/announcement/zh_CN/>\n"
+"Language-Team: Simplified Chinese "
+"<http://weblate.freepbx.org/projects/freepbx/announcement/zh_CN/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Chinese\n"
@@ -53,7 +53,7 @@ msgstr "添加"
 
 #: views/rnav.php:3
 msgid "Add Announcements"
-msgstr ""
+msgstr "添加语音播报"
 
 #: views/form.php:153
 msgid "Allow Skip"
@@ -90,7 +90,7 @@ msgstr "回放后目的地"
 
 #: views/rnav.php:8
 msgid "Destinations"
-msgstr ""
+msgstr "目的地"
 
 #: views/form.php:72
 msgid "Disable"
@@ -137,7 +137,7 @@ msgstr "语音播报列表"
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
-msgstr ""
+msgstr "将播放语音。<br>支持更多语音录音文件，请使用 \"System Recordings\" 菜单"
 
 #: views/form.php:160 views/form.php:187 views/form.php:214
 msgid "No"
