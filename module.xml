@@ -2,11 +2,12 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>2.11.0.4</version>
+	<version>12.0.1</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*12.0.1* FREEPBX-9773 Fix channel state logic
 		*2.11.0.4* Generate license file
 		*2.11.0.1* Using last_id() function (if available) for database calls
 		*2.11.0.0* #6051
@@ -40,7 +41,6 @@
 		Plays back one of the system recordings (optionally allowing the user to skip it) and then goes to another destination.
 	</description>
 	<depends>
-		<version>2.5.0alpha1</version>
 		<module>recordings ge 3.3.8</module>
 	</depends>
 	<menuitems>
@@ -52,7 +52,7 @@
 		</announcement>
  	</popovers>
 	<supported>
-		<version>2.10</version>
+		<version>12.0</version>
 	</supported>
 	<location>release/2.11/announcement-2.11.0.0.tgz</location>
 	<md5sum>704dee25bbe8e854fa4e126018b83864</md5sum>
