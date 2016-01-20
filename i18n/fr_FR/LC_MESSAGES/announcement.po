@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:12-0700\n"
-"PO-Revision-Date: 2016-01-19 23:34+0200\n"
+"PO-Revision-Date: 2016-01-20 05:43+0200\n"
 "Last-Translator: Nicolas <forums@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/announcement/fr_FR/>\n"
@@ -94,7 +94,7 @@ msgstr "Désactiver"
 
 #: views/form.php:207
 msgid "Don't Answer Channel"
-msgstr "Ne pas répondre au Canal"
+msgstr "Ne pas répondre au canal"
 
 #: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
