@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:12-0700\n"
+"POT-Creation-Date: 2016-03-11 13:42-0800\n"
 "PO-Revision-Date: 2011-09-23 09:52+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -61,6 +61,14 @@ msgstr ""
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
+msgstr ""
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Announcements"
+msgstr ""
+
+#: announcement.i18n.php:6 announcement.i18n.php:12
+msgid "Applications"
 msgstr ""
 
 #: install.php:90
@@ -138,6 +146,12 @@ msgstr ""
 
 #: views/form.php:32
 msgid "None"
+msgstr ""
+
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
 msgstr ""
 
 #: views/form.php:45

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:12-0700\n"
+"POT-Creation-Date: 2016-03-11 13:42-0800\n"
 "PO-Revision-Date: 2014-03-04 08:44+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Hungarian <http://git.freepbx.org/projects/freepbx/"
@@ -67,6 +67,14 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr ""
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Announcements"
+msgstr "Közlemények"
+
+#: announcement.i18n.php:6 announcement.i18n.php:12
+msgid "Applications"
+msgstr "Alkalmazások"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
@@ -149,6 +157,12 @@ msgstr ""
 msgid "None"
 msgstr ""
 
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+
 #: views/form.php:45
 msgid "Recording"
 msgstr "Rögzítés"
@@ -227,12 +241,6 @@ msgstr ""
 #: install.php:104 install.php:143
 msgid "ok"
 msgstr ""
-
-#~ msgid "Announcements"
-#~ msgstr "Közlemények"
-
-#~ msgid "Applications"
-#~ msgstr "Alkalmazások"
 
 #~ msgid "Add Announcement"
 #~ msgstr "Esemény hozzáadása"

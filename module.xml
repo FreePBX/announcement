@@ -2,11 +2,12 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>13.0.4</version>
+	<version>13.0.5</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*13.0.5* FREEPBX-9773 1 second delay between annoucement
 		*13.0.4* Slideout rnav
 		*13.0.3* Adjust columns to be more meaningful. Show description and destination
 		*13.0.2* Version bump Beta
@@ -14,33 +15,6 @@
 		*13.0.1alpha3* Overall fixes and tweaks
 		*13.0.1alpha2* Fix popovers
 		*13.0.1alpha1* Complete reskin
-		*2.11.0.4* Generate license file
-		*2.11.0.1* Using last_id() function (if available) for database calls
-		*2.11.0.0* #6051
-		*2.10.0.2* #5883
-		*2.10.0.1* #5478
-		*2.10.0.0* new version changes
-		*2.9.0.2* #4683
-		*2.9.0.1* removed duplicate functions
-		*2.9.0.0* #4655
-		*2.8.0.0* published 2.8 version
-		*2.7.0.0* spelling fixes, localization updates
-		*2.6.0.2* #3829
-		*2.6.0.1* #3804
-		*2.6.0.0* localizations, misc
-		*2.5.1.7* localization string enclosures, spelling
-		*2.5.1.6* spelling, localization fixes
-		*2.5.1.5* spelling fixes, Swedish
-		*2.5.1.4* #3196 typo in index
-		*2.5.1.3* #3195, localization fixes, Swedish
-		*2.5.1.2* #3138 Sqlite3 fixes, spellings
-		*2.5.1.1* #2987 sqlite3 install script changes
-		*2.5.1* #2063 Migrate recordings to recording ids
-		*2.5.0* #2845 tabindex
-		*2.4.0.3* #2872 mispelled Announcement
-		*2.4.0.2* #2604, #2843 mal-formed html tag, Russian translations
-		*2.4.0.1* added 2.4.0 dependency
-		*2.4.0* CHANGELOG TRUNCATED See SVN Repository
 	</changelog>
 	<category>Applications</category>
 	<description>

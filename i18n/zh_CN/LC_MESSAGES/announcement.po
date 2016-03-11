@@ -20,15 +20,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:12-0700\n"
+"POT-Creation-Date: 2016-03-11 13:42-0800\n"
 "PO-Revision-Date: 2015-11-16 07:30+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
-"Language-Team: Simplified Chinese "
-"<http://weblate.freepbx.org/projects/freepbx/announcement/zh_CN/>\n"
-"Language: zh_CN\n"
+"Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
+"freepbx/announcement/zh_CN/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Chinese\n"
@@ -67,6 +67,14 @@ msgstr "语音播报"
 #, php-format
 msgid "Announcement: %s"
 msgstr "公告：%s"
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Announcements"
+msgstr "公告"
+
+#: announcement.i18n.php:6 announcement.i18n.php:12
+msgid "Applications"
+msgstr "应用"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
@@ -115,9 +123,10 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
-"如果此播报来自于一个IVR，并且设置为yes，以下的目的地将被忽略，将返回到呼叫的IVR。否则，使用以下目的地。如果不使用这个模式，请不要点击检查。<br"
-">如果检查的话，IVR "
-"返回的地址将是上一次呼叫时的地址。例如，如果IVR转发呼叫到了一个语音播报，并且勾选了勾选项，系统则返回到一个IVR，也许这个流程不是我们期望的流程。"
+"如果此播报来自于一个IVR，并且设置为yes，以下的目的地将被忽略，将返回到呼叫的"
+"IVR。否则，使用以下目的地。如果不使用这个模式，请不要点击检查。<br>如果检查的"
+"话，IVR 返回的地址将是上一次呼叫时的地址。例如，如果IVR转发呼叫到了一个语音播"
+"报，并且勾选了勾选项，系统则返回到一个IVR，也许这个流程不是我们期望的流程。"
 
 #: page.announcement.php:45
 msgid "Invalid description specified"
@@ -140,7 +149,8 @@ msgstr "语音播报列表"
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
-msgstr "将播放语音。<br>支持更多语音录音文件，请使用 \"System Recordings\" 菜单"
+msgstr ""
+"将播放语音。<br>支持更多语音录音文件，请使用 \"System Recordings\" 菜单"
 
 #: views/form.php:160 views/form.php:187 views/form.php:214
 msgid "No"
@@ -149,6 +159,12 @@ msgstr ""
 #: views/form.php:32
 msgid "None"
 msgstr "无"
+
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr "回放其中一个系统录音（可跳过），然后路由到另外一个目的地。"
 
 #: views/form.php:45
 msgid "Recording"
@@ -228,17 +244,6 @@ msgstr "recording字段不存在？"
 #: install.php:104 install.php:143
 msgid "ok"
 msgstr "完成"
-
-#~ msgid "Announcements"
-#~ msgstr "公告"
-
-#~ msgid "Applications"
-#~ msgstr "应用"
-
-#~ msgid ""
-#~ "Plays back one of the system recordings (optionally allowing the user to "
-#~ "skip it) and then goes to another destination."
-#~ msgstr "回放其中一个系统录音（可跳过），然后路由到另外一个目的地。"
 
 #~ msgid "Add Announcement"
 #~ msgstr "添加公告"

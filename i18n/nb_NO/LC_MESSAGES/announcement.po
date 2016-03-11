@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:12-0700\n"
+"POT-Creation-Date: 2016-03-11 13:42-0800\n"
 "PO-Revision-Date: 2015-09-01 03:13+0200\n"
 "Last-Translator: Vidar Skjelanger <vidar@unimicro.no>\n"
 "Language-Team: Norwegian Bokmål <http://weblate.freepbx.org/projects/freepbx/"
@@ -53,6 +53,14 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr "Kunngjøring: %s"
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Announcements"
+msgstr "Kunngjøringer"
+
+#: announcement.i18n.php:6 announcement.i18n.php:12
+msgid "Applications"
+msgstr "Anvendelser"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
@@ -134,6 +142,14 @@ msgstr ""
 #: views/form.php:32
 msgid "None"
 msgstr "Ingen"
+
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+"Spiller av en av systeminnspillingene (eventuelt med mulighet for å hoppe "
+"over) og fortsetter så til en annen destinasjon."
 
 #: views/form.php:45
 msgid "Recording"
@@ -217,12 +233,6 @@ msgstr "ok"
 #~ msgid "Add Announcement"
 #~ msgstr "Legg til kunngjøring"
 
-#~ msgid "Announcements"
-#~ msgstr "Kunngjøringer"
-
-#~ msgid "Applications"
-#~ msgstr "Anvendelser"
-
 #~ msgid ""
 #~ "Check this to keep the channel from explicitly being answered. When "
 #~ "checked, the message will be played and if the channel is not already "
@@ -266,13 +276,6 @@ msgstr "ok"
 #~ msgstr ""
 #~ "Melding som skal spilles av.<br>For å legge til flere lydopptak velger du "
 #~ "\"Systeminnspillinger\" i menyen til venstre"
-
-#~ msgid ""
-#~ "Plays back one of the system recordings (optionally allowing the user to "
-#~ "skip it) and then goes to another destination."
-#~ msgstr ""
-#~ "Spiller av en av systeminnspillingene (eventuelt med mulighet for å hoppe "
-#~ "over) og fortsetter så til en annen destinasjon."
 
 #~ msgid "Submit Changes"
 #~ msgstr "Lagre endringer"

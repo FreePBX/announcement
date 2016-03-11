@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:12-0700\n"
+"POT-Creation-Date: 2016-03-11 13:42-0800\n"
 "PO-Revision-Date: 2015-04-22 20:24+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -67,6 +67,14 @@ msgstr "Приветствие"
 #, php-format
 msgid "Announcement: %s"
 msgstr "Приветствия: %s"
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Announcements"
+msgstr "Приветствия"
+
+#: announcement.i18n.php:6 announcement.i18n.php:12
+msgid "Applications"
+msgstr "Приложения"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
@@ -160,6 +168,14 @@ msgstr "Нет"
 msgid "None"
 msgstr "Нет"
 
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+"Воспроизводится одна из системных аудиозаписей (опцуионально можно разрешить "
+"абоненту пропускать её) и затем вызов направляется по назначению."
+
 #: views/form.php:45
 msgid "Recording"
 msgstr "Запись"
@@ -186,12 +202,12 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 "Установите в \"да\"  для предотвращения явного ответа в канале. Когда эта "
-"опция отмечена , сообщение будет проиграно , и если канал не получил ответа "
-",  сообщение будет доставлено как Early Media если канал поддерживает эту "
-"возможность. Когда опция не отмечена , канал получит ответ через 1 секунду. "
-"Когда используется приветствие из голосового меню или другого источника  , "
-"то канал уже получает ответ , так что задержка в 1 секунду может быть "
-"нежелательной."
+"опция отмечена , сообщение будет проиграно , и если канал не получил "
+"ответа ,  сообщение будет доставлено как Early Media если канал поддерживает "
+"эту возможность. Когда опция не отмечена , канал получит ответ через 1 "
+"секунду. Когда используется приветствие из голосового меню или другого "
+"источника  , то канал уже получает ответ , так что задержка в 1 секунду "
+"может быть нежелательной."
 
 #: Announcement.class.php:64
 msgid "Submit"
@@ -249,12 +265,6 @@ msgstr "ok"
 #~ msgid "Add Announcement"
 #~ msgstr "Добавить приветствие"
 
-#~ msgid "Announcements"
-#~ msgstr "Приветствия"
-
-#~ msgid "Applications"
-#~ msgstr "Приложения"
-
 #~ msgid ""
 #~ "Check this to keep the channel from explicitly being answered. When "
 #~ "checked, the message will be played and if the channel is not already "
@@ -305,14 +315,6 @@ msgstr "ok"
 #~ msgstr ""
 #~ "Сообщение, которое будет воспроизведено.<br>Для создания сообщения "
 #~ "воспользуйтесь разделом \"Запись сообщений\" в меню слева"
-
-#~ msgid ""
-#~ "Plays back one of the system recordings (optionally allowing the user to "
-#~ "skip it) and then goes to another destination."
-#~ msgstr ""
-#~ "Воспроизводится одна из системных аудиозаписей (опцуионально можно "
-#~ "разрешить абоненту пропускать её) и затем вызов направляется по "
-#~ "назначению."
 
 #~ msgid "Submit Changes"
 #~ msgstr "Применить изменения"

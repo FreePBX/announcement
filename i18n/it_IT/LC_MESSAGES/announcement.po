@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:12-0700\n"
+"POT-Creation-Date: 2016-03-11 13:42-0800\n"
 "PO-Revision-Date: 2008-11-06 14:48+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -49,6 +49,14 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr "Annuncio: %s"
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Announcements"
+msgstr "Annunci"
+
+#: announcement.i18n.php:6 announcement.i18n.php:12
+msgid "Applications"
+msgstr ""
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
@@ -129,6 +137,12 @@ msgstr ""
 msgid "None"
 msgstr ""
 
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+
 #: views/form.php:45
 msgid "Recording"
 msgstr "Registrazione"
@@ -207,9 +221,6 @@ msgstr "nessun campo registrazione??"
 #: install.php:104 install.php:143
 msgid "ok"
 msgstr "ok"
-
-#~ msgid "Announcements"
-#~ msgstr "Annunci"
 
 #~ msgid "Add Announcement"
 #~ msgstr "Aggiungi Annuncio"

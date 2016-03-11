@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:12-0700\n"
+"POT-Creation-Date: 2016-03-11 13:42-0800\n"
 "PO-Revision-Date: 2014-07-26 00:02+0200\n"
 "Last-Translator: Rafael <rafael@ibinetwork.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://git.freepbx.org/projects/freepbx/"
@@ -64,6 +64,14 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr "Anuncio: %s"
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Announcements"
+msgstr "Anuncios"
+
+#: announcement.i18n.php:6 announcement.i18n.php:12
+msgid "Applications"
+msgstr "Aplicações"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
@@ -141,6 +149,12 @@ msgstr ""
 #: views/form.php:32
 msgid "None"
 msgstr "Nenhum"
+
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
 
 #: views/form.php:45
 msgid "Recording"
@@ -220,12 +234,6 @@ msgstr ""
 #: install.php:104 install.php:143
 msgid "ok"
 msgstr "ok"
-
-#~ msgid "Announcements"
-#~ msgstr "Anuncios"
-
-#~ msgid "Applications"
-#~ msgstr "Aplicações"
 
 #~ msgid "Add Announcement"
 #~ msgstr "Adicionar Anuncio"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX announcement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:12-0700\n"
+"POT-Creation-Date: 2016-03-11 13:42-0800\n"
 "PO-Revision-Date: 2014-03-04 09:09+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Hebrew <http://git.freepbx.org/projects/freepbx/announcement/"
@@ -46,6 +46,15 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr "הכרזה: %s"
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Announcements"
+msgstr "הכרזות"
+
+#: announcement.i18n.php:6 announcement.i18n.php:12
+#, fuzzy
+msgid "Applications"
+msgstr "יישומים"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
@@ -126,6 +135,14 @@ msgstr ""
 msgid "None"
 msgstr "ללא"
 
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+"משמיע אחת הקלטות המערכת (עם אפשרות המאפשר למשתמש לדלג על זה) ולאחר מכן עובר "
+"ליעד אחר."
+
 #: views/form.php:45
 msgid "Recording"
 msgstr "הקלטה"
@@ -204,20 +221,6 @@ msgstr "\"אין שדה recording???"
 #: install.php:104 install.php:143
 msgid "ok"
 msgstr "בסדר"
-
-#~ msgid "Announcements"
-#~ msgstr "הכרזות"
-
-#, fuzzy
-#~ msgid "Applications"
-#~ msgstr "יישומים"
-
-#~ msgid ""
-#~ "Plays back one of the system recordings (optionally allowing the user to "
-#~ "skip it) and then goes to another destination."
-#~ msgstr ""
-#~ "משמיע אחת הקלטות המערכת (עם אפשרות המאפשר למשתמש לדלג על זה) ולאחר מכן "
-#~ "עובר ליעד אחר."
 
 #~ msgid "Add Announcement"
 #~ msgstr "הוסף הכרזה"

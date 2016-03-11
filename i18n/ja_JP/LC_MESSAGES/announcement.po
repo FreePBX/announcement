@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:12-0700\n"
+"POT-Creation-Date: 2016-03-11 13:42-0800\n"
 "PO-Revision-Date: 2015-10-27 13:03+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -81,6 +81,14 @@ msgstr "アナウンス:"
 #, php-format
 msgid "Announcement: %s"
 msgstr "アナウンス: %s"
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Announcements"
+msgstr "アナウンス"
+
+#: announcement.i18n.php:6 announcement.i18n.php:12
+msgid "Applications"
+msgstr "アプリケーション"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
@@ -167,6 +175,14 @@ msgstr "いいえ"
 msgid "None"
 msgstr "なし"
 
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+"システムレコーディングを再生する（ユーザーはスキップするのを許可する）そして"
+"次の宛先に進みます。"
+
 #: views/form.php:45
 msgid "Recording"
 msgstr "録音"
@@ -249,19 +265,6 @@ msgstr "録音フィールドがありません???"
 #: install.php:104 install.php:143
 msgid "ok"
 msgstr "ok"
-
-#~ msgid "Announcements"
-#~ msgstr "アナウンス"
-
-#~ msgid "Applications"
-#~ msgstr "アプリケーション"
-
-#~ msgid ""
-#~ "Plays back one of the system recordings (optionally allowing the user to "
-#~ "skip it) and then goes to another destination."
-#~ msgstr ""
-#~ "システムレコーディングを再生する（ユーザーはスキップするのを許可する）そし"
-#~ "て次の宛先に進みます。"
 
 #~ msgid "Add Announcement"
 #~ msgstr "アナウンス追加"

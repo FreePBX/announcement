@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for announcement
-# Copyright (C) 2008-2015 Sangoma, Inc.
+# Copyright (C) 2008-2016 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:12-0700\n"
+"POT-Creation-Date: 2016-03-11 13:42-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,6 +50,16 @@ msgstr ""
 #: functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
+msgstr ""
+
+#: announcement.i18n.php:4
+#: announcement.i18n.php:10
+msgid "Announcements"
+msgstr ""
+
+#: announcement.i18n.php:6
+#: announcement.i18n.php:12
+msgid "Applications"
 msgstr ""
 
 #: install.php:90
@@ -130,6 +140,12 @@ msgstr ""
 
 #: views/form.php:32
 msgid "None"
+msgstr ""
+
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
 msgstr ""
 
 #: views/form.php:45
