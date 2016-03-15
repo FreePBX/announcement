@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-11 13:42-0800\n"
-"PO-Revision-Date: 2016-02-14 06:55+0200\n"
+"PO-Revision-Date: 2016-03-15 09:37+0300\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
-"announcement/fa/>\n"
+"Language-Team: Persian "
+"<http://weblate.freepbx.org/projects/freepbx/announcement/fa/>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
@@ -56,11 +56,11 @@ msgstr "آگهی ：%s"
 
 #: announcement.i18n.php:4 announcement.i18n.php:10
 msgid "Announcements"
-msgstr ""
+msgstr "آگهی ها"
 
 #: announcement.i18n.php:6 announcement.i18n.php:12
 msgid "Applications"
-msgstr ""
+msgstr "درخواست"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
@@ -130,6 +130,8 @@ msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
+"پیامی که پخش میشود.<br> برای افزودن دیگر فایل ها میتوانید از طریق منوی ضبط "
+"شده سیستمی در بالا استفاده کنید"
 
 #: views/form.php:160 views/form.php:187 views/form.php:214
 msgid "No"
@@ -144,6 +146,8 @@ msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
+"پخش یکی از ضبط شده های سیستمی (کاربر مجاز میتواند این مرحله را لغو کند) و "
+"رفتن به یک مقصد دیگر."
 
 #: views/form.php:45
 msgid "Recording"
@@ -189,7 +193,7 @@ msgstr "بله"
 
 #: install.php:97
 msgid "adding recording_id field.."
-msgstr ""
+msgstr "افزودن فیلد شناسه ضبط.."
 
 #: install.php:147
 msgid "already migrated"
