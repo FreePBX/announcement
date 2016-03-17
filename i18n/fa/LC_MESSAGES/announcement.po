@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-11 13:42-0800\n"
-"PO-Revision-Date: 2016-03-15 09:37+0300\n"
+"PO-Revision-Date: 2016-03-16 21:53+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian "
 "<http://weblate.freepbx.org/projects/freepbx/announcement/fa/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.4\n"
 
 #: page.announcement.php:15
 msgid ": Add"
@@ -109,6 +109,8 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
+"اگر این اعلام از سیستم تلفن گویا آید و بله انتخاب شده باشد، مقصد زیر نادیده "
+"گرفته می شود و به جایش آن را به منو صوتی باز میگرداند."
 
 #: page.announcement.php:45
 msgid "Invalid description specified"
@@ -120,6 +122,7 @@ msgid ""
 "this option there will be a short delay inserted after the message. If a "
 "longer delay is needed it should be incorporated into the recording."
 msgstr ""
+"کلید مجوز پخش مجدد پیام. اگر انتخاب کنید بعد از پیام وقفه کوتاهی پیش می آید."
 
 #: views/rnav.php:2
 msgid "List Announcements"
@@ -173,7 +176,7 @@ msgid ""
 "When not checked, the channel is answered followed by a 1 second delay. When "
 "using an announcement from an IVR or other sources that have already "
 "answered the channel, that 1 second delay may not be desired."
-msgstr ""
+msgstr "با انتخاب بله, کانال صریحا پاسخگو است."
 
 #: Announcement.class.php:64
 msgid "Submit"
