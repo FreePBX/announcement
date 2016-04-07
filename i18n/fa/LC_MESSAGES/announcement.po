@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-11 13:42-0800\n"
-"PO-Revision-Date: 2016-04-02 18:26+0200\n"
-"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"PO-Revision-Date: 2016-04-07 09:58+0200\n"
+"Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian "
 "<http://weblate.freepbx.org/projects/freepbx/announcement/fa/>\n"
 "Language: fa\n"
@@ -39,7 +39,7 @@ msgstr "افزودن"
 
 #: views/rnav.php:3
 msgid "Add Announcements"
-msgstr "افزودن اطلاعیه ها"
+msgstr "افزودن اعلان ها"
 
 #: views/form.php:153
 msgid "Allow Skip"
@@ -47,24 +47,24 @@ msgstr "اجازه لغو"
 
 #: page.announcement.php:7
 msgid "Announcement"
-msgstr "آ گهی"
+msgstr "اعلان"
 
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
-msgstr "آگهی ：%s"
+msgstr "اعلان：%s"
 
 #: announcement.i18n.php:4 announcement.i18n.php:10
 msgid "Announcements"
-msgstr "آگهی ها"
+msgstr "اعلان ها"
 
 #: announcement.i18n.php:6 announcement.i18n.php:12
 msgid "Applications"
-msgstr "درخواست"
+msgstr "کاربرد ها"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
-msgstr "بررسی لزوم انتقال صوت ذخیره شده.."
+msgstr "بررسی لزوم انتقال پیام صوتی ذخیره شده.."
 
 #: Announcement.class.php:54
 msgid "Delete"
@@ -92,11 +92,11 @@ msgstr "غیرفعال"
 
 #: views/form.php:207
 msgid "Don't Answer Channel"
-msgstr "پاسخی از کانال دریافت نشد"
+msgstr "کانال پاسخ داده نشود"
 
 #: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
-msgstr "تماس گیرنده در صورت داشتن مجوز لازم میتواند از پخش پیام جلوگیری کند."
+msgstr "تماس گیرنده در صورت داشتن مجوز لازم می تواند از پخش پیام جلوگیری کند."
 
 #: views/form.php:195
 msgid ""
@@ -109,8 +109,13 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
-"اگر این اعلام از سیستم تلفن گویا آید و بله انتخاب شده باشد، مقصد زیر نادیده "
-"گرفته می شود و به جایش آن را به منو صوتی باز میگرداند."
+"اگر این اعلان از یک منوی صوتی پخش می شود، با انتخاب این گزینه، مقصد تعیین "
+"شده در ذیل نادیده گرفته شده و به منوی صوتی باز می گردد. در غیر این صورت مقصد "
+"زیر انتخاب می شود. دقت کنید که که مقصد بازگشت آخرین منوی صوتی در زنجیره "
+"مکالمه می باشد و لازم است در صورت نیاز این گزینه انتخاب شود. به عنوان مثال "
+"ممکن است در منوی صوتی به بخشی هدایت شوید که به این اعلان منتهی شود؛ در این "
+"صورت اگر این گزینه فعال باشد مجددا به همان منوی صوتی ارجاع می شوید که ممکن "
+"است دور از انتظار باشد."
 
 #: page.announcement.php:45
 msgid "Invalid description specified"
@@ -122,19 +127,21 @@ msgid ""
 "this option there will be a short delay inserted after the message. If a "
 "longer delay is needed it should be incorporated into the recording."
 msgstr ""
-"کلید مجوز پخش مجدد پیام. اگر انتخاب کنید بعد از پیام وقفه کوتاهی پیش می آید."
+".کلیدی که  در صورتی فشار دادن، پخش مجدد پیام را فراهم می کند. اگر این گزینه "
+"را انتخاب نمایید مقداری تاخیر پس از پیام به وجود می آید. اگر به تاخیر بیشتری "
+"نیاز دارید باید در ضبط پیام آن را در نظر بگیرید."
 
 #: views/rnav.php:2
 msgid "List Announcements"
-msgstr "فهرست آگهی ها"
+msgstr "فهرست اعلان ها"
 
 #: views/form.php:59
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
-"پیامی که پخش میشود.<br> برای افزودن دیگر فایل ها میتوانید از طریق منوی ضبط "
-"شده سیستمی در بالا استفاده کنید"
+".پیامی که باید پخش شود <br>  .به منظور افزودن پیام، از بخش \\\"ضبط پیام های "
+"سیستم\\\" در منوی بالا استفاده نمایید"
 
 #: views/form.php:160 views/form.php:187 views/form.php:214
 msgid "No"
@@ -142,19 +149,19 @@ msgstr "خیر"
 
 #: views/form.php:32
 msgid "None"
-msgstr "هیچ"
+msgstr "هیچ کدام"
 
 #: announcement.i18n.php:8
 msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
-"پخش یکی از ضبط شده های سیستمی (کاربر مجاز میتواند این مرحله را لغو کند) و "
-"رفتن به یک مقصد دیگر."
+"پخش یکی از پیام های ضبط شده سیستم (کاربر می تواند این مرحله را لغو کند) و "
+"سپس رفتن به یک مقصد دیگر."
 
 #: views/form.php:45
 msgid "Recording"
-msgstr "ذخیره کردن"
+msgstr "پیام ضبط شده"
 
 #: views/form.php:127
 msgid "Repeat"
@@ -176,7 +183,12 @@ msgid ""
 "When not checked, the channel is answered followed by a 1 second delay. When "
 "using an announcement from an IVR or other sources that have already "
 "answered the channel, that 1 second delay may not be desired."
-msgstr "با انتخاب بله, کانال صریحا پاسخگو است."
+msgstr ""
+"در صورت انتخاب بله، از پاسخ به کانال جلوگیری می گردد. در صورتی که کانال پاسخ "
+"داده نشود، پیام به صورت پیشواز پخش خواهد شد که البته باید کانال این قابلیت "
+"را پشتیبانی نماید. در غیر این صورت کانال با تاخیر 1 ثانیه پاسخ داده خواهد "
+"شد. زمانی که از اعلان در منوی صوتی و یا جاهای دیگر استفاده می نمایید، چون "
+"کانال قبلا پاسخ داده شده است، این تاخیر ممکن است مطالوب نباشد."
 
 #: Announcement.class.php:64
 msgid "Submit"
@@ -184,11 +196,11 @@ msgstr "ثبت"
 
 #: views/form.php:114
 msgid "The name of this announcement."
-msgstr "نام این آگهی."
+msgstr "نام این اعلان."
 
 #: views/form.php:246
 msgid "Where to send the caller after the announcement is played."
-msgstr "تماس گیرنده پس از پخش آگهی به کجا منتقل شود."
+msgstr "تماس گیرنده پس از پخش اعلان به کجا منتقل شود."
 
 #: views/form.php:158 views/form.php:185 views/form.php:212
 msgid "Yes"
@@ -200,15 +212,15 @@ msgstr "افزودن فیلد شناسه ضبط.."
 
 #: install.php:147
 msgid "already migrated"
-msgstr "منتقل شده"
+msgstr "انتقال یافته"
 
 #: install.php:137
 msgid "dropping recording field.."
-msgstr "انتقال فیلد ضبط.."
+msgstr "فیلد پیام ضبط شده از قلم افتاده ..."
 
 #: install.php:101 install.php:113 install.php:129
 msgid "fatal error"
-msgstr "خطای مهم"
+msgstr "خطای مهلک"
 
 #: install.php:109
 msgid "migrate to recording ids.."
@@ -221,11 +233,11 @@ msgstr "ورودی های %s منتقل شده"
 
 #: install.php:96
 msgid "migrating"
-msgstr "انتقال"
+msgstr "در حال انتقال"
 
 #: install.php:141
 msgid "no recording field???"
-msgstr "بدون فیلد ضبط؟؟؟"
+msgstr "بدون فیلد پیلم ضبط شده ؟؟؟"
 
 #: install.php:104 install.php:143
 msgid "ok"
