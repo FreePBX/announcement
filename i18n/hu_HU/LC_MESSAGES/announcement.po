@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-11 13:42-0800\n"
+"POT-Creation-Date: 2016-06-17 17:57-0700\n"
 "PO-Revision-Date: 2014-03-04 08:44+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Hungarian <http://git.freepbx.org/projects/freepbx/"
@@ -43,11 +43,11 @@ msgstr ""
 msgid ": Edit"
 msgstr ""
 
-#: views/grid.php:16
+#: views/grid.php:18
 msgid "Actions"
 msgstr ""
 
-#: views/grid.php:9
+#: views/grid.php:11
 msgid "Add"
 msgstr ""
 
@@ -80,15 +80,15 @@ msgstr "Alkalmazások"
 msgid "Checking if recordings need migration.."
 msgstr ""
 
-#: Announcement.class.php:54
+#: Announcement.class.php:59
 msgid "Delete"
 msgstr "Törlés"
 
-#: views/form.php:102 views/grid.php:14
+#: views/form.php:102 views/grid.php:16
 msgid "Description"
 msgstr "Meghatározás"
 
-#: views/grid.php:15
+#: views/grid.php:17
 msgid "Destination"
 msgstr ""
 
@@ -125,7 +125,7 @@ msgid ""
 "which may not be the expected behavior."
 msgstr ""
 
-#: page.announcement.php:45
+#: assets/js/announcement.js:6
 msgid "Invalid description specified"
 msgstr ""
 
@@ -153,6 +153,10 @@ msgstr ""
 msgid "No"
 msgstr ""
 
+#: assets/js/announcement.js:33
+msgid "No Destination"
+msgstr ""
+
 #: views/form.php:32
 msgid "None"
 msgstr ""
@@ -171,11 +175,11 @@ msgstr "Rögzítés"
 msgid "Repeat"
 msgstr "Ismétlés"
 
-#: Announcement.class.php:59
+#: Announcement.class.php:64
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:180 views/grid.php:22
+#: views/form.php:180
 msgid "Return to IVR"
 msgstr "Vissza az IVR-be."
 
@@ -189,7 +193,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:64
+#: Announcement.class.php:69
 msgid "Submit"
 msgstr ""
 

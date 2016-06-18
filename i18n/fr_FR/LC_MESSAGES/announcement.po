@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-11 13:42-0800\n"
+"POT-Creation-Date: 2016-06-17 17:57-0700\n"
 "PO-Revision-Date: 2016-02-04 23:06+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -39,11 +39,11 @@ msgstr ": Ajouter"
 msgid ": Edit"
 msgstr ": Éditer"
 
-#: views/grid.php:16
+#: views/grid.php:18
 msgid "Actions"
 msgstr "Actions"
 
-#: views/grid.php:9
+#: views/grid.php:11
 msgid "Add"
 msgstr "Ajouter"
 
@@ -76,15 +76,15 @@ msgstr "Applications"
 msgid "Checking if recordings need migration.."
 msgstr "Teste si les enregistrements ont besoin d'être migrés..."
 
-#: Announcement.class.php:54
+#: Announcement.class.php:59
 msgid "Delete"
 msgstr "Supprimer"
 
-#: views/form.php:102 views/grid.php:14
+#: views/form.php:102 views/grid.php:16
 msgid "Description"
 msgstr "Description"
 
-#: views/grid.php:15
+#: views/grid.php:17
 msgid "Destination"
 msgstr "Destination"
 
@@ -121,7 +121,7 @@ msgid ""
 "which may not be the expected behavior."
 msgstr ""
 
-#: page.announcement.php:45
+#: assets/js/announcement.js:6
 msgid "Invalid description specified"
 msgstr "Description spécifiée invalide"
 
@@ -149,6 +149,10 @@ msgstr ""
 msgid "No"
 msgstr "Non"
 
+#: assets/js/announcement.js:33
+msgid "No Destination"
+msgstr ""
+
 #: views/form.php:32
 msgid "None"
 msgstr "Aucun"
@@ -169,11 +173,11 @@ msgstr "Enregistrement"
 msgid "Repeat"
 msgstr "Répéter"
 
-#: Announcement.class.php:59
+#: Announcement.class.php:64
 msgid "Reset"
 msgstr "Réinitialiser"
 
-#: views/form.php:180 views/grid.php:22
+#: views/form.php:180
 msgid "Return to IVR"
 msgstr "Retourner à l'IVR"
 
@@ -187,7 +191,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:64
+#: Announcement.class.php:69
 msgid "Submit"
 msgstr "Soumettre"
 

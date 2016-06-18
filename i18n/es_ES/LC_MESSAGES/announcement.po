@@ -5,15 +5,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - test module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-11 13:42-0800\n"
+"POT-Creation-Date: 2016-06-17 17:57-0700\n"
 "PO-Revision-Date: 2016-04-25 00:18+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish "
-"<http://weblate.freepbx.org/projects/freepbx/announcement/es_ES/>\n"
-"Language: es_ES\n"
+"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
+"announcement/es_ES/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 "X-Poedit-Language: Spanish\n"
@@ -28,11 +28,11 @@ msgstr ": Agregar"
 msgid ": Edit"
 msgstr ": Editar"
 
-#: views/grid.php:16
+#: views/grid.php:18
 msgid "Actions"
 msgstr "Acciones"
 
-#: views/grid.php:9
+#: views/grid.php:11
 msgid "Add"
 msgstr "Agregar"
 
@@ -65,15 +65,15 @@ msgstr "Aplicaciones"
 msgid "Checking if recordings need migration.."
 msgstr "Comprobando si las grabaciones necesitan migrarse..."
 
-#: Announcement.class.php:54
+#: Announcement.class.php:59
 msgid "Delete"
 msgstr "Eliminar"
 
-#: views/form.php:102 views/grid.php:14
+#: views/form.php:102 views/grid.php:16
 msgid "Description"
 msgstr "Descripción"
 
-#: views/grid.php:15
+#: views/grid.php:17
 msgid "Destination"
 msgstr "Destino"
 
@@ -119,7 +119,7 @@ msgstr ""
 "se selecciona  esta casilla, se volverá a ese IVR lo cual puede no ser el "
 "comportamiento esperado."
 
-#: page.announcement.php:45
+#: assets/js/announcement.js:6
 msgid "Invalid description specified"
 msgstr "La descripción especificada no es válida"
 
@@ -150,6 +150,10 @@ msgstr ""
 msgid "No"
 msgstr "No"
 
+#: assets/js/announcement.js:33
+msgid "No Destination"
+msgstr ""
+
 #: views/form.php:32
 msgid "None"
 msgstr "ninguno"
@@ -170,11 +174,11 @@ msgstr "Grabación"
 msgid "Repeat"
 msgstr "Repetir"
 
-#: Announcement.class.php:59
+#: Announcement.class.php:64
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: views/form.php:180 views/grid.php:22
+#: views/form.php:180
 msgid "Return to IVR"
 msgstr "Volver al IVR"
 
@@ -194,7 +198,7 @@ msgstr ""
 "retardo de 1 segundo. Al utilizar un anuncio de un IVR u otras fuentes que "
 "ya han respondido el canal, ese1 segundo  de retraso puede no ser  deseado."
 
-#: Announcement.class.php:64
+#: Announcement.class.php:69
 msgid "Submit"
 msgstr "Enviar"
 

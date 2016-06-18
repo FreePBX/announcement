@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-11 13:42-0800\n"
+"POT-Creation-Date: 2016-06-17 17:57-0700\n"
 "PO-Revision-Date: 2015-11-16 07:30+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -43,11 +43,11 @@ msgstr ": 添加"
 msgid ": Edit"
 msgstr ": 编辑"
 
-#: views/grid.php:16
+#: views/grid.php:18
 msgid "Actions"
 msgstr "命令"
 
-#: views/grid.php:9
+#: views/grid.php:11
 msgid "Add"
 msgstr "添加"
 
@@ -80,15 +80,15 @@ msgstr "应用"
 msgid "Checking if recordings need migration.."
 msgstr "检查是否需要迁移录音。。"
 
-#: Announcement.class.php:54
+#: Announcement.class.php:59
 msgid "Delete"
 msgstr "删除"
 
-#: views/form.php:102 views/grid.php:14
+#: views/form.php:102 views/grid.php:16
 msgid "Description"
 msgstr "描述"
 
-#: views/grid.php:15
+#: views/grid.php:17
 msgid "Destination"
 msgstr "目的地"
 
@@ -128,7 +128,7 @@ msgstr ""
 "话，IVR 返回的地址将是上一次呼叫时的地址。例如，如果IVR转发呼叫到了一个语音播"
 "报，并且勾选了勾选项，系统则返回到一个IVR，也许这个流程不是我们期望的流程。"
 
-#: page.announcement.php:45
+#: assets/js/announcement.js:6
 msgid "Invalid description specified"
 msgstr "指定了无效的描述"
 
@@ -156,6 +156,10 @@ msgstr ""
 msgid "No"
 msgstr ""
 
+#: assets/js/announcement.js:33
+msgid "No Destination"
+msgstr ""
+
 #: views/form.php:32
 msgid "None"
 msgstr "无"
@@ -174,11 +178,11 @@ msgstr "录音"
 msgid "Repeat"
 msgstr "重复"
 
-#: Announcement.class.php:59
+#: Announcement.class.php:64
 msgid "Reset"
 msgstr "重新设置"
 
-#: views/form.php:180 views/grid.php:22
+#: views/form.php:180
 msgid "Return to IVR"
 msgstr "返回至IVR"
 
@@ -192,7 +196,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:64
+#: Announcement.class.php:69
 msgid "Submit"
 msgstr "提交"
 
