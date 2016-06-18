@@ -3,32 +3,21 @@
 //	Copyright 2015 Sangoma Technologies.
 //
 //
-$destlist = \FreePBX::Modules()->getDestinations();
 ?>
+<script>
+	var destinations = <?php echo json_encode(FreePBX::Modules()->getDestinations())?>;
+</script>
 <div id="toolbar-all">
 	<a href="config.php?display=announcement&amp;view=form" class="btn btn-primary"><i class="fa fa-plus"></i> <?php echo _('Add')?></a>
 </div>
-<table data-toolbar="#toolbar-all" data-toggle="table"  data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true"  id="table-all">
-<thead>
-	<tr>
-		<th data-sortable="true"><?php echo _("Description")?></th>
-		<th data-sortable="true"><?php echo _("Destination")?></th>
-		<th><?php echo _("Actions")?></th>
-	</tr>
-</thead>
-<tbody>
-	<?php foreach (announcement_list() as $row) {
-		$postd = isset($destlist[$row['post_dest']]['description'])?$destlist[$row['post_dest']]['description']:$row['post_dest'];
-		$dest = $row['return_ivr'] == 1? _("Return to IVR"):$postd;
-		?>
+<table data-toolbar="#toolbar-all" data-toggle="table" data-url="ajax.php?module=announcement&amp;command=getJSON&amp;jdata=grid" data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true"  id="table-all">
+	<thead>
 		<tr>
-			<td><?php echo $row['description']?></td>
-			<td><?php echo $dest?></td>
-			<td>
-				<a href="?display=announcement&amp;view=form&amp;extdisplay=<?php echo $row['announcement_id']?>"><i class="fa fa-edit"></i></a>
-				<a href="?display=announcement&amp;action=delete&amp;extdisplay=<?php echo $row['announcement_id']?>" class="delAction"><i class="fa fa-trash"></i></a>
-			</td>
+			<th data-sortable="true" data-field="description"><?php echo _("Description")?></th>
+			<th data-sortable="true" data-field="post_dest" data-formatter="aDestFormatter"><?php echo _("Destination")?></th>
+			<th data-field="announcement_id" data-formatter="actionformatter"><?php echo _("Actions")?></th>
 		</tr>
-	<?php } ?>
-</tbody>
+	</thead>
+	<tbody>
+	</tbody>
 </table>

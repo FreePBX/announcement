@@ -27,6 +27,8 @@ class Announcement extends \FreePBX_Helpers implements \BMO  {
 	public function ajaxRequest($req, $setting){
 		switch($req){
 			case "getData":
+			case "getJSON":
+				return true;
 			break;
 		}
 	}
@@ -38,6 +40,9 @@ class Announcement extends \FreePBX_Helpers implements \BMO  {
 		$request = $_REQUEST;
 		switch($request['command']){
 			case "getData":
+			break;
+			case "getJSON":
+				return $this->getAnnouncements();
 			break;
 		}
 	}
@@ -130,6 +135,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO  {
 			break;
 		}
 	}
+
 	public function getRightNav($request) {
 		if(isset($request['view']) && $request['view'] == 'form'){
 		    return load_view(__DIR__."/views/rnav.php",array());
