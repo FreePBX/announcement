@@ -10,30 +10,33 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-17 17:57-0700\n"
-"PO-Revision-Date: 2016-06-17 17:57-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2016-10-01 11:48+0200\n"
+"Last-Translator: Maxim <maxim@ua.fm>\n"
+"Language-Team: Ukrainian "
+"<http://weblate.freepbx.org/projects/freepbx/announcement/uk_UA/>\n"
+"Language: uk_UA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: page.announcement.php:15
 msgid ": Add"
-msgstr ""
+msgstr ": Додати"
 
 #: page.announcement.php:13
 msgid ": Edit"
-msgstr ""
+msgstr ": Редагувати"
 
 #: views/grid.php:18
 msgid "Actions"
-msgstr ""
+msgstr "Дії"
 
 #: views/grid.php:11
 msgid "Add"
-msgstr ""
+msgstr "Додати"
 
 #: views/rnav.php:3
 msgid "Add Announcements"
@@ -41,7 +44,7 @@ msgstr ""
 
 #: views/form.php:153
 msgid "Allow Skip"
-msgstr ""
+msgstr "Дозволити пропустити"
 
 #: page.announcement.php:7
 msgid "Announcement"
@@ -58,7 +61,7 @@ msgstr ""
 
 #: announcement.i18n.php:6 announcement.i18n.php:12
 msgid "Applications"
-msgstr ""
+msgstr "Додатки"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
@@ -66,23 +69,23 @@ msgstr ""
 
 #: Announcement.class.php:59
 msgid "Delete"
-msgstr ""
+msgstr "Видалити"
 
 #: views/form.php:102 views/grid.php:16
 msgid "Description"
-msgstr ""
+msgstr "Опис"
 
 #: views/grid.php:17
 msgid "Destination"
-msgstr ""
+msgstr "Призначення"
 
 #: views/form.php:234
 msgid "Destination after Playback"
-msgstr ""
+msgstr "Призначення після відтворення"
 
 #: views/rnav.php:8
 msgid "Destinations"
-msgstr ""
+msgstr "Призначення"
 
 #: views/form.php:72
 msgid "Disable"
