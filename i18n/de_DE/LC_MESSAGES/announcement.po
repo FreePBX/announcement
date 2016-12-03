@@ -10,54 +10,57 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-17 17:57-0700\n"
-"PO-Revision-Date: 2016-06-17 17:57-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2016-12-03 05:00+0200\n"
+"Last-Translator: Sven <spiderrs4@web.de>\n"
+"Language-Team: German "
+"<http://weblate.freepbx.org/projects/freepbx/announcement/de_DE/>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: page.announcement.php:15
 msgid ": Add"
-msgstr ""
+msgstr ": Hinzufügen"
 
 #: page.announcement.php:13
 msgid ": Edit"
-msgstr ""
+msgstr ": Bearbeiten"
 
 #: views/grid.php:18
 msgid "Actions"
-msgstr ""
+msgstr "Aktionen"
 
 #: views/grid.php:11
 msgid "Add"
-msgstr ""
+msgstr "Hinzufügen"
 
 #: views/rnav.php:3
 msgid "Add Announcements"
-msgstr ""
+msgstr "Ansage hinzufügen"
 
 #: views/form.php:153
 msgid "Allow Skip"
-msgstr ""
+msgstr "Überspringen zulassen"
 
 #: page.announcement.php:7
 msgid "Announcement"
-msgstr ""
+msgstr "Ansage"
 
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
-msgstr ""
+msgstr "Ansage: %s"
 
 #: announcement.i18n.php:4 announcement.i18n.php:10
 msgid "Announcements"
-msgstr ""
+msgstr "Ansagen"
 
 #: announcement.i18n.php:6 announcement.i18n.php:12
 msgid "Applications"
-msgstr ""
+msgstr "Anwendungen"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
@@ -65,27 +68,27 @@ msgstr ""
 
 #: Announcement.class.php:59
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: views/form.php:102 views/grid.php:16
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: views/grid.php:17
 msgid "Destination"
-msgstr ""
+msgstr "Ziel"
 
 #: views/form.php:234
 msgid "Destination after Playback"
-msgstr ""
+msgstr "Ziel nach Ansage"
 
 #: views/rnav.php:8
 msgid "Destinations"
-msgstr ""
+msgstr "Ziele"
 
 #: views/form.php:72
 msgid "Disable"
-msgstr ""
+msgstr "Deaktivieren"
 
 #: views/form.php:207
 msgid "Don't Answer Channel"
@@ -109,7 +112,7 @@ msgstr ""
 
 #: assets/js/announcement.js:6
 msgid "Invalid description specified"
-msgstr ""
+msgstr "Ungültige Beschreibung angegeben"
 
 #: views/form.php:141
 msgid ""
@@ -120,7 +123,7 @@ msgstr ""
 
 #: views/rnav.php:2
 msgid "List Announcements"
-msgstr ""
+msgstr "Ansagen auflisten"
 
 #: views/form.php:59
 msgid ""
@@ -130,15 +133,15 @@ msgstr ""
 
 #: views/form.php:160 views/form.php:187 views/form.php:214
 msgid "No"
-msgstr ""
+msgstr "Nein"
 
 #: assets/js/announcement.js:33
 msgid "No Destination"
-msgstr ""
+msgstr "Kein Ziel"
 
 #: views/form.php:32
 msgid "None"
-msgstr ""
+msgstr "keine"
 
 #: announcement.i18n.php:8
 msgid ""
@@ -148,19 +151,19 @@ msgstr ""
 
 #: views/form.php:45
 msgid "Recording"
-msgstr ""
+msgstr "Aufnahme"
 
 #: views/form.php:127
 msgid "Repeat"
-msgstr ""
+msgstr "Wiederholen"
 
 #: Announcement.class.php:64
 msgid "Reset"
-msgstr ""
+msgstr "Zurücksetzen"
 
 #: views/form.php:180
 msgid "Return to IVR"
-msgstr ""
+msgstr "Zurück zu IVR"
 
 #: views/form.php:222
 msgid ""
@@ -174,11 +177,11 @@ msgstr ""
 
 #: Announcement.class.php:69
 msgid "Submit"
-msgstr ""
+msgstr "Bestätigen"
 
 #: views/form.php:114
 msgid "The name of this announcement."
-msgstr ""
+msgstr "Der Name für diese Ansage."
 
 #: views/form.php:246
 msgid "Where to send the caller after the announcement is played."
@@ -186,7 +189,7 @@ msgstr ""
 
 #: views/form.php:158 views/form.php:185 views/form.php:212
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: install.php:97
 msgid "adding recording_id field.."
@@ -202,7 +205,7 @@ msgstr ""
 
 #: install.php:101 install.php:113 install.php:129
 msgid "fatal error"
-msgstr ""
+msgstr "schwerwiegender Fehler"
 
 #: install.php:109
 msgid "migrate to recording ids.."
@@ -215,7 +218,7 @@ msgstr ""
 
 #: install.php:96
 msgid "migrating"
-msgstr ""
+msgstr "migrieren"
 
 #: install.php:141
 msgid "no recording field???"
@@ -223,4 +226,4 @@ msgstr ""
 
 #: install.php:104 install.php:143
 msgid "ok"
-msgstr ""
+msgstr "Ok"
