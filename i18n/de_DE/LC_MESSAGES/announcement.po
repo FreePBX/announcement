@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-17 17:57-0700\n"
-"PO-Revision-Date: 2016-12-05 12:59+0200\n"
+"PO-Revision-Date: 2016-12-05 13:25+0200\n"
 "Last-Translator: Sven <spiderrs4@web.de>\n"
 "Language-Team: German "
 "<http://weblate.freepbx.org/projects/freepbx/announcement/de_DE/>\n"
@@ -130,6 +130,9 @@ msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
+"Nachricht, die wiedergegeben werden soll.<br>Um zusätzliche Aufnahmen "
+"hinzuzufügen, verwenden Sie im Menü unter Administrator den Punkt \""
+"Systemaufzeichnungen\""
 
 #: views/form.php:160 views/form.php:187 views/form.php:214
 msgid "No"
@@ -148,6 +151,8 @@ msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
+"Gibt eine Systemaufzeichnungen wieder (optional kann der Benutzer dies "
+"überspringen) und wird dann zu einem anderen Ziel geleitet."
 
 #: views/form.php:45
 msgid "Recording"
@@ -186,6 +191,7 @@ msgstr "Der Name für diese Ansage."
 #: views/form.php:246
 msgid "Where to send the caller after the announcement is played."
 msgstr ""
+"Wohin der Anrufer geleitet werden soll, nachdem die Ansage abgespielt wurde."
 
 #: views/form.php:158 views/form.php:185 views/form.php:212
 msgid "Yes"
@@ -193,7 +199,7 @@ msgstr "Ja"
 
 #: install.php:97
 msgid "adding recording_id field.."
-msgstr ""
+msgstr "Aufnahme id_Feld hinzufügen.."
 
 #: install.php:147
 msgid "already migrated"
