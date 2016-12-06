@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-17 17:57-0700\n"
-"PO-Revision-Date: 2016-12-05 13:25+0200\n"
+"PO-Revision-Date: 2016-12-06 15:24+0200\n"
 "Last-Translator: Sven <spiderrs4@web.de>\n"
 "Language-Team: German "
 "<http://weblate.freepbx.org/projects/freepbx/announcement/de_DE/>\n"
@@ -96,7 +96,7 @@ msgstr "Keine Antwort Kanal"
 
 #: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
-msgstr ""
+msgstr "Ermöglicht dem Anrufer die Nachricht per Tastendruck zu überspringen."
 
 #: views/form.php:195
 msgid ""
@@ -109,6 +109,15 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
+"Wenn diese Ansage von einem IVR stammt und \"zurück zu IVR\" auf Ja gesetzt "
+"ist, wird das Ziel unten ignoriert und stattdessen an das anrufende IVR "
+"zurückgegeben. Andernfalls wird das Ziel unten genommen. Nicht aktivieren, "
+"wenn Sie diesen Modus nicht benutzten.<br>Der IVR Rückkehr Ort wird auf das "
+"letzte IVR in der Anruferkette gesetzt, die aufgerufen wurde, seien Sie also "
+"vorsichtig und überprüfen Sie nur wenn nötig. Wenn beispielsweise ein IVR "
+"einen Anruf an ein anderes Ziel weiterleitet, das diese Ansage schließlich "
+"aufruft und dieses Kontrollkästchen aktiviert ist, kehrt es zu dem IVR "
+"zurück, das möglicherweise nicht das erwartete ist."
 
 #: assets/js/announcement.js:6
 msgid "Invalid description specified"
@@ -120,6 +129,10 @@ msgid ""
 "this option there will be a short delay inserted after the message. If a "
 "longer delay is needed it should be incorporated into the recording."
 msgstr ""
+"Eine Taste welche das wiederholen der Ansage ermöglicht. Wenn Sie diese "
+"Option wählen, wird nach der Ansage eine kurze Verzögerung eingefügt. Wenn "
+"eine längere Verzögerung benötigt wird, sollten Sie diese in die "
+"Aufzeichnung integrieren."
 
 #: views/rnav.php:2
 msgid "List Announcements"
@@ -203,7 +216,7 @@ msgstr "Aufnahme id_Feld hinzufügen.."
 
 #: install.php:147
 msgid "already migrated"
-msgstr ""
+msgstr "bereits migriert"
 
 #: install.php:137
 msgid "dropping recording field.."
