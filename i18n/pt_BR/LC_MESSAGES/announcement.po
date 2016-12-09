@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-17 17:57-0700\n"
-"PO-Revision-Date: 2016-12-03 07:16+0200\n"
+"PO-Revision-Date: 2016-12-09 06:33+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/announcement/pt_BR/>\n"
@@ -109,7 +109,7 @@ msgstr "Não Responder Canal"
 #: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
-"Permitir que o interlocutor pressione uma tecla para ignorar a mensagem."
+"Permitir que o usuário chamador pressione uma tecla para ignorar a mensagem."
 
 #: views/form.php:195
 msgid ""
