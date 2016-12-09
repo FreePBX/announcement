@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - test module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-17 17:57-0700\n"
-"PO-Revision-Date: 2016-12-09 05:20+0200\n"
+"PO-Revision-Date: 2016-12-09 05:23+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/announcement/es_ES/>\n"
@@ -220,7 +220,7 @@ msgstr "añadiendo campo recording_id..."
 
 #: install.php:147
 msgid "already migrated"
-msgstr "Ya se ha migrado"
+msgstr "ya se ha migrado"
 
 #: install.php:137
 msgid "dropping recording field.."
@@ -237,7 +237,7 @@ msgstr "migrar a identificadores de grabación (recording ids).."
 #: install.php:133
 #, php-format
 msgid "migrated %s entries"
-msgstr "%s entradas migradas"
+msgstr "migradas %s entradas"
 
 #: install.php:96
 msgid "migrating"
