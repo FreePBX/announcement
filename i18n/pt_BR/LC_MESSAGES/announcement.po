@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-17 17:57-0700\n"
-"PO-Revision-Date: 2016-12-09 06:33+0200\n"
+"PO-Revision-Date: 2016-12-11 02:11+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/announcement/pt_BR/>\n"
@@ -102,7 +102,6 @@ msgid "Disable"
 msgstr "Desabilitar"
 
 #: views/form.php:207
-#, fuzzy
 msgid "Don't Answer Channel"
 msgstr "Não Responder Canal"
 
@@ -122,6 +121,15 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
+"Se este anúncio vier de uma URA e estiver definido como \"sim\", o destino "
+"abaixo será ignorado e em vez disso, ele retornará para a URA da chamada. "
+"Caso contrário, o destino abaixo será assumido. Não selecione se não "
+"utilizar este modo. <br>O direcionamento de retorno da URA será para a "
+"última URA na cadeia de chamadas que foi usada por isso tenha cuidado para "
+"selecionar apenas quando necessário. Por exemplo, se uma URA direciona uma "
+"chamada para outro destino que eventualmente chama este anúncio e este campo "
+"estiver selecionado, ele retornará a essa URA o qual pode não ser o "
+"comportamento esperado."
 
 #: assets/js/announcement.js:6
 msgid "Invalid description specified"
@@ -133,24 +141,29 @@ msgid ""
 "this option there will be a short delay inserted after the message. If a "
 "longer delay is needed it should be incorporated into the recording."
 msgstr ""
+"Tecla para pressionar a qual permitirá que a mensagem seja reproduzida. Se "
+"você escolher esta opção, será inserido um pequeno atraso após a mensagem. "
+"Se for necessário um atraso mais longo, ele deve ser incorporado na gravação."
 
 #: views/rnav.php:2
 msgid "List Announcements"
-msgstr ""
+msgstr "Listar Aúncios"
 
 #: views/form.php:59
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
+"Mensagem a ser reproduzida. <br>Para adicionar gravações adicionais use o "
+"menu \"Gravações do Sistema\" acima"
 
 #: views/form.php:160 views/form.php:187 views/form.php:214
 msgid "No"
-msgstr ""
+msgstr "Não"
 
 #: assets/js/announcement.js:33
 msgid "No Destination"
-msgstr ""
+msgstr "Sem Destino"
 
 #: views/form.php:32
 msgid "None"
@@ -161,6 +174,8 @@ msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
+"Reproduz uma das gravações do sistema (opcionalmente permitindo que o "
+"usuário pule-a) e, em seguida, vai para outro destino."
 
 #: views/form.php:45
 msgid "Recording"
@@ -172,7 +187,7 @@ msgstr "Repetir"
 
 #: Announcement.class.php:64
 msgid "Reset"
-msgstr ""
+msgstr "Reiniciar"
 
 #: views/form.php:180
 msgid "Return to IVR"
@@ -187,26 +202,32 @@ msgid ""
 "using an announcement from an IVR or other sources that have already "
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
+"Defina isso como \"Sim\", para evitar que o canal seja explicitamente "
+"respondido. Quando selecionado, a mensagem será reproduzida e se o canal não "
+"estiver já respondido, será entregue como uma mídia antecipada se o canal "
+"suportar isso. Quando não selecionado, o canal é respondido seguido de um "
+"atraso de 1 segundo. Ao usar um anúncio de uma URA ou outras fontes que já "
+"tenham respondido ao canal, esse atraso de 1 segundo pode não ser desejado."
 
 #: Announcement.class.php:69
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: views/form.php:114
 msgid "The name of this announcement."
-msgstr ""
+msgstr "Nome deste anúncio."
 
 #: views/form.php:246
 msgid "Where to send the caller after the announcement is played."
-msgstr ""
+msgstr "Onde enviar o usuário chamador após o anúncio ser reproduzido."
 
 #: views/form.php:158 views/form.php:185 views/form.php:212
 msgid "Yes"
-msgstr ""
+msgstr "Sim"
 
 #: install.php:97
 msgid "adding recording_id field.."
-msgstr ""
+msgstr "adicionando campo recording_id..."
 
 #: install.php:147
 msgid "already migrated"
@@ -214,7 +235,7 @@ msgstr "já migrado"
 
 #: install.php:137
 msgid "dropping recording field.."
-msgstr ""
+msgstr "eliminando campo de gravação..."
 
 #: install.php:101 install.php:113 install.php:129
 msgid "fatal error"
@@ -222,12 +243,12 @@ msgstr "erro fatal"
 
 #: install.php:109
 msgid "migrate to recording ids.."
-msgstr ""
+msgstr "migrar para identificadores de gravação..."
 
 #: install.php:133
 #, php-format
 msgid "migrated %s entries"
-msgstr ""
+msgstr "migrados %s elementos"
 
 #: install.php:96
 msgid "migrating"
@@ -235,7 +256,7 @@ msgstr "migrando"
 
 #: install.php:141
 msgid "no recording field???"
-msgstr ""
+msgstr "Nenhum campo de gravação???"
 
 #: install.php:104 install.php:143
 msgid "ok"
