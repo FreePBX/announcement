@@ -119,22 +119,22 @@ class Announcement extends \FreePBX_Helpers implements \BMO  {
 
 		switch ($action) {
 			case 'add':
-				$_REQUEST['extdisplay'] = announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
+				announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 				needreload();
-				$_REQUEST['extdisplay'] = null;
-				$_REQUEST['view'] = null;
+				unset($_REQUEST['extdisplay']);
+				unset($_REQUEST['view']);
 			break;
 			case 'edit':
 				announcement_edit($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 				needreload();
-				$_REQUEST['extdisplay'] = null;
-				$_REQUEST['view'] = null;
+				unset($_REQUEST['extdisplay']);
+				unset($_REQUEST['view']);
 			break;
 			case 'delete':
 				announcement_delete($_REQUEST['extdisplay']);
 				needreload();
-				$_REQUEST['extdisplay'] = null;
-				$_REQUEST['view'] = null;
+				unset($_REQUEST['extdisplay']);
+				unset($_REQUEST['view']);
 			break;
 		}
 	}
