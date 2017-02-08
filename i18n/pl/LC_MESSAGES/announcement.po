@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-17 17:57-0700\n"
-"PO-Revision-Date: 2017-02-06 00:32+0200\n"
+"PO-Revision-Date: 2017-02-07 18:57+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish "
 "<http://weblate.freepbx.org/projects/freepbx/announcement/pl/>\n"
@@ -103,12 +103,13 @@ msgid "Disable"
 msgstr "Wyłącz"
 
 #: views/form.php:207
+#, fuzzy
 msgid "Don't Answer Channel"
-msgstr ""
+msgstr "Nie odbieraj kanału"
 
 #: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
-msgstr ""
+msgstr "Jeżeli dzwoniący może nacisnąć przycisk by pominąć wiadomość."
 
 #: views/form.php:195
 msgid ""
@@ -121,6 +122,15 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
+"Jeżeli zapowiedź przyszła z IVR i wartość ustawiona jest na TAK, kierunek "
+"poniżej będzie ignorowany i zamiast przekierowany powróci do IVR. W "
+"przeciwnym razie, poniższy kierunek będzie wybrany. Nie zaznaczaj jeżeli nie "
+"używasz tego modu. <br>Zaznacz w wypadku tylko kiedy jest ko konieczne. "
+"Miejscem powrotu IVR będzie ostatni IVR w łańcuchu połączenia , które "
+"zostało wybrane. Np. Jeżeli IVR kieruje połączenie do następnego kierunku, "
+"który po pewnym czasie dociera do tej zapowiedzi i to pole jest zaznaczone, "
+"połączenie powróci do tego IVR co nie koniecznie może być oczekiwanym "
+"zachowaniem."
 
 #: assets/js/announcement.js:6
 msgid "Invalid description specified"
@@ -186,6 +196,7 @@ msgid "Return to IVR"
 msgstr "Zwróć do IVR"
 
 #: views/form.php:222
+#, fuzzy
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -194,6 +205,12 @@ msgid ""
 "using an announcement from an IVR or other sources that have already "
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
+"Ustaw na TAK, by utrzymać kanał by utrzymać odpowiedzi kanału. Kiedy "
+"zaznaczone, wiadomość będzie odegrana i jeżeli kanał nie już nie odpowiadał "
+"zostanie dostarczony jako wczesne media, jeżeli są one wspierane. Nie "
+"zaznaczony, kanał wyśle odpowiedź po 1 sekundowym opóźnieniu. Kiedy używane "
+"jako zapowiedź w IVR albo inne źródła, które już odpowiedziały, 1 sekundowe "
+"opóźnienie może być nie wskazane."
 
 #: Announcement.class.php:69
 msgid "Submit"
