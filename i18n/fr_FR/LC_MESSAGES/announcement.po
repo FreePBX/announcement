@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-17 17:57-0700\n"
-"PO-Revision-Date: 2017-03-12 19:09+0200\n"
+"PO-Revision-Date: 2017-03-12 19:29+0200\n"
 "Last-Translator: Nicolas <freepbx@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/announcement/fr_FR/>\n"
@@ -94,7 +94,7 @@ msgstr "Destination après l'annonce"
 
 #: views/rnav.php:8
 msgid "Destinations"
-msgstr ""
+msgstr "Destinations"
 
 #: views/form.php:72
 msgid "Disable"
