@@ -7,7 +7,7 @@ $request = $_REQUEST;
 $heading = _("Announcement");
 $request["view"] = !empty($request["view"]) ? $request["view"] : '';
 //get unique queues
-switch($request["view"]){
+switch($_GET["view"]){
 	case "form":
 		if($request['extdisplay']){
 			$heading .= _(": Edit");

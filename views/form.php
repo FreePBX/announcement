@@ -86,7 +86,7 @@ if ($extdisplay) {
 }
 ?>
 
-<form class="fpbx-submit" name="editAnnouncement" action="" method="post" onsubmit="return checkAnnouncement(editAnnouncement);" data-fpbx-delete="config.php?display=announcement&amp;extdisplay=<?php echo $extdisplay ?>&amp;action=delete">
+<form class="fpbx-submit" name="editAnnouncement" action="?display=announcements" method="post" onsubmit="return checkAnnouncement(editAnnouncement);" data-fpbx-delete="config.php?display=announcement&amp;extdisplay=<?php echo $extdisplay ?>&amp;action=delete">
 <input type="hidden" name="extdisplay" value="<?php echo $extdisplay; ?>">
 <input type="hidden" name="announcement_id" value="<?php echo $extdisplay; ?>">
 <input type="hidden" name="action" value="<?php echo $action; ?>">
