@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-17 17:57-0700\n"
+"POT-Creation-Date: 2017-03-29 10:11-0700\n"
 "PO-Revision-Date: 2015-10-27 13:03+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -86,7 +86,7 @@ msgstr "アナウンス: %s"
 msgid "Announcements"
 msgstr "アナウンス"
 
-#: announcement.i18n.php:6 announcement.i18n.php:12
+#: announcement.i18n.php:6
 msgid "Applications"
 msgstr "アプリケーション"
 

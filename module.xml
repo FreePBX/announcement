@@ -2,11 +2,12 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>13.0.6</version>
+	<version>13.0.6.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*13.0.6.1* FREEPBX-13958 Return to List after adding Announcement
 		*13.0.6* FREEPBX-12477
 		*13.0.5* FREEPBX-9773 1 second delay between annoucement
 		*13.0.4* Slideout rnav
