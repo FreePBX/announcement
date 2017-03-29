@@ -3,18 +3,18 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for announcement
-# Copyright (C) 2008-2015 Sangoma, Inc.
+# Copyright (C) 2008-2016 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-17 17:57-0700\n"
-"PO-Revision-Date: 2016-08-11 19:34+0200\n"
-"Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian (Iran) "
-"<http://weblate.freepbx.org/projects/freepbx/announcement/fa_IR/>\n"
-"Language: fa_IR\n"
+"PO-Revision-Date: 2017-03-03 15:54+0200\n"
+"Last-Translator: hammer125 <auswertung@aon.at>\n"
+"Language-Team: German "
+"<http://weblate.freepbx.org/projects/freepbx/announcement/de_DE/>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,80 +23,80 @@ msgstr ""
 
 #: page.announcement.php:15
 msgid ": Add"
-msgstr "：افزودن"
+msgstr ": Hinzufügen"
 
 #: page.announcement.php:13
 msgid ": Edit"
-msgstr "：ویرایش"
+msgstr ": Bearbeiten"
 
 #: views/grid.php:18
 msgid "Actions"
-msgstr "عملیات"
+msgstr "Aktionen"
 
 #: views/grid.php:11
 msgid "Add"
-msgstr "افزودن"
+msgstr "Hinzufügen"
 
 #: views/rnav.php:3
 msgid "Add Announcements"
-msgstr "افزودن اعلان ها"
+msgstr "Ansage hinzufügen"
 
 #: views/form.php:153
 msgid "Allow Skip"
-msgstr "اجازه لغو"
+msgstr "Überspringen zulassen"
 
 #: page.announcement.php:7
 msgid "Announcement"
-msgstr "اعلان"
+msgstr "Ansage"
 
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
-msgstr "اعلان：%s"
+msgstr "Ansage: %s"
 
 #: announcement.i18n.php:4 announcement.i18n.php:10
 msgid "Announcements"
-msgstr "اعلان ها"
+msgstr "Ansagen"
 
 #: announcement.i18n.php:6 announcement.i18n.php:12
 msgid "Applications"
-msgstr "برنامه ها"
+msgstr "Anwendungen"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
-msgstr "بررسی لزوم انتقال پیام صوتی ذخیره شده.."
+msgstr "Es wird überprüft, ob die Aufnahmen eine Umstellung benötigen .."
 
 #: Announcement.class.php:59
 msgid "Delete"
-msgstr "حذف"
+msgstr "Löschen"
 
 #: views/form.php:102 views/grid.php:16
 msgid "Description"
-msgstr "توضیحات"
+msgstr "Beschreibung"
 
 #: views/grid.php:17
 msgid "Destination"
-msgstr "مقصد"
+msgstr "Ziel"
 
 #: views/form.php:234
 msgid "Destination after Playback"
-msgstr "مقصد پس از پخش"
+msgstr "Ziel nach Ansage"
 
 #: views/rnav.php:8
 msgid "Destinations"
-msgstr "مقصدها"
+msgstr "Ziele"
 
 #: views/form.php:72
 msgid "Disable"
-msgstr "غیرفعال"
+msgstr "Deaktivieren"
 
 #: views/form.php:207
 msgid "Don't Answer Channel"
-msgstr "کانال پاسخ داده نشود"
+msgstr "Keine Antwort Kanal"
 
 #: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
-msgstr "تماس گیرنده در صورت داشتن مجوز لازم می تواند از پخش پیام جلوگیری کند."
+msgstr "Ermöglicht dem Anrufer die Nachricht per Tastendruck zu überspringen."
 
 #: views/form.php:195
 msgid ""
@@ -109,17 +109,19 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
-"اگر این اعلان از یک منوی صوتی پخش می شود، با انتخاب این گزینه، مقصد تعیین "
-"شده در ذیل نادیده گرفته شده و به منوی صوتی باز می گردد. در غیر این صورت مقصد "
-"زیر انتخاب می شود. دقت کنید که که مقصد بازگشت آخرین منوی صوتی در زنجیره "
-"مکالمه می باشد و لازم است در صورت نیاز این گزینه انتخاب شود. به عنوان مثال "
-"ممکن است در منوی صوتی به بخشی هدایت شوید که به این اعلان منتهی شود؛ در این "
-"صورت اگر این گزینه فعال باشد مجددا به همان منوی صوتی ارجاع می شوید که ممکن "
-"است دور از انتظار باشد."
+"Wenn diese Ansage von einem IVR stammt und \"zurück zu IVR\" auf Ja gesetzt "
+"ist, wird das Ziel unten ignoriert und stattdessen an das anrufende IVR "
+"zurückgegeben. Andernfalls wird das Ziel unten genommen. Nicht aktivieren, "
+"wenn Sie diesen Modus nicht benutzten.<br>Der IVR Rückkehr Ort wird auf das "
+"letzte IVR in der Anruferkette gesetzt, die aufgerufen wurde, seien Sie also "
+"vorsichtig und überprüfen Sie nur wenn nötig. Wenn beispielsweise ein IVR "
+"einen Anruf an ein anderes Ziel weiterleitet, das diese Ansage schließlich "
+"aufruft und dieses Kontrollkästchen aktiviert ist, kehrt es zu dem IVR "
+"zurück, das möglicherweise nicht das erwartete ist."
 
 #: assets/js/announcement.js:6
 msgid "Invalid description specified"
-msgstr "توضیحات نادرست"
+msgstr "Ungültige Beschreibung angegeben"
 
 #: views/form.php:141
 msgid ""
@@ -127,57 +129,59 @@ msgid ""
 "this option there will be a short delay inserted after the message. If a "
 "longer delay is needed it should be incorporated into the recording."
 msgstr ""
-"کلیدی که در صورتی فشار دادن، پخش مجدد پیام را فراهم می کند. اگر این گزینه را "
-"انتخاب نمایید مقداری تاخیر پس از پیام به وجود می آید. اگر به تاخیر بیشتری "
-"نیاز دارید باید در ضبط پیام آن را در نظر بگیرید."
+"Eine Taste welche das wiederholen der Ansage ermöglicht. Wenn Sie diese "
+"Option wählen, wird nach der Ansage eine kurze Verzögerung eingefügt. Wenn "
+"eine längere Verzögerung benötigt wird, sollten Sie diese in die "
+"Aufzeichnung integrieren."
 
 #: views/rnav.php:2
 msgid "List Announcements"
-msgstr "فهرست اعلان ها"
+msgstr "Ansagenliste"
 
 #: views/form.php:59
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
-"پیامی که باید پخش شود <br>. به منظور افزودن پیام، از بخش \\\"ضبط پیام های "
-"سیستم\\\" در منوی بالا استفاده نمایید"
+"Nachricht, die wiedergegeben werden soll.<br>Um zusätzliche Aufnahmen "
+"hinzuzufügen, verwenden Sie im Menü unter Administrator den Punkt \""
+"Systemaufzeichnungen\""
 
 #: views/form.php:160 views/form.php:187 views/form.php:214
 msgid "No"
-msgstr "خیر"
+msgstr "Nein"
 
 #: assets/js/announcement.js:33
 msgid "No Destination"
-msgstr "بدون مقصد"
+msgstr "Kein Ziel"
 
 #: views/form.php:32
 msgid "None"
-msgstr "هیچ کدام"
+msgstr "keine"
 
 #: announcement.i18n.php:8
 msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
-"پخش یکی از پیام های ضبط شده سیستم (کاربر می تواند این مرحله را لغو کند) و "
-"سپس رفتن به یک مقصد دیگر."
+"Gibt eine Systemaufzeichnungen wieder (optional kann der Benutzer dies "
+"überspringen) und wird dann zu einem anderen Ziel geleitet."
 
 #: views/form.php:45
 msgid "Recording"
-msgstr "پیام ضبط شده"
+msgstr "Aufnahme"
 
 #: views/form.php:127
 msgid "Repeat"
-msgstr "تکرار"
+msgstr "Wiederholen"
 
 #: Announcement.class.php:64
 msgid "Reset"
-msgstr "بازنشانی"
+msgstr "Zurücksetzen"
 
 #: views/form.php:180
 msgid "Return to IVR"
-msgstr "بازگشت به منوی صوتی"
+msgstr "Zurück zu IVR"
 
 #: views/form.php:222
 msgid ""
@@ -188,61 +192,65 @@ msgid ""
 "using an announcement from an IVR or other sources that have already "
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
-"در صورت انتخاب بله، از پاسخ به کانال جلوگیری می گردد. در صورتی که کانال پاسخ "
-"داده نشود، پیام به صورت پیشواز پخش خواهد شد که البته باید کانال این قابلیت "
-"را پشتیبانی نماید. در غیر این صورت کانال با تاخیر 1 ثانیه پاسخ داده خواهد "
-"شد. زمانی که از اعلان در منوی صوتی و یا جاهای دیگر استفاده می نمایید، چون "
-"کانال قبلا پاسخ داده شده است، این تاخیر ممکن است مطالوب نباشد."
+"Setzen Sie das auf Ja, um den Anruf davon abzuhalten, ausdrücklich "
+"beantwortet zu werden. Wenn angehakt, wird die Mitteilung abgespielt und "
+"wenn der Anruf noch nicht beantwortet wurde wird sie als early media "
+"übergeben, wenn der Anruf dies unterstützt. Wenn nicht angehakt, wird der "
+"Anruf beantwortet mit einer anschließenden 1-Sekunden-Verzögerung. Wenn die "
+"Mitteilung von IVR oder aus anderen Quellen, die bereits auf den Anruf "
+"geantwortet haben, verwendet wird, dann wir die 1-Sekunden-Verzögerung "
+"vielleicht nicht erwünscht sein."
 
 #: Announcement.class.php:69
 msgid "Submit"
-msgstr "ثبت"
+msgstr "Bestätigen"
 
 #: views/form.php:114
 msgid "The name of this announcement."
-msgstr "نام این اعلان."
+msgstr "Der Name für diese Ansage."
 
 #: views/form.php:246
 msgid "Where to send the caller after the announcement is played."
-msgstr "تماس گیرنده پس از پخش اعلان به کجا منتقل شود."
+msgstr ""
+"Wohin der Anrufer geleitet werden soll, nachdem die Ansage abgespielt wurde."
 
 #: views/form.php:158 views/form.php:185 views/form.php:212
 msgid "Yes"
-msgstr "بله"
+msgstr "Ja"
 
 #: install.php:97
 msgid "adding recording_id field.."
-msgstr "افزودن فیلد شناسه ضبط.."
+msgstr "Aufnahme id_Feld hinzufügen.."
 
 #: install.php:147
 msgid "already migrated"
-msgstr "انتقال یافته"
+msgstr "bereits migriert"
 
 #: install.php:137
 msgid "dropping recording field.."
-msgstr "فیلد پیام ضبط شده از قلم افتاده ..."
+msgstr "Aufnahmefeld weglassen.."
 
 #: install.php:101 install.php:113 install.php:129
 msgid "fatal error"
-msgstr "خطای مهلک"
+msgstr "schwerwiegender Fehler"
 
 #: install.php:109
 msgid "migrate to recording ids.."
-msgstr "انتقال به شناسه های ضبط.."
+msgstr "in Aufnahme-ids überführen.."
 
 #: install.php:133
 #, php-format
 msgid "migrated %s entries"
-msgstr "ورودی های %s منتقل شده"
+msgstr "überführte %s Einträge"
 
 #: install.php:96
 msgid "migrating"
-msgstr "در حال انتقال"
+msgstr "migrieren"
 
 #: install.php:141
 msgid "no recording field???"
-msgstr "بدون فیلد پیلم ضبط شده ؟؟؟"
+msgstr "kein Aufnahmefeld???"
 
 #: install.php:104 install.php:143
 msgid "ok"
-msgstr "تایید"
+msgstr "Ok"

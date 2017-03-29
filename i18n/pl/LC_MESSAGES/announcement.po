@@ -21,91 +21,95 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-17 17:57-0700\n"
-"PO-Revision-Date: 2011-09-23 09:52+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-02-07 19:01+0200\n"
+"Last-Translator: Michal <mboltz@tlen.pl>\n"
+"Language-Team: Polish "
+"<http://weblate.freepbx.org/projects/freepbx/announcement/pl/>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: page.announcement.php:15
 msgid ": Add"
-msgstr ""
+msgstr ": Dodaj"
 
 #: page.announcement.php:13
 msgid ": Edit"
-msgstr ""
+msgstr ": Edytuj"
 
 #: views/grid.php:18
 msgid "Actions"
-msgstr ""
+msgstr "Operacje"
 
 #: views/grid.php:11
 msgid "Add"
-msgstr ""
+msgstr "Dodaj"
 
 #: views/rnav.php:3
 msgid "Add Announcements"
-msgstr ""
+msgstr "Dodaj ogłoszenie"
 
 #: views/form.php:153
 msgid "Allow Skip"
-msgstr ""
+msgstr "Pozwól pominąć"
 
 #: page.announcement.php:7
 msgid "Announcement"
-msgstr ""
+msgstr "Ogłoszenie"
 
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
-msgstr ""
+msgstr "Ogłoszenie: %s"
 
 #: announcement.i18n.php:4 announcement.i18n.php:10
 msgid "Announcements"
-msgstr ""
+msgstr "Ogłoszenia"
 
 #: announcement.i18n.php:6 announcement.i18n.php:12
 msgid "Applications"
-msgstr ""
+msgstr "Aplikacje"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
-msgstr ""
+msgstr "Sprawdzanie czy nagrania potrzebują migracji.."
 
 #: Announcement.class.php:59
 msgid "Delete"
-msgstr ""
+msgstr "Usuń"
 
 #: views/form.php:102 views/grid.php:16
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #: views/grid.php:17
 msgid "Destination"
-msgstr ""
+msgstr "Miejsce docelowe"
 
 #: views/form.php:234
 msgid "Destination after Playback"
-msgstr ""
+msgstr "Miejsce docelowe po odtworzeniu nagranego dźwięku"
 
 #: views/rnav.php:8
 msgid "Destinations"
-msgstr ""
+msgstr "Miejsca docelowe"
 
 #: views/form.php:72
 msgid "Disable"
-msgstr ""
+msgstr "Wyłącz"
 
 #: views/form.php:207
+#, fuzzy
 msgid "Don't Answer Channel"
-msgstr ""
+msgstr "Nie odbieraj kanału"
 
 #: views/form.php:168
 msgid "If the caller is allowed to press a key to skip the message."
-msgstr ""
+msgstr "Jeżeli dzwoniący może nacisnąć przycisk by pominąć wiadomość."
 
 #: views/form.php:195
 msgid ""
@@ -118,10 +122,19 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
+"Jeżeli zapowiedź przyszła z IVR i wartość ustawiona jest na TAK, kierunek "
+"poniżej będzie ignorowany i zamiast przekierowany powróci do IVR. W "
+"przeciwnym razie, poniższy kierunek będzie wybrany. Nie zaznaczaj jeżeli nie "
+"używasz tego modu. <br>Zaznacz w wypadku tylko kiedy jest ko konieczne. "
+"Miejscem powrotu IVR będzie ostatni IVR w łańcuchu połączenia , które "
+"zostało wybrane. Np. Jeżeli IVR kieruje połączenie do następnego kierunku, "
+"który po pewnym czasie dociera do tej zapowiedzi i to pole jest zaznaczone, "
+"połączenie powróci do tego IVR co nie koniecznie może być oczekiwanym "
+"zachowaniem."
 
 #: assets/js/announcement.js:6
 msgid "Invalid description specified"
-msgstr ""
+msgstr "Wyszczególniono błędny opis"
 
 #: views/form.php:141
 msgid ""
@@ -129,52 +142,61 @@ msgid ""
 "this option there will be a short delay inserted after the message. If a "
 "longer delay is needed it should be incorporated into the recording."
 msgstr ""
+"Przycisk który zezwoli na ponowne odtworzenia wiadomości. Jeśli wybierzesz "
+"tę opcję będzie dodane krótkie opóźnienie po wiadomości. Jeśli potrzebne "
+"jest dłuższe opóźnienie powinno ono zostać dołączone do wiadomości."
 
 #: views/rnav.php:2
 msgid "List Announcements"
-msgstr ""
+msgstr "Lista ogłoszeń"
 
 #: views/form.php:59
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
+"Wiadomość do odtworzenia. <br> Aby dodać dodatkowe nagrania użyć \"Systemu "
+"Nagrywania\" w MENU powyżej"
 
 #: views/form.php:160 views/form.php:187 views/form.php:214
 msgid "No"
-msgstr ""
+msgstr "Nie"
 
 #: assets/js/announcement.js:33
 msgid "No Destination"
-msgstr ""
+msgstr "Brak miejsca docelowego"
 
 #: views/form.php:32
 msgid "None"
-msgstr ""
+msgstr "Żaden"
 
 #: announcement.i18n.php:8
 msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
+"Odtwarzanie jednego z nagrań systemowych (opcjonalnie zezwalając "
+"użytkownikowi na pominięcie go) następnie przechodzi do innego miejsca "
+"docelowego."
 
 #: views/form.php:45
 msgid "Recording"
-msgstr ""
+msgstr "Nagranie"
 
 #: views/form.php:127
 msgid "Repeat"
-msgstr ""
+msgstr "Powtórz"
 
 #: Announcement.class.php:64
 msgid "Reset"
-msgstr ""
+msgstr "wyzerować"
 
 #: views/form.php:180
 msgid "Return to IVR"
-msgstr ""
+msgstr "Zwróć do IVR"
 
 #: views/form.php:222
+#, fuzzy
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -183,56 +205,63 @@ msgid ""
 "using an announcement from an IVR or other sources that have already "
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
+"Ustaw na TAK, by utrzymać kanał by utrzymać odpowiedzi kanału. Kiedy "
+"zaznaczone, wiadomość będzie odegrana i jeżeli kanał nie już nie odpowiadał "
+"zostanie dostarczony jako wczesne media, jeżeli są one wspierane. Nie "
+"zaznaczony, kanał wyśle odpowiedź po 1 sekundowym opóźnieniu. Kiedy używane "
+"jako zapowiedź w IVR albo inne źródła, które już odpowiedziały, 1 sekundowe "
+"opóźnienie może być nie wskazane."
 
 #: Announcement.class.php:69
 msgid "Submit"
-msgstr ""
+msgstr "zgłoś"
 
 #: views/form.php:114
 msgid "The name of this announcement."
-msgstr ""
+msgstr "Nazwa tego ogłoszenia."
 
 #: views/form.php:246
 msgid "Where to send the caller after the announcement is played."
-msgstr ""
+msgstr "Gdzie wysłać dzwoniącego po odtworzeniu ogłoszenia."
 
 #: views/form.php:158 views/form.php:185 views/form.php:212
 msgid "Yes"
-msgstr ""
+msgstr "Tak"
 
 #: install.php:97
 msgid "adding recording_id field.."
-msgstr ""
+msgstr "dodawanie pola identyfikatorów nagrania.."
 
 #: install.php:147
 msgid "already migrated"
-msgstr ""
+msgstr "już przeniesiono"
 
 #: install.php:137
+#, fuzzy
 msgid "dropping recording field.."
-msgstr ""
+msgstr "miejsce zrzutu nagrań.."
 
 #: install.php:101 install.php:113 install.php:129
 msgid "fatal error"
-msgstr ""
+msgstr "błąd krytyczny"
 
 #: install.php:109
 msgid "migrate to recording ids.."
-msgstr ""
+msgstr "przenoszenie do identyfikatorów nagrania.."
 
 #: install.php:133
 #, php-format
 msgid "migrated %s entries"
-msgstr ""
+msgstr "przeniesiono %s wpisy"
 
 #: install.php:96
 msgid "migrating"
-msgstr ""
+msgstr "przenoszenie"
 
 #: install.php:141
 msgid "no recording field???"
-msgstr ""
+msgstr "brak pola nagrywania???"
 
 #: install.php:104 install.php:143
 msgid "ok"
-msgstr ""
+msgstr "ok"

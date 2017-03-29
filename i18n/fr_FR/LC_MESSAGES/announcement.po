@@ -20,16 +20,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-17 17:57-0700\n"
-"PO-Revision-Date: 2016-02-04 23:06+0200\n"
-"Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
-"Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
-"announcement/fr_FR/>\n"
+"PO-Revision-Date: 2017-03-13 14:21+0200\n"
+"Last-Translator: Nicolas <freepbx@riendeau.org>\n"
+"Language-Team: French "
+"<http://weblate.freepbx.org/projects/freepbx/announcement/fr_FR/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.4\n"
 
 #: page.announcement.php:15
 msgid ": Add"
@@ -144,6 +144,8 @@ msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
+"Message qui sera entendu.<br>Pour ajouter des enregistrements additionnels "
+"utiliser le menu \"Enregistrement systèmes\""
 
 #: views/form.php:160 views/form.php:187 views/form.php:214
 msgid "No"
@@ -151,7 +153,7 @@ msgstr "Non"
 
 #: assets/js/announcement.js:33
 msgid "No Destination"
-msgstr ""
+msgstr "Pas de destination"
 
 #: views/form.php:32
 msgid "None"
@@ -201,7 +203,7 @@ msgstr "Le nom de cette annonce."
 
 #: views/form.php:246
 msgid "Where to send the caller after the announcement is played."
-msgstr ""
+msgstr "La destination vers laquelle l'appelant sera transféré après l'annonce."
 
 #: views/form.php:158 views/form.php:185 views/form.php:212
 msgid "Yes"
