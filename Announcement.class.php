@@ -72,7 +72,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO  {
 				if (empty($request['extdisplay'])) {
 					unset($buttons['delete']);
 				}
-				if(empty($request['view']) || $request['view'] != 'form'){
+				if(empty($_GET['view']) || $_GET['view'] != 'form'){
 					$buttons = array();
 				}
 			break;
@@ -134,7 +134,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO  {
 	}
 
 	public function getRightNav($request) {
-		if(isset($request['view']) && $request['view'] == 'form'){
+		if(isset($_GET['view']) && $_GET['view'] == 'form'){
 		    return load_view(__DIR__."/views/rnav.php",array());
 		}
 	}
