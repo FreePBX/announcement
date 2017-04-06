@@ -7,10 +7,10 @@
 <script>
 	var destinations = <?php echo json_encode(FreePBX::Modules()->getDestinations())?>;
 </script>
-<div id="toolbar-all">
+<div id="toolbar-grid">
 	<a href="config.php?display=announcement&amp;view=form" class="btn btn-primary"><i class="fa fa-plus"></i> <?php echo _('Add')?></a>
 </div>
-<table data-toolbar="#toolbar-all" data-toggle="table" data-url="ajax.php?module=announcement&amp;command=getJSON&amp;jdata=grid" data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true"  id="table-all">
+<table data-toolbar="#toolbar-grid" data-toggle="table" data-url="ajax.php?module=announcement&amp;command=getJSON&amp;jdata=grid" data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true"  id="table-all">
 	<thead>
 		<tr>
 			<th data-sortable="true" data-field="description"><?php echo _("Description")?></th>
