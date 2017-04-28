@@ -73,17 +73,6 @@ $repeatopts = '<option value=""'.($default == '' ? ' SELECTED' : '').'>'._("Disa
 foreach ($digits as $digit) {
 	$repeatopts .= '<option value="'.$digit.'"'.($digit == $default ? ' SELECTED' : '').'>'.$digit."</option>\n";
 }
-$usagehtml = '';
-if ($extdisplay) {
-	$usage_list = framework_display_destination_usage(announcement_getdest($extdisplay));
-	if (!empty($usage_list)) {
-		$usagehtml .= '<div class="well">';
-		$usagehtml .= '<h4>'.$usage_list['text'].'</h4>';
-		$usagehtml .= '<p>'.$usage_list['tooltip'].'</p>';
-		$usagehtml .='</div>';
-	}
-	echo $usagehtml;
-}
 ?>
 
 <form class="fpbx-submit" name="editAnnouncement" action="?display=announcement" method="post" onsubmit="return checkAnnouncement(editAnnouncement);" data-fpbx-delete="config.php?display=announcement&amp;extdisplay=<?php echo $extdisplay ?>&amp;action=delete">
