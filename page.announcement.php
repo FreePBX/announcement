@@ -6,11 +6,26 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 $request = $_REQUEST;
 $heading = _("Announcement");
 $request["view"] = !empty($request["view"]) ? $request["view"] : '';
+$usagehtml = '';
 //get unique queues
-switch($_GET["view"]){
+switch($request["view"]){
 	case "form":
-		if($request['extdisplay']){
+		if(isset($request['extdisplay'])){
 			$heading .= _(": Edit");
+			$usage_list = framework_display_destination_usage(announcement_getdest($request['extdisplay']));
+			if(!empty($usage_list)){
+				$usagehtml = <<< HTML
+<div class="panel panel-default">
+	<div class="panel-heading">
+		$usage_list[text]
+	</div>
+	<div class="panel-body">
+		$usage_list[tooltip]
+	</div>
+</div>
+
+HTML;
+			}
 		}else{
 			$heading .= _(": Add");
 		}
@@ -24,6 +39,7 @@ switch($_GET["view"]){
 ?>
 <div class="container-fluid">
 	<h1><?php echo $heading ?></h1>
+	<?php echo $usagehtml?>
 	<div class = "display full-border">
 		<div class="row">
 			<div class="col-sm-12">
