@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-29 10:11-0700\n"
+"POT-Creation-Date: 2017-05-02 12:43-0400\n"
 "PO-Revision-Date: 2015-11-16 07:30+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -35,11 +35,11 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: page.announcement.php:15
+#: page.announcement.php:17
 msgid ": Add"
 msgstr ": 添加"
 
-#: page.announcement.php:13
+#: page.announcement.php:14
 msgid ": Edit"
 msgstr ": 编辑"
 
@@ -55,7 +55,7 @@ msgstr "添加"
 msgid "Add Announcements"
 msgstr "添加语音播报"
 
-#: views/form.php:153
+#: views/form.php:142
 msgid "Allow Skip"
 msgstr "允许跳过"
 
@@ -84,7 +84,7 @@ msgstr "检查是否需要迁移录音。。"
 msgid "Delete"
 msgstr "删除"
 
-#: views/form.php:102 views/grid.php:16
+#: views/form.php:91 views/grid.php:16
 msgid "Description"
 msgstr "描述"
 
@@ -92,7 +92,7 @@ msgstr "描述"
 msgid "Destination"
 msgstr "目的地"
 
-#: views/form.php:234
+#: views/form.php:223
 msgid "Destination after Playback"
 msgstr "回放后目的地"
 
@@ -104,15 +104,15 @@ msgstr "目的地"
 msgid "Disable"
 msgstr "禁用"
 
-#: views/form.php:207
+#: views/form.php:196
 msgid "Don't Answer Channel"
 msgstr "不要接听频道"
 
-#: views/form.php:168
+#: views/form.php:157
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr "设定主叫是否可以按下某键以跳过消息。"
 
-#: views/form.php:195
+#: views/form.php:184
 msgid ""
 "If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -132,7 +132,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "指定了无效的描述"
 
-#: views/form.php:141
+#: views/form.php:130
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -152,7 +152,7 @@ msgid ""
 msgstr ""
 "将播放语音。<br>支持更多语音录音文件，请使用 \"System Recordings\" 菜单"
 
-#: views/form.php:160 views/form.php:187 views/form.php:214
+#: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "No"
 msgstr ""
 
@@ -174,7 +174,7 @@ msgstr "回放其中一个系统录音（可跳过），然后路由到另外一
 msgid "Recording"
 msgstr "录音"
 
-#: views/form.php:127
+#: views/form.php:116
 msgid "Repeat"
 msgstr "重复"
 
@@ -182,11 +182,11 @@ msgstr "重复"
 msgid "Reset"
 msgstr "重新设置"
 
-#: views/form.php:180
+#: views/form.php:169
 msgid "Return to IVR"
 msgstr "返回至IVR"
 
-#: views/form.php:222
+#: views/form.php:211
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -200,15 +200,15 @@ msgstr ""
 msgid "Submit"
 msgstr "提交"
 
-#: views/form.php:114
+#: views/form.php:103
 msgid "The name of this announcement."
 msgstr "语音播报名称。"
 
-#: views/form.php:246
+#: views/form.php:235
 msgid "Where to send the caller after the announcement is played."
 msgstr "语音播报后发送此呼叫的目的地。"
 
-#: views/form.php:158 views/form.php:185 views/form.php:212
+#: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
 msgstr ""
 

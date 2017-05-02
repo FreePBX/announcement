@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - test module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-29 10:11-0700\n"
+"POT-Creation-Date: 2017-05-02 12:43-0400\n"
 "PO-Revision-Date: 2016-12-09 05:23+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -20,11 +20,11 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: page.announcement.php:15
+#: page.announcement.php:17
 msgid ": Add"
 msgstr ": Agregar"
 
-#: page.announcement.php:13
+#: page.announcement.php:14
 msgid ": Edit"
 msgstr ": Editar"
 
@@ -40,7 +40,7 @@ msgstr "Agregar"
 msgid "Add Announcements"
 msgstr "Agregar Anuncios"
 
-#: views/form.php:153
+#: views/form.php:142
 msgid "Allow Skip"
 msgstr "Permitir saltar"
 
@@ -69,7 +69,7 @@ msgstr "Comprobando si las grabaciones necesitan migrarse..."
 msgid "Delete"
 msgstr "Eliminar"
 
-#: views/form.php:102 views/grid.php:16
+#: views/form.php:91 views/grid.php:16
 msgid "Description"
 msgstr "Descripción"
 
@@ -77,7 +77,7 @@ msgstr "Descripción"
 msgid "Destination"
 msgstr "Destino"
 
-#: views/form.php:234
+#: views/form.php:223
 msgid "Destination after Playback"
 msgstr "Destino luego de Reproducir"
 
@@ -89,16 +89,16 @@ msgstr "Destinos"
 msgid "Disable"
 msgstr "Deshabilitar"
 
-#: views/form.php:207
+#: views/form.php:196
 msgid "Don't Answer Channel"
 msgstr "No contestar canal"
 
-#: views/form.php:168
+#: views/form.php:157
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 "Indica si el llamante puede presionar una tecla para saltarse el mensaje."
 
-#: views/form.php:195
+#: views/form.php:184
 msgid ""
 "If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -123,7 +123,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "La descripción especificada no es válida"
 
-#: views/form.php:141
+#: views/form.php:130
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -146,7 +146,7 @@ msgstr ""
 "Mensaje a ser reproducido. <br>Para agregar grabaciones adicionales use el "
 "MENU \"Grabaciones del Sistema\" arriba"
 
-#: views/form.php:160 views/form.php:187 views/form.php:214
+#: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "No"
 msgstr "No"
 
@@ -170,7 +170,7 @@ msgstr ""
 msgid "Recording"
 msgstr "Grabación"
 
-#: views/form.php:127
+#: views/form.php:116
 msgid "Repeat"
 msgstr "Repetir"
 
@@ -178,11 +178,11 @@ msgstr "Repetir"
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: views/form.php:180
+#: views/form.php:169
 msgid "Return to IVR"
 msgstr "Volver al IVR"
 
-#: views/form.php:222
+#: views/form.php:211
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -202,15 +202,15 @@ msgstr ""
 msgid "Submit"
 msgstr "Enviar"
 
-#: views/form.php:114
+#: views/form.php:103
 msgid "The name of this announcement."
 msgstr "El nombre de este anuncio."
 
-#: views/form.php:246
+#: views/form.php:235
 msgid "Where to send the caller after the announcement is played."
 msgstr "Donde enviar al llamante despues de que el anuncio sea reproducido."
 
-#: views/form.php:158 views/form.php:185 views/form.php:212
+#: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
 msgstr "Si"
 

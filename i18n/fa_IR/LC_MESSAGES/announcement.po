@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-29 10:11-0700\n"
+"POT-Creation-Date: 2017-05-02 12:43-0400\n"
 "PO-Revision-Date: 2016-08-11 19:34+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,11 +21,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: page.announcement.php:15
+#: page.announcement.php:17
 msgid ": Add"
 msgstr "：افزودن"
 
-#: page.announcement.php:13
+#: page.announcement.php:14
 msgid ": Edit"
 msgstr "：ویرایش"
 
@@ -41,7 +41,7 @@ msgstr "افزودن"
 msgid "Add Announcements"
 msgstr "افزودن اعلان ها"
 
-#: views/form.php:153
+#: views/form.php:142
 msgid "Allow Skip"
 msgstr "اجازه لغو"
 
@@ -70,7 +70,7 @@ msgstr "بررسی لزوم انتقال پیام صوتی ذخیره شده.."
 msgid "Delete"
 msgstr "حذف"
 
-#: views/form.php:102 views/grid.php:16
+#: views/form.php:91 views/grid.php:16
 msgid "Description"
 msgstr "توضیحات"
 
@@ -78,7 +78,7 @@ msgstr "توضیحات"
 msgid "Destination"
 msgstr "مقصد"
 
-#: views/form.php:234
+#: views/form.php:223
 msgid "Destination after Playback"
 msgstr "مقصد پس از پخش"
 
@@ -90,15 +90,15 @@ msgstr "مقصدها"
 msgid "Disable"
 msgstr "غیرفعال"
 
-#: views/form.php:207
+#: views/form.php:196
 msgid "Don't Answer Channel"
 msgstr "کانال پاسخ داده نشود"
 
-#: views/form.php:168
+#: views/form.php:157
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr "تماس گیرنده در صورت داشتن مجوز لازم می تواند از پخش پیام جلوگیری کند."
 
-#: views/form.php:195
+#: views/form.php:184
 msgid ""
 "If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -121,7 +121,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "توضیحات نادرست"
 
-#: views/form.php:141
+#: views/form.php:130
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -143,7 +143,7 @@ msgstr ""
 "پیامی که باید پخش شود <br>. به منظور افزودن پیام، از بخش \\\"ضبط پیام های "
 "سیستم\\\" در منوی بالا استفاده نمایید"
 
-#: views/form.php:160 views/form.php:187 views/form.php:214
+#: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "No"
 msgstr "خیر"
 
@@ -167,7 +167,7 @@ msgstr ""
 msgid "Recording"
 msgstr "پیام ضبط شده"
 
-#: views/form.php:127
+#: views/form.php:116
 msgid "Repeat"
 msgstr "تکرار"
 
@@ -175,11 +175,11 @@ msgstr "تکرار"
 msgid "Reset"
 msgstr "بازنشانی"
 
-#: views/form.php:180
+#: views/form.php:169
 msgid "Return to IVR"
 msgstr "بازگشت به منوی صوتی"
 
-#: views/form.php:222
+#: views/form.php:211
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -198,15 +198,15 @@ msgstr ""
 msgid "Submit"
 msgstr "ثبت"
 
-#: views/form.php:114
+#: views/form.php:103
 msgid "The name of this announcement."
 msgstr "نام این اعلان."
 
-#: views/form.php:246
+#: views/form.php:235
 msgid "Where to send the caller after the announcement is played."
 msgstr "تماس گیرنده پس از پخش اعلان به کجا منتقل شود."
 
-#: views/form.php:158 views/form.php:185 views/form.php:212
+#: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
 msgstr "بله"
 

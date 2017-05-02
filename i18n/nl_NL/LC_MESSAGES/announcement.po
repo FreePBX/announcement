@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-29 10:11-0700\n"
+"POT-Creation-Date: 2017-05-02 12:43-0400\n"
 "PO-Revision-Date: 2016-06-01 07:34+0200\n"
 "Last-Translator: Hans <info@hansvaneijsden.nl>\n"
 "Language-Team: Dutch <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,11 +21,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: page.announcement.php:15
+#: page.announcement.php:17
 msgid ": Add"
 msgstr ": Toevoegen"
 
-#: page.announcement.php:13
+#: page.announcement.php:14
 msgid ": Edit"
 msgstr ": Bewerken"
 
@@ -41,7 +41,7 @@ msgstr "Toevoegen"
 msgid "Add Announcements"
 msgstr "Aankondigingen Toevoegen"
 
-#: views/form.php:153
+#: views/form.php:142
 msgid "Allow Skip"
 msgstr "Overslaan toestaan"
 
@@ -70,7 +70,7 @@ msgstr "Controleren of opnames moeten worden gemigreerd.."
 msgid "Delete"
 msgstr "Verwijderen"
 
-#: views/form.php:102 views/grid.php:16
+#: views/form.php:91 views/grid.php:16
 msgid "Description"
 msgstr "Omschrijving"
 
@@ -78,7 +78,7 @@ msgstr "Omschrijving"
 msgid "Destination"
 msgstr "Bestemming"
 
-#: views/form.php:234
+#: views/form.php:223
 msgid "Destination after Playback"
 msgstr "Bestemming na weergave"
 
@@ -90,15 +90,15 @@ msgstr "Bestemmingen"
 msgid "Disable"
 msgstr "Uitschakelen"
 
-#: views/form.php:207
+#: views/form.php:196
 msgid "Don't Answer Channel"
 msgstr "Kanaal niet beantwoorden"
 
-#: views/form.php:168
+#: views/form.php:157
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr "De aanroeper toestaan om het bericht over te laten slaan."
 
-#: views/form.php:195
+#: views/form.php:184
 msgid ""
 "If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -114,7 +114,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "Ongeldige omschrijving ingevoerd"
 
-#: views/form.php:141
+#: views/form.php:130
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -134,7 +134,7 @@ msgid ""
 "Recordings\" MENU above"
 msgstr ""
 
-#: views/form.php:160 views/form.php:187 views/form.php:214
+#: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "No"
 msgstr "Nee"
 
@@ -158,7 +158,7 @@ msgstr ""
 msgid "Recording"
 msgstr "Opname"
 
-#: views/form.php:127
+#: views/form.php:116
 msgid "Repeat"
 msgstr "Herhalen"
 
@@ -166,11 +166,11 @@ msgstr "Herhalen"
 msgid "Reset"
 msgstr "Herstellen"
 
-#: views/form.php:180
+#: views/form.php:169
 msgid "Return to IVR"
 msgstr "Terugkeren naar IVR"
 
-#: views/form.php:222
+#: views/form.php:211
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -184,15 +184,15 @@ msgstr ""
 msgid "Submit"
 msgstr "Verzenden"
 
-#: views/form.php:114
+#: views/form.php:103
 msgid "The name of this announcement."
 msgstr "De naam van deze aankondiging."
 
-#: views/form.php:246
+#: views/form.php:235
 msgid "Where to send the caller after the announcement is played."
 msgstr ""
 
-#: views/form.php:158 views/form.php:185 views/form.php:212
+#: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
 msgstr "Ja"
 

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBXannouncement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-29 10:11-0700\n"
+"POT-Creation-Date: 2017-05-02 12:43-0400\n"
 "PO-Revision-Date: 2008-10-10 20:20+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,11 +30,11 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: page.announcement.php:15
+#: page.announcement.php:17
 msgid ": Add"
 msgstr ""
 
-#: page.announcement.php:13
+#: page.announcement.php:14
 msgid ": Edit"
 msgstr ""
 
@@ -50,7 +50,7 @@ msgstr ""
 msgid "Add Announcements"
 msgstr ""
 
-#: views/form.php:153
+#: views/form.php:142
 msgid "Allow Skip"
 msgstr "Tillåt hoppa över"
 
@@ -79,7 +79,7 @@ msgstr "Kontrollerar om inspelningar behöver migreras.."
 msgid "Delete"
 msgstr "Ta bort"
 
-#: views/form.php:102 views/grid.php:16
+#: views/form.php:91 views/grid.php:16
 msgid "Description"
 msgstr "Beskrivning"
 
@@ -87,7 +87,7 @@ msgstr "Beskrivning"
 msgid "Destination"
 msgstr ""
 
-#: views/form.php:234
+#: views/form.php:223
 msgid "Destination after Playback"
 msgstr ""
 
@@ -99,17 +99,17 @@ msgstr ""
 msgid "Disable"
 msgstr "Avaktivera"
 
-#: views/form.php:207
+#: views/form.php:196
 msgid "Don't Answer Channel"
 msgstr "Svara inte denna kanal"
 
-#: views/form.php:168
+#: views/form.php:157
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 "Om uppringaren ska tillåtas att trycka en tangent för att hoppa över "
 "meddelandet."
 
-#: views/form.php:195
+#: views/form.php:184
 msgid ""
 "If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -125,7 +125,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "Ogiltig beskrivning"
 
-#: views/form.php:141
+#: views/form.php:130
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -145,7 +145,7 @@ msgid ""
 "Recordings\" MENU above"
 msgstr ""
 
-#: views/form.php:160 views/form.php:187 views/form.php:214
+#: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "No"
 msgstr ""
 
@@ -169,7 +169,7 @@ msgstr ""
 msgid "Recording"
 msgstr "Inspelning"
 
-#: views/form.php:127
+#: views/form.php:116
 msgid "Repeat"
 msgstr "Repetera"
 
@@ -177,11 +177,11 @@ msgstr "Repetera"
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:180
+#: views/form.php:169
 msgid "Return to IVR"
 msgstr "Återgå till den digitala receptionisten"
 
-#: views/form.php:222
+#: views/form.php:211
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -195,15 +195,15 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:114
+#: views/form.php:103
 msgid "The name of this announcement."
 msgstr ""
 
-#: views/form.php:246
+#: views/form.php:235
 msgid "Where to send the caller after the announcement is played."
 msgstr ""
 
-#: views/form.php:158 views/form.php:185 views/form.php:212
+#: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
 msgstr ""
 

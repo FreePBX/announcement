@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-29 10:11-0700\n"
+"POT-Creation-Date: 2017-05-02 12:43-0400\n"
 "PO-Revision-Date: 2016-08-04 19:36+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/"
@@ -32,11 +32,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: page.announcement.php:15
+#: page.announcement.php:17
 msgid ": Add"
 msgstr ": Добавяне"
 
-#: page.announcement.php:13
+#: page.announcement.php:14
 msgid ": Edit"
 msgstr ": Редактиране"
 
@@ -52,7 +52,7 @@ msgstr "Добави"
 msgid "Add Announcements"
 msgstr "Добавяне на Съобщения"
 
-#: views/form.php:153
+#: views/form.php:142
 msgid "Allow Skip"
 msgstr "Позволи Прескачане"
 
@@ -81,7 +81,7 @@ msgstr "Проверка дали записите имат нужда от пр
 msgid "Delete"
 msgstr "Изтрий"
 
-#: views/form.php:102 views/grid.php:16
+#: views/form.php:91 views/grid.php:16
 msgid "Description"
 msgstr "Описание"
 
@@ -89,7 +89,7 @@ msgstr "Описание"
 msgid "Destination"
 msgstr "Направление"
 
-#: views/form.php:234
+#: views/form.php:223
 msgid "Destination after Playback"
 msgstr "Направление след Възпроизвеждане"
 
@@ -101,15 +101,15 @@ msgstr "Направления"
 msgid "Disable"
 msgstr "Забрани"
 
-#: views/form.php:207
+#: views/form.php:196
 msgid "Don't Answer Channel"
 msgstr "Не Отваряй Канал"
 
-#: views/form.php:168
+#: views/form.php:157
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr "Позволява на обаждащия се да натисне бутон и да прескочи съобщението."
 
-#: views/form.php:195
+#: views/form.php:184
 msgid ""
 "If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -133,7 +133,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "Въведено е неправилно описание"
 
-#: views/form.php:141
+#: views/form.php:130
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -155,7 +155,7 @@ msgstr ""
 "Съобщение за възпроизвеждане.<br>За да добавите допълнителни записи "
 "използвайте меню \"Системни Записи\""
 
-#: views/form.php:160 views/form.php:187 views/form.php:214
+#: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "No"
 msgstr "Не"
 
@@ -179,7 +179,7 @@ msgstr ""
 msgid "Recording"
 msgstr "Запис"
 
-#: views/form.php:127
+#: views/form.php:116
 msgid "Repeat"
 msgstr "Повтори"
 
@@ -187,11 +187,11 @@ msgstr "Повтори"
 msgid "Reset"
 msgstr "Изчисти"
 
-#: views/form.php:180
+#: views/form.php:169
 msgid "Return to IVR"
 msgstr "Върни се към IVR"
 
-#: views/form.php:222
+#: views/form.php:211
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -211,15 +211,15 @@ msgstr ""
 msgid "Submit"
 msgstr "Приеми"
 
-#: views/form.php:114
+#: views/form.php:103
 msgid "The name of this announcement."
 msgstr "Име на това съобщение."
 
-#: views/form.php:246
+#: views/form.php:235
 msgid "Where to send the caller after the announcement is played."
 msgstr "Накъде да пренасочи обаждащия се след възпроизвеждане на съобщението."
 
-#: views/form.php:158 views/form.php:185 views/form.php:212
+#: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
 msgstr "Да"
 
