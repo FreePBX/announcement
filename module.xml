@@ -24,7 +24,7 @@
 		Plays back one of the system recordings (optionally allowing the user to skip it) and then goes to another destination.
 	</description>
 	<depends>
-		<version>13.0.5</version>
+		<version>13.0.191.12</version>
 		<module>recordings ge 3.3.8</module>
 	</depends>
 	<menuitems>
