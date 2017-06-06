@@ -5,10 +5,10 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //
 $request = $_REQUEST;
 $heading = _("Announcement");
-$request["view"] = !empty($request["view"]) ? $request["view"] : '';
+$view = !empty($_GET["view"]) ? $_GET["view"] : '';
 $usagehtml = '';
 //get unique queues
-switch($request["view"]){
+switch($view){
 	case "form":
 		if(isset($request['extdisplay'])){
 			$heading .= _(": Edit");
@@ -31,7 +31,7 @@ switch($request["view"]){
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="fpbx-container">
-					<div class="display <?php echo !empty($_REQUEST['view']) ? "full" : "no"?>-border">
+					<div class="display <?php echo !empty($view) ? "full" : "no"?>-border">
 						<?php echo $content ?>
 					</div>
 				</div>
