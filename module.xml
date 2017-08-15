@@ -30,7 +30,7 @@
 		<module>recordings ge 3.3.8</module>
 	</depends>
 	<menuitems>
-		<announcement>Announcements</announcement>
+		<announcement needsenginedb="yes">Announcements</announcement>
 	</menuitems>
 	<popovers>
 		<announcement>
