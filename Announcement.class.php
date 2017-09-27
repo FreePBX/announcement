@@ -3,7 +3,7 @@
 //	Copyright 2015 Sangoma Technologies.
 // vim: set ai ts=4 sw=4 ft=php:
 namespace FreePBX\modules;
-class Announcement extends \FreePBX_Helpers implements \BMO  {
+class Announcement extends \FreePBX_Helpers implements \BMO {
 
 	private $freepbx;
 	public function __construct($freepbx = null) {
@@ -86,7 +86,10 @@ class Announcement extends \FreePBX_Helpers implements \BMO  {
 	public function uninstall() {
 	}
 
-	public function backup() {
+	public function backup($backup) {
+		$backup->addDependency('Core');
+		$backup->addDependency('Recordings');
+		$backup->addConfigs($this->getAnnouncements());
 	}
 
 	public function restore($backup) {
