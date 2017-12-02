@@ -20,8 +20,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-02 12:43-0400\n"
-"PO-Revision-Date: 2017-12-01 16:54+0200\n"
-"Last-Translator: jeremie <jeremie@famillecattan.com>\n"
+"PO-Revision-Date: 2017-12-01 18:25+0200\n"
+"Last-Translator: CATTAN Jérémie <jeremie@famillecattan.com>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/announcement/fr_FR/>\n"
 "Language: fr_FR\n"
@@ -128,7 +128,7 @@ msgstr ""
 "attention à ne vérifier que lorsque cela est nécessaire. Par exemple, si un "
 "SVI dirige un appel vers une autre destination qui appelle finalement cette "
 "annonce et que cette case est cochée, elle retournera à ce SVI qui peut ne "
-"pas être le comportement attendu"
+"pas être le comportement attendu."
 
 #: assets/js/announcement.js:6
 msgid "Invalid description specified"
@@ -257,7 +257,7 @@ msgstr "migration"
 
 #: install.php:141
 msgid "no recording field???"
-msgstr "pas de champ \"recording\" ???"
+msgstr "pas de champ enregistrement ?"
 
 #: install.php:104 install.php:143
 msgid "ok"
