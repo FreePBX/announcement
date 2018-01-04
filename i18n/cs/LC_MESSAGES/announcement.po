@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-02 12:43-0400\n"
-"PO-Revision-Date: 2017-07-17 17:49+0200\n"
+"PO-Revision-Date: 2018-01-03 21:54+0200\n"
 "Last-Translator: Petr <petrv@atlantis.cz>\n"
 "Language-Team: Czech "
 "<http://weblate.freepbx.org/projects/freepbx/announcement/cs/>\n"
@@ -63,9 +63,8 @@ msgid "Applications"
 msgstr "Aplikace"
 
 #: install.php:90
-#, fuzzy
 msgid "Checking if recordings need migration.."
-msgstr "Kontrola, jestli nahrávky potřebuji migraci"
+msgstr "Kontrola, jestli nahrávky potřebuji migraci."
 
 #: Announcement.class.php:59
 msgid "Delete"
@@ -200,7 +199,6 @@ msgstr ""
 "být 1 sekundové zpoždění požadováno."
 
 #: Announcement.class.php:69
-#, fuzzy
 msgid "Submit"
 msgstr "Potvrdit"
 
