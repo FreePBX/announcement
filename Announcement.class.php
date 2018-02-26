@@ -29,7 +29,8 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 			case "getData":
 			case "getJSON":
 				return true;
-			break;
+			default:
+				return false;
 		}
 	}
 
@@ -43,39 +44,37 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 			break;
 			case "getJSON":
 				return $this->getAnnouncements();
+			default:
 			break;
 		}
 	}
 
 	public function getActionBar($request) {
 		$buttons = array();
-
-		switch($request['display']) {
-			case 'announcement':
-				$buttons = array(
-					'delete' => array(
-						'name' => 'delete',
-						'id' => 'delete',
-						'value' => _('Delete')
-					),
-					'reset' => array(
-						'name' => 'reset',
-						'id' => 'reset',
-						'value' => _('Reset')
-					),
-					'submit' => array(
-						'name' => 'submit',
-						'id' => 'submit',
-						'value' => _('Submit')
-					)
-				);
-				if (empty($request['extdisplay'])) {
-					unset($buttons['delete']);
-				}
-				if(empty($_GET['view']) || $_GET['view'] != 'form'){
-					$buttons = array();
-				}
-			break;
+		if($request['display'] == 'announcement'){
+			$buttons = array(
+				'delete' => array(
+					'name' => 'delete',
+					'id' => 'delete',
+					'value' => _('Delete')
+				),
+				'reset' => array(
+					'name' => 'reset',
+					'id' => 'reset',
+					'value' => _('Reset')
+				),
+				'submit' => array(
+					'name' => 'submit',
+					'id' => 'submit',
+					'value' => _('Submit')
+				)
+			);
+			if (empty($request['extdisplay'])) {
+				unset($buttons['delete']);
+			}
+			if(empty($_GET['view']) || $_GET['view'] != 'form'){
+				$buttons = array();
+			}
 		}
 		return $buttons;
 	}
@@ -87,9 +86,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 	}
 
 	public function backup($backup) {
-		$backup->addDependency('Core');
-		$backup->addDependency('Recordings');
-		$backup->addConfigs($this->getAnnouncements());
+
 	}
 
 	public function restore($backup) {
@@ -102,10 +99,10 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 	public function doConfigPageInit($page) {
 		$request = $_REQUEST;
 		$action = isset($request['action']) ? $request['action'] :  '';
-		if (isset($request['delete'])) $action = 'delete';
-
+		if (isset($request['delete'])){
+			$action = 'delete';
+		}
 		$announcement_id = isset($request['announcement_id']) ? $request['announcement_id'] :  false;
-		$view = isset($request['view']) ? $request['view'] :  'form';
 		$description = isset($request['description']) ? $request['description'] :  '';
 		$recording_id = isset($request['recording_id']) ? $request['recording_id'] :  '';
 		$allow_skip = isset($request['allow_skip']) ? $request['allow_skip'] :  0;
@@ -132,6 +129,8 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 			case 'delete':
 				announcement_delete($_REQUEST['extdisplay']);
 				needreload();
+			break;
+			default:
 			break;
 		}
 	}
