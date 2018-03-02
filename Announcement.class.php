@@ -11,7 +11,15 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 		$this->freepbx = $freepbx;
 		$this->db = $this->freepbx->Database;
 	}
-
+	public function resetModule($confirm = false){
+		if($confirm !== true){
+			return false; 
+		}
+		$sql = "TRUNCATE announcement";
+		$sth = $this->db->prepare($sql);
+		needreload();
+		return $sth->execute();
+	}
 	public function getAnnouncements() {
 		$sql = "SELECT announcement_id, description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement";
 		$sth = $this->db->prepare($sql);
@@ -95,6 +103,20 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 	public function doTests($db) {
 		return true;
 	}
+	public function addAnnouncement($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
+		$sql = "INSERT INTO announcement  (description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg) VALUES  (:description, :recording_id, :allow_skip, :post_dest, :return_ivr, :noanswer, :repeat_msg)";
+		$insert = [
+			':description' => $description,
+			':recording_id' => $recording_id,
+			':allow_skip' => $allow_skip,
+			':post_dest' => $post_deat,
+			':return_ivr' => $return_ivr,
+			':noanswer' => $noanswer,
+			':repeat_msg' => $repeat_msg
+		];
+		$stmt = $this->db->prepare($sql);
+		return $stmt->execute($insert);
+	}
 
 	public function doConfigPageInit($page) {
 		$request = $_REQUEST;
@@ -119,7 +141,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 
 		switch ($action) {
 			case 'add':
-				$_REQUEST['extdisplay'] = announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
+				$this->addAnnouncement($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 				needreload();
 			break;
 			case 'edit':
