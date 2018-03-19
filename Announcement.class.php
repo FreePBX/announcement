@@ -109,7 +109,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 			':description' => $description,
 			':recording_id' => $recording_id,
 			':allow_skip' => $allow_skip,
-			':post_dest' => $post_deat,
+			':post_dest' => $post_dest,
 			':return_ivr' => $return_ivr,
 			':noanswer' => $noanswer,
 			':repeat_msg' => $repeat_msg
