@@ -12,7 +12,7 @@ class Restore{
     $this->freepbx->Announcement->resetModule(true);
     foreach($configs as $config){
       extract($config[0]);
-      dbug($this->freepbx->Announcement->addAnnouncement($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg));
+      $this->freepbx->Announcement->addAnnouncement($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
     }
   }
 }
