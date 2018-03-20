@@ -1,8 +1,7 @@
 <?php
-if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
-//	Copyright 2006-2014 Schmooze Com Inc.
-//
+//	Copyright 2015 Sangoma Technologies.
+// vim: set ai ts=4 sw=4 ft=php:
 function announcement_destinations() {
 	// return an associative array with destination and description
 	$extens = array();
@@ -154,34 +153,18 @@ function announcement_get($announcement_id) {
 }
 
 function announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
+	_announcement_backtrace();
 	return FreePBX::Announcement()->addAnnoucement($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 }
 
 function announcement_delete($announcement_id) {
-	global $db;
-	$sql = "DELETE FROM announcement WHERE announcement_id = ".$db->escapeSimple($announcement_id);
-	$result = $db->query($sql);
-	if(DB::IsError($result)) {
-		die_freepbx($result->getMessage().$sql);
-	}
-
+	_announcement_backtrace();
+	return FreePBX::Announcement()->deleteAnnoucement($announcement_id);
 }
 
 function announcement_edit($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
-	global $db;
-	$sql = "UPDATE announcement SET ".
-		"description = '".$db->escapeSimple($description)."', ".
-		"recording_id = '".$recording_id."', ".
-		"allow_skip = '".($allow_skip ? 1 : 0)."', ".
-		"post_dest = '".$db->escapeSimple($post_dest)."', ".
-		"return_ivr = '".($return_ivr ? 1 : 0)."', ".
-		"noanswer = '".($noanswer ? 1 : 0)."', ".
-		"repeat_msg = '".$db->escapeSimple($repeat_msg)."' ".
-		"WHERE announcement_id = ".$db->escapeSimple($announcement_id);
-	$result = $db->query($sql);
-	if(DB::IsError($result)) {
-		die_freepbx($result->getMessage().$sql);
-	}
+	_announcement_backtrace();
+	return FreePBX::Announcement()->editAnnoucement($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 }
 
 function announcement_check_destinations($dest=true) {
@@ -215,4 +198,10 @@ function announcement_change_destination($old_dest, $new_dest) {
 	$sql = 'UPDATE announcement SET post_dest = "' . $new_dest . '" WHERE post_dest= "' . $old_dest . '"';
 	sql($sql, "query");
 }
-?>
+function _announcement_backtrace() {
+	$trace = debug_backtrace();
+	$function = $trace[1]['function'];
+	$line = $trace[1]['line'];
+	$file = $trace[1]['file'];
+	freepbx_log(FPBX_LOG_WARNING,'Depreciated Function '.$function.' detected in '.$file.' on line '.$line);
+}
