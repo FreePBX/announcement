@@ -6,7 +6,7 @@ public function runRestore(){
     $configs = $this->getConfigs();
     foreach($configs as $config){
       extract($config[0]);
-      $this->freepbx->Announcement->addAnnouncement($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
+      $this->FreePBX->Announcement->addAnnouncement($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
     }
   }
 }
