@@ -10,16 +10,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-02 12:43-0400\n"
-"PO-Revision-Date: 2018-01-03 21:54+0200\n"
-"Last-Translator: Petr <petrv@atlantis.cz>\n"
-"Language-Team: Czech "
-"<http://weblate.freepbx.org/projects/freepbx/announcement/cs/>\n"
+"PO-Revision-Date: 2018-05-29 11:18+0000\n"
+"Last-Translator: Petr Varvarovsky <petrv@atlantis.cz>\n"
+"Language-Team: Czech <http://*/projects/freepbx/announcement/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 2.19.1\n"
 
 #: page.announcement.php:17
 msgid ": Add"
@@ -91,7 +90,6 @@ msgid "Disable"
 msgstr "Zakázat"
 
 #: views/form.php:196
-#, fuzzy
 msgid "Don't Answer Channel"
 msgstr "Kanál neodpovídat"
 
@@ -182,7 +180,6 @@ msgid "Return to IVR"
 msgstr "Návrat do IVR"
 
 #: views/form.php:211
-#, fuzzy
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -224,7 +221,7 @@ msgstr "již přemigrováno"
 
 #: install.php:137
 msgid "dropping recording field.."
-msgstr ""
+msgstr "klesající pole záznamu .."
 
 #: install.php:101 install.php:113 install.php:129
 msgid "fatal error"
