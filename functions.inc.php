@@ -131,14 +131,7 @@ function announcement_list() {
 }
 
 function announcement_get($announcement_id) {
-	global $db;
-	$sql = "SELECT announcement_id, description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement WHERE announcement_id = '".$db->escapeSimple($announcement_id)."'";
-	$row = $db->getRow($sql,DB_FETCHMODE_ASSOC);
-	if(DB::IsError($row)) {
-		die_freepbx($row->getMessage()."<br><br>Error selecting row from announcement");
-	}
-	// Added Associative query above but put positional indexes back to maintain backward compatibility
-	//
+	$row = \FreePBX::Announcement()->getAnnouncementByID($announcement_id);
 	$i = 0;
 	if(!empty($row) && is_array($row)) {
 		foreach ($row as $item) {
@@ -149,21 +142,20 @@ function announcement_get($announcement_id) {
 	} else {
 		return array();
 	}
-
 }
 
 function announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
-	_announcement_backtrace();
+	FreePBX::Modules()->deprecatedFunction();
 	return FreePBX::Announcement()->addAnnoucement($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 }
 
 function announcement_delete($announcement_id) {
-	_announcement_backtrace();
+	FreePBX::Modules()->deprecatedFunction();
 	return FreePBX::Announcement()->deleteAnnoucement($announcement_id);
 }
 
 function announcement_edit($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
-	_announcement_backtrace();
+	FreePBX::Modules()->deprecatedFunction();
 	return FreePBX::Announcement()->editAnnoucement($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 }
 
@@ -197,11 +189,4 @@ function announcement_check_destinations($dest=true) {
 function announcement_change_destination($old_dest, $new_dest) {
 	$sql = 'UPDATE announcement SET post_dest = "' . $new_dest . '" WHERE post_dest= "' . $old_dest . '"';
 	sql($sql, "query");
-}
-function _announcement_backtrace() {
-	$trace = debug_backtrace();
-	$function = $trace[1]['function'];
-	$line = $trace[1]['line'];
-	$file = $trace[1]['file'];
-	freepbx_log(FPBX_LOG_WARNING,'Depreciated Function '.$function.' detected in '.$file.' on line '.$line);
 }

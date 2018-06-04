@@ -19,6 +19,31 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 		return $sth->fetchAll(\PDO::FETCH_ASSOC);
 	}
 
+	public function getAnnouncementByID($id) {
+		$sql = "SELECT announcement_id, description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement WHERE announcement_id = ?";
+		$sth = $this->db->prepare($sql);
+		$sth->execute(array($id));
+		return $sth->fetch(\PDO::FETCH_ASSOC);
+
+
+		$row = $db->getRow($sql,DB_FETCHMODE_ASSOC);
+		if(DB::IsError($row)) {
+			die_freepbx($row->getMessage()."<br><br>Error selecting row from announcement");
+		}
+		// Added Associative query above but put positional indexes back to maintain backward compatibility
+		//
+		$i = 0;
+		if(!empty($row) && is_array($row)) {
+			foreach ($row as $item) {
+				$row[$i] = $item;
+				$i++;
+			}
+			return $row;
+		} else {
+			return array();
+		}
+	}
+
 	/**
 	 * Ajax Request
 	 * @param string $req     The request type
@@ -101,6 +126,16 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 		return true;
 	}
 	public function addAnnouncement($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
+		$defaults = [
+			'allow_skip' => ($allow_skip) ? 1 : 0,
+			'noanswer' => ($noanswer) ? 1 : 0,
+			'return_ivr' => ($return_ivr) ? 1 : 0,
+		];
+		foreach($defaults as $key => $value) {
+			if(is_null($$key)) {
+				$$key = $value;
+			}
+		}
 		$sql = "INSERT INTO announcement  (description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg) VALUES  (:description, :recording_id, :allow_skip, :post_dest, :return_ivr, :noanswer, :repeat_msg)";
 		$insert = [
 			':description' => $description,
@@ -112,7 +147,8 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 			':repeat_msg' => $repeat_msg
 		];
 		$stmt = $this->db->prepare($sql);
-		return $stmt->execute($insert);
+		$stmt->execute($insert);
+		return $this->freepbx->Database->lastInsertId();
 	}
 
 	public function deleteAnnouncement($id){
@@ -120,9 +156,19 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 		$stmt = $this->db->prepare($sql);
 		return $stmt->execute([':id' => $id]);
 	}
-	
-	public function editAnnouncement(){
-	$sql = "UPDATE announcement SET 
+
+	public function editAnnouncement($announcement_id,$description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg){
+	$defaults = [
+		'allow_skip' => ($allow_skip) ? 1 : 0,
+		'noanswer' => ($noanswer) ? 1 : 0,
+		'return_ivr' => ($return_ivr) ? 1 : 0,
+	];
+	foreach($defaults as $key => $value) {
+		if(is_null($$key)) {
+			$$key = $value;
+		}
+	}
+	$sql = "UPDATE announcement SET
 		`description` = :description,
 		`recording_id` = :recording_id,
 		`allow_skip` = :allow_skip,
@@ -131,7 +177,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 		`noanswer` = :noanswer,
 		`repeat_msg` = :repeat_msg
 		WHERE `announcement_id` = :announcement_id";
-		$insert = [		
+		$insert = [
 			':description' => $description,
 			':recording_id' => $recording_id,
 			':allow_skip' => $allow_skip,
