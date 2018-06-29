@@ -22,17 +22,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:12-0700\n"
+"POT-Creation-Date: 2018-06-29 17:59-0400\n"
 "PO-Revision-Date: 2016-04-15 12:21+0000\n"
 "Last-Translator: Weblate Admin <admin@postmet.com>\n"
-"Language-Team: Russian "
-"<https://weblate.postmet.com/projects/freepbx13/announcement/ru_RU/>\n"
+"Language-Team: Russian <https://weblate.postmet.com/projects/freepbx13/"
+"announcement/ru_RU/>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.4\n"
 
 #: page.announcement.php:17
@@ -134,7 +134,7 @@ msgstr ""
 "вызов может вернуться  в последнее голосовое меню в цепочке , что может "
 "являться непредсказуемым поведением."
 
-#: page.announcement.php:45
+#: assets/js/announcement.js:6
 msgid "Invalid description specified"
 msgstr "Использовано неправильное описание"
 
@@ -163,6 +163,10 @@ msgstr ""
 #: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "No"
 msgstr "Нет"
+
+#: assets/js/announcement.js:33
+msgid "No Destination"
+msgstr ""
 
 #: views/form.php:32
 msgid "None"
@@ -202,14 +206,14 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 "Установите в \"да\"  для предотвращения явного ответа в канале. Когда эта "
-"опция отмечена , сообщение будет проиграно , и если канал не получил ответа "
-",  сообщение будет доставлено как Early Media если канал поддерживает эту "
-"возможность. Когда опция не отмечена , канал получит ответ через 1 секунду. "
-"Когда используется приветствие из голосового меню или другого источника  , "
-"то канал уже получает ответ , так что задержка в 1 секунду может быть "
-"нежелательной."
+"опция отмечена , сообщение будет проиграно , и если канал не получил "
+"ответа ,  сообщение будет доставлено как Early Media если канал поддерживает "
+"эту возможность. Когда опция не отмечена , канал получит ответ через 1 "
+"секунду. Когда используется приветствие из голосового меню или другого "
+"источника  , то канал уже получает ответ , так что задержка в 1 секунду "
+"может быть нежелательной."
 
-#: Announcement.class.php:64
+#: Announcement.class.php:69
 msgid "Submit"
 msgstr "Подтвердить"
 
