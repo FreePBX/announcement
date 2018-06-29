@@ -49,7 +49,7 @@ msgstr "Tillat å hoppe over"
 msgid "Announcement"
 msgstr ""
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
+#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
 msgstr "Kunngjøring: %s"
@@ -62,11 +62,7 @@ msgstr "Kunngjøringer"
 msgid "Applications"
 msgstr "Anvendelser"
 
-#: install.php:90
-msgid "Checking if recordings need migration.."
-msgstr "Kontrollerer om lydopptak trenger å migreres..."
-
-#: Announcement.class.php:59
+#: Announcement.class.php:84
 msgid "Delete"
 msgstr "Slett"
 
@@ -163,7 +159,7 @@ msgstr "Lydopptak"
 msgid "Repeat"
 msgstr "Gjenta"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr ""
 
@@ -181,7 +177,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:69
+#: Announcement.class.php:94
 msgid "Submit"
 msgstr ""
 
@@ -197,42 +193,35 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: install.php:97
-msgid "adding recording_id field.."
-msgstr "legger til feltet recording_id..."
+#~ msgid "Checking if recordings need migration.."
+#~ msgstr "Kontrollerer om lydopptak trenger å migreres..."
 
-#: install.php:147
-msgid "already migrated"
-msgstr "allerede migrert"
+#~ msgid "adding recording_id field.."
+#~ msgstr "legger til feltet recording_id..."
 
-#: install.php:137
-msgid "dropping recording field.."
-msgstr "dropper feltet recording.."
+#~ msgid "already migrated"
+#~ msgstr "allerede migrert"
 
-#: install.php:101 install.php:113 install.php:129
-msgid "fatal error"
-msgstr "kritisk feil"
+#~ msgid "dropping recording field.."
+#~ msgstr "dropper feltet recording.."
 
-#: install.php:109
-msgid "migrate to recording ids.."
-msgstr "migrerer til recording ids.."
+#~ msgid "fatal error"
+#~ msgstr "kritisk feil"
 
-#: install.php:133
-#, php-format
-msgid "migrated %s entries"
-msgstr "migrert %s poster"
+#~ msgid "migrate to recording ids.."
+#~ msgstr "migrerer til recording ids.."
 
-#: install.php:96
-msgid "migrating"
-msgstr "migrerer"
+#~ msgid "migrated %s entries"
+#~ msgstr "migrert %s poster"
 
-#: install.php:141
-msgid "no recording field???"
-msgstr "ingen recording-felt?"
+#~ msgid "migrating"
+#~ msgstr "migrerer"
 
-#: install.php:104 install.php:143
-msgid "ok"
-msgstr "ok"
+#~ msgid "no recording field???"
+#~ msgstr "ingen recording-felt?"
+
+#~ msgid "ok"
+#~ msgstr "ok"
 
 #~ msgid "Add Announcement"
 #~ msgstr "Legg til kunngjøring"

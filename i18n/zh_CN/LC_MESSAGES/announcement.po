@@ -63,7 +63,7 @@ msgstr "允许跳过"
 msgid "Announcement"
 msgstr "语音播报"
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
+#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
 msgstr "公告：%s"
@@ -76,11 +76,7 @@ msgstr "公告"
 msgid "Applications"
 msgstr "应用"
 
-#: install.php:90
-msgid "Checking if recordings need migration.."
-msgstr "检查是否需要迁移录音。。"
-
-#: Announcement.class.php:59
+#: Announcement.class.php:84
 msgid "Delete"
 msgstr "删除"
 
@@ -178,7 +174,7 @@ msgstr "录音"
 msgid "Repeat"
 msgstr "重复"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr "重新设置"
 
@@ -196,7 +192,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:69
+#: Announcement.class.php:94
 msgid "Submit"
 msgstr "提交"
 
@@ -212,42 +208,35 @@ msgstr "语音播报后发送此呼叫的目的地。"
 msgid "Yes"
 msgstr ""
 
-#: install.php:97
-msgid "adding recording_id field.."
-msgstr "正在添加recording_id字段。。"
+#~ msgid "Checking if recordings need migration.."
+#~ msgstr "检查是否需要迁移录音。。"
 
-#: install.php:147
-msgid "already migrated"
-msgstr "已经迁移过了"
+#~ msgid "adding recording_id field.."
+#~ msgstr "正在添加recording_id字段。。"
 
-#: install.php:137
-msgid "dropping recording field.."
-msgstr "正在删除recording字段。。"
+#~ msgid "already migrated"
+#~ msgstr "已经迁移过了"
 
-#: install.php:101 install.php:113 install.php:129
-msgid "fatal error"
-msgstr "致命错误"
+#~ msgid "dropping recording field.."
+#~ msgstr "正在删除recording字段。。"
 
-#: install.php:109
-msgid "migrate to recording ids.."
-msgstr "迁移到录音ID。。"
+#~ msgid "fatal error"
+#~ msgstr "致命错误"
 
-#: install.php:133
-#, php-format
-msgid "migrated %s entries"
-msgstr "迁移了 %s 个项目"
+#~ msgid "migrate to recording ids.."
+#~ msgstr "迁移到录音ID。。"
 
-#: install.php:96
-msgid "migrating"
-msgstr "正在迁移"
+#~ msgid "migrated %s entries"
+#~ msgstr "迁移了 %s 个项目"
 
-#: install.php:141
-msgid "no recording field???"
-msgstr "recording字段不存在？"
+#~ msgid "migrating"
+#~ msgstr "正在迁移"
 
-#: install.php:104 install.php:143
-msgid "ok"
-msgstr "完成"
+#~ msgid "no recording field???"
+#~ msgstr "recording字段不存在？"
+
+#~ msgid "ok"
+#~ msgstr "完成"
 
 #~ msgid "Add Announcement"
 #~ msgstr "添加公告"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-02 12:43-0400\n"
+"POT-Creation-Date: 2018-06-29 17:59-0400\n"
 "PO-Revision-Date: 2018-05-29 11:18+0000\n"
 "Last-Translator: Petr Varvarovsky <petrv@atlantis.cz>\n"
 "Language-Team: Czech <http://*/projects/freepbx/announcement/cs/>\n"
@@ -48,7 +48,7 @@ msgstr "Povolit přeskočení"
 msgid "Announcement"
 msgstr "Oznámení"
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
+#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
 msgstr "Oznámení: %s"
@@ -61,11 +61,7 @@ msgstr "Oznámení"
 msgid "Applications"
 msgstr "Aplikace"
 
-#: install.php:90
-msgid "Checking if recordings need migration.."
-msgstr "Kontrola, jestli nahrávky potřebuji migraci."
-
-#: Announcement.class.php:59
+#: Announcement.class.php:84
 msgid "Delete"
 msgstr "Smazat"
 
@@ -171,7 +167,7 @@ msgstr "Nahrávání"
 msgid "Repeat"
 msgstr "Opakovat"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr "Reset"
 
@@ -195,7 +191,7 @@ msgstr ""
 "oznámení z IVR nebo jiných zdrojů, které již kanál již odpověděly, nemusí "
 "být 1 sekundové zpoždění požadováno."
 
-#: Announcement.class.php:69
+#: Announcement.class.php:94
 msgid "Submit"
 msgstr "Potvrdit"
 
@@ -211,39 +207,32 @@ msgstr "Kde přesměrovat hovor po přehrání oznámení."
 msgid "Yes"
 msgstr "Ano"
 
-#: install.php:97
-msgid "adding recording_id field.."
-msgstr "Přidání pole record_id."
+#~ msgid "Checking if recordings need migration.."
+#~ msgstr "Kontrola, jestli nahrávky potřebuji migraci."
 
-#: install.php:147
-msgid "already migrated"
-msgstr "již přemigrováno"
+#~ msgid "adding recording_id field.."
+#~ msgstr "Přidání pole record_id."
 
-#: install.php:137
-msgid "dropping recording field.."
-msgstr "klesající pole záznamu .."
+#~ msgid "already migrated"
+#~ msgstr "již přemigrováno"
 
-#: install.php:101 install.php:113 install.php:129
-msgid "fatal error"
-msgstr "Kritická chyba"
+#~ msgid "dropping recording field.."
+#~ msgstr "klesající pole záznamu .."
 
-#: install.php:109
-msgid "migrate to recording ids.."
-msgstr "přemístění do záznamů ids .."
+#~ msgid "fatal error"
+#~ msgstr "Kritická chyba"
 
-#: install.php:133
-#, php-format
-msgid "migrated %s entries"
-msgstr "migrované položky %s"
+#~ msgid "migrate to recording ids.."
+#~ msgstr "přemístění do záznamů ids .."
 
-#: install.php:96
-msgid "migrating"
-msgstr "migrace"
+#~ msgid "migrated %s entries"
+#~ msgstr "migrované položky %s"
 
-#: install.php:141
-msgid "no recording field???"
-msgstr "žádné pole nahrávky???"
+#~ msgid "migrating"
+#~ msgstr "migrace"
 
-#: install.php:104 install.php:143
-msgid "ok"
-msgstr "ok"
+#~ msgid "no recording field???"
+#~ msgstr "žádné pole nahrávky???"
+
+#~ msgid "ok"
+#~ msgstr "ok"

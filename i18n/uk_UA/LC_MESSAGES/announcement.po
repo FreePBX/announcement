@@ -50,7 +50,7 @@ msgstr "Дозволити пропустити"
 msgid "Announcement"
 msgstr ""
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
+#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
 msgstr ""
@@ -63,11 +63,7 @@ msgstr ""
 msgid "Applications"
 msgstr "Додатки"
 
-#: install.php:90
-msgid "Checking if recordings need migration.."
-msgstr ""
-
-#: Announcement.class.php:59
+#: Announcement.class.php:84
 msgid "Delete"
 msgstr "Видалити"
 
@@ -158,7 +154,7 @@ msgstr ""
 msgid "Repeat"
 msgstr ""
 
-#: Announcement.class.php:64
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr ""
 
@@ -176,7 +172,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:69
+#: Announcement.class.php:94
 msgid "Submit"
 msgstr ""
 
@@ -190,41 +186,4 @@ msgstr ""
 
 #: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
-msgstr ""
-
-#: install.php:97
-msgid "adding recording_id field.."
-msgstr ""
-
-#: install.php:147
-msgid "already migrated"
-msgstr ""
-
-#: install.php:137
-msgid "dropping recording field.."
-msgstr ""
-
-#: install.php:101 install.php:113 install.php:129
-msgid "fatal error"
-msgstr ""
-
-#: install.php:109
-msgid "migrate to recording ids.."
-msgstr ""
-
-#: install.php:133
-#, php-format
-msgid "migrated %s entries"
-msgstr ""
-
-#: install.php:96
-msgid "migrating"
-msgstr ""
-
-#: install.php:141
-msgid "no recording field???"
-msgstr ""
-
-#: install.php:104 install.php:143
-msgid "ok"
 msgstr ""

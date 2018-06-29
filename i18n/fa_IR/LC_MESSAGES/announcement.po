@@ -49,7 +49,7 @@ msgstr "اجازه لغو"
 msgid "Announcement"
 msgstr "اعلان"
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
+#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
 msgstr "اعلان：%s"
@@ -62,11 +62,7 @@ msgstr "اعلان ها"
 msgid "Applications"
 msgstr "برنامه ها"
 
-#: install.php:90
-msgid "Checking if recordings need migration.."
-msgstr "بررسی لزوم انتقال پیام صوتی ذخیره شده.."
-
-#: Announcement.class.php:59
+#: Announcement.class.php:84
 msgid "Delete"
 msgstr "حذف"
 
@@ -171,7 +167,7 @@ msgstr "پیام ضبط شده"
 msgid "Repeat"
 msgstr "تکرار"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -194,7 +190,7 @@ msgstr ""
 "شد. زمانی که از اعلان در منوی صوتی و یا جاهای دیگر استفاده می نمایید، چون "
 "کانال قبلا پاسخ داده شده است، این تاخیر ممکن است مطالوب نباشد."
 
-#: Announcement.class.php:69
+#: Announcement.class.php:94
 msgid "Submit"
 msgstr "ثبت"
 
@@ -210,39 +206,32 @@ msgstr "تماس گیرنده پس از پخش اعلان به کجا منتقل
 msgid "Yes"
 msgstr "بله"
 
-#: install.php:97
-msgid "adding recording_id field.."
-msgstr "افزودن فیلد شناسه ضبط.."
+#~ msgid "Checking if recordings need migration.."
+#~ msgstr "بررسی لزوم انتقال پیام صوتی ذخیره شده.."
 
-#: install.php:147
-msgid "already migrated"
-msgstr "انتقال یافته"
+#~ msgid "adding recording_id field.."
+#~ msgstr "افزودن فیلد شناسه ضبط.."
 
-#: install.php:137
-msgid "dropping recording field.."
-msgstr "فیلد پیام ضبط شده از قلم افتاده ..."
+#~ msgid "already migrated"
+#~ msgstr "انتقال یافته"
 
-#: install.php:101 install.php:113 install.php:129
-msgid "fatal error"
-msgstr "خطای مهلک"
+#~ msgid "dropping recording field.."
+#~ msgstr "فیلد پیام ضبط شده از قلم افتاده ..."
 
-#: install.php:109
-msgid "migrate to recording ids.."
-msgstr "انتقال به شناسه های ضبط.."
+#~ msgid "fatal error"
+#~ msgstr "خطای مهلک"
 
-#: install.php:133
-#, php-format
-msgid "migrated %s entries"
-msgstr "ورودی های %s منتقل شده"
+#~ msgid "migrate to recording ids.."
+#~ msgstr "انتقال به شناسه های ضبط.."
 
-#: install.php:96
-msgid "migrating"
-msgstr "در حال انتقال"
+#~ msgid "migrated %s entries"
+#~ msgstr "ورودی های %s منتقل شده"
 
-#: install.php:141
-msgid "no recording field???"
-msgstr "بدون فیلد پیلم ضبط شده ؟؟؟"
+#~ msgid "migrating"
+#~ msgstr "در حال انتقال"
 
-#: install.php:104 install.php:143
-msgid "ok"
-msgstr "تایید"
+#~ msgid "no recording field???"
+#~ msgstr "بدون فیلد پیلم ضبط شده ؟؟؟"
+
+#~ msgid "ok"
+#~ msgstr "تایید"

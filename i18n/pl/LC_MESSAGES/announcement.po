@@ -61,7 +61,7 @@ msgstr "Pozwól pominąć"
 msgid "Announcement"
 msgstr "Ogłoszenie"
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
+#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
 msgstr "Ogłoszenie: %s"
@@ -74,11 +74,7 @@ msgstr "Ogłoszenia"
 msgid "Applications"
 msgstr "Aplikacje"
 
-#: install.php:90
-msgid "Checking if recordings need migration.."
-msgstr "Sprawdzanie czy nagrania potrzebują migracji.."
-
-#: Announcement.class.php:59
+#: Announcement.class.php:84
 msgid "Delete"
 msgstr "Usuń"
 
@@ -187,7 +183,7 @@ msgstr "Nagranie"
 msgid "Repeat"
 msgstr "Powtórz"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr "wyzerować"
 
@@ -212,7 +208,7 @@ msgstr ""
 "jako zapowiedź w IVR albo inne źródła, które już odpowiedziały, 1 sekundowe "
 "opóźnienie może być nie wskazane."
 
-#: Announcement.class.php:69
+#: Announcement.class.php:94
 msgid "Submit"
 msgstr "zgłoś"
 
@@ -228,40 +224,33 @@ msgstr "Gdzie wysłać dzwoniącego po odtworzeniu ogłoszenia."
 msgid "Yes"
 msgstr "Tak"
 
-#: install.php:97
-msgid "adding recording_id field.."
-msgstr "dodawanie pola identyfikatorów nagrania.."
+#~ msgid "Checking if recordings need migration.."
+#~ msgstr "Sprawdzanie czy nagrania potrzebują migracji.."
 
-#: install.php:147
-msgid "already migrated"
-msgstr "już przeniesiono"
+#~ msgid "adding recording_id field.."
+#~ msgstr "dodawanie pola identyfikatorów nagrania.."
 
-#: install.php:137
+#~ msgid "already migrated"
+#~ msgstr "już przeniesiono"
+
 #, fuzzy
-msgid "dropping recording field.."
-msgstr "miejsce zrzutu nagrań.."
+#~ msgid "dropping recording field.."
+#~ msgstr "miejsce zrzutu nagrań.."
 
-#: install.php:101 install.php:113 install.php:129
-msgid "fatal error"
-msgstr "błąd krytyczny"
+#~ msgid "fatal error"
+#~ msgstr "błąd krytyczny"
 
-#: install.php:109
-msgid "migrate to recording ids.."
-msgstr "przenoszenie do identyfikatorów nagrania.."
+#~ msgid "migrate to recording ids.."
+#~ msgstr "przenoszenie do identyfikatorów nagrania.."
 
-#: install.php:133
-#, php-format
-msgid "migrated %s entries"
-msgstr "przeniesiono %s wpisy"
+#~ msgid "migrated %s entries"
+#~ msgstr "przeniesiono %s wpisy"
 
-#: install.php:96
-msgid "migrating"
-msgstr "przenoszenie"
+#~ msgid "migrating"
+#~ msgstr "przenoszenie"
 
-#: install.php:141
-msgid "no recording field???"
-msgstr "brak pola nagrywania???"
+#~ msgid "no recording field???"
+#~ msgstr "brak pola nagrywania???"
 
-#: install.php:104 install.php:143
-msgid "ok"
-msgstr "ok"
+#~ msgid "ok"
+#~ msgstr "ok"

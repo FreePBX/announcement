@@ -77,7 +77,7 @@ msgstr "スキップを許可"
 msgid "Announcement"
 msgstr "アナウンス:"
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
+#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
 msgstr "アナウンス: %s"
@@ -90,11 +90,7 @@ msgstr "アナウンス"
 msgid "Applications"
 msgstr "アプリケーション"
 
-#: install.php:90
-msgid "Checking if recordings need migration.."
-msgstr "録音の移行が必要かチェック中.."
-
-#: Announcement.class.php:59
+#: Announcement.class.php:84
 msgid "Delete"
 msgstr "削除"
 
@@ -195,7 +191,7 @@ msgstr "録音"
 msgid "Repeat"
 msgstr "リピート"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr "リセット"
 
@@ -217,7 +213,7 @@ msgstr ""
 "先を経由した場合は1秒が空くと音の流れが不自然になる可能性がありますので注意が"
 "必要です。"
 
-#: Announcement.class.php:69
+#: Announcement.class.php:94
 msgid "Submit"
 msgstr "送信"
 
@@ -233,42 +229,35 @@ msgstr "再生してから呼を転送する宛先"
 msgid "Yes"
 msgstr "はい"
 
-#: install.php:97
-msgid "adding recording_id field.."
-msgstr "recording_idフィールドを追加中.."
+#~ msgid "Checking if recordings need migration.."
+#~ msgstr "録音の移行が必要かチェック中.."
 
-#: install.php:147
-msgid "already migrated"
-msgstr "移行済み"
+#~ msgid "adding recording_id field.."
+#~ msgstr "recording_idフィールドを追加中.."
 
-#: install.php:137
-msgid "dropping recording field.."
-msgstr "録音フィールドを削除.."
+#~ msgid "already migrated"
+#~ msgstr "移行済み"
 
-#: install.php:101 install.php:113 install.php:129
-msgid "fatal error"
-msgstr "致命的なエラー"
+#~ msgid "dropping recording field.."
+#~ msgstr "録音フィールドを削除.."
 
-#: install.php:109
-msgid "migrate to recording ids.."
-msgstr "録音IDに移行中.."
+#~ msgid "fatal error"
+#~ msgstr "致命的なエラー"
 
-#: install.php:133
-#, php-format
-msgid "migrated %s entries"
-msgstr "%sエントリーを移行する"
+#~ msgid "migrate to recording ids.."
+#~ msgstr "録音IDに移行中.."
 
-#: install.php:96
-msgid "migrating"
-msgstr "移行中"
+#~ msgid "migrated %s entries"
+#~ msgstr "%sエントリーを移行する"
 
-#: install.php:141
-msgid "no recording field???"
-msgstr "録音フィールドがありません???"
+#~ msgid "migrating"
+#~ msgstr "移行中"
 
-#: install.php:104 install.php:143
-msgid "ok"
-msgstr "ok"
+#~ msgid "no recording field???"
+#~ msgstr "録音フィールドがありません???"
+
+#~ msgid "ok"
+#~ msgstr "ok"
 
 #~ msgid "Add Announcement"
 #~ msgstr "アナウンス追加"

@@ -49,7 +49,7 @@ msgstr "Überspringen zulassen"
 msgid "Announcement"
 msgstr "Ansage"
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
+#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
 msgstr "Ansage: %s"
@@ -62,11 +62,7 @@ msgstr "Ansagen"
 msgid "Applications"
 msgstr "Anwendungen"
 
-#: install.php:90
-msgid "Checking if recordings need migration.."
-msgstr "Es wird überprüft, ob die Aufnahmen eine Umstellung benötigen .."
-
-#: Announcement.class.php:59
+#: Announcement.class.php:84
 msgid "Delete"
 msgstr "Löschen"
 
@@ -175,7 +171,7 @@ msgstr "Aufnahme"
 msgid "Repeat"
 msgstr "Wiederholen"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr "Zurücksetzen"
 
@@ -201,7 +197,7 @@ msgstr ""
 "geantwortet haben, verwendet wird, dann wir die 1-Sekunden-Verzögerung "
 "vielleicht nicht erwünscht sein."
 
-#: Announcement.class.php:69
+#: Announcement.class.php:94
 msgid "Submit"
 msgstr "Bestätigen"
 
@@ -218,39 +214,32 @@ msgstr ""
 msgid "Yes"
 msgstr "Ja"
 
-#: install.php:97
-msgid "adding recording_id field.."
-msgstr "Aufnahme id_Feld hinzufügen.."
+#~ msgid "Checking if recordings need migration.."
+#~ msgstr "Es wird überprüft, ob die Aufnahmen eine Umstellung benötigen .."
 
-#: install.php:147
-msgid "already migrated"
-msgstr "bereits migriert"
+#~ msgid "adding recording_id field.."
+#~ msgstr "Aufnahme id_Feld hinzufügen.."
 
-#: install.php:137
-msgid "dropping recording field.."
-msgstr "Aufnahmefeld weglassen.."
+#~ msgid "already migrated"
+#~ msgstr "bereits migriert"
 
-#: install.php:101 install.php:113 install.php:129
-msgid "fatal error"
-msgstr "schwerwiegender Fehler"
+#~ msgid "dropping recording field.."
+#~ msgstr "Aufnahmefeld weglassen.."
 
-#: install.php:109
-msgid "migrate to recording ids.."
-msgstr "in Aufnahme-ids überführen.."
+#~ msgid "fatal error"
+#~ msgstr "schwerwiegender Fehler"
 
-#: install.php:133
-#, php-format
-msgid "migrated %s entries"
-msgstr "überführte %s Einträge"
+#~ msgid "migrate to recording ids.."
+#~ msgstr "in Aufnahme-ids überführen.."
 
-#: install.php:96
-msgid "migrating"
-msgstr "migrieren"
+#~ msgid "migrated %s entries"
+#~ msgstr "überführte %s Einträge"
 
-#: install.php:141
-msgid "no recording field???"
-msgstr "kein Aufnahmefeld???"
+#~ msgid "migrating"
+#~ msgstr "migrieren"
 
-#: install.php:104 install.php:143
-msgid "ok"
-msgstr "Ok"
+#~ msgid "no recording field???"
+#~ msgstr "kein Aufnahmefeld???"
+
+#~ msgid "ok"
+#~ msgstr "Ok"

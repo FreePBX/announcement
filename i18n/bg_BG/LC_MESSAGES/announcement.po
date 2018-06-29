@@ -60,7 +60,7 @@ msgstr "Позволи Прескачане"
 msgid "Announcement"
 msgstr "Съобщение"
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
+#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
 msgstr "Съобщение: %s"
@@ -73,11 +73,7 @@ msgstr "Съобщения"
 msgid "Applications"
 msgstr "Приложения"
 
-#: install.php:90
-msgid "Checking if recordings need migration.."
-msgstr "Проверка дали записите имат нужда от преместване.."
-
-#: Announcement.class.php:59
+#: Announcement.class.php:84
 msgid "Delete"
 msgstr "Изтрий"
 
@@ -183,7 +179,7 @@ msgstr "Запис"
 msgid "Repeat"
 msgstr "Повтори"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr "Изчисти"
 
@@ -207,7 +203,7 @@ msgstr ""
 "използвате съобщение в IVR или други източници които вече са отворили "
 "канала, тази 1 секунда пауза може да е нежелана."
 
-#: Announcement.class.php:69
+#: Announcement.class.php:94
 msgid "Submit"
 msgstr "Приеми"
 
@@ -223,42 +219,35 @@ msgstr "Накъде да пренасочи обаждащия се след в
 msgid "Yes"
 msgstr "Да"
 
-#: install.php:97
-msgid "adding recording_id field.."
-msgstr "добавяне на поле recording_id.."
+#~ msgid "Checking if recordings need migration.."
+#~ msgstr "Проверка дали записите имат нужда от преместване.."
 
-#: install.php:147
-msgid "already migrated"
-msgstr "вече са преместени"
+#~ msgid "adding recording_id field.."
+#~ msgstr "добавяне на поле recording_id.."
 
-#: install.php:137
-msgid "dropping recording field.."
-msgstr "премахване на полето за записи.."
+#~ msgid "already migrated"
+#~ msgstr "вече са преместени"
 
-#: install.php:101 install.php:113 install.php:129
-msgid "fatal error"
-msgstr "фатална грешка"
+#~ msgid "dropping recording field.."
+#~ msgstr "премахване на полето за записи.."
 
-#: install.php:109
-msgid "migrate to recording ids.."
-msgstr "преместване към id на записите.."
+#~ msgid "fatal error"
+#~ msgstr "фатална грешка"
 
-#: install.php:133
-#, php-format
-msgid "migrated %s entries"
-msgstr "преместени %s записа"
+#~ msgid "migrate to recording ids.."
+#~ msgstr "преместване към id на записите.."
 
-#: install.php:96
-msgid "migrating"
-msgstr "преместване"
+#~ msgid "migrated %s entries"
+#~ msgstr "преместени %s записа"
 
-#: install.php:141
-msgid "no recording field???"
-msgstr "няма поле за записи???"
+#~ msgid "migrating"
+#~ msgstr "преместване"
 
-#: install.php:104 install.php:143
-msgid "ok"
-msgstr "ok"
+#~ msgid "no recording field???"
+#~ msgstr "няма поле за записи???"
+
+#~ msgid "ok"
+#~ msgstr "ok"
 
 #~ msgid "Add Announcement"
 #~ msgstr "Добави Съобщение"

@@ -49,7 +49,7 @@ msgstr "Permitir Saltar"
 msgid "Announcement"
 msgstr ""
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
+#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
 msgstr "Anúncio: %s"
@@ -62,11 +62,7 @@ msgstr "Anúncios"
 msgid "Applications"
 msgstr "Aplicações"
 
-#: install.php:90
-msgid "Checking if recordings need migration.."
-msgstr "Verificando se se é necessário migrar gravações.."
-
-#: Announcement.class.php:59
+#: Announcement.class.php:84
 msgid "Delete"
 msgstr "Eliminar"
 
@@ -160,7 +156,7 @@ msgstr "Gravação"
 msgid "Repeat"
 msgstr "Repetir"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr ""
 
@@ -178,7 +174,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:69
+#: Announcement.class.php:94
 msgid "Submit"
 msgstr ""
 
@@ -194,42 +190,32 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: install.php:97
-msgid "adding recording_id field.."
-msgstr "adicionando campo recording_id.."
+#~ msgid "Checking if recordings need migration.."
+#~ msgstr "Verificando se se é necessário migrar gravações.."
 
-#: install.php:147
-msgid "already migrated"
-msgstr "anteriormente migrado"
+#~ msgid "adding recording_id field.."
+#~ msgstr "adicionando campo recording_id.."
 
-#: install.php:137
-msgid "dropping recording field.."
-msgstr "apagando o campo recording.."
+#~ msgid "already migrated"
+#~ msgstr "anteriormente migrado"
 
-#: install.php:101 install.php:113 install.php:129
-msgid "fatal error"
-msgstr "erro fatal"
+#~ msgid "dropping recording field.."
+#~ msgstr "apagando o campo recording.."
 
-#: install.php:109
-msgid "migrate to recording ids.."
-msgstr "migrar para ids de gravações.."
+#~ msgid "fatal error"
+#~ msgstr "erro fatal"
 
-#: install.php:133
-#, php-format
-msgid "migrated %s entries"
-msgstr "%s entradas migradas"
+#~ msgid "migrate to recording ids.."
+#~ msgstr "migrar para ids de gravações.."
 
-#: install.php:96
-msgid "migrating"
-msgstr "migrando"
+#~ msgid "migrated %s entries"
+#~ msgstr "%s entradas migradas"
 
-#: install.php:141
-msgid "no recording field???"
-msgstr "sem campo de gravação???"
+#~ msgid "migrating"
+#~ msgstr "migrando"
 
-#: install.php:104 install.php:143
-msgid "ok"
-msgstr ""
+#~ msgid "no recording field???"
+#~ msgstr "sem campo de gravação???"
 
 #~ msgid "Add Announcement"
 #~ msgstr "Adicionar Anúncio"

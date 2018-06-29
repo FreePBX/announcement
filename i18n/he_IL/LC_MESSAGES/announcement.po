@@ -42,7 +42,7 @@ msgstr "אפשר לדלג"
 msgid "Announcement"
 msgstr "הכרזה"
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
+#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
 msgstr "הכרזה: %s"
@@ -56,11 +56,7 @@ msgstr "הכרזות"
 msgid "Applications"
 msgstr "יישומים"
 
-#: install.php:90
-msgid "Checking if recordings need migration.."
-msgstr "בודק אם הקלטות צריכות הגירה.."
-
-#: Announcement.class.php:59
+#: Announcement.class.php:84
 msgid "Delete"
 msgstr "מחק"
 
@@ -156,7 +152,7 @@ msgstr "הקלטה"
 msgid "Repeat"
 msgstr "חוזר"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr "איפוס"
 
@@ -174,7 +170,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:69
+#: Announcement.class.php:94
 msgid "Submit"
 msgstr "שלח"
 
@@ -190,42 +186,35 @@ msgstr "לאן לשלוח את המתקשר לאחר שהכרזה הושמעה."
 msgid "Yes"
 msgstr "כן"
 
-#: install.php:97
-msgid "adding recording_id field.."
-msgstr "הוספת שדה recording_id .."
+#~ msgid "Checking if recordings need migration.."
+#~ msgstr "בודק אם הקלטות צריכות הגירה.."
 
-#: install.php:147
-msgid "already migrated"
-msgstr "כבר היגרו"
+#~ msgid "adding recording_id field.."
+#~ msgstr "הוספת שדה recording_id .."
 
-#: install.php:137
-msgid "dropping recording field.."
-msgstr "הסרת שדה recording .."
+#~ msgid "already migrated"
+#~ msgstr "כבר היגרו"
 
-#: install.php:101 install.php:113 install.php:129
-msgid "fatal error"
-msgstr "שגיאה קטלנית"
+#~ msgid "dropping recording field.."
+#~ msgstr "הסרת שדה recording .."
 
-#: install.php:109
-msgid "migrate to recording ids.."
-msgstr "מהגר אל recording ids .."
+#~ msgid "fatal error"
+#~ msgstr "שגיאה קטלנית"
 
-#: install.php:133
-#, php-format
-msgid "migrated %s entries"
-msgstr "היגרו %s ערכים"
+#~ msgid "migrate to recording ids.."
+#~ msgstr "מהגר אל recording ids .."
 
-#: install.php:96
-msgid "migrating"
-msgstr "הגירת"
+#~ msgid "migrated %s entries"
+#~ msgstr "היגרו %s ערכים"
 
-#: install.php:141
-msgid "no recording field???"
-msgstr "\"אין שדה recording???"
+#~ msgid "migrating"
+#~ msgstr "הגירת"
 
-#: install.php:104 install.php:143
-msgid "ok"
-msgstr "בסדר"
+#~ msgid "no recording field???"
+#~ msgstr "\"אין שדה recording???"
+
+#~ msgid "ok"
+#~ msgstr "בסדר"
 
 #~ msgid "Add Announcement"
 #~ msgstr "הוסף הכרזה"
