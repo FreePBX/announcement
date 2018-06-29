@@ -3,100 +3,99 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for announcement
-# Copyright (C) 2008-2016 Sangoma, Inc.
+# Copyright (C) 2008-2017 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-29 17:59-0400\n"
-"PO-Revision-Date: 2017-03-03 15:54+0200\n"
-"Last-Translator: hammer125 <auswertung@aon.at>\n"
-"Language-Team: German <http://weblate.freepbx.org/projects/freepbx/"
-"announcement/de_DE/>\n"
-"Language: de_DE\n"
+"POT-Creation-Date: 2017-05-02 12:43-0400\n"
+"PO-Revision-Date: 2018-05-29 11:18+0000\n"
+"Last-Translator: Petr Varvarovsky <petrv@atlantis.cz>\n"
+"Language-Team: Czech <http://*/projects/freepbx/announcement/cs/>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.19.1\n"
 
 #: page.announcement.php:17
 msgid ": Add"
-msgstr ": Hinzufügen"
+msgstr ": Přidat"
 
 #: page.announcement.php:14
 msgid ": Edit"
-msgstr ": Bearbeiten"
+msgstr ": Editovat"
 
 #: views/grid.php:18
 msgid "Actions"
-msgstr "Aktionen"
+msgstr "Akce"
 
 #: views/grid.php:11
 msgid "Add"
-msgstr "Hinzufügen"
+msgstr "Přidat"
 
 #: views/rnav.php:3
 msgid "Add Announcements"
-msgstr "Ansage hinzufügen"
+msgstr "Přidat oznámení"
 
 #: views/form.php:142
 msgid "Allow Skip"
-msgstr "Überspringen zulassen"
+msgstr "Povolit přeskočení"
 
 #: page.announcement.php:7
 msgid "Announcement"
-msgstr "Ansage"
+msgstr "Oznámení"
 
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
-msgstr "Ansage: %s"
+msgstr "Oznámení: %s"
 
 #: announcement.i18n.php:4 announcement.i18n.php:10
 msgid "Announcements"
-msgstr "Ansagen"
+msgstr "Oznámení"
 
 #: announcement.i18n.php:6
 msgid "Applications"
-msgstr "Anwendungen"
+msgstr "Aplikace"
 
 #: install.php:90
 msgid "Checking if recordings need migration.."
-msgstr "Es wird überprüft, ob die Aufnahmen eine Umstellung benötigen .."
+msgstr "Kontrola, jestli nahrávky potřebuji migraci."
 
 #: Announcement.class.php:59
 msgid "Delete"
-msgstr "Löschen"
+msgstr "Smazat"
 
 #: views/form.php:91 views/grid.php:16
 msgid "Description"
-msgstr "Beschreibung"
+msgstr "Popis"
 
 #: views/grid.php:17
 msgid "Destination"
-msgstr "Ziel"
+msgstr "Cíl"
 
 #: views/form.php:223
 msgid "Destination after Playback"
-msgstr "Ziel nach Ansage"
+msgstr "Cíl po přehrávání"
 
 #: views/rnav.php:8
 msgid "Destinations"
-msgstr "Ziele"
+msgstr "Cíle"
 
 #: views/form.php:72
 msgid "Disable"
-msgstr "Deaktivieren"
+msgstr "Zakázat"
 
 #: views/form.php:196
 msgid "Don't Answer Channel"
-msgstr "Keine Antwort Kanal"
+msgstr "Kanál neodpovídat"
 
 #: views/form.php:157
 msgid "If the caller is allowed to press a key to skip the message."
-msgstr "Ermöglicht dem Anrufer die Nachricht per Tastendruck zu überspringen."
+msgstr "Je-li volajícímu umožněno stisknout klávesu pro přeskočení zprávy."
 
 #: views/form.php:184
 msgid ""
@@ -109,19 +108,18 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
-"Wenn diese Ansage von einem IVR stammt und \"zurück zu IVR\" auf Ja gesetzt "
-"ist, wird das Ziel unten ignoriert und stattdessen an das anrufende IVR "
-"zurückgegeben. Andernfalls wird das Ziel unten genommen. Nicht aktivieren, "
-"wenn Sie diesen Modus nicht benutzten.<br>Der IVR Rückkehr Ort wird auf das "
-"letzte IVR in der Anruferkette gesetzt, die aufgerufen wurde, seien Sie also "
-"vorsichtig und überprüfen Sie nur wenn nötig. Wenn beispielsweise ein IVR "
-"einen Anruf an ein anderes Ziel weiterleitet, das diese Ansage schließlich "
-"aufruft und dieses Kontrollkästchen aktiviert ist, kehrt es zu dem IVR "
-"zurück, das möglicherweise nicht das erwartete ist."
+"Pokud toto oznámení pochází z IVR a je nastaveno na ano, níže uvedený cíl "
+"bude ignorován a místo toho se vrátí do IVR. V opačném případě bude proveden "
+"níže uvedený cíl. Nezapomeňte, zda v tomto režimu nepoužíváte. <br> Místo "
+"návratu IVR bude k poslednímu IVR v řetězci hovorů, které bylo nazýváno, "
+"takže buďte opatrní, abyste si ověřili, kdy je potřeba. Například pokud IVR "
+"směruje volání do jiného cíle, které nakonec vyvolá toto oznámení a toto "
+"políčko je zaškrtnuto, vrátí se k tomu IVR, což pravděpodobně není "
+"očekávaným chováním."
 
 #: assets/js/announcement.js:6
 msgid "Invalid description specified"
-msgstr "Ungültige Beschreibung angegeben"
+msgstr "Zadán neplatný popis"
 
 #: views/form.php:130
 msgid ""
@@ -129,59 +127,57 @@ msgid ""
 "this option there will be a short delay inserted after the message. If a "
 "longer delay is needed it should be incorporated into the recording."
 msgstr ""
-"Eine Taste welche das wiederholen der Ansage ermöglicht. Wenn Sie diese "
-"Option wählen, wird nach der Ansage eine kurze Verzögerung eingefügt. Wenn "
-"eine längere Verzögerung benötigt wird, sollten Sie diese in die "
-"Aufzeichnung integrieren."
+"Tlačítko pro stisknutí, které umožní přehrání zprávy. Pokud zvolíte tuto "
+"možnost, bude po zprávě vloženo krátké zpoždění. Pokud je zapotřebí delší "
+"prodleva, měla by být do záznamu začleněna."
 
 #: views/rnav.php:2
 msgid "List Announcements"
-msgstr "Ansagenliste"
+msgstr "Seznam oznámení"
 
 #: views/form.php:59
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
-"Nachricht, die wiedergegeben werden soll.<br>Um zusätzliche Aufnahmen "
-"hinzuzufügen, verwenden Sie im Menü unter Administrator den Punkt "
-"\"Systemaufzeichnungen\""
+"Zpráva, kterou chcete přehrát. <br> Chcete-li přidat další nahrávky, "
+"použijte MENU systému \"Nahrávky systému\" výše"
 
 #: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "No"
-msgstr "Nein"
+msgstr "Ne"
 
 #: assets/js/announcement.js:33
 msgid "No Destination"
-msgstr "Kein Ziel"
+msgstr "Není cíl"
 
 #: views/form.php:32
 msgid "None"
-msgstr "keine"
+msgstr "Žádný"
 
 #: announcement.i18n.php:8
 msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
-"Gibt eine Systemaufzeichnungen wieder (optional kann der Benutzer dies "
-"überspringen) und wird dann zu einem anderen Ziel geleitet."
+"Přehrává jednu ze systémových nahrávek (volitelně umožňuje uživateli "
+"přeskočit) a přejde do jiného cíle."
 
 #: views/form.php:45
 msgid "Recording"
-msgstr "Aufnahme"
+msgstr "Nahrávání"
 
 #: views/form.php:116
 msgid "Repeat"
-msgstr "Wiederholen"
+msgstr "Opakovat"
 
 #: Announcement.class.php:64
 msgid "Reset"
-msgstr "Zurücksetzen"
+msgstr "Reset"
 
 #: views/form.php:169
 msgid "Return to IVR"
-msgstr "Zurück zu IVR"
+msgstr "Návrat do IVR"
 
 #: views/form.php:211
 msgid ""
@@ -192,65 +188,62 @@ msgid ""
 "using an announcement from an IVR or other sources that have already "
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
-"Setzen Sie das auf Ja, um den Anruf davon abzuhalten, ausdrücklich "
-"beantwortet zu werden. Wenn angehakt, wird die Mitteilung abgespielt und "
-"wenn der Anruf noch nicht beantwortet wurde wird sie als early media "
-"übergeben, wenn der Anruf dies unterstützt. Wenn nicht angehakt, wird der "
-"Anruf beantwortet mit einer anschließenden 1-Sekunden-Verzögerung. Wenn die "
-"Mitteilung von IVR oder aus anderen Quellen, die bereits auf den Anruf "
-"geantwortet haben, verwendet wird, dann wir die 1-Sekunden-Verzögerung "
-"vielleicht nicht erwünscht sein."
+"Nastavte tuto volbu na hodnotu ano, aby se kanále explicitně nereagovalo. "
+"Pokud je zaškrtnuto, zpráva se přehraje a pokud kanál již není zodpovězen, "
+"bude doručen jako časné médium, pokud to kanál podporuje. Pokud není "
+"zaškrtnuto, odpovídá kanál a následně 1 sekundové zpoždění. Při použití "
+"oznámení z IVR nebo jiných zdrojů, které již kanál již odpověděly, nemusí "
+"být 1 sekundové zpoždění požadováno."
 
 #: Announcement.class.php:69
 msgid "Submit"
-msgstr "Bestätigen"
+msgstr "Potvrdit"
 
 #: views/form.php:103
 msgid "The name of this announcement."
-msgstr "Der Name für diese Ansage."
+msgstr "Jméno tohoto oznámení."
 
 #: views/form.php:235
 msgid "Where to send the caller after the announcement is played."
-msgstr ""
-"Wohin der Anrufer geleitet werden soll, nachdem die Ansage abgespielt wurde."
+msgstr "Kde přesměrovat hovor po přehrání oznámení."
 
 #: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
-msgstr "Ja"
+msgstr "Ano"
 
 #: install.php:97
 msgid "adding recording_id field.."
-msgstr "Aufnahme id_Feld hinzufügen.."
+msgstr "Přidání pole record_id."
 
 #: install.php:147
 msgid "already migrated"
-msgstr "bereits migriert"
+msgstr "již přemigrováno"
 
 #: install.php:137
 msgid "dropping recording field.."
-msgstr "Aufnahmefeld weglassen.."
+msgstr "klesající pole záznamu .."
 
 #: install.php:101 install.php:113 install.php:129
 msgid "fatal error"
-msgstr "schwerwiegender Fehler"
+msgstr "Kritická chyba"
 
 #: install.php:109
 msgid "migrate to recording ids.."
-msgstr "in Aufnahme-ids überführen.."
+msgstr "přemístění do záznamů ids .."
 
 #: install.php:133
 #, php-format
 msgid "migrated %s entries"
-msgstr "überführte %s Einträge"
+msgstr "migrované položky %s"
 
 #: install.php:96
 msgid "migrating"
-msgstr "migrieren"
+msgstr "migrace"
 
 #: install.php:141
 msgid "no recording field???"
-msgstr "kein Aufnahmefeld???"
+msgstr "žádné pole nahrávky???"
 
 #: install.php:104 install.php:143
 msgid "ok"
-msgstr "Ok"
+msgstr "ok"
