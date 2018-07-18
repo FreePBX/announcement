@@ -29,7 +29,7 @@ function announcement_getdestinfo($dest) {
 		} else {
 			$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
 			return array('description' => sprintf(_("Announcement: %s"),$thisexten['description']),
-			             'edit_url' => 'config.php?display=announcement&type='.$type.'&extdisplay='.urlencode($exten),
+			             'edit_url' => 'config.php?display=announcement&view=form&type='.$type.'&extdisplay='.urlencode($exten),
 								  );
 		}
 	} else {
@@ -224,7 +224,7 @@ function announcement_check_destinations($dest=true) {
 		$destlist[] = array(
 			'dest' => $thisdest,
 			'description' => sprintf(_("Announcement: %s"),$result['description']),
-			'edit_url' => 'config.php?display=announcement&type='.$type.'&extdisplay='.urlencode($thisid),
+			'edit_url' => 'config.php?display=announcement&view=form&type='.$type.'&extdisplay='.urlencode($thisid),
 		);
 	}
 	return $destlist;

@@ -2,11 +2,13 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>13.0.7.1</version>
+	<version>13.0.7.3</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*13.0.7.3* FREEPBX-17706 Wrong URL's in Used as Destination - Announcements 
+		*13.0.7.2* FREEPBX-17706 Wrong URL's in Used as Destination - Announcements 
 		*13.0.7.1* FREEPBX-14511 Announcement Redirect
 		*13.0.7* FREEPBX-12690 add view for destinations usage
 		*13.0.6.2* FREEPBX-14511 Fix behavior after redirect changes.
@@ -30,7 +32,7 @@
 		<module>recordings ge 3.3.8</module>
 	</depends>
 	<menuitems>
-		<announcement>Announcements</announcement>
+		<announcement needsenginedb="yes">Announcements</announcement>
 	</menuitems>
 	<popovers>
 		<announcement>
