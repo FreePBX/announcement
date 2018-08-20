@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-29 17:59-0400\n"
+"POT-Creation-Date: 2018-08-20 12:20-0400\n"
 "PO-Revision-Date: 2016-06-01 07:34+0200\n"
 "Last-Translator: Hans <info@hansvaneijsden.nl>\n"
 "Language-Team: Dutch <http://weblate.freepbx.org/projects/freepbx/"
@@ -62,7 +62,7 @@ msgstr "Aankondigingen"
 msgid "Applications"
 msgstr "Aplicatie's"
 
-#: Announcement.class.php:84
+#: Announcement.class.php:94
 msgid "Delete"
 msgstr "Verwijderen"
 
@@ -158,7 +158,7 @@ msgstr "Opname"
 msgid "Repeat"
 msgstr "Herhalen"
 
-#: Announcement.class.php:89
+#: Announcement.class.php:99
 msgid "Reset"
 msgstr "Herstellen"
 
@@ -176,7 +176,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:94
+#: Announcement.class.php:104
 msgid "Submit"
 msgstr "Verzenden"
 

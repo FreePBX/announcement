@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - test module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-29 17:59-0400\n"
+"POT-Creation-Date: 2018-08-20 12:20-0400\n"
 "PO-Revision-Date: 2016-12-09 05:23+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -61,7 +61,7 @@ msgstr "Anuncios"
 msgid "Applications"
 msgstr "Aplicaciones"
 
-#: Announcement.class.php:84
+#: Announcement.class.php:94
 msgid "Delete"
 msgstr "Eliminar"
 
@@ -170,7 +170,7 @@ msgstr "Grabación"
 msgid "Repeat"
 msgstr "Repetir"
 
-#: Announcement.class.php:89
+#: Announcement.class.php:99
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -194,7 +194,7 @@ msgstr ""
 "retardo de 1 segundo. Al utilizar un anuncio de un IVR u otras fuentes que "
 "ya han respondido el canal, ese1 segundo  de retraso puede no ser  deseado."
 
-#: Announcement.class.php:94
+#: Announcement.class.php:104
 msgid "Submit"
 msgstr "Enviar"
 

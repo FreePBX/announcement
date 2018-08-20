@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-29 17:59-0400\n"
+"POT-Creation-Date: 2018-08-20 12:20-0400\n"
 "PO-Revision-Date: 2017-02-07 19:01+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
@@ -74,7 +74,7 @@ msgstr "Ogłoszenia"
 msgid "Applications"
 msgstr "Aplikacje"
 
-#: Announcement.class.php:84
+#: Announcement.class.php:94
 msgid "Delete"
 msgstr "Usuń"
 
@@ -183,7 +183,7 @@ msgstr "Nagranie"
 msgid "Repeat"
 msgstr "Powtórz"
 
-#: Announcement.class.php:89
+#: Announcement.class.php:99
 msgid "Reset"
 msgstr "wyzerować"
 
@@ -208,7 +208,7 @@ msgstr ""
 "jako zapowiedź w IVR albo inne źródła, które już odpowiedziały, 1 sekundowe "
 "opóźnienie może być nie wskazane."
 
-#: Announcement.class.php:94
+#: Announcement.class.php:104
 msgid "Submit"
 msgstr "zgłoś"
 

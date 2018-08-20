@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX announcement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-29 17:59-0400\n"
+"POT-Creation-Date: 2018-08-20 12:20-0400\n"
 "PO-Revision-Date: 2016-05-08 19:53+0200\n"
 "Last-Translator: Avishay <baabad@outlook.com>\n"
 "Language-Team: Hebrew <http://weblate.freepbx.org/projects/freepbx/"
@@ -56,7 +56,7 @@ msgstr "הכרזות"
 msgid "Applications"
 msgstr "יישומים"
 
-#: Announcement.class.php:84
+#: Announcement.class.php:94
 msgid "Delete"
 msgstr "מחק"
 
@@ -152,7 +152,7 @@ msgstr "הקלטה"
 msgid "Repeat"
 msgstr "חוזר"
 
-#: Announcement.class.php:89
+#: Announcement.class.php:99
 msgid "Reset"
 msgstr "איפוס"
 
@@ -170,7 +170,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:94
+#: Announcement.class.php:104
 msgid "Submit"
 msgstr "שלח"
 

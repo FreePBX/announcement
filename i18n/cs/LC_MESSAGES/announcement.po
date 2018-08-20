@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-29 17:59-0400\n"
+"POT-Creation-Date: 2018-08-20 12:20-0400\n"
 "PO-Revision-Date: 2018-05-29 11:18+0000\n"
 "Last-Translator: Petr Varvarovsky <petrv@atlantis.cz>\n"
 "Language-Team: Czech <http://*/projects/freepbx/announcement/cs/>\n"
@@ -61,7 +61,7 @@ msgstr "Oznámení"
 msgid "Applications"
 msgstr "Aplikace"
 
-#: Announcement.class.php:84
+#: Announcement.class.php:94
 msgid "Delete"
 msgstr "Smazat"
 
@@ -167,7 +167,7 @@ msgstr "Nahrávání"
 msgid "Repeat"
 msgstr "Opakovat"
 
-#: Announcement.class.php:89
+#: Announcement.class.php:99
 msgid "Reset"
 msgstr "Reset"
 
@@ -191,7 +191,7 @@ msgstr ""
 "oznámení z IVR nebo jiných zdrojů, které již kanál již odpověděly, nemusí "
 "být 1 sekundové zpoždění požadováno."
 
-#: Announcement.class.php:94
+#: Announcement.class.php:104
 msgid "Submit"
 msgstr "Potvrdit"
 

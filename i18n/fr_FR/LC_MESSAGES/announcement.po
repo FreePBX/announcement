@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-29 17:59-0400\n"
+"POT-Creation-Date: 2018-08-20 12:20-0400\n"
 "PO-Revision-Date: 2017-12-01 18:25+0200\n"
 "Last-Translator: CATTAN Jérémie <jeremie@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -72,7 +72,7 @@ msgstr "Annonces"
 msgid "Applications"
 msgstr "Applications"
 
-#: Announcement.class.php:84
+#: Announcement.class.php:94
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -180,7 +180,7 @@ msgstr "Enregistrement"
 msgid "Repeat"
 msgstr "Répéter"
 
-#: Announcement.class.php:89
+#: Announcement.class.php:99
 msgid "Reset"
 msgstr "Réinitialiser"
 
@@ -205,7 +205,7 @@ msgstr ""
 "provenant d'un SVI ou d'autres sources qui ont déjà répondu au canal, ce "
 "délai d'une seconde peut ne pas être souhaité."
 
-#: Announcement.class.php:94
+#: Announcement.class.php:104
 msgid "Submit"
 msgstr "Soumettre"
 

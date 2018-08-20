@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-29 17:59-0400\n"
+"POT-Creation-Date: 2018-08-20 12:20-0400\n"
 "PO-Revision-Date: 2017-03-24 13:34+0200\n"
 "Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -73,7 +73,7 @@ msgstr "Anuncios"
 msgid "Applications"
 msgstr "Aplicações"
 
-#: Announcement.class.php:84
+#: Announcement.class.php:94
 msgid "Delete"
 msgstr "Apagar"
 
@@ -181,7 +181,7 @@ msgstr "Gravação"
 msgid "Repeat"
 msgstr "Repetir"
 
-#: Announcement.class.php:89
+#: Announcement.class.php:99
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -205,7 +205,7 @@ msgstr ""
 "atraso de 1 segundo. Ao usar um anúncio de uma URA ou outras fontes que já "
 "tenham respondido ao canal, esse atraso de 1 segundo pode não ser desejado."
 
-#: Announcement.class.php:94
+#: Announcement.class.php:104
 msgid "Submit"
 msgstr "Enviar"
 
