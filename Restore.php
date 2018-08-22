@@ -31,7 +31,7 @@ class Restore Extends Base\RestoreBase{
     ];
     foreach ($configs as $config) {
         foreach ($fields as $field) {
-          isset($config[0][$field])? $$field = $config[0][$field] : $$field = null;
+          isset($config[$field])? $$field = $config[$field] : $$field = null;
         }
         dbug([$description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg]);
         $this->FreePBX->Announcement->addAnnouncement($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
