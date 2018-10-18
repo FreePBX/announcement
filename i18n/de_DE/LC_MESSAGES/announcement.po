@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-29 17:59-0400\n"
-"PO-Revision-Date: 2018-10-14 01:24+0000\n"
+"PO-Revision-Date: 2018-10-19 13:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/announcement/de/>\n"
 "Language: de_DE\n"
@@ -156,7 +156,7 @@ msgstr "Kein Ziel"
 
 #: views/form.php:32
 msgid "None"
-msgstr "keine"
+msgstr "Kein*e"
 
 #: announcement.i18n.php:8
 msgid ""
