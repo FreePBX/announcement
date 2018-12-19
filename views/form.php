@@ -239,3 +239,6 @@ foreach ($digits as $digit) {
 <!--END Destination-->
 
 </form>
+<script>
+var announcementnames = <?php print json_encode(\FreePBX::Announcement()->getALLAnnouncements($extdisplay)); ?>;
+</script>

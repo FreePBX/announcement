@@ -12,7 +12,9 @@ function checkAnnouncement(theForm) {
   defaultEmptyOK = false;
   if (isEmpty(theForm.description.value))
     return warnInvalid(theForm.description, msgInvalidDescription);
-
+	if (announcementnames.indexOf($("#description").val()) >= 0) {
+				return warnInvalid($("#description"),_("Announcement Description Already Exist"));
+	}
   if (!validateDestinations(theForm, 1, true))
     return false;
 
