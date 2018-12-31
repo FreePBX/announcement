@@ -10,16 +10,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-29 17:59-0400\n"
-"PO-Revision-Date: 2017-03-03 15:54+0200\n"
-"Last-Translator: hammer125 <auswertung@aon.at>\n"
-"Language-Team: German <http://weblate.freepbx.org/projects/freepbx/"
-"announcement/de_DE/>\n"
+"PO-Revision-Date: 2018-10-19 13:00+0000\n"
+"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
+"Language-Team: German <http://*/projects/freepbx/announcement/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: page.announcement.php:17
 msgid ": Add"
@@ -39,7 +38,7 @@ msgstr "Hinzufügen"
 
 #: views/rnav.php:3
 msgid "Add Announcements"
-msgstr "Ansage hinzufügen"
+msgstr "Ansagen hinzufügen"
 
 #: views/form.php:142
 msgid "Allow Skip"
@@ -80,7 +79,7 @@ msgstr "Ziel"
 
 #: views/form.php:223
 msgid "Destination after Playback"
-msgstr "Ziel nach Ansage"
+msgstr "Ziel nach Wiedergabe"
 
 #: views/rnav.php:8
 msgid "Destinations"
@@ -92,11 +91,11 @@ msgstr "Deaktivieren"
 
 #: views/form.php:196
 msgid "Don't Answer Channel"
-msgstr "Keine Antwort Kanal"
+msgstr "Kanal nicht beantworten"
 
 #: views/form.php:157
 msgid "If the caller is allowed to press a key to skip the message."
-msgstr "Ermöglicht dem Anrufer die Nachricht per Tastendruck zu überspringen."
+msgstr "Anrufern erlauben, die Nachricht per Tastendruck zu überspringen."
 
 #: views/form.php:184
 msgid ""
@@ -157,7 +156,7 @@ msgstr "Kein Ziel"
 
 #: views/form.php:32
 msgid "None"
-msgstr "keine"
+msgstr "Kein*e"
 
 #: announcement.i18n.php:8
 msgid ""
@@ -203,7 +202,7 @@ msgstr ""
 
 #: Announcement.class.php:69
 msgid "Submit"
-msgstr "Bestätigen"
+msgstr "Absenden"
 
 #: views/form.php:103
 msgid "The name of this announcement."
