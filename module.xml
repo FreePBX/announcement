@@ -2,11 +2,12 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>13.0.7.4</version>
+	<version>13.0.7.5</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*13.0.7.5* FREEPBX-15206 Multiple Appointment reminder can be added with same Name 
 		*13.0.7.4* Fixing FREEPBX-15198 Multiple announcements can be added with same Name issue. 
 		*13.0.7.3* FREEPBX-17706 Wrong URL's in Used as Destination - Announcements 
 		*13.0.7.2* FREEPBX-17706 Wrong URL's in Used as Destination - Announcements 
