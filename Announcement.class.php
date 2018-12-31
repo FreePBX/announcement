@@ -19,6 +19,17 @@ class Announcement extends \FreePBX_Helpers implements \BMO  {
 		return $sth->fetchAll(\PDO::FETCH_ASSOC);
 	}
 
+	public function getALLAnnouncements($id) {
+		$sql = "SELECT description FROM announcement";
+		if ($id) {
+			$sql .= ' where  id != :id ';
+		}
+		$sth = $this->db->prepare($sql);
+		$sth->execute(array(":id" => $id));
+		$res = $sth->fetchAll(\PDO::FETCH_COLUMN, 0);
+		return is_array($res)?$res:array();
+	}
+
 	/**
 	 * Ajax Request
 	 * @param string $req     The request type
