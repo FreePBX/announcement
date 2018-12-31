@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:20-0400\n"
+"POT-Creation-Date: 2018-12-31 12:36+0530\n"
 "PO-Revision-Date: 2017-12-01 18:25+0200\n"
 "Last-Translator: CATTAN Jérémie <jeremie@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -59,6 +59,10 @@ msgstr "Autoriser à Passer"
 msgid "Announcement"
 msgstr "Annonce"
 
+#: assets/js/announcement.js:16
+msgid "Announcement Description Already Exist"
+msgstr ""
+
 #: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
@@ -72,7 +76,7 @@ msgstr "Annonces"
 msgid "Applications"
 msgstr "Applications"
 
-#: Announcement.class.php:94
+#: Announcement.class.php:104
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -156,7 +160,7 @@ msgstr ""
 msgid "No"
 msgstr "Non"
 
-#: assets/js/announcement.js:33
+#: assets/js/announcement.js:35
 msgid "No Destination"
 msgstr "Pas de destination"
 
@@ -180,7 +184,7 @@ msgstr "Enregistrement"
 msgid "Repeat"
 msgstr "Répéter"
 
-#: Announcement.class.php:99
+#: Announcement.class.php:109
 msgid "Reset"
 msgstr "Réinitialiser"
 
@@ -205,7 +209,7 @@ msgstr ""
 "provenant d'un SVI ou d'autres sources qui ont déjà répondu au canal, ce "
 "délai d'une seconde peut ne pas être souhaité."
 
-#: Announcement.class.php:104
+#: Announcement.class.php:114
 msgid "Submit"
 msgstr "Soumettre"
 

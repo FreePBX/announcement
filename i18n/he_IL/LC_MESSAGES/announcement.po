@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX announcement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:20-0400\n"
+"POT-Creation-Date: 2018-12-31 12:36+0530\n"
 "PO-Revision-Date: 2016-05-08 19:53+0200\n"
 "Last-Translator: Avishay <baabad@outlook.com>\n"
 "Language-Team: Hebrew <http://weblate.freepbx.org/projects/freepbx/"
@@ -42,6 +42,10 @@ msgstr "אפשר לדלג"
 msgid "Announcement"
 msgstr "הכרזה"
 
+#: assets/js/announcement.js:16
+msgid "Announcement Description Already Exist"
+msgstr ""
+
 #: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
@@ -56,7 +60,7 @@ msgstr "הכרזות"
 msgid "Applications"
 msgstr "יישומים"
 
-#: Announcement.class.php:94
+#: Announcement.class.php:104
 msgid "Delete"
 msgstr "מחק"
 
@@ -128,7 +132,7 @@ msgstr ""
 msgid "No"
 msgstr "לא"
 
-#: assets/js/announcement.js:33
+#: assets/js/announcement.js:35
 msgid "No Destination"
 msgstr ""
 
@@ -152,7 +156,7 @@ msgstr "הקלטה"
 msgid "Repeat"
 msgstr "חוזר"
 
-#: Announcement.class.php:99
+#: Announcement.class.php:109
 msgid "Reset"
 msgstr "איפוס"
 
@@ -170,7 +174,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:104
+#: Announcement.class.php:114
 msgid "Submit"
 msgstr "שלח"
 

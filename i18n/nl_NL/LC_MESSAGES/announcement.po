@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:20-0400\n"
+"POT-Creation-Date: 2018-12-31 12:36+0530\n"
 "PO-Revision-Date: 2016-06-01 07:34+0200\n"
 "Last-Translator: Hans <info@hansvaneijsden.nl>\n"
 "Language-Team: Dutch <http://weblate.freepbx.org/projects/freepbx/"
@@ -49,6 +49,10 @@ msgstr "Overslaan toestaan"
 msgid "Announcement"
 msgstr "Aankondiging"
 
+#: assets/js/announcement.js:16
+msgid "Announcement Description Already Exist"
+msgstr ""
+
 #: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
@@ -62,7 +66,7 @@ msgstr "Aankondigingen"
 msgid "Applications"
 msgstr "Aplicatie's"
 
-#: Announcement.class.php:94
+#: Announcement.class.php:104
 msgid "Delete"
 msgstr "Verwijderen"
 
@@ -134,7 +138,7 @@ msgstr ""
 msgid "No"
 msgstr "Nee"
 
-#: assets/js/announcement.js:33
+#: assets/js/announcement.js:35
 msgid "No Destination"
 msgstr ""
 
@@ -158,7 +162,7 @@ msgstr "Opname"
 msgid "Repeat"
 msgstr "Herhalen"
 
-#: Announcement.class.php:99
+#: Announcement.class.php:109
 msgid "Reset"
 msgstr "Herstellen"
 
@@ -176,7 +180,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:104
+#: Announcement.class.php:114
 msgid "Submit"
 msgstr "Verzenden"
 

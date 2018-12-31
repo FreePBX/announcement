@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBXannouncement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:20-0400\n"
+"POT-Creation-Date: 2018-12-31 12:36+0530\n"
 "PO-Revision-Date: 2008-10-10 20:20+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -59,6 +59,10 @@ msgstr "Tillåt hoppa över"
 msgid "Announcement"
 msgstr ""
 
+#: assets/js/announcement.js:16
+msgid "Announcement Description Already Exist"
+msgstr ""
+
 #: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
@@ -72,7 +76,7 @@ msgstr "Meddelanden"
 msgid "Applications"
 msgstr ""
 
-#: Announcement.class.php:94
+#: Announcement.class.php:104
 msgid "Delete"
 msgstr "Ta bort"
 
@@ -146,7 +150,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: assets/js/announcement.js:33
+#: assets/js/announcement.js:35
 msgid "No Destination"
 msgstr ""
 
@@ -170,7 +174,7 @@ msgstr "Inspelning"
 msgid "Repeat"
 msgstr "Repetera"
 
-#: Announcement.class.php:99
+#: Announcement.class.php:109
 msgid "Reset"
 msgstr ""
 
@@ -188,7 +192,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:104
+#: Announcement.class.php:114
 msgid "Submit"
 msgstr ""
 
