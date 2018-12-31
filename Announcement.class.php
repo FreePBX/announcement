@@ -62,6 +62,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 		$sth->execute(array(":id" => $id));
 		$res = $sth->fetchAll(\PDO::FETCH_COLUMN, 0);
 		return is_array($res)?$res:array();
+	}
 
 	/**
 	 * Ajax Request
