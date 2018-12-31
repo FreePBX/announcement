@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-29 17:59-0400\n"
+"POT-Creation-Date: 2018-12-31 12:25+0530\n"
 "PO-Revision-Date: 2016-08-11 19:34+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -49,6 +49,10 @@ msgstr "اجازه لغو"
 msgid "Announcement"
 msgstr "اعلان"
 
+#: assets/js/announcement.js:16
+msgid "Announcement Description Already Exist"
+msgstr ""
+
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
@@ -66,7 +70,7 @@ msgstr "برنامه ها"
 msgid "Checking if recordings need migration.."
 msgstr "بررسی لزوم انتقال پیام صوتی ذخیره شده.."
 
-#: Announcement.class.php:59
+#: Announcement.class.php:70
 msgid "Delete"
 msgstr "حذف"
 
@@ -147,7 +151,7 @@ msgstr ""
 msgid "No"
 msgstr "خیر"
 
-#: assets/js/announcement.js:33
+#: assets/js/announcement.js:35
 msgid "No Destination"
 msgstr "بدون مقصد"
 
@@ -171,7 +175,7 @@ msgstr "پیام ضبط شده"
 msgid "Repeat"
 msgstr "تکرار"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:75
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -194,7 +198,7 @@ msgstr ""
 "شد. زمانی که از اعلان در منوی صوتی و یا جاهای دیگر استفاده می نمایید، چون "
 "کانال قبلا پاسخ داده شده است، این تاخیر ممکن است مطالوب نباشد."
 
-#: Announcement.class.php:69
+#: Announcement.class.php:80
 msgid "Submit"
 msgstr "ثبت"
 

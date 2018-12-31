@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-09 19:27-0400\n"
+"POT-Creation-Date: 2018-12-31 12:25+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,6 +46,10 @@ msgstr ""
 msgid "Announcement"
 msgstr ""
 
+#: assets/js/announcement.js:16
+msgid "Announcement Description Already Exist"
+msgstr ""
+
 #: functions.inc.php:31
 #: functions.inc.php:51
 #: functions.inc.php:226
@@ -66,7 +70,7 @@ msgstr ""
 msgid "Checking if recordings need migration.."
 msgstr ""
 
-#: Announcement.class.php:59
+#: Announcement.class.php:70
 msgid "Delete"
 msgstr ""
 
@@ -138,7 +142,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: assets/js/announcement.js:33
+#: assets/js/announcement.js:35
 msgid "No Destination"
 msgstr ""
 
@@ -160,7 +164,7 @@ msgstr ""
 msgid "Repeat"
 msgstr ""
 
-#: Announcement.class.php:64
+#: Announcement.class.php:75
 msgid "Reset"
 msgstr ""
 
@@ -178,7 +182,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:69
+#: Announcement.class.php:80
 msgid "Submit"
 msgstr ""
 

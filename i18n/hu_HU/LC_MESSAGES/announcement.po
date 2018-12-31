@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-29 17:59-0400\n"
+"POT-Creation-Date: 2018-12-31 12:25+0530\n"
 "PO-Revision-Date: 2014-03-04 08:44+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Hungarian <http://git.freepbx.org/projects/freepbx/"
@@ -63,6 +63,10 @@ msgstr "Elfogad kihagyást"
 msgid "Announcement"
 msgstr ""
 
+#: assets/js/announcement.js:16
+msgid "Announcement Description Already Exist"
+msgstr ""
+
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
@@ -80,7 +84,7 @@ msgstr "Alkalmazások"
 msgid "Checking if recordings need migration.."
 msgstr ""
 
-#: Announcement.class.php:59
+#: Announcement.class.php:70
 msgid "Delete"
 msgstr "Törlés"
 
@@ -153,7 +157,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: assets/js/announcement.js:33
+#: assets/js/announcement.js:35
 msgid "No Destination"
 msgstr ""
 
@@ -175,7 +179,7 @@ msgstr "Rögzítés"
 msgid "Repeat"
 msgstr "Ismétlés"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:75
 msgid "Reset"
 msgstr ""
 
@@ -193,7 +197,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:69
+#: Announcement.class.php:80
 msgid "Submit"
 msgstr ""
 

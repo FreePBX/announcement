@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-02 12:43-0400\n"
+"POT-Creation-Date: 2018-12-31 12:25+0530\n"
 "PO-Revision-Date: 2018-07-18 19:15+0000\n"
 "Last-Translator: Maurizio Longhitano <mlonghitano@teampower.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/announcement/it/>\n"
@@ -48,6 +48,10 @@ msgstr "Permetti Salta"
 msgid "Announcement"
 msgstr "Annunci"
 
+#: assets/js/announcement.js:16
+msgid "Announcement Description Already Exist"
+msgstr ""
+
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
@@ -65,7 +69,7 @@ msgstr "Applicazioni"
 msgid "Checking if recordings need migration.."
 msgstr "Controllo se le registrazioni hanno bisogno di una migrazione.."
 
-#: Announcement.class.php:59
+#: Announcement.class.php:70
 msgid "Delete"
 msgstr "Elimina"
 
@@ -151,7 +155,7 @@ msgstr ""
 msgid "No"
 msgstr "No"
 
-#: assets/js/announcement.js:33
+#: assets/js/announcement.js:35
 msgid "No Destination"
 msgstr "Nessuna destinazione"
 
@@ -175,7 +179,7 @@ msgstr "Registrazione"
 msgid "Repeat"
 msgstr "Ripeti"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:75
 msgid "Reset"
 msgstr "Reset"
 
@@ -200,7 +204,7 @@ msgstr ""
 "che hanno già risposto al canale, quel ritardo di 1 secondo poterebbe non "
 "essere desiderato."
 
-#: Announcement.class.php:69
+#: Announcement.class.php:80
 msgid "Submit"
 msgstr "Invio"
 

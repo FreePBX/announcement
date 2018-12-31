@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-29 17:59-0400\n"
+"POT-Creation-Date: 2018-12-31 12:25+0530\n"
 "PO-Revision-Date: 2018-10-19 13:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/announcement/de/>\n"
@@ -48,6 +48,10 @@ msgstr "Überspringen zulassen"
 msgid "Announcement"
 msgstr "Ansage"
 
+#: assets/js/announcement.js:16
+msgid "Announcement Description Already Exist"
+msgstr ""
+
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
@@ -65,7 +69,7 @@ msgstr "Anwendungen"
 msgid "Checking if recordings need migration.."
 msgstr "Es wird überprüft, ob die Aufnahmen eine Umstellung benötigen .."
 
-#: Announcement.class.php:59
+#: Announcement.class.php:70
 msgid "Delete"
 msgstr "Löschen"
 
@@ -150,7 +154,7 @@ msgstr ""
 msgid "No"
 msgstr "Nein"
 
-#: assets/js/announcement.js:33
+#: assets/js/announcement.js:35
 msgid "No Destination"
 msgstr "Kein Ziel"
 
@@ -174,7 +178,7 @@ msgstr "Aufnahme"
 msgid "Repeat"
 msgstr "Wiederholen"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:75
 msgid "Reset"
 msgstr "Zurücksetzen"
 
@@ -200,7 +204,7 @@ msgstr ""
 "geantwortet haben, verwendet wird, dann wir die 1-Sekunden-Verzögerung "
 "vielleicht nicht erwünscht sein."
 
-#: Announcement.class.php:69
+#: Announcement.class.php:80
 msgid "Submit"
 msgstr "Absenden"
 

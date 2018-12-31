@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-02 12:43-0400\n"
+"POT-Creation-Date: 2018-12-31 12:25+0530\n"
 "PO-Revision-Date: 2017-09-02 09:02+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
-"Language-Team: Vietnamese "
-"<http://weblate.freepbx.org/projects/freepbx/announcement/vi/>\n"
+"Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
+"announcement/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,6 +49,10 @@ msgstr "Cho Phép Bỏ Qua"
 msgid "Announcement"
 msgstr "Thông Báo"
 
+#: assets/js/announcement.js:16
+msgid "Announcement Description Already Exist"
+msgstr ""
+
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
@@ -66,7 +70,7 @@ msgstr "Các Ứng Dụng"
 msgid "Checking if recordings need migration.."
 msgstr "Kiểm tra nếu bản ghi cần di chuyển .."
 
-#: Announcement.class.php:59
+#: Announcement.class.php:70
 msgid "Delete"
 msgstr "Xóa"
 
@@ -158,7 +162,7 @@ msgstr ""
 msgid "No"
 msgstr "Không"
 
-#: assets/js/announcement.js:33
+#: assets/js/announcement.js:35
 msgid "No Destination"
 msgstr "Không có điểm đến"
 
@@ -182,7 +186,7 @@ msgstr "Ghi âm"
 msgid "Repeat"
 msgstr "Lặp lại"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:75
 msgid "Reset"
 msgstr "Đặt lại"
 
@@ -206,7 +210,7 @@ msgstr ""
 "hoặc các nguồn khác đã trả lời kênh, sự chậm trễ 1 giây đó có thể không được "
 "mong muốn."
 
-#: Announcement.class.php:69
+#: Announcement.class.php:80
 msgid "Submit"
 msgstr "Nộp"
 

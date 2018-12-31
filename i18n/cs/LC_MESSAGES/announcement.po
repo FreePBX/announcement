@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-02 12:43-0400\n"
+"POT-Creation-Date: 2018-12-31 12:25+0530\n"
 "PO-Revision-Date: 2018-05-29 11:18+0000\n"
 "Last-Translator: Petr Varvarovsky <petrv@atlantis.cz>\n"
 "Language-Team: Czech <http://*/projects/freepbx/announcement/cs/>\n"
@@ -48,6 +48,10 @@ msgstr "Povolit přeskočení"
 msgid "Announcement"
 msgstr "Oznámení"
 
+#: assets/js/announcement.js:16
+msgid "Announcement Description Already Exist"
+msgstr ""
+
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
@@ -65,7 +69,7 @@ msgstr "Aplikace"
 msgid "Checking if recordings need migration.."
 msgstr "Kontrola, jestli nahrávky potřebuji migraci."
 
-#: Announcement.class.php:59
+#: Announcement.class.php:70
 msgid "Delete"
 msgstr "Smazat"
 
@@ -147,7 +151,7 @@ msgstr ""
 msgid "No"
 msgstr "Ne"
 
-#: assets/js/announcement.js:33
+#: assets/js/announcement.js:35
 msgid "No Destination"
 msgstr "Není cíl"
 
@@ -171,7 +175,7 @@ msgstr "Nahrávání"
 msgid "Repeat"
 msgstr "Opakovat"
 
-#: Announcement.class.php:64
+#: Announcement.class.php:75
 msgid "Reset"
 msgstr "Reset"
 
@@ -195,7 +199,7 @@ msgstr ""
 "oznámení z IVR nebo jiných zdrojů, které již kanál již odpověděly, nemusí "
 "být 1 sekundové zpoždění požadováno."
 
-#: Announcement.class.php:69
+#: Announcement.class.php:80
 msgid "Submit"
 msgstr "Potvrdit"
 
