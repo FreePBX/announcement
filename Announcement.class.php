@@ -22,7 +22,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO  {
 	public function getALLAnnouncements($id) {
 		$sql = "SELECT description FROM announcement";
 		if ($id) {
-			$sql .= ' where  id != :id ';
+			$sql .= ' where announcement_id != :id ';
 		}
 		$sth = $this->db->prepare($sql);
 		$sth->execute(array(":id" => $id));
