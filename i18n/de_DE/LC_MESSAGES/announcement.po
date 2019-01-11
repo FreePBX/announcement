@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-31 12:25+0530\n"
-"PO-Revision-Date: 2018-10-19 13:00+0000\n"
+"PO-Revision-Date: 2019-01-11 14:25+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/announcement/de/>\n"
 "Language: de_DE\n"
@@ -50,7 +50,7 @@ msgstr "Ansage"
 
 #: assets/js/announcement.js:16
 msgid "Announcement Description Already Exist"
-msgstr ""
+msgstr "Diese Beschreibung wird bereits für eine Ansage verwendet"
 
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
