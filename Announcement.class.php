@@ -12,16 +12,6 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 		$this->db = $this->freepbx->Database;
 	}
 
-	public function setDatabase($database){
-		$this->db = $database;
-		return $this;
-	}
-
-	public function resetDatabase(){
-		$this->db - $this->freepbx->Database;
-		return $this;
-	}
-
 	public function getAnnouncements() {
 		$sql = "SELECT announcement_id, description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement";
 		$sth = $this->db->prepare($sql);
