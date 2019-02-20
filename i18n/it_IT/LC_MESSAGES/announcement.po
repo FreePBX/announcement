@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-31 12:36+0530\n"
+"POT-Creation-Date: 2019-02-19 19:40-0500\n"
 "PO-Revision-Date: 2018-03-15 17:13+0200\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://weblate.freepbx.org/projects/freepbx/"
@@ -66,7 +66,7 @@ msgstr "Annunci"
 msgid "Applications"
 msgstr "Applicazioni"
 
-#: Announcement.class.php:104
+#: Announcement.class.php:94
 msgid "Delete"
 msgstr "Elimina"
 
@@ -176,7 +176,7 @@ msgstr "Registrazione"
 msgid "Repeat"
 msgstr "Ripeti"
 
-#: Announcement.class.php:109
+#: Announcement.class.php:99
 msgid "Reset"
 msgstr "Reset"
 
@@ -201,7 +201,7 @@ msgstr ""
 "che hanno già risposto al canale, quel ritardo di 1 secondo poterebbe non "
 "essere desiderato."
 
-#: Announcement.class.php:114
+#: Announcement.class.php:104
 msgid "Submit"
 msgstr "Invio"
 

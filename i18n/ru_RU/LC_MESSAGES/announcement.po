@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-31 12:36+0530\n"
+"POT-Creation-Date: 2019-02-19 19:40-0500\n"
 "PO-Revision-Date: 2016-04-15 12:21+0000\n"
 "Last-Translator: Weblate Admin <admin@postmet.com>\n"
 "Language-Team: Russian <https://weblate.postmet.com/projects/freepbx13/"
@@ -80,7 +80,7 @@ msgstr "Приветствия"
 msgid "Applications"
 msgstr "Приложения"
 
-#: Announcement.class.php:104
+#: Announcement.class.php:94
 msgid "Delete"
 msgstr "Удалить"
 
@@ -188,7 +188,7 @@ msgstr "Запись"
 msgid "Repeat"
 msgstr "Повторить"
 
-#: Announcement.class.php:109
+#: Announcement.class.php:99
 msgid "Reset"
 msgstr "Сброс"
 
@@ -213,7 +213,7 @@ msgstr ""
 "источника  , то канал уже получает ответ , так что задержка в 1 секунду "
 "может быть нежелательной."
 
-#: Announcement.class.php:114
+#: Announcement.class.php:104
 msgid "Submit"
 msgstr "Подтвердить"
 

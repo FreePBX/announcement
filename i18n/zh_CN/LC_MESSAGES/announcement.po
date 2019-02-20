@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-31 12:36+0530\n"
+"POT-Creation-Date: 2019-02-19 19:40-0500\n"
 "PO-Revision-Date: 2015-11-16 07:30+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -80,7 +80,7 @@ msgstr "公告"
 msgid "Applications"
 msgstr "应用"
 
-#: Announcement.class.php:104
+#: Announcement.class.php:94
 msgid "Delete"
 msgstr "删除"
 
@@ -178,7 +178,7 @@ msgstr "录音"
 msgid "Repeat"
 msgstr "重复"
 
-#: Announcement.class.php:109
+#: Announcement.class.php:99
 msgid "Reset"
 msgstr "重新设置"
 
@@ -196,7 +196,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:114
+#: Announcement.class.php:104
 msgid "Submit"
 msgstr "提交"
 
