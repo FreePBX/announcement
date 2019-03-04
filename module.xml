@@ -2,11 +2,12 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>15.0.3.5</version>
+	<version>15.0.3.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*15.0.3.6* Better legacy restores
 		*15.0.3.5* Utilize restore data directly to the database
 		*15.0.3.4* FREEPBX-18866 
 		*15.0.3.3* Fixing FREEPBX-15198 Multiple announcements can be added with same Name issue. 

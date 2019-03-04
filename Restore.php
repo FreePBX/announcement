@@ -8,14 +8,7 @@ class Restore Extends Base\RestoreBase{
 	}
 
 	public function processLegacy($pdo, $data, $tables, $unknownTables){
-		$tables = array_flip($tables + $unknownTables);
-		if(!isset($tables['announcement'])){
-			$this->log("No announcement tables");
-			return;
-		}
-
-		$rows = $pdo->query("SELECT * FROM announcement")->fetchAll(\PDO::FETCH_ASSOC);
-		$this->processData($rows);
+		$this->restoreLegacyDatabase($pdo);
 	}
 
 	public function processData($configs){
