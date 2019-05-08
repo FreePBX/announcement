@@ -10,17 +10,19 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-02 12:19+0530\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-05-08 18:27+0000\n"
+"Last-Translator: Andrew Nagy <andrew.nagy@the159.com>\n"
+"Language-Team: Hindi <http://*/projects/freepbx/announcement/hi/>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: page.announcement.php:17
 msgid ": Add"
-msgstr ""
+msgstr ": जोड़ना"
 
 #: page.announcement.php:14
 msgid ": Edit"
