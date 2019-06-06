@@ -18,7 +18,7 @@ if ($extdisplay) {
 } else {
 	$description = "";
 	$recording_id = "";
-	$allow_skip = "";
+	$allow_skip = 0;
 	$post_dest =  "";
 	$return_ivr = "";
 	$noanswer = "";
