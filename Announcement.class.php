@@ -137,12 +137,13 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 	}
 	public function addAnnouncement($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
 		$defaults = [
+			'recording_id' => ($recording_id) ? $recording_id : null,
 			'allow_skip' => ($allow_skip) ? 1 : 0,
 			'noanswer' => ($noanswer) ? 1 : 0,
 			'return_ivr' => ($return_ivr) ? 1 : 0,
 		];
 		foreach($defaults as $key => $value) {
-			if(is_null($$key)) {
+			if(!empty($$key)) {
 				$$key = $value;
 			}
 		}
@@ -169,12 +170,13 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 
 	public function editAnnouncement($announcement_id,$description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg){
 	$defaults = [
+		'recording_id' => ($recording_id) ? $recording_id : null,
 		'allow_skip' => ($allow_skip) ? 1 : 0,
 		'noanswer' => ($noanswer) ? 1 : 0,
 		'return_ivr' => ($return_ivr) ? 1 : 0,
 	];
 	foreach($defaults as $key => $value) {
-		if(is_null($$key)) {
+		if(!empty($$key)) {
 			$$key = $value;
 		}
 	}
