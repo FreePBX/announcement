@@ -143,7 +143,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 			'return_ivr' => ($return_ivr) ? 1 : 0,
 		];
 		foreach($defaults as $key => $value) {
-			if(!empty($$key)) {
+			if(empty($$key)) {
 				$$key = $value;
 			}
 		}
@@ -176,7 +176,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 		'return_ivr' => ($return_ivr) ? 1 : 0,
 	];
 	foreach($defaults as $key => $value) {
-		if(!empty($$key)) {
+		if(empty($$key)) {
 			$$key = $value;
 		}
 	}
