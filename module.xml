@@ -2,23 +2,12 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>15.0.3.10</version>
+	<version>16.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
-		*15.0.3.10* Bugfix/FREEI-890 fix xss bootstrap datatable issues 
-		*15.0.3.9* bump 
-		*15.0.3.8* Fixing FREEPBX-20080 
-		*15.0.3.7* Fixing FREEPBX-20080
-		*15.0.3.6* Better legacy restores
-		*15.0.3.5* Utilize restore data directly to the database
-		*15.0.3.4* FREEPBX-18866 
-		*15.0.3.3* Fixing FREEPBX-15198 Multiple announcements can be added with same Name issue. 
-		*15.0.3.2* Fix backup data format
-		*15.0.3* FREEPBX-17706 Wrong URL's in Used as Destination - Announcements 
-		*15.0.2* FREEPBX-17706 Wrong URL's in Used as Destination - Announcements 
-		*15.0.1* Forked from 13.0.7.1
+		*16.0.1alpha* 16.0.1 alpha release
 	</changelog>
 	<category>Applications</category>
 	<description>
@@ -50,6 +39,6 @@
 		</announcement>
 	</popovers>
 	<supported>
-		<version>15.0</version>
+		<version>16.0</version>
 	</supported>
 </module>
