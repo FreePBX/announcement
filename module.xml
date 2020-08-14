@@ -2,14 +2,16 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>16.0.1</version>
+	<version>16.0.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*16.0.2* Packaging of ver 16.0.2
 		*16.0.1alpha* 16.0.1 alpha release
 	</changelog>
 	<category>Applications</category>
+	<more-info>https://wiki.freepbx.org/display/FPG/Announcements+Module+User+Guide</more-info>
 	<description>
 		Plays back one of the system recordings (optionally allowing the user to skip it) and then goes to another destination.
 	</description>
