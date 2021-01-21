@@ -7,27 +7,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-19 19:40-0500\n"
-"PO-Revision-Date: 2018-03-15 17:13+0200\n"
-"Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
+"POT-Creation-Date: 2018-12-31 12:25+0530\n"
+"PO-Revision-Date: 2020-11-18 13:00+0000\n"
+"Last-Translator: Danilo Smaldone <dsmaldone@sangoma.com>\n"
 "Language-Team: Italian <http://weblate.freepbx.org/projects/freepbx/"
-"announcement/it_IT/>\n"
+"announcement/it/>\n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
 #: page.announcement.php:17
 msgid ": Add"
-msgstr "Aggiungere"
+msgstr ": Aggiungi"
 
 #: page.announcement.php:14
 msgid ": Edit"
-msgstr "Modifica"
+msgstr ": Modifica"
 
 #: views/grid.php:18
 msgid "Actions"
@@ -35,11 +35,11 @@ msgstr "Azioni"
 
 #: views/grid.php:11
 msgid "Add"
-msgstr "Aggiungere"
+msgstr "Aggiungi"
 
 #: views/rnav.php:3
 msgid "Add Announcements"
-msgstr "Aggiungi annunci"
+msgstr "Aggiungi Annunci"
 
 #: views/form.php:142
 msgid "Allow Skip"
@@ -47,13 +47,13 @@ msgstr "Permetti Salta"
 
 #: page.announcement.php:7
 msgid "Announcement"
-msgstr "Annunci"
+msgstr "Annuncio"
 
 #: assets/js/announcement.js:16
 msgid "Announcement Description Already Exist"
-msgstr ""
+msgstr "La descrizione dell'Annuncio già esiste"
 
-#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
+#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
 msgstr "Annuncio: %s"
@@ -66,7 +66,11 @@ msgstr "Annunci"
 msgid "Applications"
 msgstr "Applicazioni"
 
-#: Announcement.class.php:94
+#: install.php:90
+msgid "Checking if recordings need migration.."
+msgstr "Verifico se le registrazioni necessitano della migrazione .."
+
+#: Announcement.class.php:70
 msgid "Delete"
 msgstr "Elimina"
 
@@ -80,7 +84,7 @@ msgstr "Destinazione"
 
 #: views/form.php:223
 msgid "Destination after Playback"
-msgstr "Destinazione dopo la riproduzione"
+msgstr "Destinazione dopo Riproduzione"
 
 #: views/rnav.php:8
 msgid "Destinations"
@@ -88,7 +92,7 @@ msgstr "Destinazioni"
 
 #: views/form.php:72
 msgid "Disable"
-msgstr "Disattivato"
+msgstr "Disattiva"
 
 #: views/form.php:196
 msgid "Don't Answer Channel"
@@ -96,9 +100,7 @@ msgstr "Non Rispondere al Canale"
 
 #: views/form.php:157
 msgid "If the caller is allowed to press a key to skip the message."
-msgstr ""
-"Se si vuole permettere al chiamante di saltare il messaggio premendo un "
-"tasto."
+msgstr "Se il chiamante può premere un tasto per saltare il messaggio."
 
 #: views/form.php:184
 msgid ""
@@ -111,15 +113,15 @@ msgid ""
 "calls this announcement and this box is checked, it will return to that IVR "
 "which may not be the expected behavior."
 msgstr ""
-"Se questo annuncio proviene da un IVR e questo è impostato su sì,la "
-"destinazione sottostante verrà ignorata e ritornerà all' IVR chiamante. "
-"Altrimenti, la destinazione sottostante verrà presa. Non abilitare se non si "
-"usa questa modalità. <br>Il punto di ritorno dell'IVR sarà l'ultimo IVR "
-"nella catena di chiamata che è stato chiamato,quindi abilitare questa "
-"funzione solo se è necessario. Per esempio,se un IVR dirige una chiamata a "
-"un' altra destinazione che chiama questo annuncio e il campo è selezionato, "
-"la chiamata ritornerà all' IVR e questo può non essere il funzionamento "
-"atteso."
+"Se questo Annuncio proviene da un IVR e questo è impostato su Sì, la "
+"destinazione seguente verrà ignorata e tornerà invece all'IVR chiamante. In "
+"caso contrario, verrà usata la destinazione di seguito definitia. Non "
+"selezionare se non si utilizza in questa modalità. <br> La destionazione di "
+"ritorno dell'IVR sarà quella dell'ultimo IVR nella catena della chiamate, "
+"quindi fai attenzione a selezionarlo solo quando necessario. Ad esempio, se "
+"un IVR indirizza una chiamata ad una destinazione che al termine chiama "
+"questo annuncio e questa casella è selezionata, la stessa tornerà a "
+"quell'IVR e potrebbe non essere quindi il comportamento previsto."
 
 #: assets/js/announcement.js:6
 msgid "Invalid description specified"
@@ -131,22 +133,21 @@ msgid ""
 "this option there will be a short delay inserted after the message. If a "
 "longer delay is needed it should be incorporated into the recording."
 msgstr ""
-"Tasto da premere che permetterà al messaggio di essere riascoltato. Se "
-"scegli questa opzione ci sarà un leggero ritardò dopo il messaggio.Se si ha "
-"bisogno di un ritardo più lungo, questo dovrebbe essere incluso nella "
-"registrazione."
+"Tasto da premere per la ripetizione del messaggio. Se scegli questa opzione, "
+"verrà inserito una breve interruzione dopo il messaggio. Se è necessario un "
+"ritardo più lungo, questo va incorporarlo nella registrazione."
 
 #: views/rnav.php:2
 msgid "List Announcements"
-msgstr "Elenco annunci"
+msgstr "Elenco Annunci"
 
 #: views/form.php:59
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
-"Messaggio da riprodurre. <br> Per aggiungere altre registrazioni, utilizzare "
-"il menu \"System Recordings\" sopra"
+"Messaggio da riprodurre. <br>Per aggiungere ulteriori registrazioni "
+"utilizzare il MENU \"Registrazioni di sistema\" in alto"
 
 #: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "No"
@@ -158,15 +159,15 @@ msgstr "Nessuna destinazione"
 
 #: views/form.php:32
 msgid "None"
-msgstr "Nesunna"
+msgstr "Nessuna"
 
 #: announcement.i18n.php:8
 msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
-"Riproduce una delle registrazioni di sistema (facoltativamente consentendo "
-"all'utente di ignorarlo) e quindi passa a un'altra destinazione."
+"Riproduce una delle Registrazioni di Sistema (consentendo opzionalmente "
+"all'utente di saltarla) e quindi va a un'altra destinazione."
 
 #: views/form.php:45
 msgid "Recording"
@@ -176,9 +177,9 @@ msgstr "Registrazione"
 msgid "Repeat"
 msgstr "Ripeti"
 
-#: Announcement.class.php:99
+#: Announcement.class.php:75
 msgid "Reset"
-msgstr "Reset"
+msgstr "Ripristina"
 
 #: views/form.php:169
 msgid "Return to IVR"
@@ -193,59 +194,66 @@ msgid ""
 "using an announcement from an IVR or other sources that have already "
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
-"Impostare su Sì, per evitare che venga esplicitamente risposto al canale. Se "
-"selezionato, il messaggio verrà riprodotto e se il canale non ha già "
-"ricevuto risposta verrà consegnato come media iniziale se il canale lo "
-"supporta. Se non selezionato, il canale riceve una risposta seguita  da un "
-"ritardo di 1 secondo. Quando si usa un annuncio da un IVR o da altre fonti "
-"che hanno già risposto al canale, quel ritardo di 1 secondo poterebbe non "
-"essere desiderato."
+"Imposta su Si, per evitare che il canale sia risposto esplicitamente. Se "
+"selezionato, il messaggio verrà riprodotto e se il canale non è stato "
+"risposto, verrà riprodotto come Early Media se il canale lo supporta. Quando "
+"non è selezionato, il canale viene risposto e seguito da un ritardo di 1 "
+"secondo. Quando si utilizza un annuncio da un IVR o da altre sorgenti che "
+"hanno già risposto il canale, il ritardo di 1 secondo potrebbe non essere "
+"richiesto."
 
-#: Announcement.class.php:104
+#: Announcement.class.php:80
 msgid "Submit"
-msgstr "Invio"
+msgstr "Invia"
 
 #: views/form.php:103
 msgid "The name of this announcement."
-msgstr "Il nome di questo annuncio."
+msgstr "Il nome di questo Annuncio."
 
 #: views/form.php:235
 msgid "Where to send the caller after the announcement is played."
-msgstr "Dove inviare il chiamante dopo la riproduzione dell'annuncio."
+msgstr "Dove inviare il chiamante dopo la riproduzione dell'Annuncio."
 
 #: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
 msgstr "Si"
 
-#~ msgid "Checking if recordings need migration.."
-#~ msgstr "Controllo se le registrazioni hanno bisogno di una migrazione.."
+#: install.php:97
+msgid "adding recording_id field.."
+msgstr "sto aggiugendo il campo recording_id.."
 
-#~ msgid "adding recording_id field.."
-#~ msgstr "sto aggiugendo il campo recording_id.."
+#: install.php:147
+msgid "already migrated"
+msgstr "già migrato"
 
-#~ msgid "already migrated"
-#~ msgstr "già migrato"
+#: install.php:137
+msgid "dropping recording field.."
+msgstr "sto scartando il campo registrazione.."
 
-#~ msgid "dropping recording field.."
-#~ msgstr "sto scartando un campo registrazione"
+#: install.php:101 install.php:113 install.php:129
+msgid "fatal error"
+msgstr "errore fatale"
 
-#~ msgid "fatal error"
-#~ msgstr "errore fatale"
+#: install.php:109
+msgid "migrate to recording ids.."
+msgstr "migrazione su id registrazioni.."
 
-#~ msgid "migrate to recording ids.."
-#~ msgstr "migrazione su id registrazioni.."
+#: install.php:133
+#, php-format
+msgid "migrated %s entries"
+msgstr "migrate %s voci"
 
-#~ msgid "migrated %s entries"
-#~ msgstr "migrate %s voci"
+#: install.php:96
+msgid "migrating"
+msgstr "migrazione"
 
-#~ msgid "migrating"
-#~ msgstr "migrazione"
+#: install.php:141
+msgid "no recording field???"
+msgstr "nessun campo registrazione??"
 
-#~ msgid "no recording field???"
-#~ msgstr "nessun campo registrazione??"
-
-#~ msgid "ok"
-#~ msgstr "ok"
+#: install.php:104 install.php:143
+msgid "ok"
+msgstr "ok"
 
 #~ msgid "Add Announcement"
 #~ msgstr "Aggiungi Annuncio"
