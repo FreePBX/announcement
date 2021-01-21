@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-31 12:25+0530\n"
+"POT-Creation-Date: 2021-01-21 10:34+0000\n"
 "PO-Revision-Date: 2020-11-18 13:00+0000\n"
 "Last-Translator: Danilo Smaldone <dsmaldone@sangoma.com>\n"
 "Language-Team: Italian <http://weblate.freepbx.org/projects/freepbx/"
@@ -53,7 +53,7 @@ msgstr "Annuncio"
 msgid "Announcement Description Already Exist"
 msgstr "La descrizione dell'Annuncio già esiste"
 
-#: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
+#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
 msgstr "Annuncio: %s"
@@ -66,11 +66,7 @@ msgstr "Annunci"
 msgid "Applications"
 msgstr "Applicazioni"
 
-#: install.php:90
-msgid "Checking if recordings need migration.."
-msgstr "Verifico se le registrazioni necessitano della migrazione .."
-
-#: Announcement.class.php:70
+#: Announcement.class.php:94
 msgid "Delete"
 msgstr "Elimina"
 
@@ -177,7 +173,7 @@ msgstr "Registrazione"
 msgid "Repeat"
 msgstr "Ripeti"
 
-#: Announcement.class.php:75
+#: Announcement.class.php:99
 msgid "Reset"
 msgstr "Ripristina"
 
@@ -202,7 +198,7 @@ msgstr ""
 "hanno già risposto il canale, il ritardo di 1 secondo potrebbe non essere "
 "richiesto."
 
-#: Announcement.class.php:80
+#: Announcement.class.php:104
 msgid "Submit"
 msgstr "Invia"
 
@@ -218,42 +214,35 @@ msgstr "Dove inviare il chiamante dopo la riproduzione dell'Annuncio."
 msgid "Yes"
 msgstr "Si"
 
-#: install.php:97
-msgid "adding recording_id field.."
-msgstr "sto aggiugendo il campo recording_id.."
+#~ msgid "Checking if recordings need migration.."
+#~ msgstr "Verifico se le registrazioni necessitano della migrazione .."
 
-#: install.php:147
-msgid "already migrated"
-msgstr "già migrato"
+#~ msgid "adding recording_id field.."
+#~ msgstr "sto aggiugendo il campo recording_id.."
 
-#: install.php:137
-msgid "dropping recording field.."
-msgstr "sto scartando il campo registrazione.."
+#~ msgid "already migrated"
+#~ msgstr "già migrato"
 
-#: install.php:101 install.php:113 install.php:129
-msgid "fatal error"
-msgstr "errore fatale"
+#~ msgid "dropping recording field.."
+#~ msgstr "sto scartando il campo registrazione.."
 
-#: install.php:109
-msgid "migrate to recording ids.."
-msgstr "migrazione su id registrazioni.."
+#~ msgid "fatal error"
+#~ msgstr "errore fatale"
 
-#: install.php:133
-#, php-format
-msgid "migrated %s entries"
-msgstr "migrate %s voci"
+#~ msgid "migrate to recording ids.."
+#~ msgstr "migrazione su id registrazioni.."
 
-#: install.php:96
-msgid "migrating"
-msgstr "migrazione"
+#~ msgid "migrated %s entries"
+#~ msgstr "migrate %s voci"
 
-#: install.php:141
-msgid "no recording field???"
-msgstr "nessun campo registrazione??"
+#~ msgid "migrating"
+#~ msgstr "migrazione"
 
-#: install.php:104 install.php:143
-msgid "ok"
-msgstr "ok"
+#~ msgid "no recording field???"
+#~ msgstr "nessun campo registrazione??"
+
+#~ msgid "ok"
+#~ msgstr "ok"
 
 #~ msgid "Add Announcement"
 #~ msgstr "Aggiungi Annuncio"
