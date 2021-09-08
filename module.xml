@@ -2,11 +2,12 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>16.0.3</version>
+	<version>16.0.4</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*16.0.4* Packaging of ver 16.0.4
 		*16.0.3* Packaging of ver 16.0.3
 		*16.0.2* Packaging of ver 16.0.2
 		*16.0.1alpha* 16.0.1 alpha release
@@ -29,8 +30,8 @@
 	</table>
 </database>
 	<depends>
-		<version>13.0.191.12</version>
-		<module>recordings ge 3.3.8</module>
+		<version>16.0.10.27</version>
+		<module>recordings ge 16.0.4</module>
 	</depends>
 	<menuitems>
 		<announcement needsenginedb="yes">Announcements</announcement>
