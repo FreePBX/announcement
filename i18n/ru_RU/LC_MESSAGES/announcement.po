@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-31 12:25+0530\n"
-"PO-Revision-Date: 2021-11-17 06:24+0000\n"
+"PO-Revision-Date: 2021-11-19 16:01+0000\n"
 "Last-Translator: Dmitriy Kuznetsov <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "announcement/ru/>\n"
@@ -61,20 +61,20 @@ msgstr "Разрешить пропуситить"
 
 #: page.announcement.php:7
 msgid "Announcement"
-msgstr "Приветствие"
+msgstr "Объявление"
 
 #: assets/js/announcement.js:16
 msgid "Announcement Description Already Exist"
-msgstr "Описание приветствия уже существует"
+msgstr "Описание объявления уже существует"
 
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
-msgstr "Приветствия: %s"
+msgstr "Объявление: %s"
 
 #: announcement.i18n.php:4 announcement.i18n.php:10
 msgid "Announcements"
-msgstr "Приветствия"
+msgstr "Объявления"
 
 #: announcement.i18n.php:6
 msgid "Applications"
