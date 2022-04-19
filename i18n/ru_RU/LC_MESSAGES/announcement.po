@@ -1,29 +1,23 @@
 # This file is part of FreePBX.
-#
 #    FreePBX is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
 #    the Free Software Foundation, either version 2 of the License, or
 #    (at your option) any later version.
-#
 #    FreePBX is distributed in the hope that it will be useful,
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
-#
 #    You should have received a copy of the GNU General Public License
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
-#
 # Russian freePBX ver. translation
 # Copyright (c) 2006-2011 PostMet Corporation
-# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2011.
-#
-# Использовать iconv announcement.utf8.po -f UTF-8 -t ISO-8859-5 -o announcement.po
+# Alexander Kozyrev <ceo@postmet.com>, 2006-2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-31 12:25+0530\n"
-"PO-Revision-Date: 2021-11-23 07:00+0000\n"
+"POT-Creation-Date: 2018-06-29 17:59-0400\n"
+"PO-Revision-Date: 2022-04-19 05:12+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "announcement/ru/>\n"
@@ -57,11 +51,11 @@ msgstr "Добавить приветствие"
 
 #: views/form.php:142
 msgid "Allow Skip"
-msgstr "Разрешить пропуситить"
+msgstr "Разрешить пропустить"
 
 #: page.announcement.php:7
 msgid "Announcement"
-msgstr "Объявление"
+msgstr "Приветствие"
 
 #: assets/js/announcement.js:16
 msgid "Announcement Description Already Exist"
@@ -70,11 +64,11 @@ msgstr "Описание объявления уже существует"
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
-msgstr "Объявление: %s"
+msgstr "Приветствия: %s"
 
 #: announcement.i18n.php:4 announcement.i18n.php:10
 msgid "Announcements"
-msgstr "Объявления"
+msgstr "Приветствия"
 
 #: announcement.i18n.php:6
 msgid "Applications"
@@ -170,7 +164,7 @@ msgstr "Нет"
 
 #: assets/js/announcement.js:35
 msgid "No Destination"
-msgstr "Нет назначения"
+msgstr "Нет места назначения"
 
 #: views/form.php:32
 msgid "None"
@@ -219,7 +213,7 @@ msgstr ""
 
 #: Announcement.class.php:80
 msgid "Submit"
-msgstr "Применить"
+msgstr "Подтвердить"
 
 #: views/form.php:103
 msgid "The name of this announcement."
