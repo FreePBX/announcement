@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-29 17:59-0400\n"
-"PO-Revision-Date: 2022-04-19 05:12+0000\n"
+"PO-Revision-Date: 2022-04-21 09:00+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "announcement/ru/>\n"
@@ -213,7 +213,7 @@ msgstr ""
 
 #: Announcement.class.php:80
 msgid "Submit"
-msgstr "Подтвердить"
+msgstr "Принять"
 
 #: views/form.php:103
 msgid "The name of this announcement."
