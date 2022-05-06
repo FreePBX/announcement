@@ -39,8 +39,8 @@ if(function_exists('recordings_list')){
 	<div class="element-container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="row">
-					<div class="form-group">
+				<div class="">
+					<div class="form-group row">
 						<div class="col-md-3">
 							<label class="control-label" for="recording_id">'. _("Recording") .'</label>
 							<i class="fa fa-question-circle fpbx-help-icon" data-for="recording_id"></i>
@@ -85,8 +85,8 @@ foreach ($digits as $digit) {
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="row">
-				<div class="form-group">
+			<div class="">
+				<div class="form-group row">
 					<div class="col-md-3">
 						<label class="control-label" for="description"><?php echo _("Description") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="description"></i>
@@ -110,8 +110,8 @@ foreach ($digits as $digit) {
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="row">
-				<div class="form-group">
+			<div class="">
+				<div class="form-group row">
 					<div class="col-md-3">
 						<label class="control-label" for="repeat_msg"><?php echo _("Repeat") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="repeat_msg"></i>
@@ -136,8 +136,8 @@ foreach ($digits as $digit) {
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="row">
-				<div class="form-group">
+			<div class="">
+				<div class="form-group row">
 					<div class="col-md-3">
 						<label class="control-label" for="allow_skip"><?php echo _("Allow Skip") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="allow_skip"></i>
@@ -163,8 +163,8 @@ foreach ($digits as $digit) {
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="row">
-				<div class="form-group">
+			<div class="">
+				<div class="form-group row">
 					<div class="col-md-3">
 						<label class="control-label" for="return_ivr"><?php echo _("Return to IVR") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="return_ivr"></i>
@@ -190,8 +190,8 @@ foreach ($digits as $digit) {
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="row">
-				<div class="form-group">
+			<div class="">
+				<div class="form-group row">
 					<div class="col-md-3">
 						<label class="control-label" for="noanswer"><?php echo _("Don't Answer Channel") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="noanswer"></i>
@@ -217,8 +217,8 @@ foreach ($digits as $digit) {
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="row">
-				<div class="form-group">
+			<div class="">
+				<div class="form-group row">
 					<div class="col-md-3">
 						<label class="control-label" for="goto0"><?php echo _("Destination after Playback") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="goto0"></i>
