@@ -20,9 +20,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-31 12:25+0530\n"
-"PO-Revision-Date: 2019-03-28 11:29+0000\n"
-"Last-Translator: jeremie cattan <freepbx@famillecattan.com>\n"
-"Language-Team: French <http://*/projects/freepbx/announcement/fr/>\n"
+"PO-Revision-Date: 2023-01-14 18:00+0000\n"
+"Last-Translator:  peyre <contact@provya.fr>\n"
+"Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
+"announcement/fr/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,7 +49,7 @@ msgstr "Ajouter"
 
 #: views/rnav.php:3
 msgid "Add Announcements"
-msgstr "Ajouter une annonce"
+msgstr "Ajouter des annonces"
 
 #: views/form.php:142
 msgid "Allow Skip"
@@ -60,12 +61,12 @@ msgstr "Annonce"
 
 #: assets/js/announcement.js:16
 msgid "Announcement Description Already Exist"
-msgstr "Description de l'annonce existe déjà"
+msgstr "La description de l'annonce existe déjà"
 
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
-msgstr "Annonce: %s"
+msgstr "Annonce : %s"
 
 #: announcement.i18n.php:4 announcement.i18n.php:10
 msgid "Announcements"
@@ -156,8 +157,8 @@ msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
-"Message qui sera entendu.<br>Pour ajouter des enregistrements additionnels "
-"utiliser le menu \"Enregistrement systèmes\""
+"Message qui sera joué.<br>Pour ajouter des enregistrements additionnels, "
+"utiliser le menu \"Enregistrements systèmes\""
 
 #: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "No"
@@ -176,8 +177,8 @@ msgid ""
 "Plays back one of the system recordings (optionally allowing the user to "
 "skip it) and then goes to another destination."
 msgstr ""
-"Jouer un des enregistrements du système (en option permettant à "
-"l'utilisateur de le sauter) puis va vers une autre destination."
+"Joue un des enregistrements du système (en option permettant à l'utilisateur "
+"de le sauter) puis va vers une autre destination."
 
 #: views/form.php:45
 msgid "Recording"
@@ -193,7 +194,7 @@ msgstr "Réinitialiser"
 
 #: views/form.php:169
 msgid "Return to IVR"
-msgstr "Retourner à l'IVR"
+msgstr "Retourner au SVI"
 
 #: views/form.php:211
 msgid ""
