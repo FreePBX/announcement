@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-31 12:25+0530\n"
-"PO-Revision-Date: 2023-03-13 08:17+0000\n"
+"PO-Revision-Date: 2023-03-14 09:00+0000\n"
 "Last-Translator: Klemens Starybrat <klemens.starybrat@gmail.com>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
 "announcement/pl/>\n"
@@ -43,7 +43,7 @@ msgstr ": Edytuj"
 
 #: views/grid.php:18
 msgid "Actions"
-msgstr "Operacje"
+msgstr "Działania"
 
 #: views/grid.php:11
 msgid "Add"
