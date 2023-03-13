@@ -21,8 +21,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-31 12:25+0530\n"
-"PO-Revision-Date: 2017-02-07 19:01+0200\n"
-"Last-Translator: Michal <mboltz@tlen.pl>\n"
+"PO-Revision-Date: 2023-03-13 08:17+0000\n"
+"Last-Translator: Klemens Starybrat <klemens.starybrat@gmail.com>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
 "announcement/pl/>\n"
 "Language: pl\n"
@@ -31,7 +31,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: page.announcement.php:17
 msgid ": Add"
@@ -63,7 +63,7 @@ msgstr "Ogłoszenie"
 
 #: assets/js/announcement.js:16
 msgid "Announcement Description Already Exist"
-msgstr ""
+msgstr "Opis ogłoszenia już istnieje"
 
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
@@ -107,7 +107,6 @@ msgid "Disable"
 msgstr "Wyłącz"
 
 #: views/form.php:196
-#, fuzzy
 msgid "Don't Answer Channel"
 msgstr "Nie odbieraj kanału"
 
@@ -200,7 +199,6 @@ msgid "Return to IVR"
 msgstr "Zwróć do IVR"
 
 #: views/form.php:211
-#, fuzzy
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -209,12 +207,12 @@ msgid ""
 "using an announcement from an IVR or other sources that have already "
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
-"Ustaw na TAK, by utrzymać kanał by utrzymać odpowiedzi kanału. Kiedy "
-"zaznaczone, wiadomość będzie odegrana i jeżeli kanał nie już nie odpowiadał "
-"zostanie dostarczony jako wczesne media, jeżeli są one wspierane. Nie "
-"zaznaczony, kanał wyśle odpowiedź po 1 sekundowym opóźnieniu. Kiedy używane "
-"jako zapowiedź w IVR albo inne źródła, które już odpowiedziały, 1 sekundowe "
-"opóźnienie może być nie wskazane."
+"Ustaw na TAK, by by zapobiec odebraniu kanału (połączenia). Kiedy "
+"zaznaczone, wiadomość będzie odegrana i jeżeli kanał nie został wcześniej "
+"odebrany, zostanie dostarczona jako early media, jeżeli wspierane przez "
+"kanał. Kiedy nie zaznaczone, kanał zostanie odebrany po 1 sekundowym "
+"opóźnieniu. Kiedy ogłoszenie jest używane w IVR albo innym źródle, które już "
+"odebrało kanał, 1 sekundowe opóźnienie może być niewskazane."
 
 #: Announcement.class.php:80
 msgid "Submit"
@@ -241,9 +239,8 @@ msgid "already migrated"
 msgstr "już przeniesiono"
 
 #: install.php:137
-#, fuzzy
 msgid "dropping recording field.."
-msgstr "miejsce zrzutu nagrań.."
+msgstr "odrzucanie pola 'recording'.."
 
 #: install.php:101 install.php:113 install.php:129
 msgid "fatal error"
