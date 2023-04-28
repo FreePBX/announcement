@@ -49,7 +49,9 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 			$sql .= ' where announcement_id != :id ';
 		}
 		$sth = $this->db->prepare($sql);
-		$sth->execute(array(":id" => $id));
+		if ($id) {
+			$sth->execute(array(":id" => $id));
+		}
 		$res = $sth->fetchAll(\PDO::FETCH_COLUMN, 0);
 		return is_array($res)?$res:array();
 	}
