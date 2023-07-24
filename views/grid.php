@@ -5,7 +5,7 @@
 //
 ?>
 <script>
-	var destinations = <?php echo json_encode(FreePBX::Modules()->getDestinations())?>;
+	var destinations = <?php echo json_encode(FreePBX::Modules()->getDestinations(), JSON_THROW_ON_ERROR)?>;
 </script>
 <div id="toolbar-grid">
 	<a href="config.php?display=announcement&amp;view=form" class="btn btn-primary"><i class="fa fa-plus"></i> <?php echo _('Add')?></a>

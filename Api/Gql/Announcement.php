@@ -12,8 +12,7 @@ class Announcement extends Base {
 
 	public function mutationCallback() {
 		if($this->checkAllWriteScope()) {
-			return function() {
-				return [
+			return fn() => [
 					'addAnnouncement' => Relay::mutationWithClientMutationId([
 						'name' => 'addAnnouncement',
 						'description' => 'Add a new announcement to the system',
@@ -48,9 +47,7 @@ class Announcement extends Base {
 						'outputFields' => [
 							'announcement' => [
 								'type' => $this->typeContainer->get('announcement')->getObject(),
-								'resolve' => function ($payload) {
-									return $payload;
-								}
+								'resolve' => fn($payload) => $payload
 							]
 						],
 						'mutateAndGetPayload' => function ($input) {
@@ -111,9 +108,7 @@ class Announcement extends Base {
 						'outputFields' => [
 							'announcement' => [
 								'type' => $this->typeContainer->get('announcement')->getObject(),
-								'resolve' => function ($payload) {
-									return $payload;
-								}
+								'resolve' => fn($payload) => $payload
 							]
 						],
 						'mutateAndGetPayload' => function ($input) {
@@ -147,9 +142,7 @@ class Announcement extends Base {
 						'outputFields' => [
 							'deletedId' => [
 								'type' => Type::nonNull(Type::id()),
-								'resolve' => function ($payload) {
-									return $payload['id'];
-								}
+								'resolve' => fn($payload) => $payload['id']
 							]
 						],
 						'mutateAndGetPayload' => function ($input) {
@@ -158,21 +151,17 @@ class Announcement extends Base {
 						}
 					])
 				];
-			};
 		}
 	}
 
 	public function queryCallback() {
 		if($this->checkAllReadScope()) {
-			return function() {
-				return [
+			return fn() => [
 					'allAnnouncements' => [
 						'type' => $this->typeContainer->get('announcement')->getConnectionType(),
 						'description' => $this->description,
 						'args' => Relay::connectionArgs(),
-						'resolve' => function($root, $args) {
-							return Relay::connectionFromArray($this->freepbx->Announcement->getAnnouncements(), $args);
-						},
+						'resolve' => fn($root, $args) => Relay::connectionFromArray($this->freepbx->Announcement->getAnnouncements(), $args),
 					],
 					'announcement' => [
 						'type' => $this->typeContainer->get('announcement')->getObject(),
@@ -183,22 +172,17 @@ class Announcement extends Base {
 								'description' => 'Announcement ID',
 							]
 						],
-						'resolve' => function($root, $args) {
-							return $this->freepbx->Announcement->getAnnouncementByID($args['id']);
-						}
+						'resolve' => fn($root, $args) => $this->freepbx->Announcement->getAnnouncementByID($args['id'])
 					]
 				];
-			};
 		}
 	}
 
 	public function postInitializeTypes() {
 		$destinations = $this->typeContainer->get('destination');
-		$destinations->addTypeCallback(function() {
-			return [
+		$destinations->addTypeCallback(fn() => [
 				$this->typeContainer->get('announcement')->getObject()
-			];
-		});
+			]);
 
 		$destinations->addResolveTypeCallback(function($value, $context, $info) {
 			if (is_array($value) && $value['graphqlType'] == 'announcement') {
@@ -207,7 +191,7 @@ class Announcement extends Base {
 		});
 
 		$destinations->addResolveValueCallback(function($value) {
-			if (substr(trim($value),0,17) == 'app-announcement-') {
+			if (str_starts_with(trim($value), 'app-announcement-')) {
 				$exten = explode(',',$value);
 				$exten = substr($exten[0],17);
 				$out = $this->freepbx->Announcement->getAnnouncementByID($exten);
@@ -222,20 +206,15 @@ class Announcement extends Base {
 		$user = $this->typeContainer->create('announcement');
 		$user->setDescription('Plays back one of the system recordings (optionally allowing the user to skip it) and then goes to another destination');
 
-		$user->addInterfaceCallback(function() {
-			return [$this->getNodeDefinition()['nodeInterface']];
-		});
+		$user->addInterfaceCallback(fn() => [$this->getNodeDefinition()['nodeInterface']]);
 
 		$user->setGetNodeCallback(function($id) {
 			$item = $this->freepbx->Announcement->getAnnouncementByID($id);
 			return !empty($item) ? $item : null;
 		});
 
-		$user->addFieldCallback(function() {
-			return [
-				'id' => Relay::globalIdField('announcement', function($row) {
-					return $row['announcement_id'];
-				}),
+		$user->addFieldCallback(fn() => [
+				'id' => Relay::globalIdField('announcement', fn($row) => $row['announcement_id']),
 				'announcement_id' => [
 					'type' => Type::int(),
 					'description' => 'The announcement id'
@@ -263,36 +242,25 @@ class Announcement extends Base {
 				'destinationConnection' => [
 					'type' => $this->typeContainer->get('destination')->getObject(),
 					'description' => 'Where to send the caller after the announcement is played',
-					'resolve' => function($row) {
-						return $this->typeContainer->get('destination')->resolveValue($row['post_dest']);
-					}
+					'resolve' => fn($row) => $this->typeContainer->get('destination')->resolveValue($row['post_dest'])
 				]
-			];
-		});
+			]);
 
-		$user->setConnectionResolveNode(function ($edge) {
-			return $edge['node'];
-		});
+		$user->setConnectionResolveNode(fn($edge) => $edge['node']);
 
-		$user->setConnectionFields(function() {
-			return [
+		$user->setConnectionFields(fn() => [
 				'totalCount' => [
 					'type' => Type::int(),
-					'resolve' => function($value) {
-						return count($this->freepbx->Announcement->getAnnouncements());
-					}
+					'resolve' => fn($value) => is_countable($this->freepbx->Announcement->getAnnouncements()) ? count($this->freepbx->Announcement->getAnnouncements()) : 0
 				],
 				'announcements' => [
 					'type' => Type::listOf($this->typeContainer->get('announcement')->getObject()),
 					'description' => $this->description,
 					'resolve' => function($root, $args) {
-						$data = array_map(function($row){
-							return $row['node'];
-						},$root['edges']);
+						$data = array_map(fn($row) => $row['node'],$root['edges']);
 						return $data;
 					}
 				]
-			];
-		});
+			]);
 	}
 }

@@ -27,7 +27,7 @@ if ($extdisplay) {
 $recopts = '';
 if(function_exists('recordings_list')){
 	$tresults = recordings_list();
-	$default = (isset($recording_id) ? $recording_id : '');
+	$default = ($recording_id ?? '');
 	if (isset($tresults[0])) {
 		$recopts .= '<option value="">'._("None")."</option>\n";
 		foreach ($tresults as $tresult) {
@@ -63,7 +63,7 @@ if(function_exists('recordings_list')){
 	<!--END Recording-->
 	';
 }
-$default = isset($repeat_msg) ? $repeat_msg : '';
+$default = $repeat_msg ?? '';
 for ($i=0; $i<=9; $i++ ) {
 	$digits[]="$i";
 }
@@ -240,5 +240,5 @@ foreach ($digits as $digit) {
 
 </form>
 <script>
-var announcementnames = <?php print json_encode(\FreePBX::Announcement()->getALLAnnouncements($extdisplay)); ?>;
+var announcementnames = <?php print json_encode(\FreePBX::Announcement()->getALLAnnouncements($extdisplay), JSON_THROW_ON_ERROR); ?>;
 </script>

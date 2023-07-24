@@ -22,7 +22,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 	public function getAnnouncementByID($id) {
 		$sql = "SELECT announcement_id, description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg FROM announcement WHERE announcement_id = ?";
 		$sth = $this->db->prepare($sql);
-		$sth->execute(array($id));
+		$sth->execute([$id]);
 		return $sth->fetch(\PDO::FETCH_ASSOC);
 
 
@@ -40,7 +40,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 			}
 			return $row;
 		} else {
-			return array();
+			return [];
 		}
 	}
 	public function getALLAnnouncements($id) {
@@ -50,10 +50,10 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 		}
 		$sth = $this->db->prepare($sql);
 		if ($id) {
-			$sth->execute(array(":id" => $id));
+			$sth->execute([":id" => $id]);
 		}
 		$res = $sth->fetchAll(\PDO::FETCH_COLUMN, 0);
-		return is_array($res)?$res:array();
+		return is_array($res)?$res:[];
 	}
 
 	/**
@@ -62,13 +62,10 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 	 * @param string $setting Settings to return back
 	 */
 	public function ajaxRequest($req, $setting){
-		switch($req){
-			case "getData":
-			case "getJSON":
-				return true;
-			default:
-				return false;
-		}
+		return match ($req) {
+      "getData", "getJSON" => true,
+      default => false,
+  };
 	}
 
 	/**
@@ -87,30 +84,14 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 	}
 
 	public function getActionBar($request) {
-		$buttons = array();
+		$buttons = [];
 		if($request['display'] == 'announcement'){
-			$buttons = array(
-				'delete' => array(
-					'name' => 'delete',
-					'id' => 'delete',
-					'value' => _('Delete')
-				),
-				'reset' => array(
-					'name' => 'reset',
-					'id' => 'reset',
-					'value' => _('Reset')
-				),
-				'submit' => array(
-					'name' => 'submit',
-					'id' => 'submit',
-					'value' => _('Submit')
-				)
-			);
+			$buttons = ['delete' => ['name' => 'delete', 'id' => 'delete', 'value' => _('Delete')], 'reset' => ['name' => 'reset', 'id' => 'reset', 'value' => _('Reset')], 'submit' => ['name' => 'submit', 'id' => 'submit', 'value' => _('Submit')]];
 			if (empty($request['extdisplay'])) {
 				unset($buttons['delete']);
 			}
 			if(empty($_GET['view']) || $_GET['view'] != 'form'){
-				$buttons = array();
+				$buttons = [];
 			}
 		}
 		return $buttons;
@@ -139,14 +120,14 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 	}
 	public function addAnnouncement($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
 		$defaults = [
-			'recording_id' => ($recording_id) ? $recording_id : null,
+			'recording_id' => $recording_id ?: null,
 			'allow_skip' => ($allow_skip) ? 1 : 0,
 			'noanswer' => ($noanswer) ? 1 : 0,
 			'return_ivr' => ($return_ivr) ? 1 : 0,
 		];
 		foreach($defaults as $key => $value) {
-			if(empty($$key)) {
-				$$key = $value;
+			if(empty(${$key})) {
+				${$key} = $value;
 			}
 		}
 		$sql = "INSERT INTO announcement  (description, recording_id, allow_skip, post_dest, return_ivr, noanswer, repeat_msg) VALUES  (:description, :recording_id, :allow_skip, :post_dest, :return_ivr, :noanswer, :repeat_msg)";
@@ -172,14 +153,14 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 
 	public function editAnnouncement($announcement_id,$description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg){
 	$defaults = [
-		'recording_id' => ($recording_id) ? $recording_id : null,
+		'recording_id' => $recording_id ?: null,
 		'allow_skip' => ($allow_skip) ? 1 : 0,
 		'noanswer' => ($noanswer) ? 1 : 0,
 		'return_ivr' => ($return_ivr) ? 1 : 0,
 	];
 	foreach($defaults as $key => $value) {
-		if(empty($$key)) {
-			$$key = $value;
+		if(empty(${$key})) {
+			${$key} = $value;
 		}
 	}
 	$sql = "UPDATE announcement SET
@@ -206,18 +187,18 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 	}
 	public function doConfigPageInit($page) {
 		$request = $_REQUEST;
-		$action = isset($request['action']) ? $request['action'] :  '';
+		$action = $request['action'] ?? '';
 		if (isset($request['delete'])){
 			$action = 'delete';
 		}
-		$announcement_id = isset($request['announcement_id']) ? $request['announcement_id'] :  false;
-		$description = isset($request['description']) ? $request['description'] :  '';
-		$recording_id = isset($request['recording_id']) ? $request['recording_id'] :  '';
-		$allow_skip = isset($request['allow_skip']) ? $request['allow_skip'] :  0;
-		$return_ivr = isset($request['return_ivr']) ? $request['return_ivr'] :  0;
-		$noanswer = isset($request['noanswer']) ? $request['noanswer'] :  0;
-		$post_dest = isset($request['post_dest']) ? $request['post_dest'] :  '';
-		$repeat_msg = isset($request['repeat_msg']) ? $request['repeat_msg'] :  '';
+		$announcement_id = $request['announcement_id'] ?? false;
+		$description = $request['description'] ?? '';
+		$recording_id = $request['recording_id'] ?? '';
+		$allow_skip = $request['allow_skip'] ?? 0;
+		$return_ivr = $request['return_ivr'] ?? 0;
+		$noanswer = $request['noanswer'] ?? 0;
+		$post_dest = $request['post_dest'] ?? '';
+		$repeat_msg = $request['repeat_msg'] ?? '';
 
 		if (isset($request['goto0']) && $request['goto0']) {
 			// 'ringgroup_post_dest'  'ivr_post_dest' or whatever
@@ -245,7 +226,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 
 	public function getRightNav($request) {
 		if(isset($_GET['view']) && $_GET['view'] == 'form'){
-		    return load_view(__DIR__."/views/rnav.php",array());
+		    return load_view(__DIR__."/views/rnav.php",[]);
 		}
 	}
 }

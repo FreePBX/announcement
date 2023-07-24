@@ -24,7 +24,7 @@ class Restore Extends Base\RestoreBase{
 		$sth = $this->FreePBX->Database->prepare("INSERT INTO announcement (`announcement_id`, `description`, `recording_id`, `allow_skip`, `post_dest`, `return_ivr`, `noanswer`, `repeat_msg`) VALUES (:announcement_id, :description, :recording_id, :allow_skip, :post_dest, :return_ivr, :noanswer, :repeat_msg)");
 		foreach ($configs as $config) {
 			foreach ($fields as $field) {
-				isset($config[$field])? $$field = $config[$field] : $$field = null;
+				isset($config[$field])? ${$field} = $config[$field] : ${$field} = null;
 			}
 			$sth->execute([
 				":announcement_id" => $config['announcement_id'],

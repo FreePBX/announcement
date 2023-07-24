@@ -16,7 +16,7 @@ switch($view){
 		}else{
 			$heading .= _(": Add");
 		}
-		$content = load_view(__DIR__.'/views/form.php', array('request' => $request, 'amp_conf' => $amp_conf));
+		$content = load_view(__DIR__.'/views/form.php', ['request' => $request, 'amp_conf' => $amp_conf]);
 	break;
 	default:
 		$content = load_view(__DIR__.'/views/grid.php');

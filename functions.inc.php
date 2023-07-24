@@ -4,32 +4,30 @@
 // vim: set ai ts=4 sw=4 ft=php:
 function announcement_destinations() {
 	// return an associative array with destination and description
-	$extens = array();
+	$extens = [];
 	foreach (announcement_list() as $row) {
-		$extens[] = array('destination' => 'app-announcement-'.$row['announcement_id'].',s,1', 'description' => $row[1]);
+		$extens[] = ['destination' => 'app-announcement-'.$row['announcement_id'].',s,1', 'description' => $row[1]];
 	}
 	return $extens;
 }
 
 function announcement_getdest($exten) {
-	return array('app-announcement-'.$exten.',s,1');
+	return ['app-announcement-'.$exten.',s,1'];
 }
 
 function announcement_getdestinfo($dest) {
 	global $active_modules;
 
-	if (substr(trim($dest),0,17) == 'app-announcement-') {
-		$exten = explode(',',$dest);
+	if (str_starts_with(trim((string) $dest), 'app-announcement-')) {
+		$exten = explode(',',(string) $dest);
 		$exten = substr($exten[0],17);
 
 		$thisexten = announcement_get($exten);
 		if (empty($thisexten)) {
-			return array();
+			return [];
 		} else {
-			$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
-			return array('description' => sprintf(_("Announcement: %s"),$thisexten['description']),
-			             'edit_url' => 'config.php?display=announcement&view=form&type='.$type.'&extdisplay='.urlencode($exten),
-								  );
+			$type = $active_modules['announcement']['type'] ?? 'setup';
+			return ['description' => sprintf(_("Announcement: %s"),$thisexten['description']), 'edit_url' => 'config.php?display=announcement&view=form&type='.$type.'&extdisplay='.urlencode($exten)];
 		}
 	} else {
 		return false;
@@ -37,18 +35,16 @@ function announcement_getdestinfo($dest) {
 }
 
 function announcement_recordings_usage($recording_id) {
-	global $active_modules;
+	$usage_arr = [];
+ global $active_modules;
 
 	$results = sql("SELECT announcement_id, description FROM announcement WHERE recording_id = '$recording_id'","getAll",DB_FETCHMODE_ASSOC);
 	if (empty($results)) {
-		return array();
+		return [];
 	} else {
-		$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
+		$type = $active_modules['announcement']['type'] ?? 'setup';
 		foreach ($results as $result) {
-			$usage_arr[] = array(
-				'url_query' => 'config.php?display=announcement&type='.$type.'&extdisplay='.urlencode($result['announcement_id']),
-				'description' => sprintf(_("Announcement: %s"),$result['description']),
-			);
+			$usage_arr[] = ['url_query' => 'config.php?display=announcement&type='.$type.'&extdisplay='.urlencode((string) $result['announcement_id']), 'description' => sprintf(_("Announcement: %s"),$result['description'])];
 		}
 		return $usage_arr;
 	}
@@ -113,7 +109,7 @@ function announcement_get_config($engine) {
 function announcement_list() {
 	$results = \FreePBX::Announcement()->getAnnouncements();
 
-	$results = is_array($results) ? $results : array();
+	$results = is_array($results) ? $results : [];
 	// Make array backward compatible.
 	$count = 0;
 	foreach($results as $item) {
@@ -140,7 +136,7 @@ function announcement_get($announcement_id) {
 		}
 		return $row;
 	} else {
-		return array();
+		return [];
 	}
 }
 
@@ -162,7 +158,7 @@ function announcement_edit($announcement_id, $description, $recording_id, $allow
 function announcement_check_destinations($dest=true) {
 	global $active_modules;
 
-	$destlist = array();
+	$destlist = [];
 	if (is_array($dest) && empty($dest)) {
 		return $destlist;
 	}
@@ -172,16 +168,12 @@ function announcement_check_destinations($dest=true) {
 	}
 	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
 
-	$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
+	$type = $active_modules['announcement']['type'] ?? 'setup';
 
 	foreach ($results as $result) {
 		$thisdest = $result['post_dest'];
 		$thisid   = $result['announcement_id'];
-		$destlist[] = array(
-			'dest' => $thisdest,
-			'description' => sprintf(_("Announcement: %s"),$result['description']),
-			'edit_url' => 'config.php?display=announcement&view=form&type='.$type.'&extdisplay='.urlencode($thisid),
-		);
+		$destlist[] = ['dest' => $thisdest, 'description' => sprintf(_("Announcement: %s"),$result['description']), 'edit_url' => 'config.php?display=announcement&view=form&type='.$type.'&extdisplay='.urlencode((string) $thisid)];
 	}
 	return $destlist;
 }
