@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-19 19:40-0500\n"
+"POT-Creation-Date: 2023-07-31 05:47+0000\n"
 "PO-Revision-Date: 2017-02-07 19:01+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
@@ -65,7 +65,7 @@ msgstr "Ogłoszenie"
 msgid "Announcement Description Already Exist"
 msgstr ""
 
-#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
+#: functions.inc.php:30 functions.inc.php:47 functions.inc.php:176
 #, php-format
 msgid "Announcement: %s"
 msgstr "Ogłoszenie: %s"
@@ -78,7 +78,7 @@ msgstr "Ogłoszenia"
 msgid "Applications"
 msgstr "Aplikacje"
 
-#: Announcement.class.php:94
+#: Announcement.class.php:89
 msgid "Delete"
 msgstr "Usuń"
 
@@ -187,7 +187,7 @@ msgstr "Nagranie"
 msgid "Repeat"
 msgstr "Powtórz"
 
-#: Announcement.class.php:99
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr "wyzerować"
 
@@ -212,7 +212,7 @@ msgstr ""
 "jako zapowiedź w IVR albo inne źródła, które już odpowiedziały, 1 sekundowe "
 "opóźnienie może być nie wskazane."
 
-#: Announcement.class.php:104
+#: Announcement.class.php:89
 msgid "Submit"
 msgstr "zgłoś"
 

@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for announcement
-# Copyright (C) 2008-2022 Sangoma Technologies, Inc.
+# Copyright (C) 2008-2023 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-23 04:32+0000\n"
+"POT-Creation-Date: 2023-07-31 05:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,8 +51,8 @@ msgid "Announcement Description Already Exist"
 msgstr ""
 
 #: functions.inc.php:30
-#: functions.inc.php:50
-#: functions.inc.php:182
+#: functions.inc.php:47
+#: functions.inc.php:176
 #, php-format
 msgid "Announcement: %s"
 msgstr ""
@@ -66,7 +66,7 @@ msgstr ""
 msgid "Applications"
 msgstr ""
 
-#: Announcement.class.php:94
+#: Announcement.class.php:89
 msgid "Delete"
 msgstr ""
 
@@ -160,7 +160,7 @@ msgstr ""
 msgid "Repeat"
 msgstr ""
 
-#: Announcement.class.php:99
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr ""
 
@@ -178,7 +178,7 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:104
+#: Announcement.class.php:89
 msgid "Submit"
 msgstr ""
 

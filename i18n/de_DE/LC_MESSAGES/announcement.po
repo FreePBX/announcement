@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-19 19:40-0500\n"
+"POT-Creation-Date: 2023-07-31 05:47+0000\n"
 "PO-Revision-Date: 2017-03-03 15:54+0200\n"
 "Last-Translator: hammer125 <auswertung@aon.at>\n"
 "Language-Team: German <http://weblate.freepbx.org/projects/freepbx/"
@@ -53,7 +53,7 @@ msgstr "Ansage"
 msgid "Announcement Description Already Exist"
 msgstr ""
 
-#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
+#: functions.inc.php:30 functions.inc.php:47 functions.inc.php:176
 #, php-format
 msgid "Announcement: %s"
 msgstr "Ansage: %s"
@@ -66,7 +66,7 @@ msgstr "Ansagen"
 msgid "Applications"
 msgstr "Anwendungen"
 
-#: Announcement.class.php:94
+#: Announcement.class.php:89
 msgid "Delete"
 msgstr "Löschen"
 
@@ -175,7 +175,7 @@ msgstr "Aufnahme"
 msgid "Repeat"
 msgstr "Wiederholen"
 
-#: Announcement.class.php:99
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr "Zurücksetzen"
 
@@ -201,7 +201,7 @@ msgstr ""
 "geantwortet haben, verwendet wird, dann wir die 1-Sekunden-Verzögerung "
 "vielleicht nicht erwünscht sein."
 
-#: Announcement.class.php:104
+#: Announcement.class.php:89
 msgid "Submit"
 msgstr "Bestätigen"
 

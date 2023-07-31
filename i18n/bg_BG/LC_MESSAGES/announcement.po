@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-19 19:40-0500\n"
+"POT-Creation-Date: 2023-07-31 05:47+0000\n"
 "PO-Revision-Date: 2016-08-04 19:36+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/"
@@ -64,7 +64,7 @@ msgstr "Съобщение"
 msgid "Announcement Description Already Exist"
 msgstr ""
 
-#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
+#: functions.inc.php:30 functions.inc.php:47 functions.inc.php:176
 #, php-format
 msgid "Announcement: %s"
 msgstr "Съобщение: %s"
@@ -77,7 +77,7 @@ msgstr "Съобщения"
 msgid "Applications"
 msgstr "Приложения"
 
-#: Announcement.class.php:94
+#: Announcement.class.php:89
 msgid "Delete"
 msgstr "Изтрий"
 
@@ -183,7 +183,7 @@ msgstr "Запис"
 msgid "Repeat"
 msgstr "Повтори"
 
-#: Announcement.class.php:99
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr "Изчисти"
 
@@ -207,7 +207,7 @@ msgstr ""
 "използвате съобщение в IVR или други източници които вече са отворили "
 "канала, тази 1 секунда пауза може да е нежелана."
 
-#: Announcement.class.php:104
+#: Announcement.class.php:89
 msgid "Submit"
 msgstr "Приеми"
 

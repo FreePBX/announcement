@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-21 10:34+0000\n"
+"POT-Creation-Date: 2023-07-31 05:47+0000\n"
 "PO-Revision-Date: 2020-11-18 13:00+0000\n"
 "Last-Translator: Danilo Smaldone <dsmaldone@sangoma.com>\n"
 "Language-Team: Italian <http://weblate.freepbx.org/projects/freepbx/"
@@ -53,7 +53,7 @@ msgstr "Annuncio"
 msgid "Announcement Description Already Exist"
 msgstr "La descrizione dell'Annuncio già esiste"
 
-#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
+#: functions.inc.php:30 functions.inc.php:47 functions.inc.php:176
 #, php-format
 msgid "Announcement: %s"
 msgstr "Annuncio: %s"
@@ -66,7 +66,7 @@ msgstr "Annunci"
 msgid "Applications"
 msgstr "Applicazioni"
 
-#: Announcement.class.php:94
+#: Announcement.class.php:89
 msgid "Delete"
 msgstr "Elimina"
 
@@ -173,7 +173,7 @@ msgstr "Registrazione"
 msgid "Repeat"
 msgstr "Ripeti"
 
-#: Announcement.class.php:99
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr "Ripristina"
 
@@ -198,7 +198,7 @@ msgstr ""
 "hanno già risposto il canale, il ritardo di 1 secondo potrebbe non essere "
 "richiesto."
 
-#: Announcement.class.php:104
+#: Announcement.class.php:89
 msgid "Submit"
 msgstr "Invia"
 

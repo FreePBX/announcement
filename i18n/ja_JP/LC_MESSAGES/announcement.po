@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-19 19:40-0500\n"
+"POT-Creation-Date: 2023-07-31 05:47+0000\n"
 "PO-Revision-Date: 2015-10-27 13:03+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -81,7 +81,7 @@ msgstr "アナウンス:"
 msgid "Announcement Description Already Exist"
 msgstr ""
 
-#: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
+#: functions.inc.php:30 functions.inc.php:47 functions.inc.php:176
 #, php-format
 msgid "Announcement: %s"
 msgstr "アナウンス: %s"
@@ -94,7 +94,7 @@ msgstr "アナウンス"
 msgid "Applications"
 msgstr "アプリケーション"
 
-#: Announcement.class.php:94
+#: Announcement.class.php:89
 msgid "Delete"
 msgstr "削除"
 
@@ -195,7 +195,7 @@ msgstr "録音"
 msgid "Repeat"
 msgstr "リピート"
 
-#: Announcement.class.php:99
+#: Announcement.class.php:89
 msgid "Reset"
 msgstr "リセット"
 
@@ -217,7 +217,7 @@ msgstr ""
 "先を経由した場合は1秒が空くと音の流れが不自然になる可能性がありますので注意が"
 "必要です。"
 
-#: Announcement.class.php:104
+#: Announcement.class.php:89
 msgid "Submit"
 msgstr "送信"
 
