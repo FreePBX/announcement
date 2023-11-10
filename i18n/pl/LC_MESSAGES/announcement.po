@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-31 12:25+0530\n"
-"PO-Revision-Date: 2023-10-24 14:00+0000\n"
+"PO-Revision-Date: 2023-11-11 14:00+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
 "announcement/pl/>\n"
@@ -51,7 +51,7 @@ msgstr "Dodaj"
 
 #: views/rnav.php:3
 msgid "Add Announcements"
-msgstr "Dodaj ogłoszenie"
+msgstr "Dodaj zapowiedź"
 
 #: views/form.php:142
 msgid "Allow Skip"
@@ -59,7 +59,7 @@ msgstr "Pozwól pominąć"
 
 #: page.announcement.php:7
 msgid "Announcement"
-msgstr "Ogłoszenie"
+msgstr "Zapowiedź"
 
 #: assets/js/announcement.js:16
 msgid "Announcement Description Already Exist"
@@ -68,11 +68,11 @@ msgstr "Opis zapowiedzi już istnieje"
 #: functions.inc.php:31 functions.inc.php:51 functions.inc.php:226
 #, php-format
 msgid "Announcement: %s"
-msgstr "Ogłoszenie: %s"
+msgstr "Zapowiedź: %s"
 
 #: announcement.i18n.php:4 announcement.i18n.php:10
 msgid "Announcements"
-msgstr "Ogłoszenia"
+msgstr "Zapowiedzi"
 
 #: announcement.i18n.php:6
 msgid "Applications"
@@ -151,7 +151,7 @@ msgstr ""
 
 #: views/rnav.php:2
 msgid "List Announcements"
-msgstr "Lista ogłoszeń"
+msgstr "Lista zapowiedzi"
 
 #: views/form.php:59
 msgid ""
@@ -211,7 +211,7 @@ msgstr ""
 "zaznaczone, wiadomość będzie odegrana i jeżeli kanał nie został wcześniej "
 "odebrany, zostanie dostarczona jako early media, jeżeli wspierane przez "
 "kanał. Kiedy nie zaznaczone, kanał zostanie odebrany po 1 sekundowym "
-"opóźnieniu. Kiedy ogłoszenie jest używane w IVR albo innym źródle, które już "
+"opóźnieniu. Kiedy zapowiedź jest używana w IVR albo innym źródle, które już "
 "odebrało kanał, 1 sekundowe opóźnienie może być niewskazane."
 
 #: Announcement.class.php:80
@@ -220,11 +220,11 @@ msgstr "zgłoś"
 
 #: views/form.php:103
 msgid "The name of this announcement."
-msgstr "Nazwa tego ogłoszenia."
+msgstr "Nazwa tej zapowiedzi."
 
 #: views/form.php:235
 msgid "Where to send the caller after the announcement is played."
-msgstr "Gdzie wysłać dzwoniącego po odtworzeniu ogłoszenia."
+msgstr "Gdzie wysłać dzwoniącego po odtworzeniu zapowiedzi."
 
 #: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
