@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-31 12:25+0530\n"
-"PO-Revision-Date: 2023-11-11 14:00+0000\n"
+"PO-Revision-Date: 2023-11-26 20:00+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
 "announcement/pl/>\n"
@@ -96,7 +96,7 @@ msgstr "Miejsce docelowe"
 
 #: views/form.php:223
 msgid "Destination after Playback"
-msgstr "Miejsce docelowe po odtworzeniu nagranego dźwięku"
+msgstr "Miejsce docelowe po odtworzeniu"
 
 #: views/rnav.php:8
 msgid "Destinations"
@@ -112,7 +112,7 @@ msgstr "Nie odbieraj kanału"
 
 #: views/form.php:157
 msgid "If the caller is allowed to press a key to skip the message."
-msgstr "Jeżeli dzwoniący może nacisnąć przycisk by pominąć wiadomość."
+msgstr "Czy dzwoniący może pominąć komunikat przez wciśnięcie klawisza."
 
 #: views/form.php:184
 msgid ""
@@ -158,8 +158,8 @@ msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
-"Wiadomość do odtworzenia. <br> Aby dodać dodatkowe nagrania użyć \"Systemu "
-"Nagrywania\" w MENU powyżej"
+"Wybierz nagranie do odtworzenia. <br> Dodaj nagrania w module \"Nagrania "
+"Systemowe\" w MENU Admin."
 
 #: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "No"
@@ -188,7 +188,7 @@ msgstr "Nagranie"
 
 #: views/form.php:116
 msgid "Repeat"
-msgstr "Powtórz"
+msgstr "Powtarzaj"
 
 #: Announcement.class.php:75
 msgid "Reset"
@@ -196,7 +196,7 @@ msgstr "wyzerować"
 
 #: views/form.php:169
 msgid "Return to IVR"
-msgstr "Zwróć do IVR"
+msgstr "Powróć do IVR"
 
 #: views/form.php:211
 msgid ""
