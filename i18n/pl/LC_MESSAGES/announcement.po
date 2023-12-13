@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-31 12:25+0530\n"
-"PO-Revision-Date: 2023-11-26 20:00+0000\n"
+"PO-Revision-Date: 2023-12-14 08:18+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
 "announcement/pl/>\n"
@@ -216,7 +216,7 @@ msgstr ""
 
 #: Announcement.class.php:80
 msgid "Submit"
-msgstr "zgłoś"
+msgstr "Zatwierdź"
 
 #: views/form.php:103
 msgid "The name of this announcement."
