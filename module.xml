@@ -2,12 +2,12 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>17.0.1</version>
+	<version>17.0.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
-		*17.0.1alpha* 17.0.1 alpha release
+		*17.0.2* 17.0.2 release
 	</changelog>
 	<category>Applications</category>
 	<more-info>https://wiki.freepbx.org/display/FPG/Announcements+Module+User+Guide</more-info>
@@ -27,8 +27,8 @@
 	</table>
 </database>
 	<depends>
-		<version>16.0.10.27</version>
-		<module>recordings ge 16.0.4</module>
+		<version>17.0.1</version>
+		<module>recordings ge 17.0.1</module>
 	</depends>
 	<menuitems>
 		<announcement needsenginedb="yes">Announcements</announcement>
