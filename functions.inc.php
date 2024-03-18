@@ -146,17 +146,17 @@ function announcement_get($announcement_id) {
 
 function announcement_add($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
 	FreePBX::Modules()->deprecatedFunction();
-	return FreePBX::Announcement()->addAnnoucement($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
+	return FreePBX::Announcement()->addAnnouncement($description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 }
 
 function announcement_delete($announcement_id) {
 	FreePBX::Modules()->deprecatedFunction();
-	return FreePBX::Announcement()->deleteAnnoucement($announcement_id);
+	return FreePBX::Announcement()->deleteAnnouncement($announcement_id);
 }
 
 function announcement_edit($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg) {
 	FreePBX::Modules()->deprecatedFunction();
-	return FreePBX::Announcement()->editAnnoucement($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
+	return FreePBX::Announcement()->editAnnouncement($announcement_id, $description, $recording_id, $allow_skip, $post_dest, $return_ivr, $noanswer, $repeat_msg);
 }
 
 function announcement_check_destinations($dest=true) {
