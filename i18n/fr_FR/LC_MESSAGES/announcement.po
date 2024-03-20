@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-19 19:40-0500\n"
+"POT-Creation-Date: 2024-03-20 03:14+0000\n"
 "PO-Revision-Date: 2017-12-01 18:25+0200\n"
 "Last-Translator: CATTAN Jérémie <jeremie@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -67,14 +67,6 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr "Annonce: %s"
-
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Announcements"
-msgstr "Annonces"
-
-#: announcement.i18n.php:6
-msgid "Applications"
-msgstr "Applications"
 
 #: Announcement.class.php:94
 msgid "Delete"
@@ -168,14 +160,6 @@ msgstr "Pas de destination"
 msgid "None"
 msgstr "Aucun"
 
-#: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"Jouer un des enregistrements du système (en option permettant à "
-"l'utilisateur de le sauter) puis va vers une autre destination."
-
 #: views/form.php:45
 msgid "Recording"
 msgstr "Enregistrement"
@@ -225,6 +209,19 @@ msgstr ""
 #: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
 msgstr "Oui"
+
+#~ msgid "Announcements"
+#~ msgstr "Annonces"
+
+#~ msgid "Applications"
+#~ msgstr "Applications"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "Jouer un des enregistrements du système (en option permettant à "
+#~ "l'utilisateur de le sauter) puis va vers une autre destination."
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "Teste si les enregistrements ont besoin d'être migrés..."

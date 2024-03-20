@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-19 19:40-0500\n"
+"POT-Creation-Date: 2024-03-20 03:14+0000\n"
 "PO-Revision-Date: 2017-03-24 13:34+0200\n"
 "Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -68,14 +68,6 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr "Anuncio: %s"
-
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Announcements"
-msgstr "Anuncios"
-
-#: announcement.i18n.php:6
-msgid "Applications"
-msgstr "Aplicações"
 
 #: Announcement.class.php:94
 msgid "Delete"
@@ -169,14 +161,6 @@ msgstr "Sem Destino"
 msgid "None"
 msgstr "Nenhum"
 
-#: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"Reproduz uma das gravações do sistema (opcionalmente permitindo que o "
-"usuário pule-a) e, em seguida, vai para outro destino."
-
 #: views/form.php:45
 msgid "Recording"
 msgstr "Gravação"
@@ -224,6 +208,19 @@ msgstr "Onde enviar o usuário chamador após o anúncio ser reproduzido."
 #: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
 msgstr "Sim"
+
+#~ msgid "Announcements"
+#~ msgstr "Anuncios"
+
+#~ msgid "Applications"
+#~ msgstr "Aplicações"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "Reproduz uma das gravações do sistema (opcionalmente permitindo que o "
+#~ "usuário pule-a) e, em seguida, vai para outro destino."
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "Checando se a gravação precisa migrar..."

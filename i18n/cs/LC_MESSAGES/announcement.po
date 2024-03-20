@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-19 19:40-0500\n"
+"POT-Creation-Date: 2024-03-20 03:14+0000\n"
 "PO-Revision-Date: 2018-05-29 11:18+0000\n"
 "Last-Translator: Petr Varvarovsky <petrv@atlantis.cz>\n"
 "Language-Team: Czech <http://*/projects/freepbx/announcement/cs/>\n"
@@ -56,14 +56,6 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr "Oznámení: %s"
-
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Announcements"
-msgstr "Oznámení"
-
-#: announcement.i18n.php:6
-msgid "Applications"
-msgstr "Aplikace"
 
 #: Announcement.class.php:94
 msgid "Delete"
@@ -155,14 +147,6 @@ msgstr "Není cíl"
 msgid "None"
 msgstr "Žádný"
 
-#: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"Přehrává jednu ze systémových nahrávek (volitelně umožňuje uživateli "
-"přeskočit) a přejde do jiného cíle."
-
 #: views/form.php:45
 msgid "Recording"
 msgstr "Nahrávání"
@@ -210,6 +194,19 @@ msgstr "Kde přesměrovat hovor po přehrání oznámení."
 #: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
 msgstr "Ano"
+
+#~ msgid "Announcements"
+#~ msgstr "Oznámení"
+
+#~ msgid "Applications"
+#~ msgstr "Aplikace"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "Přehrává jednu ze systémových nahrávek (volitelně umožňuje uživateli "
+#~ "přeskočit) a přejde do jiného cíle."
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "Kontrola, jestli nahrávky potřebuji migraci."

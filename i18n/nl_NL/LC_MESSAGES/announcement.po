@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-19 19:40-0500\n"
+"POT-Creation-Date: 2024-03-20 03:14+0000\n"
 "PO-Revision-Date: 2016-06-01 07:34+0200\n"
 "Last-Translator: Hans <info@hansvaneijsden.nl>\n"
 "Language-Team: Dutch <http://weblate.freepbx.org/projects/freepbx/"
@@ -57,14 +57,6 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr "Aankondiging: %s"
-
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Announcements"
-msgstr "Aankondigingen"
-
-#: announcement.i18n.php:6
-msgid "Applications"
-msgstr "Aplicatie's"
 
 #: Announcement.class.php:94
 msgid "Delete"
@@ -146,14 +138,6 @@ msgstr ""
 msgid "None"
 msgstr "Geen"
 
-#: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"Speelt een van de systeem opnames af (met mogelijkheid om over te slaan) en "
-"gaat dan naar een andere bestemming."
-
 #: views/form.php:45
 msgid "Recording"
 msgstr "Opname"
@@ -195,6 +179,19 @@ msgstr ""
 #: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
 msgstr "Ja"
+
+#~ msgid "Announcements"
+#~ msgstr "Aankondigingen"
+
+#~ msgid "Applications"
+#~ msgstr "Aplicatie's"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "Speelt een van de systeem opnames af (met mogelijkheid om over te slaan) "
+#~ "en gaat dan naar een andere bestemming."
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "Controleren of opnames moeten worden gemigreerd.."

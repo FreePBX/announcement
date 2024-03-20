@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-19 19:40-0500\n"
+"POT-Creation-Date: 2024-03-20 03:14+0000\n"
 "PO-Revision-Date: 2016-04-15 12:21+0000\n"
 "Last-Translator: Weblate Admin <admin@postmet.com>\n"
 "Language-Team: Russian <https://weblate.postmet.com/projects/freepbx13/"
@@ -71,14 +71,6 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr "Приветствия: %s"
-
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Announcements"
-msgstr "Приветствия"
-
-#: announcement.i18n.php:6
-msgid "Applications"
-msgstr "Приложения"
 
 #: Announcement.class.php:94
 msgid "Delete"
@@ -172,14 +164,6 @@ msgstr ""
 msgid "None"
 msgstr "Нет"
 
-#: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"Воспроизводится одна из системных аудиозаписей (опционально можно разрешить "
-"абоненту пропускать её) и затем вызов направляется по назначению."
-
 #: views/form.php:45
 msgid "Recording"
 msgstr "Запись"
@@ -228,6 +212,20 @@ msgstr "Дальнейший пункт обработки вызова посл
 #: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
 msgstr "Да"
+
+#~ msgid "Announcements"
+#~ msgstr "Приветствия"
+
+#~ msgid "Applications"
+#~ msgstr "Приложения"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "Воспроизводится одна из системных аудиозаписей (опционально можно "
+#~ "разрешить абоненту пропускать её) и затем вызов направляется по "
+#~ "назначению."
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "Проверка нуждаются ли записи в перемещении.."

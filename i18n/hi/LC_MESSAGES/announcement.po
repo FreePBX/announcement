@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-06 18:48+0530\n"
+"POT-Creation-Date: 2024-03-20 03:14+0000\n"
 "PO-Revision-Date: 2019-05-08 20:11+0000\n"
 "Last-Translator: Andrew Nagy <andrew.nagy@the159.com>\n"
 "Language-Team: Hindi <http://*/projects/freepbx/announcement/hi/>\n"
@@ -55,14 +55,6 @@ msgstr ""
 #: functions.inc.php:30 functions.inc.php:50 functions.inc.php:182
 #, php-format
 msgid "Announcement: %s"
-msgstr ""
-
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Announcements"
-msgstr ""
-
-#: announcement.i18n.php:6
-msgid "Applications"
 msgstr ""
 
 #: Announcement.class.php:94
@@ -140,12 +132,6 @@ msgstr ""
 
 #: views/form.php:32
 msgid "None"
-msgstr ""
-
-#: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
 msgstr ""
 
 #: views/form.php:45

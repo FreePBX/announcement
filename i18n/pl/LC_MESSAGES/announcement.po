@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-19 19:40-0500\n"
+"POT-Creation-Date: 2024-03-20 03:14+0000\n"
 "PO-Revision-Date: 2017-02-07 19:01+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
@@ -69,14 +69,6 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr "Ogłoszenie: %s"
-
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Announcements"
-msgstr "Ogłoszenia"
-
-#: announcement.i18n.php:6
-msgid "Applications"
-msgstr "Aplikacje"
 
 #: Announcement.class.php:94
 msgid "Delete"
@@ -170,15 +162,6 @@ msgstr "Brak miejsca docelowego"
 msgid "None"
 msgstr "Żaden"
 
-#: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"Odtwarzanie jednego z nagrań systemowych (opcjonalnie zezwalając "
-"użytkownikowi na pominięcie go) następnie przechodzi do innego miejsca "
-"docelowego."
-
 #: views/form.php:45
 msgid "Recording"
 msgstr "Nagranie"
@@ -227,6 +210,20 @@ msgstr "Gdzie wysłać dzwoniącego po odtworzeniu ogłoszenia."
 #: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
 msgstr "Tak"
+
+#~ msgid "Announcements"
+#~ msgstr "Ogłoszenia"
+
+#~ msgid "Applications"
+#~ msgstr "Aplikacje"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "Odtwarzanie jednego z nagrań systemowych (opcjonalnie zezwalając "
+#~ "użytkownikowi na pominięcie go) następnie przechodzi do innego miejsca "
+#~ "docelowego."
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "Sprawdzanie czy nagrania potrzebują migracji.."

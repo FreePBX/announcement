@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-21 10:34+0000\n"
+"POT-Creation-Date: 2024-03-20 03:14+0000\n"
 "PO-Revision-Date: 2020-11-18 13:00+0000\n"
 "Last-Translator: Danilo Smaldone <dsmaldone@sangoma.com>\n"
 "Language-Team: Italian <http://weblate.freepbx.org/projects/freepbx/"
@@ -57,14 +57,6 @@ msgstr "La descrizione dell'Annuncio già esiste"
 #, php-format
 msgid "Announcement: %s"
 msgstr "Annuncio: %s"
-
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Announcements"
-msgstr "Annunci"
-
-#: announcement.i18n.php:6
-msgid "Applications"
-msgstr "Applicazioni"
 
 #: Announcement.class.php:94
 msgid "Delete"
@@ -157,14 +149,6 @@ msgstr "Nessuna destinazione"
 msgid "None"
 msgstr "Nessuna"
 
-#: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"Riproduce una delle Registrazioni di Sistema (consentendo opzionalmente "
-"all'utente di saltarla) e quindi va a un'altra destinazione."
-
 #: views/form.php:45
 msgid "Recording"
 msgstr "Registrazione"
@@ -213,6 +197,19 @@ msgstr "Dove inviare il chiamante dopo la riproduzione dell'Annuncio."
 #: views/form.php:147 views/form.php:174 views/form.php:201
 msgid "Yes"
 msgstr "Si"
+
+#~ msgid "Announcements"
+#~ msgstr "Annunci"
+
+#~ msgid "Applications"
+#~ msgstr "Applicazioni"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "Riproduce una delle Registrazioni di Sistema (consentendo opzionalmente "
+#~ "all'utente di saltarla) e quindi va a un'altra destinazione."
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "Verifico se le registrazioni necessitano della migrazione .."
