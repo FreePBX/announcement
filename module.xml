@@ -10,7 +10,7 @@
 		*17.0.2.1* 17.0.2.1 release
 	</changelog>
 	<category>Applications</category>
-	<more-info>https://wiki.freepbx.org/display/FPG/Announcements+Module+User+Guide</more-info>
+	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/21233847/PBX+GUI+-+Announcements+Module</more-info>
 	<description>
 		Plays back one of the system recordings (optionally allowing the user to skip it) and then goes to another destination.
 	</description>
