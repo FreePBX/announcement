@@ -16,6 +16,7 @@
 # Russian freePBX ver. translation
 # Copyright (c) 2006-2011 PostMet Corporation
 # Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2011.
+# Частное лицо Виктор Борисенко <victor.borisenko81@gmail.com>, <victor.borisenko81@yandex.ru>, 2025г.
 #
 # Использовать iconv announcement.utf8.po -f UTF-8 -t ISO-8859-5 -o announcement.po
 msgid ""
@@ -24,7 +25,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-31 05:47+0000\n"
 "PO-Revision-Date: 2016-04-15 12:21+0000\n"
-"Last-Translator: Weblate Admin <admin@postmet.com>\n"
+"Last-Translator: Виктор Борисенко <victor.borisenko81@gmail.com>\n"
 "Language-Team: Russian <https://weblate.postmet.com/projects/freepbx13/"
 "announcement/ru_RU/>\n"
 "Language: ru_RU\n"
@@ -65,7 +66,7 @@ msgstr "Приветствие"
 
 #: assets/js/announcement.js:16
 msgid "Announcement Description Already Exist"
-msgstr ""
+msgstr "Описание Приветствия уже существует"
 
 #: functions.inc.php:30 functions.inc.php:47 functions.inc.php:176
 #, php-format
@@ -166,7 +167,7 @@ msgstr "Нет"
 
 #: assets/js/announcement.js:35
 msgid "No Destination"
-msgstr ""
+msgstr "Нет назначения"
 
 #: views/form.php:32
 msgid "None"
@@ -190,7 +191,7 @@ msgstr "Повторить"
 
 #: Announcement.class.php:89
 msgid "Reset"
-msgstr "Сброс"
+msgstr "Сброс настроек"
 
 #: views/form.php:169
 msgid "Return to IVR"
