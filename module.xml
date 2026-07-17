@@ -2,12 +2,12 @@
 	<rawname>announcement</rawname>
 	<repo>standard</repo>
 	<name>Announcements</name>
-	<version>17.0.2.1</version>
+	<version>18.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
-		*17.0.2.1* 17.0.2.1 release
+		*18.0.1* initial release
 	</changelog>
 	<category>Applications</category>
 	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/21233847/PBX+GUI+-+Announcements+Module</more-info>
@@ -27,8 +27,8 @@
 	</table>
 </database>
 	<depends>
-		<version>17.0.1</version>
-		<module>recordings ge 17.0.1</module>
+		<version>18.0</version>
+		<module>recordings ge 18.0.1</module>
 	</depends>
 	<menuitems>
 		<announcement needsenginedb="yes">Announcements</announcement>
@@ -40,6 +40,6 @@
 		</announcement>
 	</popovers>
 	<supported>
-		<version>17.0</version>
+		<version>18.0</version>
 	</supported>
 </module>
