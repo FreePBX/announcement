@@ -2,7 +2,7 @@
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2015 Sangoma Technologies.
 //
-extract($request);
+$extdisplay = $request['extdisplay'] ?? '';
 $action = "add";
 if ($extdisplay) {
 	// load
@@ -25,6 +25,7 @@ if ($extdisplay) {
 	$repeat_msg = "";
 }
 $recopts = '';
+$recordinghtml = '';
 if(function_exists('recordings_list')){
 	$tresults = recordings_list();
 	$default = ($recording_id ?? '');
@@ -64,6 +65,7 @@ if(function_exists('recordings_list')){
 	';
 }
 $default = $repeat_msg ?? '';
+$digits = [];
 for ($i=0; $i<=9; $i++ ) {
 	$digits[]="$i";
 }
