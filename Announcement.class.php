@@ -6,6 +6,8 @@ namespace FreePBX\modules;
 class Announcement extends \FreePBX_Helpers implements \BMO {
 
 	private $freepbx;
+	private \FreePBX\Database $db;
+
 	public function __construct($freepbx = null) {
 		parent::__construct($freepbx);
 		$this->freepbx = $freepbx;
@@ -51,6 +53,8 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 		$sth = $this->db->prepare($sql);
 		if ($id) {
 			$sth->execute([":id" => $id]);
+		} else {
+			$sth->execute();
 		}
 		$res = $sth->fetchAll(\PDO::FETCH_COLUMN, 0);
 		return is_array($res)?$res:[];
@@ -61,7 +65,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 	 * @param string $req     The request type
 	 * @param string $setting Settings to return back
 	 */
-	public function ajaxRequest($req, $setting){
+	public function ajaxRequest($req, &$setting){
 		return match ($req) {
       "getData", "getJSON" => true,
       default => false,
@@ -73,7 +77,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 	 */
 	public function ajaxHandler(){
 		$request = $_REQUEST;
-		switch($request['command']){
+		switch($request['command'] ?? ''){
 			case "getData":
 			break;
 			case "getJSON":
@@ -202,7 +206,7 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 
 		if (isset($request['goto0']) && $request['goto0']) {
 			// 'ringgroup_post_dest'  'ivr_post_dest' or whatever
-			$post_dest = $request[ $request['goto0'].'0' ];
+			$post_dest = $request[$request['goto0'].'0'] ?? '';
 		}
 
 
@@ -216,8 +220,10 @@ class Announcement extends \FreePBX_Helpers implements \BMO {
 				needreload();
 			break;
 			case 'delete':
-				$this->deleteAnnouncement($_REQUEST['extdisplay']);
-				needreload();
+				if (isset($request['extdisplay'])) {
+					$this->deleteAnnouncement($request['extdisplay']);
+					needreload();
+				}
 			break;
 			default:
 			break;

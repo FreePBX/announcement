@@ -127,8 +127,8 @@ class Announcement extends Base {
 								}
 							}
 
-							$id = $this->freepbx->Announcement->editAnnouncement($input['announcement_id'],$input['description'], $input['recording_id'], $input['allow_skip'], $input['post_dest'], $input['return_ivr'], $input['noanswer'], $input['repeat_msg']);
-							return $this->freepbx->Announcement->getAnnouncementByID($id);
+							$this->freepbx->Announcement->editAnnouncement($input['announcement_id'],$input['description'], $input['recording_id'], $input['allow_skip'], $input['post_dest'], $input['return_ivr'], $input['noanswer'], $input['repeat_msg']);
+							return $this->freepbx->Announcement->getAnnouncementByID($input['announcement_id']) ?: null;
 						}
 					]),
 					'removeAnnouncement' => Relay::mutationWithClientMutationId([
@@ -172,7 +172,7 @@ class Announcement extends Base {
 								'description' => 'Announcement ID',
 							]
 						],
-						'resolve' => fn($root, $args) => $this->freepbx->Announcement->getAnnouncementByID($args['id'])
+						'resolve' => fn($root, $args) => isset($args['id']) ? ($this->freepbx->Announcement->getAnnouncementByID($args['id']) ?: null) : null
 					]
 				];
 		}
@@ -185,13 +185,13 @@ class Announcement extends Base {
 			]);
 
 		$destinations->addResolveTypeCallback(function($value, $context, $info) {
-			if (is_array($value) && $value['graphqlType'] == 'announcement') {
+			if (is_array($value) && ($value['graphqlType'] ?? null) === 'announcement') {
 				return $this->typeContainer->get('announcement')->getObject();
 			}
 		});
 
 		$destinations->addResolveValueCallback(function($value) {
-			if (str_starts_with(trim($value), 'app-announcement-')) {
+			if (is_string($value) && str_starts_with(trim($value), 'app-announcement-')) {
 				$exten = explode(',',$value);
 				$exten = substr($exten[0],17);
 				$out = $this->freepbx->Announcement->getAnnouncementByID($exten);
