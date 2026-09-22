@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 05:47+0000\n"
+"POT-Creation-Date: 2026-09-22 06:51-0400\n"
 "PO-Revision-Date: 2015-09-01 03:13+0200\n"
 "Last-Translator: Vidar Skjelanger <vidar@unimicro.no>\n"
 "Language-Team: Norwegian Bokmål <http://weblate.freepbx.org/projects/freepbx/"
@@ -41,7 +41,7 @@ msgstr ""
 msgid "Add Announcements"
 msgstr ""
 
-#: views/form.php:142
+#: views/form.php:144
 msgid "Allow Skip"
 msgstr "Tillat å hoppe over"
 
@@ -58,19 +58,11 @@ msgstr ""
 msgid "Announcement: %s"
 msgstr "Kunngjøring: %s"
 
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Announcements"
-msgstr "Kunngjøringer"
-
-#: announcement.i18n.php:6
-msgid "Applications"
-msgstr "Anvendelser"
-
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Delete"
 msgstr "Slett"
 
-#: views/form.php:91 views/grid.php:16
+#: views/form.php:93 views/grid.php:16
 msgid "Description"
 msgstr "Beskrivelse"
 
@@ -78,7 +70,7 @@ msgstr "Beskrivelse"
 msgid "Destination"
 msgstr ""
 
-#: views/form.php:223
+#: views/form.php:225
 msgid "Destination after Playback"
 msgstr ""
 
@@ -86,20 +78,20 @@ msgstr ""
 msgid "Destinations"
 msgstr ""
 
-#: views/form.php:72
+#: views/form.php:74
 msgid "Disable"
 msgstr "Deaktiver"
 
-#: views/form.php:196
+#: views/form.php:198
 msgid "Don't Answer Channel"
 msgstr "Ikke besvar kanalen"
 
-#: views/form.php:157
+#: views/form.php:159
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 "Om den som ringer skal kunne trykke en tast for å hoppe over kunngjøringen."
 
-#: views/form.php:184
+#: views/form.php:186
 msgid ""
 "If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -115,7 +107,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "Ugyldig beskrivelse angitt"
 
-#: views/form.php:130
+#: views/form.php:132
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -129,13 +121,13 @@ msgstr ""
 msgid "List Announcements"
 msgstr ""
 
-#: views/form.php:59
+#: views/form.php:60
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
 
-#: views/form.php:149 views/form.php:176 views/form.php:203
+#: views/form.php:151 views/form.php:178 views/form.php:205
 msgid "No"
 msgstr ""
 
@@ -143,35 +135,27 @@ msgstr ""
 msgid "No Destination"
 msgstr ""
 
-#: views/form.php:32
+#: views/form.php:33
 msgid "None"
 msgstr "Ingen"
 
-#: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"Spiller av en av systeminnspillingene (eventuelt med mulighet for å hoppe "
-"over) og fortsetter så til en annen destinasjon."
-
-#: views/form.php:45
+#: views/form.php:46
 msgid "Recording"
 msgstr "Lydopptak"
 
-#: views/form.php:116
+#: views/form.php:118
 msgid "Repeat"
 msgstr "Gjenta"
 
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:169
+#: views/form.php:171
 msgid "Return to IVR"
 msgstr "Returnere til IVR"
 
-#: views/form.php:211
+#: views/form.php:213
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -181,21 +165,34 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:103
+#: views/form.php:105
 msgid "The name of this announcement."
 msgstr ""
 
-#: views/form.php:235
+#: views/form.php:237
 msgid "Where to send the caller after the announcement is played."
 msgstr ""
 
-#: views/form.php:147 views/form.php:174 views/form.php:201
+#: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "Yes"
 msgstr ""
+
+#~ msgid "Announcements"
+#~ msgstr "Kunngjøringer"
+
+#~ msgid "Applications"
+#~ msgstr "Anvendelser"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "Spiller av en av systeminnspillingene (eventuelt med mulighet for å hoppe "
+#~ "over) og fortsetter så til en annen destinasjon."
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "Kontrollerer om lydopptak trenger å migreres..."

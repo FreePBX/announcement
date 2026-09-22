@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 05:47+0000\n"
+"POT-Creation-Date: 2026-09-22 06:51-0400\n"
 "PO-Revision-Date: 2015-11-16 07:30+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -55,7 +55,7 @@ msgstr "添加"
 msgid "Add Announcements"
 msgstr "添加语音播报"
 
-#: views/form.php:142
+#: views/form.php:144
 msgid "Allow Skip"
 msgstr "允许跳过"
 
@@ -72,19 +72,11 @@ msgstr ""
 msgid "Announcement: %s"
 msgstr "公告：%s"
 
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Announcements"
-msgstr "公告"
-
-#: announcement.i18n.php:6
-msgid "Applications"
-msgstr "应用"
-
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Delete"
 msgstr "删除"
 
-#: views/form.php:91 views/grid.php:16
+#: views/form.php:93 views/grid.php:16
 msgid "Description"
 msgstr "描述"
 
@@ -92,7 +84,7 @@ msgstr "描述"
 msgid "Destination"
 msgstr "目的地"
 
-#: views/form.php:223
+#: views/form.php:225
 msgid "Destination after Playback"
 msgstr "回放后目的地"
 
@@ -100,19 +92,19 @@ msgstr "回放后目的地"
 msgid "Destinations"
 msgstr "目的地"
 
-#: views/form.php:72
+#: views/form.php:74
 msgid "Disable"
 msgstr "禁用"
 
-#: views/form.php:196
+#: views/form.php:198
 msgid "Don't Answer Channel"
 msgstr "不要接听频道"
 
-#: views/form.php:157
+#: views/form.php:159
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr "设定主叫是否可以按下某键以跳过消息。"
 
-#: views/form.php:184
+#: views/form.php:186
 msgid ""
 "If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -132,7 +124,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "指定了无效的描述"
 
-#: views/form.php:130
+#: views/form.php:132
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -145,14 +137,14 @@ msgstr ""
 msgid "List Announcements"
 msgstr "语音播报列表"
 
-#: views/form.php:59
+#: views/form.php:60
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
 msgstr ""
 "将播放语音。<br>支持更多语音录音文件，请使用 \"System Recordings\" 菜单"
 
-#: views/form.php:149 views/form.php:176 views/form.php:203
+#: views/form.php:151 views/form.php:178 views/form.php:205
 msgid "No"
 msgstr ""
 
@@ -160,33 +152,27 @@ msgstr ""
 msgid "No Destination"
 msgstr ""
 
-#: views/form.php:32
+#: views/form.php:33
 msgid "None"
 msgstr "无"
 
-#: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr "回放其中一个系统录音（可跳过），然后路由到另外一个目的地。"
-
-#: views/form.php:45
+#: views/form.php:46
 msgid "Recording"
 msgstr "录音"
 
-#: views/form.php:116
+#: views/form.php:118
 msgid "Repeat"
 msgstr "重复"
 
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Reset"
 msgstr "重新设置"
 
-#: views/form.php:169
+#: views/form.php:171
 msgid "Return to IVR"
 msgstr "返回至IVR"
 
-#: views/form.php:211
+#: views/form.php:213
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -196,21 +182,32 @@ msgid ""
 "answered the channel, that 1 second delay may not be desired."
 msgstr ""
 
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Submit"
 msgstr "提交"
 
-#: views/form.php:103
+#: views/form.php:105
 msgid "The name of this announcement."
 msgstr "语音播报名称。"
 
-#: views/form.php:235
+#: views/form.php:237
 msgid "Where to send the caller after the announcement is played."
 msgstr "语音播报后发送此呼叫的目的地。"
 
-#: views/form.php:147 views/form.php:174 views/form.php:201
+#: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "Yes"
 msgstr ""
+
+#~ msgid "Announcements"
+#~ msgstr "公告"
+
+#~ msgid "Applications"
+#~ msgstr "应用"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr "回放其中一个系统录音（可跳过），然后路由到另外一个目的地。"
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "检查是否需要迁移录音。。"

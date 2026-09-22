@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - test module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 05:47+0000\n"
+"POT-Creation-Date: 2026-09-22 06:51-0400\n"
 "PO-Revision-Date: 2016-12-09 05:23+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -40,7 +40,7 @@ msgstr "Agregar"
 msgid "Add Announcements"
 msgstr "Agregar Anuncios"
 
-#: views/form.php:142
+#: views/form.php:144
 msgid "Allow Skip"
 msgstr "Permitir saltar"
 
@@ -57,19 +57,11 @@ msgstr ""
 msgid "Announcement: %s"
 msgstr "Anuncio: %s"
 
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Announcements"
-msgstr "Anuncios"
-
-#: announcement.i18n.php:6
-msgid "Applications"
-msgstr "Aplicaciones"
-
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Delete"
 msgstr "Eliminar"
 
-#: views/form.php:91 views/grid.php:16
+#: views/form.php:93 views/grid.php:16
 msgid "Description"
 msgstr "Descripción"
 
@@ -77,7 +69,7 @@ msgstr "Descripción"
 msgid "Destination"
 msgstr "Destino"
 
-#: views/form.php:223
+#: views/form.php:225
 msgid "Destination after Playback"
 msgstr "Destino luego de Reproducir"
 
@@ -85,20 +77,20 @@ msgstr "Destino luego de Reproducir"
 msgid "Destinations"
 msgstr "Destinos"
 
-#: views/form.php:72
+#: views/form.php:74
 msgid "Disable"
 msgstr "Deshabilitar"
 
-#: views/form.php:196
+#: views/form.php:198
 msgid "Don't Answer Channel"
 msgstr "No contestar canal"
 
-#: views/form.php:157
+#: views/form.php:159
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 "Indica si el llamante puede presionar una tecla para saltarse el mensaje."
 
-#: views/form.php:184
+#: views/form.php:186
 msgid ""
 "If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -123,7 +115,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "La descripción especificada no es válida"
 
-#: views/form.php:130
+#: views/form.php:132
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -138,7 +130,7 @@ msgstr ""
 msgid "List Announcements"
 msgstr "Listar Anuncios"
 
-#: views/form.php:59
+#: views/form.php:60
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
@@ -146,7 +138,7 @@ msgstr ""
 "Mensaje a ser reproducido. <br>Para agregar grabaciones adicionales use el "
 "MENU \"Grabaciones del Sistema\" arriba"
 
-#: views/form.php:149 views/form.php:176 views/form.php:203
+#: views/form.php:151 views/form.php:178 views/form.php:205
 msgid "No"
 msgstr "No"
 
@@ -154,35 +146,27 @@ msgstr "No"
 msgid "No Destination"
 msgstr "No Destino"
 
-#: views/form.php:32
+#: views/form.php:33
 msgid "None"
 msgstr "ninguno"
 
-#: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"Reproduce una de las grabaciones del sistema (permitiendo opcionalmente al "
-"usuario saltárselo) y luego se va a otro destino."
-
-#: views/form.php:45
+#: views/form.php:46
 msgid "Recording"
 msgstr "Grabación"
 
-#: views/form.php:116
+#: views/form.php:118
 msgid "Repeat"
 msgstr "Repetir"
 
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: views/form.php:169
+#: views/form.php:171
 msgid "Return to IVR"
 msgstr "Volver al IVR"
 
-#: views/form.php:211
+#: views/form.php:213
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -198,21 +182,34 @@ msgstr ""
 "retardo de 1 segundo. Al utilizar un anuncio de un IVR u otras fuentes que "
 "ya han respondido el canal, ese1 segundo  de retraso puede no ser  deseado."
 
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Submit"
 msgstr "Enviar"
 
-#: views/form.php:103
+#: views/form.php:105
 msgid "The name of this announcement."
 msgstr "El nombre de este anuncio."
 
-#: views/form.php:235
+#: views/form.php:237
 msgid "Where to send the caller after the announcement is played."
 msgstr "Donde enviar al llamante despues de que el anuncio sea reproducido."
 
-#: views/form.php:147 views/form.php:174 views/form.php:201
+#: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "Yes"
 msgstr "Si"
+
+#~ msgid "Announcements"
+#~ msgstr "Anuncios"
+
+#~ msgid "Applications"
+#~ msgstr "Aplicaciones"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "Reproduce una de las grabaciones del sistema (permitiendo opcionalmente "
+#~ "al usuario saltárselo) y luego se va a otro destino."
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "Comprobando si las grabaciones necesitan migrarse..."

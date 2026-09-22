@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 05:47+0000\n"
+"POT-Creation-Date: 2026-09-22 06:51-0400\n"
 "PO-Revision-Date: 2016-04-15 12:21+0000\n"
 "Last-Translator: Weblate Admin <admin@postmet.com>\n"
 "Language-Team: Russian <https://weblate.postmet.com/projects/freepbx13/"
@@ -31,8 +31,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.4\n"
 
 #: page.announcement.php:17
@@ -55,7 +55,7 @@ msgstr "Добавить"
 msgid "Add Announcements"
 msgstr "Добавить приветствие"
 
-#: views/form.php:142
+#: views/form.php:144
 msgid "Allow Skip"
 msgstr "Разрешить пропуситить"
 
@@ -72,19 +72,11 @@ msgstr ""
 msgid "Announcement: %s"
 msgstr "Приветствия: %s"
 
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Announcements"
-msgstr "Приветствия"
-
-#: announcement.i18n.php:6
-msgid "Applications"
-msgstr "Приложения"
-
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Delete"
 msgstr "Удалить"
 
-#: views/form.php:91 views/grid.php:16
+#: views/form.php:93 views/grid.php:16
 msgid "Description"
 msgstr "Описание"
 
@@ -92,7 +84,7 @@ msgstr "Описание"
 msgid "Destination"
 msgstr "Назначение"
 
-#: views/form.php:223
+#: views/form.php:225
 msgid "Destination after Playback"
 msgstr "Направление после проигрывания"
 
@@ -100,21 +92,21 @@ msgstr "Направление после проигрывания"
 msgid "Destinations"
 msgstr "Направления"
 
-#: views/form.php:72
+#: views/form.php:74
 msgid "Disable"
 msgstr "Выключить"
 
-#: views/form.php:196
+#: views/form.php:198
 msgid "Don't Answer Channel"
 msgstr "Не отвечать в канал"
 
-#: views/form.php:157
+#: views/form.php:159
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr ""
 "Разрешить пропуск приветствия по нажатию клавиши, чтобы не слушать его "
 "каждый раз."
 
-#: views/form.php:184
+#: views/form.php:186
 msgid ""
 "If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -138,7 +130,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "Использовано неправильное описание"
 
-#: views/form.php:130
+#: views/form.php:132
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -152,7 +144,7 @@ msgstr ""
 msgid "List Announcements"
 msgstr "Список приветствий"
 
-#: views/form.php:59
+#: views/form.php:60
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
@@ -160,7 +152,7 @@ msgstr ""
 "Сообщение , которое будет проиграно. Для добавления других записей "
 "используйте пунк меню \"Системные записи\""
 
-#: views/form.php:149 views/form.php:176 views/form.php:203
+#: views/form.php:151 views/form.php:178 views/form.php:205
 msgid "No"
 msgstr "Нет"
 
@@ -168,35 +160,27 @@ msgstr "Нет"
 msgid "No Destination"
 msgstr ""
 
-#: views/form.php:32
+#: views/form.php:33
 msgid "None"
 msgstr "Нет"
 
-#: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"Воспроизводится одна из системных аудиозаписей (опционально можно разрешить "
-"абоненту пропускать её) и затем вызов направляется по назначению."
-
-#: views/form.php:45
+#: views/form.php:46
 msgid "Recording"
 msgstr "Запись"
 
-#: views/form.php:116
+#: views/form.php:118
 msgid "Repeat"
 msgstr "Повторить"
 
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Reset"
 msgstr "Сброс"
 
-#: views/form.php:169
+#: views/form.php:171
 msgid "Return to IVR"
 msgstr "Возврат в Меню"
 
-#: views/form.php:211
+#: views/form.php:213
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -213,21 +197,35 @@ msgstr ""
 "источника  , то канал уже получает ответ , так что задержка в 1 секунду "
 "может быть нежелательной."
 
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Submit"
 msgstr "Подтвердить"
 
-#: views/form.php:103
+#: views/form.php:105
 msgid "The name of this announcement."
 msgstr "Имя приветствия."
 
-#: views/form.php:235
+#: views/form.php:237
 msgid "Where to send the caller after the announcement is played."
 msgstr "Дальнейший пункт обработки вызова после проигрывания приветствия."
 
-#: views/form.php:147 views/form.php:174 views/form.php:201
+#: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "Yes"
 msgstr "Да"
+
+#~ msgid "Announcements"
+#~ msgstr "Приветствия"
+
+#~ msgid "Applications"
+#~ msgstr "Приложения"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "Воспроизводится одна из системных аудиозаписей (опционально можно "
+#~ "разрешить абоненту пропускать её) и затем вызов направляется по "
+#~ "назначению."
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "Проверка нуждаются ли записи в перемещении.."

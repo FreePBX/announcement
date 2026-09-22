@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 05:47+0000\n"
+"POT-Creation-Date: 2026-09-22 06:51-0400\n"
 "PO-Revision-Date: 2017-09-02 09:02+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -41,7 +41,7 @@ msgstr "Thêm"
 msgid "Add Announcements"
 msgstr "Thêm Thông Báo"
 
-#: views/form.php:142
+#: views/form.php:144
 msgid "Allow Skip"
 msgstr "Cho Phép Bỏ Qua"
 
@@ -58,19 +58,11 @@ msgstr ""
 msgid "Announcement: %s"
 msgstr "Thông Báo: %s"
 
-#: announcement.i18n.php:4 announcement.i18n.php:10
-msgid "Announcements"
-msgstr "Các Thông báo"
-
-#: announcement.i18n.php:6
-msgid "Applications"
-msgstr "Các Ứng Dụng"
-
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Delete"
 msgstr "Xóa"
 
-#: views/form.php:91 views/grid.php:16
+#: views/form.php:93 views/grid.php:16
 msgid "Description"
 msgstr "Mô Tả"
 
@@ -78,7 +70,7 @@ msgstr "Mô Tả"
 msgid "Destination"
 msgstr "Điểm đích"
 
-#: views/form.php:223
+#: views/form.php:225
 msgid "Destination after Playback"
 msgstr "Điểm đích sau khi Phát Lại"
 
@@ -86,19 +78,19 @@ msgstr "Điểm đích sau khi Phát Lại"
 msgid "Destinations"
 msgstr "Những Điểm đích"
 
-#: views/form.php:72
+#: views/form.php:74
 msgid "Disable"
 msgstr "Vô hiệu hóa"
 
-#: views/form.php:196
+#: views/form.php:198
 msgid "Don't Answer Channel"
 msgstr "Không trả lời Kênh"
 
-#: views/form.php:157
+#: views/form.php:159
 msgid "If the caller is allowed to press a key to skip the message."
 msgstr "Nếu người gọi được phép bấm phím để bỏ qua thông báo."
 
-#: views/form.php:184
+#: views/form.php:186
 msgid ""
 "If this announcement came from an IVR and this is set to yes, the "
 "destination below will be ignored and instead it will return to the calling "
@@ -132,7 +124,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "Mô tả không hợp lệ được chỉ định"
 
-#: views/form.php:130
+#: views/form.php:132
 msgid ""
 "Key to press that will allow for the message to be replayed. If you choose "
 "this option there will be a short delay inserted after the message. If a "
@@ -146,7 +138,7 @@ msgstr ""
 msgid "List Announcements"
 msgstr "Danh sách thông báo"
 
-#: views/form.php:59
+#: views/form.php:60
 msgid ""
 "Message to be played.<br>To add additional recordings use the \"System "
 "Recordings\" MENU above"
@@ -154,7 +146,7 @@ msgstr ""
 "Tin nhắn được phát. <br> Để thêm các bản ghi âm bổ sung, sử dụng menu \"Hệ "
 "thống Ghi âm\" ở trên"
 
-#: views/form.php:149 views/form.php:176 views/form.php:203
+#: views/form.php:151 views/form.php:178 views/form.php:205
 msgid "No"
 msgstr "Không"
 
@@ -162,35 +154,27 @@ msgstr "Không"
 msgid "No Destination"
 msgstr "Không có điểm đến"
 
-#: views/form.php:32
+#: views/form.php:33
 msgid "None"
 msgstr "Không có gì hết"
 
-#: announcement.i18n.php:8
-msgid ""
-"Plays back one of the system recordings (optionally allowing the user to "
-"skip it) and then goes to another destination."
-msgstr ""
-"Phát lại một trong các bản ghi hệ thống (tùy chọn cho phép người dùng bỏ qua "
-"nó) và sau đó chuyển sang một điểm đến khác."
-
-#: views/form.php:45
+#: views/form.php:46
 msgid "Recording"
 msgstr "Ghi âm"
 
-#: views/form.php:116
+#: views/form.php:118
 msgid "Repeat"
 msgstr "Lặp lại"
 
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Reset"
 msgstr "Đặt lại"
 
-#: views/form.php:169
+#: views/form.php:171
 msgid "Return to IVR"
 msgstr "Quay trở lại IVR"
 
-#: views/form.php:211
+#: views/form.php:213
 msgid ""
 "Set this to yes, to keep the channel from explicitly being answered. When "
 "checked, the message will be played and if the channel is not already "
@@ -206,21 +190,34 @@ msgstr ""
 "hoặc các nguồn khác đã trả lời kênh, sự chậm trễ 1 giây đó có thể không được "
 "mong muốn."
 
-#: Announcement.class.php:89
+#: Announcement.class.php:93
 msgid "Submit"
 msgstr "Nộp"
 
-#: views/form.php:103
+#: views/form.php:105
 msgid "The name of this announcement."
 msgstr "Tên của thông báo này."
 
-#: views/form.php:235
+#: views/form.php:237
 msgid "Where to send the caller after the announcement is played."
 msgstr "Nơi gửi người gọi sau khi nghe thông báo."
 
-#: views/form.php:147 views/form.php:174 views/form.php:201
+#: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "Yes"
 msgstr "Có"
+
+#~ msgid "Announcements"
+#~ msgstr "Các Thông báo"
+
+#~ msgid "Applications"
+#~ msgstr "Các Ứng Dụng"
+
+#~ msgid ""
+#~ "Plays back one of the system recordings (optionally allowing the user to "
+#~ "skip it) and then goes to another destination."
+#~ msgstr ""
+#~ "Phát lại một trong các bản ghi hệ thống (tùy chọn cho phép người dùng bỏ "
+#~ "qua nó) và sau đó chuyển sang một điểm đến khác."
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "Kiểm tra nếu bản ghi cần di chuyển .."
