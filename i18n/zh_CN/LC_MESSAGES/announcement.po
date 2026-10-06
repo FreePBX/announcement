@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-22 06:51-0400\n"
+"POT-Creation-Date: 2026-10-06 06:08-0400\n"
 "PO-Revision-Date: 2015-11-16 07:30+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -71,6 +71,14 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr "公告：%s"
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Announcements"
+msgstr "公告"
+
+#: announcement.i18n.php:6
+msgid "Applications"
+msgstr "应用"
 
 #: Announcement.class.php:93
 msgid "Delete"
@@ -156,6 +164,12 @@ msgstr ""
 msgid "None"
 msgstr "无"
 
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr "回放其中一个系统录音（可跳过），然后路由到另外一个目的地。"
+
 #: views/form.php:46
 msgid "Recording"
 msgstr "录音"
@@ -197,17 +211,6 @@ msgstr "语音播报后发送此呼叫的目的地。"
 #: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "Yes"
 msgstr ""
-
-#~ msgid "Announcements"
-#~ msgstr "公告"
-
-#~ msgid "Applications"
-#~ msgstr "应用"
-
-#~ msgid ""
-#~ "Plays back one of the system recordings (optionally allowing the user to "
-#~ "skip it) and then goes to another destination."
-#~ msgstr "回放其中一个系统录音（可跳过），然后路由到另外一个目的地。"
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "检查是否需要迁移录音。。"

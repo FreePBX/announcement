@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-22 06:51-0400\n"
+"POT-Creation-Date: 2026-10-06 06:08-0400\n"
 "PO-Revision-Date: 2015-09-01 03:13+0200\n"
 "Last-Translator: Vidar Skjelanger <vidar@unimicro.no>\n"
 "Language-Team: Norwegian Bokmål <http://weblate.freepbx.org/projects/freepbx/"
@@ -57,6 +57,14 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr "Kunngjøring: %s"
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Announcements"
+msgstr "Kunngjøringer"
+
+#: announcement.i18n.php:6
+msgid "Applications"
+msgstr "Anvendelser"
 
 #: Announcement.class.php:93
 msgid "Delete"
@@ -139,6 +147,14 @@ msgstr ""
 msgid "None"
 msgstr "Ingen"
 
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+"Spiller av en av systeminnspillingene (eventuelt med mulighet for å hoppe "
+"over) og fortsetter så til en annen destinasjon."
+
 #: views/form.php:46
 msgid "Recording"
 msgstr "Lydopptak"
@@ -180,19 +196,6 @@ msgstr ""
 #: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "Yes"
 msgstr ""
-
-#~ msgid "Announcements"
-#~ msgstr "Kunngjøringer"
-
-#~ msgid "Applications"
-#~ msgstr "Anvendelser"
-
-#~ msgid ""
-#~ "Plays back one of the system recordings (optionally allowing the user to "
-#~ "skip it) and then goes to another destination."
-#~ msgstr ""
-#~ "Spiller av en av systeminnspillingene (eventuelt med mulighet for å hoppe "
-#~ "over) og fortsetter så til en annen destinasjon."
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "Kontrollerer om lydopptak trenger å migreres..."

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - test module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-22 06:51-0400\n"
+"POT-Creation-Date: 2026-10-06 06:08-0400\n"
 "PO-Revision-Date: 2016-12-09 05:23+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -56,6 +56,14 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr "Anuncio: %s"
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Announcements"
+msgstr "Anuncios"
+
+#: announcement.i18n.php:6
+msgid "Applications"
+msgstr "Aplicaciones"
 
 #: Announcement.class.php:93
 msgid "Delete"
@@ -150,6 +158,14 @@ msgstr "No Destino"
 msgid "None"
 msgstr "ninguno"
 
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+"Reproduce una de las grabaciones del sistema (permitiendo opcionalmente al "
+"usuario saltárselo) y luego se va a otro destino."
+
 #: views/form.php:46
 msgid "Recording"
 msgstr "Grabación"
@@ -197,19 +213,6 @@ msgstr "Donde enviar al llamante despues de que el anuncio sea reproducido."
 #: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "Yes"
 msgstr "Si"
-
-#~ msgid "Announcements"
-#~ msgstr "Anuncios"
-
-#~ msgid "Applications"
-#~ msgstr "Aplicaciones"
-
-#~ msgid ""
-#~ "Plays back one of the system recordings (optionally allowing the user to "
-#~ "skip it) and then goes to another destination."
-#~ msgstr ""
-#~ "Reproduce una de las grabaciones del sistema (permitiendo opcionalmente "
-#~ "al usuario saltárselo) y luego se va a otro destino."
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "Comprobando si las grabaciones necesitan migrarse..."

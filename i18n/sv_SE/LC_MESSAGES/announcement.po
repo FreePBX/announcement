@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBXannouncement\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-22 06:51-0400\n"
+"POT-Creation-Date: 2026-10-06 06:08-0400\n"
 "PO-Revision-Date: 2008-10-10 20:20+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -67,6 +67,14 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr "Meddelande: %s"
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Announcements"
+msgstr "Meddelanden"
+
+#: announcement.i18n.php:6
+msgid "Applications"
+msgstr ""
 
 #: Announcement.class.php:93
 msgid "Delete"
@@ -150,6 +158,14 @@ msgstr ""
 msgid "None"
 msgstr "Ingen"
 
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+"Spelar upp en av systeminspelningarn (valbart om uppringaren ska kunna hoppa "
+"över det) för att sedan gå till en annan destination."
+
 #: views/form.php:46
 msgid "Recording"
 msgstr "Inspelning"
@@ -191,16 +207,6 @@ msgstr ""
 #: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "Yes"
 msgstr ""
-
-#~ msgid "Announcements"
-#~ msgstr "Meddelanden"
-
-#~ msgid ""
-#~ "Plays back one of the system recordings (optionally allowing the user to "
-#~ "skip it) and then goes to another destination."
-#~ msgstr ""
-#~ "Spelar upp en av systeminspelningarn (valbart om uppringaren ska kunna "
-#~ "hoppa över det) för att sedan gå till en annan destination."
 
 #~ msgid "Checking if recordings need migration.."
 #~ msgstr "Kontrollerar om inspelningar behöver migreras.."

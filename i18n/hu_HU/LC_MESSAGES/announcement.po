@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-22 06:51-0400\n"
+"POT-Creation-Date: 2026-10-06 06:08-0400\n"
 "PO-Revision-Date: 2014-03-04 08:44+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Hungarian <http://git.freepbx.org/projects/freepbx/"
@@ -71,6 +71,14 @@ msgstr ""
 #, php-format
 msgid "Announcement: %s"
 msgstr ""
+
+#: announcement.i18n.php:4 announcement.i18n.php:10
+msgid "Announcements"
+msgstr "Közlemények"
+
+#: announcement.i18n.php:6
+msgid "Applications"
+msgstr "Alkalmazások"
 
 #: Announcement.class.php:93
 msgid "Delete"
@@ -153,6 +161,12 @@ msgstr ""
 msgid "None"
 msgstr ""
 
+#: announcement.i18n.php:8
+msgid ""
+"Plays back one of the system recordings (optionally allowing the user to "
+"skip it) and then goes to another destination."
+msgstr ""
+
 #: views/form.php:46
 msgid "Recording"
 msgstr "Rögzítés"
@@ -194,12 +208,6 @@ msgstr ""
 #: views/form.php:149 views/form.php:176 views/form.php:203
 msgid "Yes"
 msgstr ""
-
-#~ msgid "Announcements"
-#~ msgstr "Közlemények"
-
-#~ msgid "Applications"
-#~ msgstr "Alkalmazások"
 
 #~ msgid "Add Announcement"
 #~ msgstr "Esemény hozzáadása"
